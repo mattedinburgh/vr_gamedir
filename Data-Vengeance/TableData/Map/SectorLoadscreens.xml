@@ -2304,12 +2304,12 @@ INFO: High resolution loadscreens must be postfixed in the filesystem when using
 	<SECTOR>
 		<uiIndex>227</uiIndex>
 		<szLocation>O3</szLocation>
-		<RandomAltSector>1</RandomAltSector>
+		<RandomAltSector>0</RandomAltSector>
 		<szImageFormat>STI</szImageFormat>
-		<szDay>Loadscreens\LS_Hilltophouse</szDay>
-		<szNight>Loadscreens\LS_Shanty_night</szNight>
-		<szDayAlt>Loadscreens\LS_Troop_street</szDayAlt>
-		<szNightAlt>Loadscreens\LS_Townhouses_night</szNightAlt>
+		<szDay>Loadscreens\LS_White_Mansion</szDay>
+		<szNight>Loadscreens\LS_Relic_night</szNight>
+		<szDayAlt></szDayAlt>
+		<szNightAlt></szNightAlt>
 	</SECTOR>
 	<SECTOR>
 		<uiIndex>228</uiIndex>
