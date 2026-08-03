@@ -4940,14 +4940,14 @@
 	<MAGAZINE>
 		<uiIndex>704</uiIndex>
 		<ubCalibre>104</ubCalibre>
-		<ubMagSize>1</ubMagSize>
+		<ubMagSize>4</ubMagSize>
 		<ubAmmoType>126</ubAmmoType>
 		<ubMagType>0</ubMagType>
 	</MAGAZINE>
 	<MAGAZINE>
 		<uiIndex>705</uiIndex>
 		<ubCalibre>104</ubCalibre>
-		<ubMagSize>4</ubMagSize>
+		<ubMagSize>1</ubMagSize>
 		<ubAmmoType>126</ubAmmoType>
 		<ubMagType>0</ubMagType>
 	</MAGAZINE>
