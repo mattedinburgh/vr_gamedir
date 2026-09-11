@@ -73,7 +73,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -112,7 +112,7 @@
 		<nAccuracy>6</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>13</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -145,7 +145,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -185,7 +185,7 @@
 		<nAccuracy>14</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -320,7 +320,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -362,7 +362,7 @@
 		<nAccuracy>7</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>14</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12500</usOverheatingDamageThreshold>
@@ -446,7 +446,7 @@
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>9</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>13</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>60</usOverheatingSingleShotTemperature>
@@ -486,7 +486,7 @@
 		<nAccuracy>61</nAccuracy>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>5</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>17000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>114.0</usOverheatingSingleShotTemperature>
@@ -528,7 +528,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>11</Handling>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>113</usOverheatingSingleShotTemperature>
@@ -568,7 +568,7 @@
 		<nAccuracy>40</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9700</usOverheatingDamageThreshold>
@@ -610,7 +610,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>6</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>2</Handling>
+		<Handling>6</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>16000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>64</usOverheatingSingleShotTemperature>
@@ -650,8 +650,8 @@
 		<nAccuracy>29</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>2</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>47</usOverheatingSingleShotTemperature>
@@ -684,8 +684,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>575</ManualReloadSound>
 		<nAccuracy>68</nAccuracy>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9360</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -720,8 +720,8 @@
 		<MaxDistForMessyDeath>16</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>180</usOverheatingSingleShotTemperature>
@@ -757,8 +757,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>88</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -799,7 +799,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>10</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>21240</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>118</usOverheatingSingleShotTemperature>
@@ -840,8 +840,8 @@
 		<nAccuracy>66</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18900</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>120</usOverheatingSingleShotTemperature>
@@ -878,8 +878,8 @@
 		<nAccuracy>67</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>12</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>127</usOverheatingSingleShotTemperature>
@@ -918,8 +918,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>68</nAccuracy>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>24000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>115</usOverheatingSingleShotTemperature>
@@ -1001,8 +1001,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>127</usOverheatingSingleShotTemperature>
@@ -1042,8 +1042,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>115</usOverheatingSingleShotTemperature>
@@ -1083,8 +1083,8 @@
 		<nAccuracy>81</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>130</usOverheatingSingleShotTemperature>
@@ -1124,8 +1124,8 @@
 		<nAccuracy>81</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>132</usOverheatingSingleShotTemperature>
@@ -1165,8 +1165,8 @@
 		<nAccuracy>79</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11180</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>130</usOverheatingSingleShotTemperature>
@@ -1243,8 +1243,8 @@
 		<APsToReloadManually>12</APsToReloadManually>
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>20</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -1278,8 +1278,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>20</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -1320,7 +1320,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>13</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>12</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -1361,8 +1361,8 @@
 		<nAccuracy>67</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>5</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>20</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>13</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>25000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -1402,8 +1402,8 @@
 		<nAccuracy>70</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>5</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>17550</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>130</usOverheatingSingleShotTemperature>
@@ -1444,8 +1444,8 @@
 		<nAccuracy>81</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>22</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>18</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -1815,8 +1815,8 @@
 		<MaxDistForMessyDeath>9</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>73</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>30000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>900</usOverheatingSingleShotTemperature>
@@ -1988,7 +1988,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>40</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>10</Handling>
 		<usOverheatingJamThreshold>60000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>60000</usOverheatingDamageThreshold>
@@ -2089,8 +2089,8 @@
 		<nAccuracy>73</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>30000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>900</usOverheatingSingleShotTemperature>
@@ -2162,7 +2162,7 @@
 		<nAccuracy>20</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>14</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -2201,8 +2201,8 @@
 		<nAccuracy>47</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>5</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>6</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -2242,8 +2242,8 @@
 		<nAccuracy>43</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>5</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11250</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -2353,7 +2353,7 @@
 		<nAccuracy>7</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>10200</usOverheatingDamageThreshold>
@@ -2395,7 +2395,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>10</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>21800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>121</usOverheatingSingleShotTemperature>
@@ -2436,7 +2436,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>8</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>20800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>124</usOverheatingSingleShotTemperature>
@@ -2476,8 +2476,8 @@
 		<nAccuracy>70</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>11</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4450</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>89</usOverheatingSingleShotTemperature>
@@ -2510,8 +2510,8 @@
 		<MaxDistForMessyDeath>16</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>85</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>21</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>13</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>7000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -2544,8 +2544,8 @@
 		<MaxDistForMessyDeath>20</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>89</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>15</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>6000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>240</usOverheatingSingleShotTemperature>
@@ -2579,7 +2579,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>5</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -2612,7 +2612,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -2646,7 +2646,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>5</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -2680,7 +2680,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>5</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -2716,8 +2716,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>559</ManualReloadSound>
 		<nAccuracy>20</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -2750,8 +2750,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>25</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -2792,8 +2792,8 @@
 		<nAccuracy>33</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>4</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -2833,8 +2833,8 @@
 		<nAccuracy>33</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>7</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -2875,8 +2875,8 @@
 		<nAccuracy>14</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>12</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -2916,8 +2916,8 @@
 		<nAccuracy>37</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>9</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -2956,8 +2956,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>37</nAccuracy>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>6</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>14500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -2997,8 +2997,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>11</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -3033,8 +3033,8 @@
 		<MaxDistForMessyDeath>8</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>68</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>123</usOverheatingSingleShotTemperature>
@@ -3074,8 +3074,8 @@
 		<nAccuracy>52</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>11</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>2</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>7654</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>89</usOverheatingSingleShotTemperature>
@@ -3115,8 +3115,8 @@
 		<nAccuracy>66</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>21800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>122</usOverheatingSingleShotTemperature>
@@ -3149,7 +3149,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -3306,7 +3306,7 @@
 		<nAccuracy>20</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>12</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9800</usOverheatingDamageThreshold>
@@ -3348,8 +3348,8 @@
 		<nAccuracy>65</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>16900</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -3431,7 +3431,7 @@
 		<nAccuracy>14</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>12</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>10500</usOverheatingDamageThreshold>
@@ -3472,8 +3472,8 @@
 		<nAccuracy>65</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>10</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>19800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>120</usOverheatingSingleShotTemperature>
@@ -3513,8 +3513,8 @@
 		<nAccuracy>61</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>13</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>120</usOverheatingSingleShotTemperature>
@@ -3554,8 +3554,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>113</usOverheatingSingleShotTemperature>
@@ -3596,7 +3596,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>13</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>14600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>114</usOverheatingSingleShotTemperature>
@@ -3637,7 +3637,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>13</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>124</usOverheatingSingleShotTemperature>
@@ -3678,8 +3678,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>5</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>126</usOverheatingSingleShotTemperature>
@@ -3720,8 +3720,8 @@
 		<nAccuracy>65</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>5</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>120</usOverheatingSingleShotTemperature>
@@ -3761,8 +3761,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -3802,8 +3802,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>11</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -3843,8 +3843,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>128</usOverheatingSingleShotTemperature>
@@ -3884,8 +3884,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>14000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -3926,9 +3926,9 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<ubRecoilDelay>2</ubRecoilDelay>
-		<Handling>16</Handling>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>14900</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>124</usOverheatingSingleShotTemperature>
@@ -3968,7 +3968,7 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12000</usOverheatingDamageThreshold>
@@ -4045,7 +4045,7 @@
 		<nAccuracy>25</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>12</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12500</usOverheatingDamageThreshold>
@@ -4079,8 +4079,8 @@
 		<MaxDistForMessyDeath>24</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>90</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>21</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>240</usOverheatingSingleShotTemperature>
@@ -4113,8 +4113,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>25</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -4146,7 +4146,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -4179,7 +4179,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -4220,8 +4220,8 @@
 		<nAccuracy>66</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>20574</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>127</usOverheatingSingleShotTemperature>
@@ -4255,8 +4255,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>87</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -4296,8 +4296,8 @@
 		<nAccuracy>33</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>10</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11750</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>47</usOverheatingSingleShotTemperature>
@@ -4338,8 +4338,8 @@
 		<nAccuracy>82</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>26</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>16</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>21000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -4420,8 +4420,8 @@
 		<nAccuracy>79</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>10700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>134</usOverheatingSingleShotTemperature>
@@ -4490,7 +4490,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -4529,8 +4529,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>68</nAccuracy>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>26200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -4570,7 +4570,7 @@
 		<nAccuracy>64</nAccuracy>
 		<bRecoilY>7</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>8</Handling>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>20600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -4604,8 +4604,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>88</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>20</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -4639,7 +4639,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>5</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -4674,7 +4674,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -4775,8 +4775,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>92</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>7140</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>234</usOverheatingSingleShotTemperature>
@@ -4810,8 +4810,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>93</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>23</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>13</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>5950</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>238</usOverheatingSingleShotTemperature>
@@ -4852,7 +4852,7 @@
 		<nAccuracy>7</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>14</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>10300</usOverheatingDamageThreshold>
@@ -4894,8 +4894,8 @@
 		<nAccuracy>29</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>5</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -4936,8 +4936,8 @@
 		<nAccuracy>20</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>9</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -4970,7 +4970,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -5005,7 +5005,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -5047,7 +5047,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>9</Handling>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>27000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>120</usOverheatingSingleShotTemperature>
@@ -5088,7 +5088,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>13</bRecoilY>
 		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>10300</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>134</usOverheatingSingleShotTemperature>
@@ -5129,7 +5129,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>14</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>13</Handling>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>130</usOverheatingSingleShotTemperature>
@@ -5170,8 +5170,8 @@
 		<nAccuracy>81</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>25</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>16</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>28000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -5212,8 +5212,8 @@
 		<nAccuracy>65</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>5</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>13</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18750</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -5252,8 +5252,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>70</nAccuracy>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>12</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18340</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>131</usOverheatingSingleShotTemperature>
@@ -5334,8 +5334,8 @@
 		<nAccuracy>66</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>23200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>128</usOverheatingSingleShotTemperature>
@@ -5371,8 +5371,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>88</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>21</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>2400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -5412,8 +5412,8 @@
 		<nAccuracy>81</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>20700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -5453,8 +5453,8 @@
 		<nAccuracy>62</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>13</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>19300</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>126</usOverheatingSingleShotTemperature>
@@ -5488,8 +5488,8 @@
 		<MaxDistForMessyDeath>24</MaxDistForMessyDeath>
 		<ManualReloadSound>593</ManualReloadSound>
 		<nAccuracy>90</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>32</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>20</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>5200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>260</usOverheatingSingleShotTemperature>
@@ -5520,7 +5520,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>5</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -5644,8 +5644,8 @@
 		<nAccuracy>66</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>4</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>15</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18750</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -5685,7 +5685,7 @@
 		<nAccuracy>64</nAccuracy>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>13</Handling>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>24400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>127</usOverheatingSingleShotTemperature>
@@ -5720,7 +5720,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>29</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>13</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -5762,7 +5762,7 @@
 		<nAccuracy>55</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15360</usOverheatingDamageThreshold>
@@ -5803,8 +5803,8 @@
 		<nAccuracy>67</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>17500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>127</usOverheatingSingleShotTemperature>
@@ -5845,7 +5845,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>13</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>16200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>127</usOverheatingSingleShotTemperature>
@@ -5885,8 +5885,8 @@
 		<nAccuracy>74</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>13</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>7920</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>132</usOverheatingSingleShotTemperature>
@@ -5927,8 +5927,8 @@
 		<nAccuracy>67</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>127</usOverheatingSingleShotTemperature>
@@ -5969,8 +5969,8 @@
 		<nAccuracy>67</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>4</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>20</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>15</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>27000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -6005,7 +6005,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>10</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -6047,8 +6047,8 @@
 		<nAccuracy>33</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>7</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13125</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>75</usOverheatingSingleShotTemperature>
@@ -6088,8 +6088,8 @@
 		<nAccuracy>7</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>2</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>10400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>47</usOverheatingSingleShotTemperature>
@@ -6129,7 +6129,7 @@
 		<nAccuracy>25</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>13</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12600</usOverheatingDamageThreshold>
@@ -6163,8 +6163,8 @@
 		<MaxDistForMessyDeath>15</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>20</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>7000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -6231,8 +6231,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>60</nAccuracy>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>6840</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>114</usOverheatingSingleShotTemperature>
@@ -6273,8 +6273,8 @@
 		<nAccuracy>25</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>4</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>60</usOverheatingSingleShotTemperature>
@@ -6306,7 +6306,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -6342,7 +6342,7 @@
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>20</nAccuracy>
 		<ubAimLevels>3</ubAimLevels>
-		<Handling>9</Handling>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -6382,7 +6382,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>14</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>10</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>160</usOverheatingSingleShotTemperature>
@@ -6421,8 +6421,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>29</nAccuracy>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>1</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>13</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -6456,8 +6456,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>593</ManualReloadSound>
 		<nAccuracy>92</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>20</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3900</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>260</usOverheatingSingleShotTemperature>
@@ -6490,8 +6490,8 @@
 		<MaxDistForMessyDeath>13</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>82</nAccuracy>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>19000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>136</usOverheatingSingleShotTemperature>
@@ -6526,8 +6526,8 @@
 		<MaxDistForMessyDeath>15</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4900</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -6561,8 +6561,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>87</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -6601,8 +6601,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>25</nAccuracy>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>6</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>60000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>60000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -6643,8 +6643,8 @@
 		<nAccuracy>81</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>21</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>13</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>21000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -6685,7 +6685,7 @@
 		<nAccuracy>14</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>12</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11200</usOverheatingDamageThreshold>
@@ -6717,7 +6717,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>569</ManualReloadSound>
 		<nAccuracy>4</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>6</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -6749,7 +6749,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>569</ManualReloadSound>
 		<nAccuracy>4</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>6</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -6790,8 +6790,8 @@
 		<nAccuracy>52</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>9</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>123</usOverheatingSingleShotTemperature>
@@ -6831,7 +6831,7 @@
 		<nAccuracy>29</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>10</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11400</usOverheatingDamageThreshold>
@@ -6866,8 +6866,8 @@
 		<APsToReloadManually>30</APsToReloadManually>
 		<ManualReloadSound>478</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>180</usOverheatingSingleShotTemperature>
@@ -6901,8 +6901,8 @@
 		<APsToReloadManually>12</APsToReloadManually>
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>25</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -6936,7 +6936,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -6972,7 +6972,7 @@
 		<APsToReloadManually>12</APsToReloadManually>
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>25</nAccuracy>
-		<ubAimLevels>4</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
@@ -7007,8 +7007,8 @@
 		<MaxDistForMessyDeath>22</MaxDistForMessyDeath>
 		<ManualReloadSound>593</ManualReloadSound>
 		<nAccuracy>90</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>35</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>20</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>6500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>260</usOverheatingSingleShotTemperature>
@@ -7044,8 +7044,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>88</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -7086,8 +7086,8 @@
 		<nAccuracy>80</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>23</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>14</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>25375</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>145</usOverheatingSingleShotTemperature>
@@ -7128,8 +7128,8 @@
 		<nAccuracy>80</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>11</bRecoilY>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>22</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>14</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>5000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>145</usOverheatingSingleShotTemperature>
@@ -7169,7 +7169,7 @@
 		<nAccuracy>29</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>13</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9500</usOverheatingDamageThreshold>
@@ -7211,7 +7211,7 @@
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>15</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>10000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>47</usOverheatingSingleShotTemperature>
@@ -7327,8 +7327,8 @@
 		<nAccuracy>68</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>20</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>15</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>20475</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -7368,8 +7368,8 @@
 		<nAccuracy>70</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>17550</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -7443,8 +7443,8 @@
 		<nAccuracy>62</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>13</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9300</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -7480,8 +7480,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>88</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4300</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -7516,8 +7516,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>93</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>20</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4420</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>221</usOverheatingSingleShotTemperature>
@@ -7552,8 +7552,8 @@
 		<EasyUnjam>1</EasyUnjam>
 		<ManualReloadSound>558</ManualReloadSound>
 		<nAccuracy>3</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
-		<Handling>1</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>13</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -7594,7 +7594,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>12</bRecoilY>
 		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11160</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>124</usOverheatingSingleShotTemperature>
@@ -7635,8 +7635,8 @@
 		<nAccuracy>68</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>19800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>124</usOverheatingSingleShotTemperature>
@@ -7678,7 +7678,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>14</Handling>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>128</usOverheatingSingleShotTemperature>
@@ -7719,8 +7719,8 @@
 		<nAccuracy>55</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>11</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>16500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>129</usOverheatingSingleShotTemperature>
@@ -7755,7 +7755,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -7788,7 +7788,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -7822,7 +7822,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>5</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -7856,7 +7856,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>5</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -7897,7 +7897,7 @@
 		<nAccuracy>6</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>11</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>12</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12000</usOverheatingDamageThreshold>
@@ -7933,7 +7933,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -7966,7 +7966,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -8001,7 +8001,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18750</usOverheatingDamageThreshold>
@@ -8042,7 +8042,7 @@
 		<nAccuracy>7</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>10</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -8083,8 +8083,8 @@
 		<nAccuracy>29</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>5</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -8124,7 +8124,7 @@
 		<nAccuracy>70</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>4</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>26000</usOverheatingDamageThreshold>
@@ -8165,7 +8165,7 @@
 		<nAccuracy>47</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>7</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -8200,8 +8200,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>2100</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -8237,8 +8237,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>88</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -8278,7 +8278,7 @@
 		<nAccuracy>7</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>11</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -8313,8 +8313,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>559</ManualReloadSound>
 		<nAccuracy>20</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -8350,7 +8350,7 @@
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>4</nAccuracy>
 		<ubAimLevels>3</ubAimLevels>
-		<Handling>2</Handling>
+		<Handling>13</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -8386,8 +8386,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>88</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>20</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>6755</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>193</usOverheatingSingleShotTemperature>
@@ -8422,8 +8422,8 @@
 		<MaxDistForMessyDeath>15</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>190</usOverheatingSingleShotTemperature>
@@ -8458,7 +8458,7 @@
 		<MaxDistForMessyDeath>15</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>6</ubAimLevels>
+		<ubAimLevels>5</ubAimLevels>
 		<Handling>11</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3680</usOverheatingDamageThreshold>
@@ -8534,7 +8534,7 @@
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>14</Handling>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>60</usOverheatingSingleShotTemperature>
@@ -8567,7 +8567,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -8602,7 +8602,7 @@
 		<APsToReloadManually>1</APsToReloadManually>
 		<ManualReloadSound>550</ManualReloadSound>
 		<nAccuracy>4</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>6</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>10000</usOverheatingDamageThreshold>
@@ -8643,8 +8643,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>68</nAccuracy>
 		<bRecoilY>4</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18750</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -8684,8 +8684,8 @@
 		<nAccuracy>20</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>14</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -8725,8 +8725,8 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>16800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -8767,7 +8767,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>7</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>19000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -8800,7 +8800,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -8841,8 +8841,8 @@
 		<nAccuracy>68</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>11</bRecoilY>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3115</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>89</usOverheatingSingleShotTemperature>
@@ -8875,8 +8875,8 @@
 		<MaxDistForMessyDeath>16</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>85</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4875</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>195</usOverheatingSingleShotTemperature>
@@ -8909,8 +8909,8 @@
 		<APsToReloadManually>20</APsToReloadManually>
 		<ManualReloadSound>567</ManualReloadSound>
 		<nAccuracy>55</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>8</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>10500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>75</usOverheatingSingleShotTemperature>
@@ -8951,8 +8951,8 @@
 		<nAccuracy>58</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>24375</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -8992,8 +8992,8 @@
 		<nAccuracy>68</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>22500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -9033,8 +9033,8 @@
 		<nAccuracy>62</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>8</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>22500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -9075,7 +9075,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>9</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>4</Handling>
+		<Handling>15</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -9115,8 +9115,8 @@
 		<nAccuracy>70</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>11</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>22500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -9151,8 +9151,8 @@
 		<MaxDistForMessyDeath>15</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>3500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -9187,8 +9187,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>558</ManualReloadSound>
 		<nAccuracy>29</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -9228,8 +9228,8 @@
 		<nAccuracy>67</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>17500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>127</usOverheatingSingleShotTemperature>
@@ -9270,7 +9270,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>13</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>16200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>132</usOverheatingSingleShotTemperature>
@@ -9310,8 +9310,8 @@
 		<nAccuracy>67</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>19900</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -9378,7 +9378,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>5</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -9413,8 +9413,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>70</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>14960</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>187</usOverheatingSingleShotTemperature>
@@ -9454,7 +9454,7 @@
 		<nAccuracy>37</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9000</usOverheatingDamageThreshold>
@@ -9535,7 +9535,7 @@
 		<nAccuracy>58</nAccuracy>
 		<bRecoilY>7</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>6</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -9572,7 +9572,7 @@
 		<nAccuracy>50</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>15</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9400</usOverheatingDamageThreshold>
@@ -9610,7 +9610,7 @@
 		<nAccuracy>47</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>14</bRecoilY>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>15</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>8200</usOverheatingDamageThreshold>
@@ -9748,8 +9748,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>70</nAccuracy>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>6250</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -9890,8 +9890,8 @@
 		<nAccuracy>43</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -9959,8 +9959,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>25</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -9994,8 +9994,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>85</nAccuracy>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>20400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>170</usOverheatingSingleShotTemperature>
@@ -10028,8 +10028,8 @@
 		<MaxDistForMessyDeath>15</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>5700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>190</usOverheatingSingleShotTemperature>
@@ -10063,8 +10063,8 @@
 		<APsToReloadManually>23</APsToReloadManually>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>87</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>5400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>190</usOverheatingSingleShotTemperature>
@@ -10100,8 +10100,8 @@
 		<APsToReloadManually>21</APsToReloadManually>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>88</nAccuracy>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>10</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4300</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>195</usOverheatingSingleShotTemperature>
@@ -10141,7 +10141,7 @@
 		<nAccuracy>40</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>10</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9000</usOverheatingDamageThreshold>
@@ -10183,7 +10183,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>7</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>10</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>19500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -10222,8 +10222,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>61</nAccuracy>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>13</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18252</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
@@ -10254,7 +10254,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -10289,8 +10289,8 @@
 		<APsToReloadManually>28</APsToReloadManually>
 		<ManualReloadSound>477</ManualReloadSound>
 		<nAccuracy>86</nAccuracy>
-		<ubAimLevels>8</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>20400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>173</usOverheatingSingleShotTemperature>
@@ -10363,7 +10363,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18750</usOverheatingDamageThreshold>
@@ -10403,8 +10403,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>82</nAccuracy>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>19000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>135</usOverheatingSingleShotTemperature>
@@ -10443,8 +10443,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>69</nAccuracy>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>31000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>130</usOverheatingSingleShotTemperature>
@@ -10481,7 +10481,7 @@
 		<nAccuracy>80</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18500</usOverheatingDamageThreshold>
@@ -10522,7 +10522,7 @@
 		<nAccuracy>47</nAccuracy>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>12</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>27900</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -10561,8 +10561,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>66</nAccuracy>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>28300</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>130</usOverheatingSingleShotTemperature>
@@ -10602,7 +10602,7 @@
 		<nAccuracy>63</nAccuracy>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>12</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>24600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -10641,8 +10641,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>75</nAccuracy>
 		<bRecoilY>10</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>24900</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>145</usOverheatingSingleShotTemperature>
@@ -10683,8 +10683,8 @@
 		<nAccuracy>33</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>7</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>60</usOverheatingSingleShotTemperature>
@@ -10724,7 +10724,7 @@
 		<nAccuracy>73</nAccuracy>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>14</Handling>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>16800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -10764,7 +10764,7 @@
 		<nAccuracy>73</nAccuracy>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>14</Handling>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>132</usOverheatingSingleShotTemperature>
@@ -10804,8 +10804,8 @@
 		<nAccuracy>73</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>16000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>132</usOverheatingSingleShotTemperature>
@@ -10871,7 +10871,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -10903,7 +10903,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -11008,7 +11008,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -11042,7 +11042,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -11078,7 +11078,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>6</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -11182,7 +11182,7 @@
 		<EasyUnjam>1</EasyUnjam>
 		<ManualReloadSound>549</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18000</usOverheatingDamageThreshold>
@@ -11223,8 +11223,8 @@
 		<nAccuracy>81</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>134</usOverheatingSingleShotTemperature>
@@ -11259,8 +11259,8 @@
 		<MaxDistForMessyDeath>15</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>84</nAccuracy>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>19</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>6400</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -11293,8 +11293,8 @@
 		<APsToReloadManually>12</APsToReloadManually>
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>14</nAccuracy>
-		<ubAimLevels>4</ubAimLevels>
-		<Handling>9</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -11328,8 +11328,8 @@
 		<APsToReloadManually>12</APsToReloadManually>
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>25</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>3</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -11361,7 +11361,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18750</usOverheatingDamageThreshold>
@@ -12011,7 +12011,7 @@
 		<MaxDistForMessyDeath>6</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>5</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -12092,8 +12092,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>58</nAccuracy>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>11</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>23300</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>128</usOverheatingSingleShotTemperature>
@@ -12133,8 +12133,8 @@
 		<nAccuracy>29</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>9</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -12167,8 +12167,8 @@
 		<MaxDistForMessyDeath>13</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>82</nAccuracy>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -12208,7 +12208,7 @@
 		<nAccuracy>65</nAccuracy>
 		<bRecoilY>8</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>14</Handling>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>25500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>126</usOverheatingSingleShotTemperature>
@@ -12250,7 +12250,7 @@
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>12</Handling>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>60</usOverheatingSingleShotTemperature>
@@ -12289,8 +12289,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>68</nAccuracy>
 		<bRecoilY>7</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>27000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -12322,7 +12322,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>7</nAccuracy>
-		<ubAimLevels>2</ubAimLevels>
+		<ubAimLevels>3</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13500</usOverheatingDamageThreshold>
@@ -12358,8 +12358,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>40</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>6</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>100</usOverheatingSingleShotTemperature>
@@ -12399,8 +12399,8 @@
 		<nAccuracy>81</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
-		<ubAimLevels>7</ubAimLevels>
-		<Handling>23</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>17</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>28000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -12439,8 +12439,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>65</nAccuracy>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>17500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -12479,8 +12479,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>73</nAccuracy>
 		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>14</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>26800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>137</usOverheatingSingleShotTemperature>
@@ -12515,8 +12515,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>43</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>3</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>60</usOverheatingSingleShotTemperature>
@@ -12556,8 +12556,8 @@
 		<nAccuracy>7</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>6</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>14</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11500</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -12598,7 +12598,7 @@
 		<nAccuracy>33</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>10</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9000</usOverheatingDamageThreshold>
@@ -12641,7 +12641,7 @@
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>7</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>12</Handling>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>45</usOverheatingSingleShotTemperature>
@@ -12682,8 +12682,8 @@
 		<nAccuracy>67</nAccuracy>
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>6</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>17</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>13000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>130</usOverheatingSingleShotTemperature>
@@ -12724,8 +12724,8 @@
 		<nAccuracy>67</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>6</ubAimLevels>
-		<Handling>18</Handling>
+		<ubAimLevels>5</ubAimLevels>
+		<Handling>16</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>27000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>125</usOverheatingSingleShotTemperature>
@@ -12765,8 +12765,8 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>37</nAccuracy>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>2</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>18600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>124</usOverheatingSingleShotTemperature>
@@ -12806,8 +12806,8 @@
 		<nAccuracy>57</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>8</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
-		<Handling>1</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>6</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>21700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>124</usOverheatingSingleShotTemperature>
@@ -12875,8 +12875,8 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>40</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>7</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>110</usOverheatingSingleShotTemperature>
@@ -12952,7 +12952,7 @@
 		<bRecoilX>1</bRecoilX>
 		<bRecoilY>14</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>12</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>14200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>140</usOverheatingSingleShotTemperature>
@@ -12987,8 +12987,8 @@
 		<MaxDistForMessyDeath>8</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>68</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>16</Handling>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>122</usOverheatingSingleShotTemperature>
@@ -13041,7 +13041,7 @@
 		<nAccuracy>57</nAccuracy>
 		<bRecoilY>5</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>13</Handling>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>19200</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>64</usOverheatingSingleShotTemperature>
@@ -13080,7 +13080,7 @@
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>50</nAccuracy>
 		<bRecoilY>5</bRecoilY>
-		<ubAimLevels>3</ubAimLevels>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>9</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>12800</usOverheatingDamageThreshold>
@@ -13121,7 +13121,7 @@
 		<nAccuracy>25</nAccuracy>
 		<bRecoilY>5</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>11</Handling>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>9600</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>64</usOverheatingSingleShotTemperature>
@@ -13209,7 +13209,7 @@
 		<ManualReloadSound>555</ManualReloadSound>
 		<nAccuracy>20</nAccuracy>
 		<ubAimLevels>3</ubAimLevels>
-		<Handling>9</Handling>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>15000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>150</usOverheatingSingleShotTemperature>
@@ -13263,7 +13263,7 @@
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>3</ubAimLevels>
-		<Handling>2</Handling>
+		<Handling>16</Handling>
 		<usOverheatingJamThreshold>20000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>4700</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>47</usOverheatingSingleShotTemperature>
@@ -15969,7 +15969,7 @@
 		<ubCalibre>12</ubCalibre>
 		<ubReadyTime>11</ubReadyTime>
 		<ubShotsPer4Turns>17.25</ubShotsPer4Turns>
-		<ubBurstPenalty>6</ubBurstPenalty>
+		<ubBurstPenalty>7</ubBurstPenalty>
 		<ubBulletSpeed>21</ubBulletSpeed>
 		<ubImpact>30</ubImpact>
 		<ubDeadliness>30</ubDeadliness>
@@ -15993,9 +15993,9 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<AutoPenalty>7</AutoPenalty>
 		<ManualReloadSound>476</ManualReloadSound>
-		<nAccuracy>69</nAccuracy>
+		<nAccuracy>57</nAccuracy>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>13</Handling>
+		<Handling>10</Handling>
 		<usOverheatingJamThreshold>4000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>5000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>20</usOverheatingSingleShotTemperature>
@@ -16008,7 +16008,7 @@
 		<ubCalibre>12</ubCalibre>
 		<ubReadyTime>9</ubReadyTime>
 		<ubShotsPer4Turns>17.75</ubShotsPer4Turns>
-		<ubBurstPenalty>6</ubBurstPenalty>
+		<ubBurstPenalty>7</ubBurstPenalty>
 		<ubBulletSpeed>21</ubBulletSpeed>
 		<ubImpact>29</ubImpact>
 		<ubDeadliness>30</ubDeadliness>
@@ -16030,11 +16030,11 @@
 		<APsToReload>24</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
-		<AutoPenalty>7</AutoPenalty>
+		<AutoPenalty>6</AutoPenalty>
 		<ManualReloadSound>476</ManualReloadSound>
-		<nAccuracy>65</nAccuracy>
+		<nAccuracy>50</nAccuracy>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>12</Handling>
+		<Handling>9</Handling>
 		<usOverheatingJamThreshold>4000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>5000</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>20</usOverheatingSingleShotTemperature>
@@ -18885,7 +18885,7 @@
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>11</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
-		<Handling>12</Handling>
+		<Handling>8</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>8800</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>117</usOverheatingSingleShotTemperature>
