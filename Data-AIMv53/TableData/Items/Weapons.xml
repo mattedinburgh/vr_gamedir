@@ -17054,8 +17054,10 @@
 		<AutoPenalty>12</AutoPenalty>
 		<ManualReloadSound>476</ManualReloadSound>
 		<nAccuracy>70</nAccuracy>
-		<ubAimLevels>5</ubAimLevels>
-		<Handling>15</Handling>
+		<bRecoilX>2</bRecoilX>
+		<bRecoilY>15</bRecoilY>
+		<ubAimLevels>4</ubAimLevels>
+		<Handling>12</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>14960</usOverheatingDamageThreshold>
 		<usOverheatingSingleShotTemperature>28</usOverheatingSingleShotTemperature>
