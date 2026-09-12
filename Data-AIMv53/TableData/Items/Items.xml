@@ -6205,11 +6205,12 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<AimBonus>20</AimBonus>
 		<MinRangeForAimBonus>70</MinRangeForAimBonus>
-		<DamageBonus>2</DamageBonus>
-		<DayVisionRangeBonus>100</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>100</BrightLightVisionRangeBonus>
+		<DayVisionRangeBonus>90</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>90</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>90</PercentTunnelVision>
-		<ScopeMagFactor>10</ScopeMagFactor>
+		<ScopeMagFactor>10.0</ScopeMagFactor>
+		<NightVisionRangeBonus>45</NightVisionRangeBonus>
+		<CaveVisionRangeBonus>15</CaveVisionRangeBonus>
 		<PercentAPReduction>-9</PercentAPReduction>
 		<STAND_MODIFIERS>
 			<AimLevels>3</AimLevels>
@@ -6939,9 +6940,6 @@
 		<SnowCamoBonus>-5</SnowCamoBonus>
 		<StealthBonus>-5</StealthBonus>
 		<ProjectionFactor>1.3</ProjectionFactor>
-		<STAND_MODIFIERS />
-		<CROUCH_MODIFIERS />
-		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>242</uiIndex>
@@ -27269,9 +27267,6 @@
 		<Sinks>1</Sinks>
 		<BigGunList>1</BigGunList>
 		<BR_NewInventory>1</BR_NewInventory>
-		<STAND_MODIFIERS />
-		<CROUCH_MODIFIERS />
-		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>896</uiIndex>
@@ -28901,7 +28896,6 @@
 		<Bipod>7</Bipod>
 		<BurstToHitBonus>4</BurstToHitBonus>
 		<AutoFireToHitBonus>4</AutoFireToHitBonus>
-		<PercentReadyTimeAPReduction>5</PercentReadyTimeAPReduction>
 		<STAND_MODIFIERS>
 			<PercentHandling>-5</PercentHandling>
 			<PercentMaxCounterForce>50</PercentMaxCounterForce>
@@ -28943,15 +28937,16 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<ToHitBonus>25</ToHitBonus>
 		<BestLaserRange>400</BestLaserRange>
-		<PercentReadyTimeAPReduction>15</PercentReadyTimeAPReduction>		
 		<PercentAPReduction>10</PercentAPReduction>
 		<CamoBonus>-20</CamoBonus>
 		<UrbanCamoBonus>-20</UrbanCamoBonus>
 		<DesertCamoBonus>-20</DesertCamoBonus>
 		<SnowCamoBonus>-20</SnowCamoBonus>
 		<StealthBonus>-20</StealthBonus>
-		<ScopeMagFactor>1.0</ScopeMagFactor>
+		<ScopeMagFactor>1</ScopeMagFactor>
 		<ProjectionFactor>3.5</ProjectionFactor>
+		<NightVisionRangeBonus>20</NightVisionRangeBonus>
+		<CaveVisionRangeBonus>30</CaveVisionRangeBonus>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -30421,14 +30416,18 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<ToHitBonus>-5</ToHitBonus>
 		<AimBonus>11</AimBonus>
-		<PercentReadyTimeAPReduction>-15</PercentReadyTimeAPReduction>
 		<MinRangeForAimBonus>40</MinRangeForAimBonus>
-		<BurstToHitBonus>-16</BurstToHitBonus>
-		<AutoFireToHitBonus>-20</AutoFireToHitBonus>
 		<DayVisionRangeBonus>40</DayVisionRangeBonus>
 		<BrightLightVisionRangeBonus>40</BrightLightVisionRangeBonus>
-		<PercentTunnelVision>40</PercentTunnelVision>
+		<PercentTunnelVision>30</PercentTunnelVision>
 		<ScopeMagFactor>4.0</ScopeMagFactor>
+		<NightVisionRangeBonus>20</NightVisionRangeBonus>
+		<CaveVisionRangeBonus>10</CaveVisionRangeBonus>
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>1000</uiIndex>
@@ -30457,19 +30456,22 @@
 		<BigGunList>1</BigGunList>
 		<WaterDamages>1</WaterDamages>
 		<Electronic>1</Electronic>
-		<PercentReadyTimeAPReduction>-20</PercentReadyTimeAPReduction>
 		<BR_NewInventory>2</BR_NewInventory>
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<ToHitBonus>-8</ToHitBonus>
 		<AimBonus>17</AimBonus>
-		<MinRangeForAimBonus>80</MinRangeForAimBonus>
-		<BurstToHitBonus>-32</BurstToHitBonus>
-		<AutoFireToHitBonus>-40</AutoFireToHitBonus>
-		<DamageBonus>1</DamageBonus>
-		<DayVisionRangeBonus>80</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>80</BrightLightVisionRangeBonus>
+		<MinRangeForAimBonus>70</MinRangeForAimBonus>
+		<DayVisionRangeBonus>70</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>70</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>80</PercentTunnelVision>
-		<ScopeMagFactor>8.0</ScopeMagFactor>
+		<ScopeMagFactor>8</ScopeMagFactor>
+		<NightVisionRangeBonus>35</NightVisionRangeBonus>
+		<CaveVisionRangeBonus>10</CaveVisionRangeBonus>
+		<STAND_MODIFIERS>
+			<AimLevels>2</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>1001</uiIndex>
@@ -30579,9 +30581,6 @@
 		<HideMuzzleFlash>1</HideMuzzleFlash>
 		<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
 		<overheatCooldownModificator>-0.1</overheatCooldownModificator>
-		<STAND_MODIFIERS />
-		<CROUCH_MODIFIERS />
-		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>1004</uiIndex>
@@ -30615,18 +30614,16 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<ToHitBonus>-5</ToHitBonus>
 		<AimBonus>10</AimBonus>
-		<MinRangeForAimBonus>40</MinRangeForAimBonus>
-		<BurstToHitBonus>-16</BurstToHitBonus>
-		<AutoFireToHitBonus>-20</AutoFireToHitBonus>
-		<PercentReadyTimeAPReduction>-20</PercentReadyTimeAPReduction>
+		<MinRangeForAimBonus>20</MinRangeForAimBonus>
 		<PercentAPReduction>20</PercentAPReduction>
-		<DayVisionRangeBonus>40</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>40</BrightLightVisionRangeBonus>
-		<PercentTunnelVision>30</PercentTunnelVision>
+		<DayVisionRangeBonus>20</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>20</BrightLightVisionRangeBonus>
+		<PercentTunnelVision>20</PercentTunnelVision>
 		<AttachmentSystem>1</AttachmentSystem>
 		<ScopeMagFactor>4.0</ScopeMagFactor>
+		<NightVisionRangeBonus>10</NightVisionRangeBonus>
 		<STAND_MODIFIERS>
-			<AimLevels>-1</AimLevels>
+		
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -30741,11 +30738,12 @@
 		<ToHitBonus>-7</ToHitBonus>
 		<AimBonus>15</AimBonus>
 		<MinRangeForAimBonus>45</MinRangeForAimBonus>
-		<DamageBonus>1</DamageBonus>
-		<DayVisionRangeBonus>70</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>70</BrightLightVisionRangeBonus>
+		<DayVisionRangeBonus>50</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>50</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>70</PercentTunnelVision>
-		<ScopeMagFactor>7</ScopeMagFactor>
+		<ScopeMagFactor>7.0</ScopeMagFactor>
+		<NightVisionRangeBonus>25</NightVisionRangeBonus>
+		<CaveVisionRangeBonus>10</CaveVisionRangeBonus>
 		<STAND_MODIFIERS>
 			<AimLevels>2</AimLevels>
 		</STAND_MODIFIERS>
@@ -30813,13 +30811,8 @@
 		<BigGunList>1</BigGunList>
 		<BR_NewInventory>3</BR_NewInventory>
 		<BR_UsedInventory>1</BR_UsedInventory>
-		<ToHitBonus>-5</ToHitBonus>
-		<PercentReadyTimeAPReduction>5</PercentReadyTimeAPReduction>
-		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-40</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
-		</STAND_MODIFIERS>
+		<ToHitBonus>-1</ToHitBonus>
+		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
@@ -30847,11 +30840,7 @@
 		<BigGunList>1</BigGunList>
 		<BurstToHitBonus>5</BurstToHitBonus>
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
-		<STAND_MODIFIERS>
-			<PercentHandling>-10</PercentHandling>
-			<PercentMaxCounterForce>70</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>30</PercentCounterForceAccuracy>
-		</STAND_MODIFIERS>
+		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
@@ -31352,10 +31341,11 @@
 		<ToHitBonus>-2</ToHitBonus>
 		<AimBonus>5</AimBonus>
 		<MinRangeForAimBonus>10</MinRangeForAimBonus>
-		<DayVisionRangeBonus>20</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>20</BrightLightVisionRangeBonus>
-		<PercentTunnelVision>20</PercentTunnelVision>
-		<ScopeMagFactor>2</ScopeMagFactor>
+		<DayVisionRangeBonus>10</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>10</BrightLightVisionRangeBonus>
+		<PercentTunnelVision>10</PercentTunnelVision>
+		<ScopeMagFactor>2.0</ScopeMagFactor>
+		<NightVisionRangeBonus>5</NightVisionRangeBonus>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -31393,10 +31383,11 @@
 		<ToHitBonus>-5</ToHitBonus>
 		<AimBonus>10</AimBonus>
 		<MinRangeForAimBonus>20</MinRangeForAimBonus>
-		<DayVisionRangeBonus>40</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>40</BrightLightVisionRangeBonus>
-		<PercentTunnelVision>30</PercentTunnelVision>
-		<ScopeMagFactor>4</ScopeMagFactor>
+		<DayVisionRangeBonus>20</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>20</BrightLightVisionRangeBonus>
+		<PercentTunnelVision>20</PercentTunnelVision>
+		<ScopeMagFactor>4.0</ScopeMagFactor>
+		<NightVisionRangeBonus>10</NightVisionRangeBonus>
 		<STAND_MODIFIERS>
 			<AimLevels>1</AimLevels>
 		</STAND_MODIFIERS>
@@ -36299,10 +36290,10 @@
 		<ToHitBonus>-5</ToHitBonus>
 		<AimBonus>11</AimBonus>
 		<MinRangeForAimBonus>20</MinRangeForAimBonus>
-		<DayVisionRangeBonus>40</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>40</BrightLightVisionRangeBonus>
-		<PercentTunnelVision>40</PercentTunnelVision>
-		<ScopeMagFactor>4</ScopeMagFactor>
+		<DayVisionRangeBonus>20</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>20</BrightLightVisionRangeBonus>
+		<PercentTunnelVision>20</PercentTunnelVision>
+		<ScopeMagFactor>4.0</ScopeMagFactor>
 		<STAND_MODIFIERS>
 			<AimLevels>1</AimLevels>
 		</STAND_MODIFIERS>
@@ -36339,15 +36330,14 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<ToHitBonus>-4</ToHitBonus>
 		<AimBonus>9</AimBonus>
-		<MinRangeForAimBonus>40</MinRangeForAimBonus>
-		<BurstToHitBonus>-16</BurstToHitBonus>
-		<AutoFireToHitBonus>-20</AutoFireToHitBonus>
-		<PercentReadyTimeAPReduction>-15</PercentReadyTimeAPReduction>
-		<DayVisionRangeBonus>40</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>40</BrightLightVisionRangeBonus>
-		<PercentTunnelVision>40</PercentTunnelVision>
+		<MinRangeForAimBonus>20</MinRangeForAimBonus>
+		<DayVisionRangeBonus>20</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>20</BrightLightVisionRangeBonus>
+		<PercentTunnelVision>20</PercentTunnelVision>
 		<ScopeMagFactor>4.0</ScopeMagFactor>
-		<STAND_MODIFIERS />
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
@@ -36375,10 +36365,9 @@
 		<Attachment>1</Attachment>
 		<BR_NewInventory>2</BR_NewInventory>
 		<BR_UsedInventory>1</BR_UsedInventory>
-		<PercentReadyTimeAPReduction>20</PercentReadyTimeAPReduction>
 		<RangeBonus>20</RangeBonus>
 		<ToHitBonus>7</ToHitBonus>
-		<ScopeMagFactor>1.0</ScopeMagFactor>
+		<ScopeMagFactor>1</ScopeMagFactor>
 		<STAND_MODIFIERS>
 			<AimLevels>-1</AimLevels>
 		</STAND_MODIFIERS>
@@ -45252,9 +45241,6 @@
 		<Unaerodynamic>1</Unaerodynamic>
 		<Medical>1</Medical>
 		<DrugType>1280</DrugType>
-		<STAND_MODIFIERS />
-		<CROUCH_MODIFIERS />
-		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>1537</uiIndex>
@@ -71479,13 +71465,18 @@
 		<BR_UsedInventory>1</BR_UsedInventory>		
 		<AimBonus>12</AimBonus>
 		<ToHitBonus>-4</ToHitBonus>
-		<MinRangeForAimBonus>40</MinRangeForAimBonus>
+		<MinRangeForAimBonus>20</MinRangeForAimBonus>
 		<NightVisionRangeBonus>10</NightVisionRangeBonus>
 		<DayVisionRangeBonus>65</DayVisionRangeBonus>
 		<CaveVisionRangeBonus>10</CaveVisionRangeBonus>
 		<BrightLightVisionRangeBonus>40</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>60</PercentTunnelVision>
 		<ScopeMagFactor>3.6</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2811</uiIndex>
@@ -72317,7 +72308,10 @@
 		<BrightLightVisionRangeBonus>50</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>70</PercentTunnelVision>
 		<AttachmentSystem>1</AttachmentSystem>
-		<STAND_MODIFIERS />
+		<ScopeMagFactor>7</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>2</AimLevels>
+		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
@@ -72609,6 +72603,11 @@
 		<SnowCamoBonus>-6</SnowCamoBonus>
 		<StealthBonus>-6</StealthBonus>
 		<AttachmentSystem>1</AttachmentSystem>
+		<STAND_MODIFIERS>
+			<AimLevels>-1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2847</uiIndex>
@@ -72735,13 +72734,12 @@
 		<Inseparable>1</Inseparable>
 		<AimBonus>5</AimBonus>
 		<ToHitBonus>-2</ToHitBonus>
-		<MinRangeForAimBonus>20</MinRangeForAimBonus>
-		<BurstToHitBonus>-8</BurstToHitBonus>
-		<AutoFireToHitBonus>-10</AutoFireToHitBonus>
-		<DayVisionRangeBonus>20</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>20</BrightLightVisionRangeBonus>
-		<PercentTunnelVision>20</PercentTunnelVision>
+		<MinRangeForAimBonus>10</MinRangeForAimBonus>
+		<DayVisionRangeBonus>10</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>10</BrightLightVisionRangeBonus>
+		<PercentTunnelVision>10</PercentTunnelVision>
 		<ScopeMagFactor>2.0</ScopeMagFactor>
+		<NightVisionRangeBonus>5</NightVisionRangeBonus>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2851</uiIndex>
@@ -72776,6 +72774,12 @@
 		<BrightLightVisionRangeBonus>30</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>20</PercentTunnelVision>
 		<AttachmentSystem>1</AttachmentSystem>
+		<ScopeMagFactor>4</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2852</uiIndex>
@@ -72881,7 +72885,10 @@
 		<PercentTunnelVision>70</PercentTunnelVision>
 		<GasCan>1</GasCan>
 		<AttachmentSystem>1</AttachmentSystem>
-		<STAND_MODIFIERS />
+		<ScopeMagFactor>7</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>2</AimLevels>
+		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
@@ -72984,7 +72991,11 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<RangeBonus>10</RangeBonus>
 		<ToHitBonus>2</ToHitBonus>
-		<PercentReadyTimeAPReduction>20</PercentReadyTimeAPReduction>
+		<STAND_MODIFIERS>
+			<AimLevels>-1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2859</uiIndex>
@@ -73017,14 +73028,16 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<AimBonus>8</AimBonus>
 		<ToHitBonus>-4</ToHitBonus>
-		<PercentReadyTimeAPReduction>-15</PercentReadyTimeAPReduction>
-		<MinRangeForAimBonus>35</MinRangeForAimBonus>
-		<BurstToHitBonus>-15</BurstToHitBonus>
-		<AutoFireToHitBonus>-20</AutoFireToHitBonus>
+		<MinRangeForAimBonus>20</MinRangeForAimBonus>
 		<DayVisionRangeBonus>35</DayVisionRangeBonus>
 		<BrightLightVisionRangeBonus>35</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>45</PercentTunnelVision>
 		<ScopeMagFactor>3.5</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2861</uiIndex>
@@ -73056,8 +73069,12 @@
 		<BR_NewInventory>2</BR_NewInventory>
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<ToHitBonus>3</ToHitBonus>
-		<PercentReadyTimeAPReduction>20</PercentReadyTimeAPReduction>
 		<PercentAPReduction>8</PercentAPReduction>
+		<STAND_MODIFIERS>
+			<AimLevels>-1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2862</uiIndex>
@@ -73087,8 +73104,12 @@
 		<BR_NewInventory>2</BR_NewInventory>
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<ToHitBonus>1</ToHitBonus>
-		<PercentReadyTimeAPReduction>20</PercentReadyTimeAPReduction>
 		<PercentAPReduction>15</PercentAPReduction>
+		<STAND_MODIFIERS>
+			<AimLevels>-1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2863</uiIndex>
@@ -73412,7 +73433,11 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<ToHitBonus>2</ToHitBonus>
 		<PercentAPReduction>18</PercentAPReduction>
-		<PercentReadyTimeAPReduction>20</PercentReadyTimeAPReduction>
+		<STAND_MODIFIERS>
+			<AimLevels>-1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2877</uiIndex>
@@ -73443,7 +73468,11 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<ToHitBonus>2</ToHitBonus>
 		<PercentAPReduction>10</PercentAPReduction>
-		<PercentReadyTimeAPReduction>20</PercentReadyTimeAPReduction>
+		<STAND_MODIFIERS>
+			<AimLevels>-1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2878</uiIndex>
@@ -74591,6 +74620,7 @@
 		<BrightLightVisionRangeBonus>20</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>10</PercentTunnelVision>
 		<AttachmentSystem>1</AttachmentSystem>
+		<ScopeMagFactor>2</ScopeMagFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2923</uiIndex>
@@ -75320,13 +75350,20 @@
 		<BigGunList>1</BigGunList>
 		<Inseparable>1</Inseparable>
 		<Bipod>7</Bipod>
-		<PercentReadyTimeAPReduction>5</PercentReadyTimeAPReduction>
 		<BurstToHitBonus>4</BurstToHitBonus>
 		<AutoFireToHitBonus>4</AutoFireToHitBonus>
 		<AttachmentSystem>1</AttachmentSystem>
-		<STAND_MODIFIERS />
+		<STAND_MODIFIERS>
+			<PercentHandling>-5</PercentHandling>
+			<PercentMaxCounterForce>50</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>30</PercentCounterForceAccuracy>
+		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
-		<PRONE_MODIFIERS />
+		<PRONE_MODIFIERS>
+			<PercentHandling>-25</PercentHandling>
+			<PercentMaxCounterForce>70</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>35</PercentCounterForceAccuracy>
+		</PRONE_MODIFIERS>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2942</uiIndex>
@@ -75569,6 +75606,9 @@
 		<SnowCamoBonus>-20</SnowCamoBonus>
 		<StealthBonus>-20</StealthBonus>
 		<AttachmentSystem>1</AttachmentSystem>
+		<ScopeMagFactor>1</ScopeMagFactor>
+		<NightVisionRangeBonus>20</NightVisionRangeBonus>
+		<CaveVisionRangeBonus>30</CaveVisionRangeBonus>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -75626,7 +75666,10 @@
 		<ToHitBonus>2</ToHitBonus>
 		<BurstSizeBonus>2</BurstSizeBonus>
 		<AttachmentSystem>1</AttachmentSystem>
-		<STAND_MODIFIERS />
+		<ScopeMagFactor>1</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>-1</AimLevels>
+		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
@@ -75875,7 +75918,10 @@
 		<DayVisionRangeBonus>35</DayVisionRangeBonus>
 		<BrightLightVisionRangeBonus>20</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>20</PercentTunnelVision>
-		<STAND_MODIFIERS />
+		<ScopeMagFactor>4</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
@@ -75905,14 +75951,17 @@
 		<Electronic>1</Electronic>
 		<Inseparable>1</Inseparable>
 		<AimBonus>12</AimBonus>
-		<MinRangeForAimBonus>40</MinRangeForAimBonus>
+		<MinRangeForAimBonus>20</MinRangeForAimBonus>
 		<NightVisionRangeBonus>10</NightVisionRangeBonus>
 		<DayVisionRangeBonus>65</DayVisionRangeBonus>
 		<CaveVisionRangeBonus>10</CaveVisionRangeBonus>
 		<BrightLightVisionRangeBonus>40</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>60</PercentTunnelVision>
 		<AttachmentSystem>1</AttachmentSystem>
-		<STAND_MODIFIERS />
+		<ScopeMagFactor>3.6</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
@@ -76055,17 +76104,19 @@
 		<Inseparable>1</Inseparable>
 		<BlockIronSight>1</BlockIronSight>
 		<AimBonus>20</AimBonus>
-		<ToHitBonus>-10</ToHitBonus>
-		<MinRangeForAimBonus>100</MinRangeForAimBonus>
-		<BurstToHitBonus>-40</BurstToHitBonus>
-		<AutoFireToHitBonus>-50</AutoFireToHitBonus>
+		<MinRangeForAimBonus>70</MinRangeForAimBonus>
 		<PercentAPReduction>-9</PercentAPReduction>
-		<DamageBonus>2</DamageBonus>
-		<NightVisionRangeBonus>0</NightVisionRangeBonus>
-		<DayVisionRangeBonus>100</DayVisionRangeBonus>
-		<BrightLightVisionRangeBonus>100</BrightLightVisionRangeBonus>
+		<NightVisionRangeBonus>45</NightVisionRangeBonus>
+		<DayVisionRangeBonus>90</DayVisionRangeBonus>
+		<BrightLightVisionRangeBonus>90</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>90</PercentTunnelVision>
 		<ScopeMagFactor>10.0</ScopeMagFactor>
+		<CaveVisionRangeBonus>15</CaveVisionRangeBonus>
+		<STAND_MODIFIERS>
+			<AimLevels>3</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 	<ITEM>
 		<uiIndex>2962</uiIndex>
@@ -76126,8 +76177,6 @@
 		<BigGunList>1</BigGunList>
 		<Inseparable>1</Inseparable>
 		<ToHitBonus>-1</ToHitBonus>
-		<BurstToHitBonus>-1</BurstToHitBonus>
-		<AutoFireToHitBonus>-1</AutoFireToHitBonus>
 		<AttachmentSystem>1</AttachmentSystem>
 	</ITEM>
 	<ITEM>
@@ -76185,8 +76234,6 @@
 		<BigGunList>1</BigGunList>
 		<Inseparable>1</Inseparable>
 		<ToHitBonus>-2</ToHitBonus>
-		<BurstToHitBonus>-1</BurstToHitBonus>
-		<AutoFireToHitBonus>-1</AutoFireToHitBonus>
 		<AttachmentSystem>1</AttachmentSystem>
 	</ITEM>
 	<ITEM>
@@ -76525,14 +76572,16 @@
 		<Inseparable>1</Inseparable>
 		<AimBonus>8</AimBonus>
 		<ToHitBonus>-4</ToHitBonus>
-		<PercentReadyTimeAPReduction>-15</PercentReadyTimeAPReduction>
-		<MinRangeForAimBonus>35</MinRangeForAimBonus>
-		<BurstToHitBonus>-15</BurstToHitBonus>
-		<AutoFireToHitBonus>-20</AutoFireToHitBonus>
+		<MinRangeForAimBonus>20</MinRangeForAimBonus>
 		<DayVisionRangeBonus>35</DayVisionRangeBonus>
 		<BrightLightVisionRangeBonus>35</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>45</PercentTunnelVision>
 		<ScopeMagFactor>3.5</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
+		<CROUCH_MODIFIERS />
+		<PRONE_MODIFIERS />
 	</ITEM>
 		<ITEM>
 		<uiIndex>2980</uiIndex>
