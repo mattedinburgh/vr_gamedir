@@ -41,9 +41,9 @@
 		<bItemNo35>0</bItemNo35>
 		<bItemNo36>0</bItemNo36>
 		<bItemNo37>0</bItemNo37>
-		<bItemNo38>0</bItemNo38>
-		<bItemNo39>0</bItemNo39>
-		<bItemNo40>0</bItemNo40>
+		<bItemNo38>1697</bItemNo38>
+		<bItemNo39>1697</bItemNo39>
+		<bItemNo40>1697</bItemNo40>
 		<bItemNo41>0</bItemNo41>
 		<bItemNo42>0</bItemNo42>
 		<bItemNo43>0</bItemNo43>
@@ -1103,7 +1103,7 @@
 	<ENEMYITEMCHOICES>
 		<uiIndex>20</uiIndex>
 		<name>LBE</name>
-		<ubChoices>37</ubChoices>
+		<ubChoices>40</ubChoices>
 		<bItemNo1>1090</bItemNo1>
 		<bItemNo2>1090</bItemNo2>
 		<bItemNo3>1090</bItemNo3>
