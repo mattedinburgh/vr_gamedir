@@ -72375,7 +72375,10 @@
 		<BrightLightVisionRangeBonus>50</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>70</PercentTunnelVision>
 		<AttachmentSystem>1</AttachmentSystem>
-		<STAND_MODIFIERS />
+		<ScopeMagFactor>7.0</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
@@ -72832,6 +72835,10 @@
 		<BrightLightVisionRangeBonus>30</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>20</PercentTunnelVision>
 		<AttachmentSystem>1</AttachmentSystem>
+		<ScopeMagFactor>4.0</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>1</AimLevels>
+		</STAND_MODIFIERS>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2852</uiIndex>
@@ -72868,6 +72875,7 @@
 		<BrightLightVisionRangeBonus>30</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>20</PercentTunnelVision>
 		<AttachmentSystem>1</AttachmentSystem>
+		<ScopeMagFactor>4.0</ScopeMagFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2853</uiIndex>
@@ -72937,7 +72945,10 @@
 		<PercentTunnelVision>70</PercentTunnelVision>
 		<GasCan>1</GasCan>
 		<AttachmentSystem>1</AttachmentSystem>
-		<STAND_MODIFIERS />
+		<ScopeMagFactor>7.0</ScopeMagFactor>
+		<STAND_MODIFIERS>
+			<AimLevels>2</AimLevels>
+		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
