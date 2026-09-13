@@ -13,6 +13,7 @@ import csv
 import html
 import io
 import json
+import random
 import re
 import shutil
 import sys
@@ -53,16 +54,32 @@ def clean_html(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def retry_delay(response: requests.Response, attempt: int) -> float:
+    """Respect Wikimedia throttling while keeping the build bounded."""
+    retry_after = response.headers.get("Retry-After")
+    if retry_after:
+        try:
+            return min(45.0, max(1.0, float(retry_after)))
+        except ValueError:
+            pass
+    return min(30.0, float(2 ** attempt))
+
+
 def api_get(session: requests.Session, params: dict) -> dict:
     params = dict(params)
     params["format"] = "json"
-    for attempt in range(4):
-        r = session.get(COMMONS_API, params=params, timeout=45)
+    params["maxlag"] = "5"
+    for attempt in range(6):
+        r = session.get(COMMONS_API, params=params, timeout=60)
         if r.ok:
-            return r.json()
-        if attempt == 3:
+            data = r.json()
+            if "error" not in data:
+                return data
+            if data.get("error", {}).get("code") not in ("maxlag", "ratelimited"):
+                raise RuntimeError(data["error"])
+        if attempt == 5:
             r.raise_for_status()
-        time.sleep(2 ** attempt)
+        time.sleep(retry_delay(r, attempt))
     raise RuntimeError("unreachable")
 
 
@@ -163,15 +180,25 @@ def choose_pool(default_pool: str, filename: str) -> str:
     return POOL_CODES.get(default_pool, default_pool[:2].upper())
 
 
-def download_image(session: requests.Session, url: str) -> bytes:
-    for attempt in range(4):
-        r = session.get(url, timeout=90)
-        if r.ok:
-            return r.content
-        if attempt == 3:
-            r.raise_for_status()
-        time.sleep(2 ** attempt)
-    raise RuntimeError("unreachable")
+def download_image(session: requests.Session, urls: list[str]) -> bytes:
+    """Download from thumbnail/redirect/original mirrors, with throttling."""
+    last_error: Exception | None = None
+    for url in dict.fromkeys(u for u in urls if u):
+        for attempt in range(5):
+            try:
+                r = session.get(url, timeout=120, allow_redirects=True)
+                if r.ok and r.content:
+                    return r.content
+                if attempt == 4:
+                    r.raise_for_status()
+                time.sleep(retry_delay(r, attempt))
+            except Exception as exc:
+                last_error = exc
+                if attempt < 4:
+                    time.sleep(min(20.0, float(2 ** attempt)))
+    if last_error:
+        raise last_error
+    raise RuntimeError("No usable image URL")
 
 
 def prepare_image(data: bytes, width: int, height: int) -> Image.Image:
@@ -215,8 +242,9 @@ def main() -> int:
     height = int(cfg.get("target_height", 1080))
     min_width = int(cfg.get("min_width", 1200))
     min_height = int(cfg.get("min_height", 700))
-    max_total = int(cfg.get("max_total", 120))
-    max_per_category = int(cfg.get("max_per_category", 36))
+    max_total = int(cfg.get("max_total", 160))
+    max_per_category = int(cfg.get("max_per_category", 300))
+    max_candidates = int(cfg.get("max_candidates", max_total * 8))
     exclude_terms = cfg.get("exclude_title_terms", [])
 
     session = requests.Session()
@@ -241,7 +269,7 @@ def main() -> int:
 
         accepted = 0
         for fn in names:
-            if accepted >= max_per_category or len(candidates) >= max_total * 3:
+            if accepted >= max_per_category or len(candidates) >= max_candidates:
                 break
             key = fn.casefold()
             if key in seen or excluded_title(fn, exclude_terms):
@@ -249,6 +277,13 @@ def main() -> int:
             seen.add(key)
             candidates.append((fn, cat.get("primary_pool", "RURAL_MILITARY"), "Category:" + cat["name"]))
             accepted += 1
+
+    # Preserve curated seeds first, then deterministically mix category results so
+    # one very large category cannot monopolize the finished pack.
+    seed_count = len(cfg.get("seed_files", []))
+    tail = candidates[seed_count:]
+    random.Random(0x4A4132).shuffle(tail)
+    candidates = candidates[:seed_count] + tail
 
     pool_counts: dict[str, int] = defaultdict(int)
     records: list[dict[str, str]] = []
@@ -276,17 +311,30 @@ def main() -> int:
                 continue
 
             pool = choose_pool(default_pool, filename)
-            pool_counts[pool] += 1
-            seq = pool_counts[pool]
+            next_seq = pool_counts[pool] + 1
+
+            # Prefer Wikimedia's generated thumbnail, then Special:Redirect,
+            # finally the original. The redirect path is substantially more
+            # reliable for older DoD scans whose thumbnail URL intermittently
+            # returns 429/5xx from upload.wikimedia.org.
+            redirect_name = quote(filename.replace(" ", "_"), safe="()_-.,")
+            redirect_url = (
+                "https://commons.wikimedia.org/wiki/Special:Redirect/file/"
+                + redirect_name
+                + f"?width={width}"
+            )
+            raw = download_image(
+                session,
+                [info.get("thumburl", ""), redirect_url, info.get("url", "")],
+            )
+            time.sleep(0.55)
+            img = prepare_image(raw, width, height)
 
             dest_dir = root / pool
             dest_dir.mkdir(parents=True, exist_ok=True)
-            dest = dest_dir / f"{pool}_{seq:03d}_{width}x{height}.png"
-
-            raw = download_image(session, info.get("thumburl") or info["url"])
-            time.sleep(0.35)
-            img = prepare_image(raw, width, height)
+            dest = dest_dir / f"{pool}_{next_seq:03d}_{width}x{height}.png"
             img.save(dest, format="PNG", optimize=True, compress_level=9)
+            pool_counts[pool] = next_seq
 
             records.append({
                 "pool": pool,
@@ -310,6 +358,13 @@ def main() -> int:
     if not records:
         raise SystemExit("No redistribution-safe images were produced.")
 
+    minimum_total = int(cfg.get("minimum_total", 80))
+    if len(records) < minimum_total:
+        raise SystemExit(
+            f"Only {len(records)} redistribution-safe images were produced; "
+            f"minimum required is {minimum_total}. Refusing to publish a partial pack."
+        )
+
     with (root / "SOURCES.csv").open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=list(records[0].keys()))
         writer.writeheader()
@@ -320,6 +375,7 @@ def main() -> int:
         "",
         "These loading screens are derived from real archival photographs.",
         "Only Wikimedia Commons files whose metadata explicitly reports Public Domain or CC0 are included.",
+        "The builder refuses to publish a partial pack below the configured minimum image count.",
         "Edits are limited to crop, resize, restrained tonal grading, and palette quantization.",
         "",
         f"Generated screens: **{len(records)}**",
