@@ -246,6 +246,7 @@ def main() -> int:
     max_total = int(cfg.get("max_total", 160))
     max_per_category = int(cfg.get("max_per_category", 300))
     max_candidates = int(cfg.get("max_candidates", max_total * 8))
+    max_per_origin = int(cfg.get("max_per_origin", 30))
     exclude_terms = cfg.get("exclude_title_terms", [])
 
     session = requests.Session()
@@ -287,6 +288,7 @@ def main() -> int:
     candidates = candidates[:seed_count] + tail
 
     pool_counts: dict[str, int] = defaultdict(int)
+    origin_counts: dict[str, int] = defaultdict(int)
     records: list[dict[str, str]] = []
     accepted_total = 0
 
@@ -297,6 +299,8 @@ def main() -> int:
     for filename, default_pool, origin in candidates:
         if accepted_total >= max_total:
             break
+        if origin.startswith("Category:") and origin_counts[origin] >= max_per_origin:
+            continue
 
         try:
             info = infos.get(filename)
@@ -352,6 +356,7 @@ def main() -> int:
                 "original_size": f"{info.get('width')}x{info.get('height')}",
             })
             accepted_total += 1
+            origin_counts[origin] += 1
             print(f"[{accepted_total:03d}/{max_total}] {pool}: {filename}")
         except Exception as exc:
             print(f"WARN file {filename}: {exc}", file=sys.stderr)

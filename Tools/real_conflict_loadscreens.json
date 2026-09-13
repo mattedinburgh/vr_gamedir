@@ -54,6 +54,14 @@
     {
       "name": "Operation Golden Pheasant",
       "primary_pool": "AIRFIELD"
+    },
+    {
+      "name": "Civil war in Guatemala",
+      "primary_pool": "RURAL_MILITARY"
+    },
+    {
+      "name": "Soviet Bloc alleged military build-up in Nicaragua (1980—1991)",
+      "primary_pool": "JUNGLE_MILITARY"
     }
   ],
   "seed_files": [
@@ -167,8 +175,25 @@
     "protest",
     "mural",
     "arrival ceremony",
-    "return to the states"
+    "return to the states",
+    "secretary kerry",
+    "president santos",
+    "peace accord",
+    "foreign minister",
+    "heads of state",
+    "convention",
+    "job-training",
+    "job training",
+    "interview with",
+    "addresses reporters",
+    "historic district",
+    "shop owner",
+    "singer performs",
+    "band members",
+    "waves goodbye",
+    "plaza de bolivar"
   ],
   "minimum_total": 100,
-  "max_candidates": 1200
+  "max_candidates": 1200,
+  "max_per_origin": 30
 }
