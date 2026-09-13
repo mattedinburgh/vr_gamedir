@@ -18183,7 +18183,7 @@
 		<MaxDistForMessyDeath>10</MaxDistForMessyDeath>
 		<AutoPenalty>4</AutoPenalty>
 		<ManualReloadSound>476</ManualReloadSound>
-		<nAccuracy>55</nAccuracy>
+		<nAccuracy>5</nAccuracy>
 		<bRecoilX>3</bRecoilX>
 		<bRecoilY>13</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
