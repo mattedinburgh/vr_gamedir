@@ -17542,7 +17542,7 @@
 	<WEAPON>
 		<uiIndex>2111</uiIndex>
 		<szWeaponName>IMI Magal</szWeaponName>
-		<ubWeaponClass>2</ubWeaponClass>
+		<ubWeaponClass>3</ubWeaponClass>
 		<ubWeaponType>4</ubWeaponType>
 		<ubCalibre>45</ubCalibre>
 		<ubReadyTime>6</ubReadyTime>
@@ -17565,7 +17565,7 @@
 		<sLocknLoadSound>107</sLocknLoadSound>
 		<SilencedSound>157</SilencedSound>
 		<bBurstAP>12</bBurstAP>
-		<bAutofireShotsPerFiveAP>3</bAutofireShotsPerFiveAP>
+		<bAutofireShotsPerFiveAP>0</bAutofireShotsPerFiveAP>
 		<APsToReload>20</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
