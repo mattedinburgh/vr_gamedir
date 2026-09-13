@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LogicalAnimationSurfaces>
 <Layer name="vest">
-<LayerProp filter="EODvestAndPistolLeft" palette="hats">
+<LayerProp filter="EODvestAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_eod_v" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_eod_v" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="EODvestAndPistol" palette="hats">
+<LayerProp filter="EODvestAndPistol">
 			<Surface name="RGMPISTOL_WALK_eod_v" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_eod_v" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_eod_v" animsurface="RGMNOTHING_RUN" />
@@ -15,7 +15,7 @@
 			<Surface name="WATER_PISTOL_WALK_eod_v" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_eod_v" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="EODvestAndRifle" palette="hats">
+<LayerProp filter="EODvestAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_eod_v" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_eod_v" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_eod_v" animsurface="RGM_COWER_PRONE" />
@@ -29,11 +29,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_eod_v" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_eod_v" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="EODvestAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="EODvestAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_eod_v" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_eod_v" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="EODvest" palette="hats">
+<LayerProp filter="EODvest">
 			<Surface name="RGMRIFLE_WALK_CROUCH_eod_v" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_eod_v" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_eod_v" animsurface="RGMSTANDING" />
@@ -143,11 +143,11 @@
 			<Surface name="WATER_DUAL_AIM_eod_v" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_eod_v" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="SpectraVestAndPistolLeft" palette="hats">
+<LayerProp filter="SpectraVestAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_spectra" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_spectra" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="SpectraVestAndPistol" palette="hats">
+<LayerProp filter="SpectraVestAndPistol">
 			<Surface name="RGMPISTOL_WALK_spectra" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_spectra" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_spectra" animsurface="RGMNOTHING_RUN" />
@@ -157,7 +157,7 @@
 			<Surface name="WATER_PISTOL_WALK_spectra" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_spectra" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="SpectraVestAndRifle" palette="hats">
+<LayerProp filter="SpectraVestAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_spectra" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_spectra" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_spectra" animsurface="RGM_COWER_PRONE" />
@@ -171,11 +171,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_spectra" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_spectra" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="SpectraVestAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="SpectraVestAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_spectra" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_spectra" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="SpectraVest" palette="hats">
+<LayerProp filter="SpectraVest">
 			<Surface name="RGMRIFLE_WALK_CROUCH_spectra" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_spectra" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_spectra" animsurface="RGMSTANDING" />
@@ -285,11 +285,11 @@
 			<Surface name="WATER_DUAL_AIM_spectra" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_spectra" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="KevlarVestAndPistolLeft" palette="hats">
+<LayerProp filter="KevlarVestAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_kevlar" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_kevlar" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="KevlarVestAndPistol" palette="hats">
+<LayerProp filter="KevlarVestAndPistol">
 			<Surface name="RGMPISTOL_WALK_kevlar" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_kevlar" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_kevlar" animsurface="RGMNOTHING_RUN" />
@@ -299,7 +299,7 @@
 			<Surface name="WATER_PISTOL_WALK_kevlar" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_kevlar" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="KevlarVestAndRifle" palette="hats">
+<LayerProp filter="KevlarVestAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_kevlar" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_kevlar" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_kevlar" animsurface="RGM_COWER_PRONE" />
@@ -313,11 +313,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_kevlar" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_kevlar" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="KevlarVestAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="KevlarVestAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_kevlar" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_kevlar" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="KevlarVest" palette="hats">
+<LayerProp filter="KevlarVest">
 			<Surface name="RGMRIFLE_WALK_CROUCH_kevlar" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_kevlar" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_kevlar" animsurface="RGMSTANDING" />
@@ -427,11 +427,11 @@
 			<Surface name="WATER_DUAL_AIM_kevlar" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_kevlar" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="FlakVestAndPistolLeft" palette="hats">
+<LayerProp filter="FlakVestAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Flakvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Flakvest" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="FlakVestAndPistol" palette="hats">
+<LayerProp filter="FlakVestAndPistol">
 			<Surface name="RGMPISTOL_WALK_Flakvest" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Flakvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Flakvest" animsurface="RGMNOTHING_RUN" />
@@ -441,7 +441,7 @@
 			<Surface name="WATER_PISTOL_WALK_Flakvest" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Flakvest" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="FlakVestAndRifle" palette="hats">
+<LayerProp filter="FlakVestAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Flakvest" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Flakvest" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Flakvest" animsurface="RGM_COWER_PRONE" />
@@ -455,11 +455,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Flakvest" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Flakvest" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="FlakVestAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="FlakVestAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Flakvest" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Flakvest" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="FlakVest" palette="hats">
+<LayerProp filter="FlakVest">
 			<Surface name="RGMRIFLE_WALK_CROUCH_Flakvest" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_Flakvest" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_Flakvest" animsurface="RGMSTANDING" />
@@ -569,11 +569,11 @@
 			<Surface name="WATER_DUAL_AIM_Flakvest" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_Flakvest" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="GuardianVestAndPistolLeft" palette="hats_guardian_vest">
+<LayerProp filter="GuardianVestAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Guardvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Guardvest" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="GuardianVestAndPistol" palette="hats_guardian_vest">
+<LayerProp filter="GuardianVestAndPistol">
 			<Surface name="RGMPISTOL_WALK_Guardvest" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Guardvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Guardvest" animsurface="RGMNOTHING_RUN" />
@@ -583,7 +583,7 @@
 			<Surface name="WATER_PISTOL_WALK_Guardvest" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Guardvest" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="GuardianVestAndRifle" palette="hats_guardian_vest">
+<LayerProp filter="GuardianVestAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Guardvest" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Guardvest" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Guardvest" animsurface="RGM_COWER_PRONE" />
@@ -597,11 +597,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Guardvest" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Guardvest" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="GuardianVestAndBluntMeleeWeapon" palette="hats_guardian_vest">
+<LayerProp filter="GuardianVestAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Guardvest" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Guardvest" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="GuardianVest" palette="hats_guardian_vest">
+<LayerProp filter="GuardianVest">
 			<Surface name="RGMRIFLE_WALK_CROUCH_Guardvest" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_Guardvest" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_Guardvest" animsurface="RGMSTANDING" />
@@ -711,11 +711,11 @@
 			<Surface name="WATER_DUAL_AIM_Guardvest" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_Guardvest" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="SWATVestAndPistolLeft" palette="swat_blue">
+<LayerProp filter="SWATVestAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_SWATvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_SWATvest" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="SWATVestAndPistol" palette="swat_blue">
+<LayerProp filter="SWATVestAndPistol">
 			<Surface name="RGMPISTOL_WALK_SWATvest" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_SWATvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_SWATvest" animsurface="RGMNOTHING_RUN" />
@@ -725,7 +725,7 @@
 			<Surface name="WATER_PISTOL_WALK_SWATvest" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_SWATvest" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="SWATVestAndRifle" palette="swat_blue">
+<LayerProp filter="SWATVestAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_SWATvest" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_SWATvest" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_SWATvest" animsurface="RGM_COWER_PRONE" />
@@ -739,11 +739,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_SWATvest" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_SWATvest" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="SWATVestAndBluntMeleeWeapon" palette="swat_blue">
+<LayerProp filter="SWATVestAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_SWATvest" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_SWATvest" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="SWATVest" palette="swat_blue">
+<LayerProp filter="SWATVest">
 			<Surface name="RGMRIFLE_WALK_CROUCH_SWATvest" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_SWATvest" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_SWATvest" animsurface="RGMSTANDING" />
@@ -853,11 +853,11 @@
 			<Surface name="WATER_DUAL_AIM_SWATvest" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_SWATvest" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="ZylonVestAndPistolLeft" palette="hats">
+<LayerProp filter="ZylonVestAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Zylonvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Zylonvest" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="ZylonVestAndPistol" palette="hats">
+<LayerProp filter="ZylonVestAndPistol">
 			<Surface name="RGMPISTOL_WALK_Zylonvest" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Zylonvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Zylonvest" animsurface="RGMNOTHING_RUN" />
@@ -867,7 +867,7 @@
 			<Surface name="WATER_PISTOL_WALK_Zylonvest" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Zylonvest" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="ZylonVestAndRifle" palette="hats">
+<LayerProp filter="ZylonVestAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Zylonvest" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Zylonvest" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Zylonvest" animsurface="RGM_COWER_PRONE" />
@@ -881,11 +881,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Zylonvest" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Zylonvest" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="ZylonVestAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="ZylonVestAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Zylonvest" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Zylonvest" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="ZylonVest" palette="hats">
+<LayerProp filter="ZylonVest">
 			<Surface name="RGMRIFLE_WALK_CROUCH_Zylonvest" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_Zylonvest" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_Zylonvest" animsurface="RGMSTANDING" />
@@ -995,11 +995,11 @@
 			<Surface name="WATER_DUAL_AIM_Zylonvest" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_Zylonvest" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="TwaronVestAndPistolLeft" palette="hats">
+<LayerProp filter="TwaronVestAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Twavest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Twavest" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="TwaronVestAndPistol" palette="hats">
+<LayerProp filter="TwaronVestAndPistol">
 			<Surface name="RGMPISTOL_WALK_Twavest" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Twavest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Twavest" animsurface="RGMNOTHING_RUN" />
@@ -1009,7 +1009,7 @@
 			<Surface name="WATER_PISTOL_WALK_Twavest" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Twavest" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="TwaronVestAndRifle" palette="hats">
+<LayerProp filter="TwaronVestAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Twavest" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Twavest" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Twavest" animsurface="RGM_COWER_PRONE" />
@@ -1023,11 +1023,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Twavest" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Twavest" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="TwaronVestAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="TwaronVestAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Twavest" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Twavest" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="TwaronVest" palette="hats">
+<LayerProp filter="TwaronVest">
 			<Surface name="RGMRIFLE_WALK_CROUCH_Twavest" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_Twavest" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_Twavest" animsurface="RGMSTANDING" />
@@ -1137,11 +1137,11 @@
 			<Surface name="WATER_DUAL_AIM_Twavest" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_Twavest" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="DyneemaVestAndPistolLeft" palette="hats">
+<LayerProp filter="DyneemaVestAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Dynvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Dynvest" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="DyneemaVestAndPistol" palette="hats">
+<LayerProp filter="DyneemaVestAndPistol">
 			<Surface name="RGMPISTOL_WALK_Dynvest" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Dynvest" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Dynvest" animsurface="RGMNOTHING_RUN" />
@@ -1151,7 +1151,7 @@
 			<Surface name="WATER_PISTOL_WALK_Dynvest" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Dynvest" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="DyneemaVestAndRifle" palette="hats">
+<LayerProp filter="DyneemaVestAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Dynvest" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Dynvest" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Dynvest" animsurface="RGM_COWER_PRONE" />
@@ -1165,11 +1165,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Dynvest" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Dynvest" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="DyneemaVestAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="DyneemaVestAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Dynvest" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Dynvest" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="DyneemaVest" palette="hats">
+<LayerProp filter="DyneemaVest">
 			<Surface name="RGMRIFLE_WALK_CROUCH_Dynvest" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_Dynvest" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_Dynvest" animsurface="RGMSTANDING" />
@@ -1281,10 +1281,10 @@
 		</LayerProp>
 </Layer>
 <Layer name="helmet">
-<LayerProp filter="EODhelmetVestAndRifle" palette="hats">
+<LayerProp filter="EODhelmetVestAndRifle">
 			<Surface name="RGMRIFLE_ROLL_SIDE_eod_h2" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="EODhelmetAndVest" palette="hats">
+<LayerProp filter="EODhelmetAndVest">
 			<Surface name="RGMRIFLE_PRONE_eod_h2" animsurface="RGMPRONE" />
 			<Surface name="RGMMEDIC_PRONE_eod_h2" animsurface="RGMMEDICPRN" />
 			<Surface name="RGMCOWER_PRONE_eod_h2" animsurface="RGM_COWER_PRONE" />
@@ -1296,11 +1296,11 @@
 			<Surface name="RGMEMPTY_ROLL_SIDE_eod_h2" animsurface="RGMROLL_PR" />
 			<Surface name="RGMRIFLE_PRN_COWER_eod_h2" animsurface="RGM_COWER_PRONE" />
 		</LayerProp>
-<LayerProp filter="EODhelmetAndPistolLeft" palette="hats">
+<LayerProp filter="EODhelmetAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_eod_h" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_eod_h" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="EODhelmetAndPistol" palette="hats">
+<LayerProp filter="EODhelmetAndPistol">
 			<Surface name="RGMPISTOL_WALK_eod_h" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_eod_h" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_eod_h" animsurface="RGMNOTHING_RUN" />
@@ -1310,7 +1310,7 @@
 			<Surface name="WATER_PISTOL_WALK_eod_h" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_eod_h" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="EODhelmetAndRifle" palette="hats">
+<LayerProp filter="EODhelmetAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_eod_h" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_eod_h" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_eod_h" animsurface="RGM_COWER_PRONE" />
@@ -1324,11 +1324,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_eod_h" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_eod_h" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="EODhelmetAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="EODhelmetAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_eod_h" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_eod_h" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="EODhelmet" palette="hats">
+<LayerProp filter="EODhelmet">
 			<Surface name="RGMRIFLE_WALK_CROUCH_eod_h" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_eod_h" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_eod_h" animsurface="RGMSTANDING" />
@@ -1437,11 +1437,11 @@
 			<Surface name="WATER_DUAL_AIM_eod_h" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_eod_h" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="CamoHelmetAndPistolLeft" palette="WoodlandCamo">
+<LayerProp filter="CamoHelmetAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_CAMOHELMET" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_CAMOHELMET" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="CamoHelmetAndPistol" palette="WoodlandCamo">
+<LayerProp filter="CamoHelmetAndPistol">
 			<Surface name="RGMPISTOL_WALK_CAMOHELMET" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_CAMOHELMET" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_CAMOHELMET" animsurface="RGMNOTHING_RUN" />
@@ -1451,7 +1451,7 @@
 			<Surface name="WATER_PISTOL_WALK_CAMOHELMET" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_CAMOHELMET" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="CamoHelmetAndRifle" palette="WoodlandCamo">
+<LayerProp filter="CamoHelmetAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_CAMOHELMET" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_CAMOHELMET" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_CAMOHELMET" animsurface="RGM_COWER_PRONE" />
@@ -1465,11 +1465,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_CAMOHELMET" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_CAMOHELMET" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="CamoHelmetAndBluntMeleeWeapon" palette="WoodlandCamo">
+<LayerProp filter="CamoHelmetAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_CAMOHELMET" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_CAMOHELMET" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="CamoHelmet" palette="WoodlandCamo">
+<LayerProp filter="CamoHelmet">
 			<Surface name="RGMRIFLE_WALK_CROUCH_CAMOHELMET" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_CAMOHELMET" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_CAMOHELMET" animsurface="RGMSTANDING" />
@@ -1578,11 +1578,11 @@
 			<Surface name="WATER_DUAL_AIM_CAMOHELMET" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_CAMOHELMET" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="SteelHelmetAndPistolLeft" palette="hats">
+<LayerProp filter="SteelHelmetAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Steelhelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Steelhelm" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="SteelHelmetAndPistol" palette="hats">
+<LayerProp filter="SteelHelmetAndPistol">
 			<Surface name="RGMPISTOL_WALK_Steelhelm" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Steelhelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Steelhelm" animsurface="RGMNOTHING_RUN" />
@@ -1592,7 +1592,7 @@
 			<Surface name="WATER_PISTOL_WALK_Steelhelm" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Steelhelm" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="SteelHelmetAndRifle" palette="hats">
+<LayerProp filter="SteelHelmetAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Steelhelm" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Steelhelm" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Steelhelm" animsurface="RGM_COWER_PRONE" />
@@ -1606,11 +1606,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Steelhelm" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Steelhelm" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="SteelHelmetAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="SteelHelmetAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Steelhelm" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Steelhelm" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="SteelHelmet" palette="hats">
+<LayerProp filter="SteelHelmet">
 			<Surface name="RGMRIFLE_IDLE_Steelhelm" animsurface="RGMSTANDING" />
 			<Surface name="RGMBASICWALK_Steelhelm" animsurface="RGMBASICWALKING" />
 			<Surface name="RGMRUNNING_Steelhelm" animsurface="RGMRUNNING" />
@@ -1719,11 +1719,11 @@
 			<Surface name="WATER_DUAL_AIM_Steelhelm" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_Steelhelm" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="KevlarHelmetAndPistolLeft" palette="hats">
+<LayerProp filter="KevlarHelmetAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Kvlrhelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Kvlrhelm" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="KevlarHelmetAndPistol" palette="hats">
+<LayerProp filter="KevlarHelmetAndPistol">
 			<Surface name="RGMPISTOL_WALK_Kvlrhelm" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Kvlrhelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Kvlrhelm" animsurface="RGMNOTHING_RUN" />
@@ -1733,7 +1733,7 @@
 			<Surface name="WATER_PISTOL_WALK_Kvlrhelm" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Kvlrhelm" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="KevlarHelmetAndRifle" palette="hats">
+<LayerProp filter="KevlarHelmetAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Kvlrhelm" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Kvlrhelm" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Kvlrhelm" animsurface="RGM_COWER_PRONE" />
@@ -1747,11 +1747,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Kvlrhelm" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Kvlrhelm" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="KevlarHelmetAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="KevlarHelmetAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Kvlrhelm" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Kvlrhelm" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="KevlarHelmet" palette="hats">
+<LayerProp filter="KevlarHelmet">
 			<Surface name="RGMRIFLE_IDLE_Kvlrhelm" animsurface="RGMSTANDING" />
 			<Surface name="RGMBASICWALK_Kvlrhelm" animsurface="RGMBASICWALKING" />
 			<Surface name="RGMRUNNING_Kvlrhelm" animsurface="RGMRUNNING" />
@@ -1860,11 +1860,11 @@
 			<Surface name="WATER_DUAL_AIM_Kvlrhelm" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_Kvlrhelm" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="SpectraHelmetAndPistolLeft" palette="hats">
+<LayerProp filter="SpectraHelmetAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Spechelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Spechelm" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="SpectraHelmetAndPistol" palette="hats">
+<LayerProp filter="SpectraHelmetAndPistol">
 			<Surface name="RGMPISTOL_WALK_Spechelm" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Spechelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Spechelm" animsurface="RGMNOTHING_RUN" />
@@ -1874,7 +1874,7 @@
 			<Surface name="WATER_PISTOL_WALK_Spechelm" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Spechelm" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="SpectraHelmetAndRifle" palette="hats">
+<LayerProp filter="SpectraHelmetAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Spechelm" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Spechelm" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Spechelm" animsurface="RGM_COWER_PRONE" />
@@ -1888,11 +1888,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Spechelm" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Spechelm" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="SpectraHelmetAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="SpectraHelmetAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Spechelm" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Spechelm" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="SpectraHelmet" palette="hats">
+<LayerProp filter="SpectraHelmet">
 			<Surface name="RGMRIFLE_IDLE_Spechelm" animsurface="RGMSTANDING" />
 			<Surface name="RGMBASICWALK_Spechelm" animsurface="RGMBASICWALKING" />
 			<Surface name="RGMRUNNING_Spechelm" animsurface="RGMRUNNING" />
@@ -2001,11 +2001,11 @@
 			<Surface name="WATER_DUAL_AIM_Spechelm" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_Spechelm" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="SWATHelmetAndPistolLeft" palette="swat_blue">
+<LayerProp filter="SWATHelmetAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_SWAThelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_SWAThelm" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="SWATHelmetAndPistol" palette="swat_blue">
+<LayerProp filter="SWATHelmetAndPistol">
 			<Surface name="RGMPISTOL_WALK_SWAThelm" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_SWAThelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_SWAThelm" animsurface="RGMNOTHING_RUN" />
@@ -2015,7 +2015,7 @@
 			<Surface name="WATER_PISTOL_WALK_SWAThelm" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_SWAThelm" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="SWATHelmetAndRifle" palette="swat_blue">
+<LayerProp filter="SWATHelmetAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_SWAThelm" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_SWAThelm" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_SWAThelm" animsurface="RGM_COWER_PRONE" />
@@ -2029,11 +2029,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_SWAThelm" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_SWAThelm" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="SWATHelmetAndBluntMeleeWeapon" palette="swat_blue">
+<LayerProp filter="SWATHelmetAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_SWAThelm" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_SWAThelm" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="SWATHelmet" palette="swat_blue">
+<LayerProp filter="SWATHelmet">
 			<Surface name="RGMRIFLE_IDLE_SWAThelm" animsurface="RGMSTANDING" />
 			<Surface name="RGMBASICWALK_SWAThelm" animsurface="RGMBASICWALKING" />
 			<Surface name="RGMRUNNING_SWAThelm" animsurface="RGMRUNNING" />
@@ -2142,11 +2142,11 @@
 			<Surface name="WATER_DUAL_AIM_SWAThelm" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_SWAThelm" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="TwaronHelmetAndPistolLeft" palette="hats">
+<LayerProp filter="TwaronHelmetAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Twahelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Twahelm" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="TwaronHelmetAndPistol" palette="hats">
+<LayerProp filter="TwaronHelmetAndPistol">
 			<Surface name="RGMPISTOL_WALK_Twahelm" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Twahelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Twahelm" animsurface="RGMNOTHING_RUN" />
@@ -2156,7 +2156,7 @@
 			<Surface name="WATER_PISTOL_WALK_Twahelm" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Twahelm" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="TwaronHelmetAndRifle" palette="hats">
+<LayerProp filter="TwaronHelmetAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Twahelm" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Twahelm" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Twahelm" animsurface="RGM_COWER_PRONE" />
@@ -2170,11 +2170,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Twahelm" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Twahelm" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="TwaronHelmetAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="TwaronHelmetAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Twahelm" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Twahelm" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="TwaronHelmet" palette="hats">
+<LayerProp filter="TwaronHelmet">
 			<Surface name="RGMRIFLE_IDLE_Twahelm" animsurface="RGMSTANDING" />
 			<Surface name="RGMBASICWALK_Twahelm" animsurface="RGMBASICWALKING" />
 			<Surface name="RGMRUNNING_Twahelm" animsurface="RGMRUNNING" />
@@ -2283,11 +2283,11 @@
 			<Surface name="WATER_DUAL_AIM_Twahelm" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_Twahelm" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="DyneemaHelmetAndPistolLeft" palette="hats">
+<LayerProp filter="DyneemaHelmetAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_Dynhelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_Dynhelm" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="DyneemaHelmetAndPistol" palette="hats">
+<LayerProp filter="DyneemaHelmetAndPistol">
 			<Surface name="RGMPISTOL_WALK_Dynhelm" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_Dynhelm" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_Dynhelm" animsurface="RGMNOTHING_RUN" />
@@ -2297,7 +2297,7 @@
 			<Surface name="WATER_PISTOL_WALK_Dynhelm" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_Dynhelm" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="DyneemaHelmetAndRifle" palette="hats">
+<LayerProp filter="DyneemaHelmetAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_Dynhelm" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_Dynhelm" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_Dynhelm" animsurface="RGM_COWER_PRONE" />
@@ -2311,11 +2311,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_Dynhelm" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_Dynhelm" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="DyneemaHelmetAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="DyneemaHelmetAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_Dynhelm" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_Dynhelm" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="DyneemaHelmet" palette="hats">
+<LayerProp filter="DyneemaHelmet">
 			<Surface name="RGMRIFLE_IDLE_Dynhelm" animsurface="RGMSTANDING" />
 			<Surface name="RGMBASICWALK_Dynhelm" animsurface="RGMBASICWALKING" />
 			<Surface name="RGMRUNNING_Dynhelm" animsurface="RGMRUNNING" />
@@ -2424,11 +2424,11 @@
 			<Surface name="WATER_DUAL_AIM_Dynhelm" animsurface="RGMWATER_DBLSHT" />
 			<Surface name="CROUCH_MORTAR_Dynhelm" animsurface="RGMMORTAR" />
 		</LayerProp>
-<LayerProp filter="HelmetAndPistolLeft" palette="hats">
+<LayerProp filter="HelmetAndPistolLeft">
 			<Surface name="RGMEMPTY_RUN_HELMET" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMDUAL_SDSTP_HELMET" animsurface="RGMSIDESTEP" />
 		</LayerProp>
-<LayerProp filter="HelmetAndPistol" palette="hats">
+<LayerProp filter="HelmetAndPistol">
 			<Surface name="RGMPISTOL_WALK_HELMET" animsurface="RGMNOTHING_WALK" />
 			<Surface name="RGMEMPTY_RUN_HELMET" animsurface="RGMPISTOL_RUN" />			
 			<Surface name="RGMEMPTY_RUN_HELMET" animsurface="RGMNOTHING_RUN" />
@@ -2438,7 +2438,7 @@
 			<Surface name="WATER_PISTOL_WALK_HELMET" animsurface="RGMWATER_N_WALK" />
 			<Surface name="WATER_PISTOL_AIM_HELMET" animsurface="RGMWATER_N_AIM" />
 		</LayerProp>
-<LayerProp filter="HelmetAndRifle" palette="hats">
+<LayerProp filter="HelmetAndRifle">
 			<Surface name="RGM_RIFLE_OPEN_HELMET" animsurface="RGMOPEN" />
 			<Surface name="RGMRIFLE_COWER_HELMET" animsurface="RGMCOWER" />
 			<Surface name="RGMRIFLE_PRN_COWER_HELMET" animsurface="RGM_COWER_PRONE" />
@@ -2452,11 +2452,11 @@
 			<Surface name="RGMRIFLE_SIDESTEP_AIM_HELMET" animsurface="RGMSIDESTEP_R_RDY" />
 			<Surface name="RGMRIFLE_ROLL_SIDE_HELMET" animsurface="RGMROLL_PR" />
 		</LayerProp>
-<LayerProp filter="HelmetAndBluntMeleeWeapon" palette="hats">
+<LayerProp filter="HelmetAndBluntMeleeWeapon">
 			<Surface name="RGM_BLUNT_HELMET" animsurface="RGMPUNCH" />
 			<Surface name="RGMCROWBAR_CR_HIT_HELMET" animsurface="RGMPUNCHLOW" />
 		</LayerProp>
-<LayerProp filter="Helmet" palette="hats">
+<LayerProp filter="Helmet">
 			<Surface name="RGMRIFLE_WALK_CROUCH_HELMET" animsurface="RGMCROUCH_R_RDY" />
 			<Surface name="RGMRIFLE_WALK_HELMET" animsurface="RGMWALK_R_RDY" />
 			<Surface name="RGMRIFLE_IDLE_HELMET" animsurface="RGMSTANDING" />
