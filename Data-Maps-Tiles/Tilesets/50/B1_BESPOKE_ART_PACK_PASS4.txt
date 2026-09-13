@@ -1,0 +1,12 @@
+B1/ORONEGRO TRUE-COLOUR DETAIL PASS 4
+
+True-colour B1TC siblings added for repeated tactical-world details:
+- O_rail: weathered industrial railing/steel with rust
+- CARGO: faded cargo paint, scratches and corrosion
+- GASTUF1: refinery/gas equipment with full-colour metal, grease, rust and safety-paint remnants
+- HARDWARE: worn industrial hardware
+- I_CRATES: stained and varied wood/metal crate treatment
+- SANDBAG / SANDBAGS: dusty ochre/olive cloth variation and grime
+- WIREFENS: galvanized wire with corrosion variation
+
+The original STI frame geometry, offsets and JSD identities remain authoritative. No collision/pathing/map-layout changes.
