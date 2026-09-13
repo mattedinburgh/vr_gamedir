@@ -1,0 +1,53 @@
+SAN MONA REMASTER - 2026-09-13
+
+Scope
+- C5: vice/commerce strip; Tony/Hans/Shady Lady/bar district.
+- C6: eastern San Mona; Angel's leather shop/bar; visibly fire-scarred northern view.
+- D4: abandoned mine approaches and Kingpin stash route.
+- D5: boxing club / Kingpin-controlled district and mansion approaches.
+- D4_B1 / D5_B1: underground mine/stash route.
+
+Design rules carried over from B1/A3
+- Preserve authored quest/NPC/door/exit/schedule/room data.
+- Preserve structural layer, collision, LOS, cover and destruction geometry.
+- Make high-resolution tactical view materially denser and more legible.
+- Use deterministic, sector-specific environmental storytelling rather than generic clutter.
+- Ground dressing is baked into the actual DAT object layers.
+- Runtime source pass supplies district palette/material grading and sparse roof detail.
+
+Baked additions
+C5: 314
+  92 road scorch marks
+  62 paving-wear details
+  62 venue-edge details
+  98 street-growth details
+C6: 388
+  105 fire scars
+  90 burnt-rubble details
+  71 overgrowth details
+  122 green-recovery details
+D4: 679
+  121 mine-rubble details
+  47 old blast scars
+  311 scrub details
+  200 wild-grass details
+D5: 182
+  22 subtle road wear details
+  60 compound-edge details
+  100 trimmed-verge details
+D4_B1: 47
+D5_B1: 17
+
+Binary-safety audit
+- Map header, dimensions, flags and tileset ID preserved.
+- Height map preserved byte-for-byte.
+- Land layer preserved byte-for-byte.
+- Structure/shadow/roof/on-roof and every section after the object layer preserved byte-for-byte.
+- Only object-count nibbles and new visual-only object records changed.
+- No object count exceeds the 4-bit map-format limit.
+- Existing map-specific debris families/subindices were used as the compatibility baseline.
+
+Lore references consulted
+- Jagged Alliance Wiki: San Mona
+- JA2 walkthrough pages for C6, D4 and D5
+- JA2 v1.13 documentation: side quests / Kingpin money
