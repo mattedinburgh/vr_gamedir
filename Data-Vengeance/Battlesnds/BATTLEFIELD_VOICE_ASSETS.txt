@@ -1,0 +1,19 @@
+Battlefield casualty voice assets
+=================================
+
+Files:
+- m_medic.ogg
+- f_medic.ogg
+
+Source:
+Kenney Voiceover Pack (2015)
+https://kenney.nl/assets/voiceover-pack
+
+License:
+Creative Commons CC0 1.0 / public domain dedication.
+Attribution is not required. Source retained here for provenance.
+
+Integration:
+The Vengeance casualty-audio code uses these clips only for generic/no-profile
+soldiers. Named mercenaries keep their original character voice and existing
+QUOTE_SERIOUSLY_WOUNDED dialogue.
