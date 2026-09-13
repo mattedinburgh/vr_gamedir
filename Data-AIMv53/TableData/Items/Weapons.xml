@@ -18573,7 +18573,7 @@
 		<uiIndex>2139</uiIndex>
 		<szWeaponName>Taurus CT-30</szWeaponName>
 		<ubWeaponClass>3</ubWeaponClass>
-		<ubWeaponType>6</ubWeaponType>
+		<ubWeaponType>4</ubWeaponType>
 		<ubCalibre>45</ubCalibre>
 		<ubReadyTime>6</ubReadyTime>
 		<ubShotsPer4Turns>15.8</ubShotsPer4Turns>
