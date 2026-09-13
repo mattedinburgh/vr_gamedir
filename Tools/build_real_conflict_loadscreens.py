@@ -215,11 +215,12 @@ def prepare_image(data: bytes, width: int, height: int) -> Image.Image:
     img = ImageEnhance.Color(img).enhance(0.92)
     img = ImageEnhance.Contrast(img).enhance(1.05)
     img = ImageEnhance.Sharpness(img).enhance(1.03)
-    return img.quantize(
-        colors=256,
-        method=Image.Quantize.MEDIANCUT,
-        dither=Image.Dither.FLOYDSTEINBERG,
-    )
+
+    # IMPORTANT: keep loadscreens as true-colour RGB PNGs.
+    # VR's PNG loader routes 8-bit paletted PNGs through the sprite/ETRLE path,
+    # where palette index 0 is treated as transparent.  That format is wrong
+    # for full-screen backgrounds and can make the documentary screens fail.
+    return img
 
 
 def source_page(filename: str) -> str:
@@ -339,6 +340,14 @@ def main() -> int:
             dest_dir.mkdir(parents=True, exist_ok=True)
             dest = dest_dir / f"{pool}_{next_seq:03d}_{width}x{height}.png"
             img.save(dest, format="PNG", optimize=True, compress_level=9)
+
+            # Guard against accidentally reintroducing indexed/paletted output.
+            with Image.open(dest) as verify:
+                if verify.mode != "RGB":
+                    raise RuntimeError(
+                        f"Generated loadscreen {dest} has mode {verify.mode}; expected RGB"
+                    )
+
             pool_counts[pool] = next_seq
 
             records.append({
@@ -382,7 +391,7 @@ def main() -> int:
         "These loading screens are derived from real archival photographs.",
         "Only Wikimedia Commons files whose metadata explicitly reports Public Domain or CC0 are included.",
         "The builder refuses to publish a partial pack below the configured minimum image count.",
-        "Edits are limited to crop, resize, restrained tonal grading, and palette quantization.",
+        "Edits are limited to crop, resize, and restrained tonal grading.",
         "",
         f"Generated screens: **{len(records)}**",
         "",
