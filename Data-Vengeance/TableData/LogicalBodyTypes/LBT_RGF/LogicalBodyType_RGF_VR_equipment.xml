@@ -20,7 +20,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_eod_v" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_eod_v" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_eod_v" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_eod_v" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_eod_v" animsurface="RGFSHOOT_LOW"/>
@@ -32,8 +31,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_eod_v" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="EODvest">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_eod_v" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_eod_v" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_eod_v" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_eod_v" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_eod_v" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_eod_v" animsurface="RGFRUNNING"/>
@@ -46,9 +44,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_eod_v" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_eod_v" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_eod_v" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_eod_v" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_eod_v" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_eod_v" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_eod_v" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_eod_v" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_eod_v" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_eod_v" animsurface="RGFNOTHING_STD"/>
@@ -92,9 +90,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_eod_v" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_eod_v" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_eod_v" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_eod_v" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_eod_v" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_eod_v" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_eod_v" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_eod_v" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_eod_v" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_eod_v" animsurface="RGFLOB"/>
@@ -121,8 +119,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_eod_v" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_eod_v" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_eod_v" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_eod_v" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_eod_v" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_eod_v" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_eod_v" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_eod_v" animsurface="RGFKICKSN"/>
@@ -166,7 +165,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_spectra" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_spectra" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_spectra" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_spectra" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_spectra" animsurface="RGFSHOOT_LOW"/>
@@ -178,8 +176,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_spectra" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="SpectraVest">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_spectra" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_spectra" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_spectra" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_spectra" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_spectra" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_spectra" animsurface="RGFRUNNING"/>
@@ -192,9 +189,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_spectra" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_spectra" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_spectra" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_spectra" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_spectra" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_spectra" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_spectra" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_spectra" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_spectra" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_spectra" animsurface="RGFNOTHING_STD"/>
@@ -239,9 +236,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_spectra" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_spectra" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_spectra" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_spectra" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_spectra" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_spectra" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_spectra" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_spectra" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_spectra" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_spectra" animsurface="RGFLOB"/>
@@ -268,8 +265,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_spectra" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_spectra" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_spectra" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_spectra" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_spectra" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_spectra" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_spectra" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_spectra" animsurface="RGFKICKSN"/>
@@ -313,7 +311,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_kevlar" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_kevlar" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_kevlar" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_kevlar" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_kevlar" animsurface="RGFSHOOT_LOW"/>
@@ -325,8 +322,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_kevlar" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="KevlarVest">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_kevlar" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_kevlar" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_kevlar" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_kevlar" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_kevlar" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_kevlar" animsurface="RGFRUNNING"/>
@@ -339,9 +335,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_kevlar" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_kevlar" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_kevlar" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_kevlar" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_kevlar" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_kevlar" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_kevlar" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_kevlar" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_kevlar" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_kevlar" animsurface="RGFNOTHING_STD"/>
@@ -386,9 +382,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_kevlar" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_kevlar" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_kevlar" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_kevlar" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_kevlar" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_kevlar" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_kevlar" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_kevlar" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_kevlar" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_kevlar" animsurface="RGFLOB"/>
@@ -415,8 +411,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_kevlar" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_kevlar" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_kevlar" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_kevlar" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_kevlar" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_kevlar" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_kevlar" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_kevlar" animsurface="RGFKICKSN"/>
@@ -460,7 +457,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Flakvest" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Flakvest" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Flakvest" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Flakvest" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Flakvest" animsurface="RGFSHOOT_LOW"/>
@@ -472,8 +468,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_Flakvest" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="FlakVest">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Flakvest" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_Flakvest" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_Flakvest" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_Flakvest" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_Flakvest" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_Flakvest" animsurface="RGFRUNNING"/>
@@ -486,9 +481,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_Flakvest" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_Flakvest" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_Flakvest" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_Flakvest" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Flakvest" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_Flakvest" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_Flakvest" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_Flakvest" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_Flakvest" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_Flakvest" animsurface="RGFNOTHING_STD"/>
@@ -533,9 +528,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Flakvest" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Flakvest" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Flakvest" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Flakvest" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Flakvest" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Flakvest" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Flakvest" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Flakvest" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Flakvest" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Flakvest" animsurface="RGFLOB"/>
@@ -562,8 +557,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Flakvest" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Flakvest" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Flakvest" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Flakvest" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Flakvest" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Flakvest" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Flakvest" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Flakvest" animsurface="RGFKICKSN"/>
@@ -607,7 +603,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Guardvest" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Guardvest" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Guardvest" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Guardvest" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Guardvest" animsurface="RGFSHOOT_LOW"/>
@@ -619,8 +614,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_Guardvest" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="GuardianVest">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Guardvest" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_Guardvest" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_Guardvest" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_Guardvest" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_Guardvest" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_Guardvest" animsurface="RGFRUNNING"/>
@@ -633,9 +627,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_Guardvest" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_Guardvest" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_Guardvest" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_Guardvest" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Guardvest" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_Guardvest" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_Guardvest" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_Guardvest" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_Guardvest" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_Guardvest" animsurface="RGFNOTHING_STD"/>
@@ -680,9 +674,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Guardvest" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Guardvest" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Guardvest" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Guardvest" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Guardvest" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Guardvest" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Guardvest" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Guardvest" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Guardvest" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Guardvest" animsurface="RGFLOB"/>
@@ -709,8 +703,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Guardvest" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Guardvest" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Guardvest" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Guardvest" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Guardvest" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Guardvest" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Guardvest" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Guardvest" animsurface="RGFKICKSN"/>
@@ -754,7 +749,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_SWATvest" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_SWATvest" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_SWATvest" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_SWATvest" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_SWATvest" animsurface="RGFSHOOT_LOW"/>
@@ -766,8 +760,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_SWATvest" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="SWATVest">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_SWATvest" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_SWATvest" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_SWATvest" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_SWATvest" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_SWATvest" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_SWATvest" animsurface="RGFRUNNING"/>
@@ -780,9 +773,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_SWATvest" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_SWATvest" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_SWATvest" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_SWATvest" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_SWATvest" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_SWATvest" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_SWATvest" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_SWATvest" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_SWATvest" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_SWATvest" animsurface="RGFNOTHING_STD"/>
@@ -827,9 +820,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_SWATvest" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_SWATvest" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_SWATvest" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_SWATvest" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_SWATvest" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_SWATvest" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_SWATvest" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_SWATvest" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_SWATvest" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_SWATvest" animsurface="RGFLOB"/>
@@ -856,8 +849,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_SWATvest" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_SWATvest" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_SWATvest" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_SWATvest" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_SWATvest" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_SWATvest" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_SWATvest" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_SWATvest" animsurface="RGFKICKSN"/>
@@ -901,7 +895,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Zylonvest" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Zylonvest" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Zylonvest" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Zylonvest" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Zylonvest" animsurface="RGFSHOOT_LOW"/>
@@ -913,8 +906,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_Zylonvest" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="ZylonVest">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Zylonvest" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_Zylonvest" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_Zylonvest" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_Zylonvest" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_Zylonvest" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_Zylonvest" animsurface="RGFRUNNING"/>
@@ -927,9 +919,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_Zylonvest" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_Zylonvest" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_Zylonvest" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_Zylonvest" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Zylonvest" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_Zylonvest" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_Zylonvest" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_Zylonvest" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_Zylonvest" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_Zylonvest" animsurface="RGFNOTHING_STD"/>
@@ -974,9 +966,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Zylonvest" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Zylonvest" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Zylonvest" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Zylonvest" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Zylonvest" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Zylonvest" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Zylonvest" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Zylonvest" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Zylonvest" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Zylonvest" animsurface="RGFLOB"/>
@@ -1003,8 +995,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Zylonvest" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Zylonvest" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Zylonvest" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Zylonvest" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Zylonvest" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Zylonvest" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Zylonvest" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Zylonvest" animsurface="RGFKICKSN"/>
@@ -1048,7 +1041,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Twavest" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Twavest" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Twavest" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Twavest" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Twavest" animsurface="RGFSHOOT_LOW"/>
@@ -1060,8 +1052,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_Twavest" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="TwaronVest">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Twavest" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_Twavest" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_Twavest" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_Twavest" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_Twavest" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_Twavest" animsurface="RGFRUNNING"/>
@@ -1074,9 +1065,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_Twavest" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_Twavest" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_Twavest" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_Twavest" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Twavest" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_Twavest" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_Twavest" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_Twavest" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_Twavest" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_Twavest" animsurface="RGFNOTHING_STD"/>
@@ -1121,9 +1112,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Twavest" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Twavest" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Twavest" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Twavest" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Twavest" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Twavest" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Twavest" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Twavest" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Twavest" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Twavest" animsurface="RGFLOB"/>
@@ -1150,8 +1141,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Twavest" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Twavest" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Twavest" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Twavest" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Twavest" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Twavest" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Twavest" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Twavest" animsurface="RGFKICKSN"/>
@@ -1195,7 +1187,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Dynvest" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Dynvest" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Dynvest" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Dynvest" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Dynvest" animsurface="RGFSHOOT_LOW"/>
@@ -1207,8 +1198,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_Dynvest" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="DyneemaVest">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Dynvest" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_Dynvest" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_Dynvest" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_Dynvest" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_Dynvest" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_Dynvest" animsurface="RGFRUNNING"/>
@@ -1221,9 +1211,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_Dynvest" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_Dynvest" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_Dynvest" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_Dynvest" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Dynvest" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_Dynvest" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_Dynvest" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_Dynvest" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_Dynvest" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_Dynvest" animsurface="RGFNOTHING_STD"/>
@@ -1268,9 +1258,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Dynvest" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Dynvest" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Dynvest" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Dynvest" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Dynvest" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Dynvest" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Dynvest" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Dynvest" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Dynvest" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Dynvest" animsurface="RGFLOB"/>
@@ -1297,8 +1287,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Dynvest" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Dynvest" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Dynvest" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Dynvest" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Dynvest" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Dynvest" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Dynvest" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Dynvest" animsurface="RGFKICKSN"/>
@@ -1359,7 +1350,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_eod_h" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_eod_h" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_eod_h" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_eod_h" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_eod_h" animsurface="RGFSHOOT_LOW"/>
@@ -1371,8 +1361,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_eod_h" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="EODhelmet">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_eod_h" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_eod_h" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_eod_h" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_eod_h" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_eod_h" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_eod_h" animsurface="RGFRUNNING"/>
@@ -1385,9 +1374,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_eod_h" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_eod_h" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_eod_h" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_eod_h" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_eod_h" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_eod_h" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_eod_h" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_eod_h" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_eod_h" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_eod_h" animsurface="RGFNOTHING_STD"/>
@@ -1431,9 +1420,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_eod_h" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_eod_h" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_eod_h" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_eod_h" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_eod_h" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_eod_h" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_eod_h" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_eod_h" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_eod_h" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_eod_h" animsurface="RGFLOB"/>
@@ -1460,8 +1449,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_eod_h" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_eod_h" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_eod_h" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_eod_h" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_eod_h" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_eod_h" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_eod_h" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_eod_h" animsurface="RGFKICKSN"/>
@@ -1505,7 +1495,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_CAMOHELMET" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_CAMOHELMET" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_CAMOHELMET" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_CAMOHELMET" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_CAMOHELMET" animsurface="RGFSHOOT_LOW"/>
@@ -1517,8 +1506,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_CAMOHELMET" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="CamoHelmet">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_CAMOHELMET" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_CAMOHELMET" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_CAMOHELMET" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_CAMOHELMET" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_CAMOHELMET" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_CAMOHELMET" animsurface="RGFRUNNING"/>
@@ -1531,9 +1519,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_CAMOHELMET" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_CAMOHELMET" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_CAMOHELMET" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_CAMOHELMET" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_CAMOHELMET" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_CAMOHELMET" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_CAMOHELMET" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_CAMOHELMET" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_CAMOHELMET" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_CAMOHELMET" animsurface="RGFNOTHING_STD"/>
@@ -1577,9 +1565,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_CAMOHELMET" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_CAMOHELMET" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_CAMOHELMET" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_CAMOHELMET" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_CAMOHELMET" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_CAMOHELMET" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_CAMOHELMET" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_CAMOHELMET" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_CAMOHELMET" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_CAMOHELMET" animsurface="RGFLOB"/>
@@ -1606,8 +1594,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_CAMOHELMET" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_CAMOHELMET" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_CAMOHELMET" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_CAMOHELMET" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_CAMOHELMET" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_CAMOHELMET" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_CAMOHELMET" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_CAMOHELMET" animsurface="RGFKICKSN"/>
@@ -1651,7 +1640,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Steelhelm" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Steelhelm" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Steelhelm" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Steelhelm" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Steelhelm" animsurface="RGFSHOOT_LOW"/>
@@ -1669,10 +1657,10 @@
 			<Surface name="RGF_RIFLE_CROUCH_Steelhelm" animsurface="RGFCROUCHING"/>
 			<Surface name="RGF_RIFLE_SWAT_Steelhelm" animsurface="RGFSNEAKING"/>
 			<Surface name="RGF_RIFLE_WALK_Steelhelm" animsurface="RGFWALK_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Steelhelm" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_CROUCHWALK_Steelhelm" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Steelhelm" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_RIFLE_RAISE_Steelhelm" animsurface="RGFRAISE"/>
+			
+
+
+<Surface name="RGF_RIFLE_RAISE_Steelhelm" animsurface="RGFRAISE"/>
 			<Surface name="RGF_RIFLE_AIM_Steelhelm" animsurface="RGFSTANDAIM"/>
 			<Surface name="RGF_RIFLE_HIP_Steelhelm" animsurface="RGF_HIP_AIM"/>
 			<Surface name="RGF_RIFLE_CR_AIM_Steelhelm" animsurface="RGFCROUCHAIM"/>
@@ -1723,9 +1711,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Steelhelm" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Steelhelm" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Steelhelm" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Steelhelm" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Steelhelm" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Steelhelm" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Steelhelm" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Steelhelm" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Steelhelm" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Steelhelm" animsurface="RGFLOB"/>
@@ -1752,8 +1740,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Steelhelm" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Steelhelm" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Steelhelm" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Steelhelm" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Steelhelm" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Steelhelm" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Steelhelm" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Steelhelm" animsurface="RGFKICKSN"/>
@@ -1797,7 +1786,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Kvlrhelm" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Kvlrhelm" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Kvlrhelm" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Kvlrhelm" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Kvlrhelm" animsurface="RGFSHOOT_LOW"/>
@@ -1815,10 +1803,10 @@
 			<Surface name="RGF_RIFLE_CROUCH_Kvlrhelm" animsurface="RGFCROUCHING"/>
 			<Surface name="RGF_RIFLE_SWAT_Kvlrhelm" animsurface="RGFSNEAKING"/>
 			<Surface name="RGF_RIFLE_WALK_Kvlrhelm" animsurface="RGFWALK_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Kvlrhelm" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_CROUCHWALK_Kvlrhelm" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Kvlrhelm" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_RIFLE_RAISE_Kvlrhelm" animsurface="RGFRAISE"/>
+			
+
+
+<Surface name="RGF_RIFLE_RAISE_Kvlrhelm" animsurface="RGFRAISE"/>
 			<Surface name="RGF_RIFLE_AIM_Kvlrhelm" animsurface="RGFSTANDAIM"/>
 			<Surface name="RGF_RIFLE_HIP_Kvlrhelm" animsurface="RGF_HIP_AIM"/>
 			<Surface name="RGF_RIFLE_CR_AIM_Kvlrhelm" animsurface="RGFCROUCHAIM"/>
@@ -1869,9 +1857,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Kvlrhelm" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Kvlrhelm" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Kvlrhelm" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Kvlrhelm" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Kvlrhelm" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Kvlrhelm" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Kvlrhelm" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Kvlrhelm" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Kvlrhelm" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Kvlrhelm" animsurface="RGFLOB"/>
@@ -1898,8 +1886,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Kvlrhelm" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Kvlrhelm" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Kvlrhelm" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Kvlrhelm" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Kvlrhelm" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Kvlrhelm" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Kvlrhelm" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Kvlrhelm" animsurface="RGFKICKSN"/>
@@ -1943,7 +1932,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Spechelm" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Spechelm" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Spechelm" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Spechelm" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Spechelm" animsurface="RGFSHOOT_LOW"/>
@@ -1961,10 +1949,10 @@
 			<Surface name="RGF_RIFLE_CROUCH_Spechelm" animsurface="RGFCROUCHING"/>
 			<Surface name="RGF_RIFLE_SWAT_Spechelm" animsurface="RGFSNEAKING"/>
 			<Surface name="RGF_RIFLE_WALK_Spechelm" animsurface="RGFWALK_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Spechelm" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_CROUCHWALK_Spechelm" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Spechelm" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_RIFLE_RAISE_Spechelm" animsurface="RGFRAISE"/>
+			
+
+
+<Surface name="RGF_RIFLE_RAISE_Spechelm" animsurface="RGFRAISE"/>
 			<Surface name="RGF_RIFLE_AIM_Spechelm" animsurface="RGFSTANDAIM"/>
 			<Surface name="RGF_RIFLE_HIP_Spechelm" animsurface="RGF_HIP_AIM"/>
 			<Surface name="RGF_RIFLE_CR_AIM_Spechelm" animsurface="RGFCROUCHAIM"/>
@@ -2015,9 +2003,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Spechelm" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Spechelm" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Spechelm" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Spechelm" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Spechelm" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Spechelm" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Spechelm" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Spechelm" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Spechelm" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Spechelm" animsurface="RGFLOB"/>
@@ -2044,8 +2032,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Spechelm" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Spechelm" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Spechelm" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Spechelm" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Spechelm" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Spechelm" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Spechelm" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Spechelm" animsurface="RGFKICKSN"/>
@@ -2089,7 +2078,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_SWAThelm" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_SWAThelm" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_SWAThelm" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_SWAThelm" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_SWAThelm" animsurface="RGFSHOOT_LOW"/>
@@ -2107,10 +2095,10 @@
 			<Surface name="RGF_RIFLE_CROUCH_SWAThelm" animsurface="RGFCROUCHING"/>
 			<Surface name="RGF_RIFLE_SWAT_SWAThelm" animsurface="RGFSNEAKING"/>
 			<Surface name="RGF_RIFLE_WALK_SWAThelm" animsurface="RGFWALK_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_CROUCH_SWAThelm" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_CROUCHWALK_SWAThelm" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_SWAThelm" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_RIFLE_RAISE_SWAThelm" animsurface="RGFRAISE"/>
+			
+
+
+<Surface name="RGF_RIFLE_RAISE_SWAThelm" animsurface="RGFRAISE"/>
 			<Surface name="RGF_RIFLE_AIM_SWAThelm" animsurface="RGFSTANDAIM"/>
 			<Surface name="RGF_RIFLE_HIP_SWAThelm" animsurface="RGF_HIP_AIM"/>
 			<Surface name="RGF_RIFLE_CR_AIM_SWAThelm" animsurface="RGFCROUCHAIM"/>
@@ -2161,9 +2149,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_SWAThelm" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_SWAThelm" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_SWAThelm" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_SWAThelm" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_SWAThelm" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_SWAThelm" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_SWAThelm" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_SWAThelm" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_SWAThelm" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_SWAThelm" animsurface="RGFLOB"/>
@@ -2190,8 +2178,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_SWAThelm" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_SWAThelm" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_SWAThelm" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_SWAThelm" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_SWAThelm" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_SWAThelm" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_SWAThelm" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_SWAThelm" animsurface="RGFKICKSN"/>
@@ -2235,7 +2224,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Twahelm" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Twahelm" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Twahelm" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Twahelm" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Twahelm" animsurface="RGFSHOOT_LOW"/>
@@ -2253,10 +2241,10 @@
 			<Surface name="RGF_RIFLE_CROUCH_Twahelm" animsurface="RGFCROUCHING"/>
 			<Surface name="RGF_RIFLE_SWAT_Twahelm" animsurface="RGFSNEAKING"/>
 			<Surface name="RGF_RIFLE_WALK_Twahelm" animsurface="RGFWALK_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Twahelm" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_CROUCHWALK_Twahelm" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Twahelm" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_RIFLE_RAISE_Twahelm" animsurface="RGFRAISE"/>
+			
+
+
+<Surface name="RGF_RIFLE_RAISE_Twahelm" animsurface="RGFRAISE"/>
 			<Surface name="RGF_RIFLE_AIM_Twahelm" animsurface="RGFSTANDAIM"/>
 			<Surface name="RGF_RIFLE_HIP_Twahelm" animsurface="RGF_HIP_AIM"/>
 			<Surface name="RGF_RIFLE_CR_AIM_Twahelm" animsurface="RGFCROUCHAIM"/>
@@ -2307,9 +2295,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Twahelm" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Twahelm" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Twahelm" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Twahelm" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Twahelm" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Twahelm" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Twahelm" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Twahelm" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Twahelm" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Twahelm" animsurface="RGFLOB"/>
@@ -2336,8 +2324,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Twahelm" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Twahelm" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Twahelm" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Twahelm" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Twahelm" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Twahelm" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Twahelm" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Twahelm" animsurface="RGFKICKSN"/>
@@ -2381,7 +2370,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_Dynhelm" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_Dynhelm" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_Dynhelm" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_Dynhelm" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_Dynhelm" animsurface="RGFSHOOT_LOW"/>
@@ -2399,10 +2387,10 @@
 			<Surface name="RGF_RIFLE_CROUCH_Dynhelm" animsurface="RGFCROUCHING"/>
 			<Surface name="RGF_RIFLE_SWAT_Dynhelm" animsurface="RGFSNEAKING"/>
 			<Surface name="RGF_RIFLE_WALK_Dynhelm" animsurface="RGFWALK_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_CROUCH_Dynhelm" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_CROUCHWALK_Dynhelm" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_Dynhelm" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_RIFLE_RAISE_Dynhelm" animsurface="RGFRAISE"/>
+			
+
+
+<Surface name="RGF_RIFLE_RAISE_Dynhelm" animsurface="RGFRAISE"/>
 			<Surface name="RGF_RIFLE_AIM_Dynhelm" animsurface="RGFSTANDAIM"/>
 			<Surface name="RGF_RIFLE_HIP_Dynhelm" animsurface="RGF_HIP_AIM"/>
 			<Surface name="RGF_RIFLE_CR_AIM_Dynhelm" animsurface="RGFCROUCHAIM"/>
@@ -2453,9 +2441,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_Dynhelm" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_Dynhelm" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_Dynhelm" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_Dynhelm" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_Dynhelm" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_Dynhelm" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_Dynhelm" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_Dynhelm" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_Dynhelm" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_Dynhelm" animsurface="RGFLOB"/>
@@ -2482,8 +2470,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_Dynhelm" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_Dynhelm" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_Dynhelm" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_Dynhelm" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_Dynhelm" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_Dynhelm" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_Dynhelm" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_Dynhelm" animsurface="RGFKICKSN"/>
@@ -2527,7 +2516,6 @@
 			<Surface name="RGF_RIFLE_PRN_COWER_HELMET" animsurface="RGF_COWER_PRONE"/>
 			<Surface name="RGF_RIFLE_KICKDOOR_HELMET" animsurface="RGFKICKDOOR"/>
 			<!--
-<Surface name="RGF_RIFLE_LOOK_HELMET" animsurface="RGF_LOOK" />
 -->
 			<Surface name="RGF_RIFLE_DRUNK_HELMET" animsurface="RGFDRUNK"/>
 			<Surface name="RGF_RIFLE_LOW_HELMET" animsurface="RGFSHOOT_LOW"/>
@@ -2539,8 +2527,7 @@
 			<Surface name="RGF_CROWBAR_CR_HIT_HELMET" animsurface="RGFPUNCHLOW" />
 		</LayerProp>
 <LayerProp filter="Helmet">
-			<Surface name="RGF_RIFLE_WALK_CROUCH_HELMET" animsurface="RGFCROUCH_R_RDY"/>
-			<Surface name="RGF_RIFLE_WALK_HELMET" animsurface="RGFWALK_R_RDY"/>
+<Surface name="RGF_RIFLE_WALK_HELMET" animsurface="RGFWALK_R_RDY"/>
 			<Surface name="RGF_RIFLE_IDLE_HELMET" animsurface="RGFSTANDING"/>
 			<Surface name="RGF_BASICWALK_HELMET" animsurface="RGFWALKING"/>
 			<Surface name="RGF_RUNNING_HELMET" animsurface="RGFRUNNING"/>
@@ -2553,9 +2540,9 @@
 			<Surface name="RGF_RIFLE_CR_AIM_HELMET" animsurface="RGFCROUCHAIM"/>
 			<Surface name="RGF_RIFLE_PRONE_HELMET" animsurface="RGFPRONE"/>
 			<Surface name="RGF_RIFLE_HIT_HELMET" animsurface="RGFRHIT"/>
-			<Surface name="RGF_CROUCHWALK_HELMET" animsurface="RGFCROUCH_P_RDY"/>
-			<Surface name="RGF_CROUCHWALK_DUAL_HELMET" animsurface="RGFCROUCH_D_RDY"/>
-			<Surface name="RGF_HOP_HELMET" animsurface="RGFHOPFENCE"/>
+			
+
+<Surface name="RGF_HOP_HELMET" animsurface="RGFHOPFENCE"/>
 			<Surface name="RGF_HOP_HELMET" animsurface="RGFJUMPWINDOWS"/>
 			<Surface name="RGF_PUNCH_HELMET" animsurface="RGFPUNCH"/>
 			<Surface name="RGF_IDLE_HELMET" animsurface="RGFNOTHING_STD"/>
@@ -2599,9 +2586,9 @@
 			<Surface name="RGF_EMPTY_DIEFBH_HELMET" animsurface="RGFHITHARD"/>
 			<Surface name="RGF_EMPTY_DIEFBHB_HELMET" animsurface="RGFHITHARDBLOOD"/>
 			<Surface name="RGF_RIFLE_WALK_HURT_HELMET" animsurface="RGFHURTWALKINGR"/>
-			<Surface name="RGF_RIFLE_BAYONET_HELMET" animsurface="RGFBAYONET_S_S"/>
-			<Surface name="RGF_RIFLE_BAYONET_L_HELMET" animsurface="RGFBAYONET_S_P"/>
-			<Surface name="RGF_EMPTY_DODGE_HELMET" animsurface="RGFDODGE"/>
+			
+
+<Surface name="RGF_EMPTY_DODGE_HELMET" animsurface="RGFDODGE"/>
 			<Surface name="RGF_EMPTY_THROW_HELMET" animsurface="RGFTHROW"/>
 			<Surface name="RGF_EMPTY_THROW_G_HELMET" animsurface="RGFSTHRG"/>
 			<Surface name="RGF_EMPTY_LOB_HELMET" animsurface="RGFLOB"/>
@@ -2628,8 +2615,9 @@
 			<Surface name="RGF_RIFLE_WALK_HURT_HELMET" animsurface="RGFHURTWALKINGN"/>
 			<Surface name="RGF_EMPTY_FALL_HELMET" animsurface="RGFFALL"/>
 			<Surface name="RGF_EMPTY_FALLFWD_HELMET" animsurface="RGFFALLF"/>
-			<!--<Surface name="RGF_EMPTY_KARATELK_HELMET" animsurface="RGFLOWKICK" />
-			<Surface name="RGF_EMPTY_KARATESPINK_HELMET" animsurface="RGFSPINKICK" />-->
+			<!--
+
+-->
 			<Surface name="RGF_LAW_HELMET" animsurface="RGFROCKET"/>
 			<Surface name="RGF_LAW_CR_HELMET" animsurface="RGFCRROCKET"/>
 			<Surface name="RGF_EMPTY_KICKSAND_HELMET" animsurface="RGFKICKSN"/>
