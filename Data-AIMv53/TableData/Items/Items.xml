@@ -1405,7 +1405,7 @@
 		<ItemSize>7</ItemSize>
 		<usPrice>822</usPrice>
 		<ubCoolness>3</ubCoolness>
-		<bReliability>2</bReliability>
+		<bReliability>4</bReliability>
 		<bRepairEase>3</bRepairEase>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
@@ -1443,6 +1443,7 @@
 		<usPrice>934</usPrice>
 		<ubCoolness>5</ubCoolness>
 		<bRepairEase>-2</bRepairEase>
+		<bReliability>1</bReliability>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -9445,6 +9446,7 @@
 		<usPrice>902</usPrice>
 		<ubCoolness>4</ubCoolness>
 		<bRepairEase>1</bRepairEase>
+		<bReliability>2</bReliability>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -9607,7 +9609,7 @@
 		<ItemSize>5</ItemSize>
 		<usPrice>1267</usPrice>
 		<ubCoolness>3</ubCoolness>
-		<bReliability>0</bReliability>
+		<bReliability>-1</bReliability>
 		<bRepairEase>-1</bRepairEase>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
@@ -19192,6 +19194,7 @@
 		<usPrice>839</usPrice>
 		<ubCoolness>2</ubCoolness>
 		<bRepairEase>3</bRepairEase>
+		<bReliability>2</bReliability>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -19799,7 +19802,8 @@
 		<ItemSize>8</ItemSize>
 		<usPrice>740</usPrice>
 		<ubCoolness>3</ubCoolness>
-		<bRepairEase>-1</bRepairEase>
+		<bRepairEase>2</bRepairEase>
+		<bReliability>3</bReliability>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -19869,7 +19873,8 @@
 		<ItemSize>6</ItemSize>
 		<usPrice>1850</usPrice>
 		<ubCoolness>5</ubCoolness>
-		<bRepairEase>-1</bRepairEase>
+		<bRepairEase>-3</bRepairEase>
+		<bReliability>1</bReliability>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -20430,7 +20435,8 @@
 		<ItemSize>5</ItemSize>
 		<usPrice>630</usPrice>
 		<ubCoolness>2</ubCoolness>
-		<bRepairEase>3</bRepairEase>
+		<bRepairEase>4</bRepairEase>
+		<bReliability>5</bReliability>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -20438,7 +20444,7 @@
 		<Sinks>1</Sinks>
 		<ShowStatus>1</ShowStatus>
 		<BigGunList>1</BigGunList>
-		<TwoHanded>1</TwoHanded>
+		<TwoHanded>0</TwoHanded>
 		<BR_ROF>24</BR_ROF>
 		<spreadPattern>SawedoffSpread</spreadPattern>
 		<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
@@ -21244,6 +21250,7 @@
 		<usPrice>982</usPrice>
 		<ubCoolness>4</ubCoolness>
 		<bRepairEase>-2</bRepairEase>
+		<bReliability>2</bReliability>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -21291,6 +21298,8 @@
 		<ItemSize>4</ItemSize>
 		<usPrice>950</usPrice>
 		<ubCoolness>4</ubCoolness>
+		<bReliability>2</bReliability>
+		<bRepairEase>3</bRepairEase>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -21298,7 +21307,7 @@
 		<Sinks>1</Sinks>
 		<ShowStatus>1</ShowStatus>
 		<BigGunList>1</BigGunList>
-		<TwoHanded>1</TwoHanded>
+		<TwoHanded>0</TwoHanded>
 		<BR_NewInventory>1</BR_NewInventory>
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<BR_ROF>28</BR_ROF>
@@ -21664,6 +21673,8 @@
 		<ItemSize>7</ItemSize>
 		<usPrice>2010</usPrice>
 		<ubCoolness>6</ubCoolness>
+		<bReliability>1</bReliability>
+		<bRepairEase>-1</bRepairEase>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -21938,7 +21949,7 @@
 		<BigGunList>1</BigGunList>
 		<SciFi>1</SciFi>
 		<Electronic>1</Electronic>
-		<BR_ROF>800</BR_ROF>
+		<BR_ROF>750</BR_ROF>
 		<ToHitBonus>20</ToHitBonus>
 		<BestLaserRange>120</BestLaserRange>
 		<AimBonus>15</AimBonus>
@@ -22196,6 +22207,8 @@
 		<ItemSize>8</ItemSize>
 		<usPrice>1650</usPrice>
 		<ubCoolness>3</ubCoolness>
+		<bReliability>5</bReliability>
+		<bRepairEase>4</bRepairEase>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -22609,7 +22622,7 @@
 		<Metal>1</Metal>
 		<Sinks>1</Sinks>
 		<ShowStatus>1</ShowStatus>
-		<TwoHanded>1</TwoHanded>
+		<TwoHanded>0</TwoHanded>
 		<BigGunList>1</BigGunList>
 		<BR_NewInventory>1</BR_NewInventory>
 		<BR_UsedInventory>1</BR_UsedInventory>
@@ -22645,7 +22658,7 @@
 		<Metal>1</Metal>
 		<Sinks>1</Sinks>
 		<ShowStatus>1</ShowStatus>
-		<TwoHanded>1</TwoHanded>
+		<TwoHanded>0</TwoHanded>
 		<BigGunList>1</BigGunList>
 		<BR_ROF>35</BR_ROF>
 		<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
@@ -27368,7 +27381,7 @@
 		<ItemSize>7</ItemSize>
 		<usPrice>1400</usPrice>
 		<ubCoolness>4</ubCoolness>
-		<bReliability>1</bReliability>
+		<bReliability>3</bReliability>
 		<bRepairEase>1</bRepairEase>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
@@ -27406,7 +27419,7 @@
 		<ItemSize>8</ItemSize>
 		<usPrice>1460</usPrice>
 		<ubCoolness>5</ubCoolness>
-		<bReliability>1</bReliability>
+		<bReliability>3</bReliability>
 		<bRepairEase>1</bRepairEase>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
@@ -40814,6 +40827,7 @@
 		<ubCoolness>2</ubCoolness>
 		<bReliability>-4</bReliability>
 		<bRepairEase>-4</bRepairEase>
+		<TwoHanded>1</TwoHanded>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
 		<WaterDamages>0</WaterDamages>
@@ -55771,7 +55785,7 @@
 		<ShowStatus>1</ShowStatus>
 		<TwoHanded>1</TwoHanded>
 		<BigGunList>1</BigGunList>
-		<BR_ROF>800</BR_ROF>
+		<BR_ROF>750</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1009</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
@@ -55814,7 +55828,7 @@
 		<ShowStatus>1</ShowStatus>
 		<TwoHanded>1</TwoHanded>
 		<BigGunList>1</BigGunList>
-		<BR_ROF>800</BR_ROF>
+		<BR_ROF>750</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
 		<STAND_MODIFIERS />
