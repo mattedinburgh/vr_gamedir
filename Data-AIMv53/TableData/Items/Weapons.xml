@@ -18177,7 +18177,7 @@
 		<sLocknLoadSound>107</sLocknLoadSound>
 		<SilencedSound>157</SilencedSound>
 		<bBurstAP>7</bBurstAP>
-		<bAutofireShotsPerFiveAP>10</bAutofireShotsPerFiveAP>
+		<bAutofireShotsPerFiveAP>5</bAutofireShotsPerFiveAP>
 		<APsToReload>16</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>10</MaxDistForMessyDeath>
