@@ -70,7 +70,7 @@ def api_get(session: requests.Session, params: dict) -> dict:
     params["format"] = "json"
     params["maxlag"] = "5"
     for attempt in range(6):
-        r = session.get(COMMONS_API, params=params, timeout=60)
+        r = session.post(COMMONS_API, data=params, timeout=60)
         if r.ok:
             data = r.json()
             if "error" not in data:
@@ -98,6 +98,7 @@ def category_files(session: requests.Session, category: str) -> list[str]:
         if cont:
             params["cmcontinue"] = cont
         data = api_get(session, params)
+        time.sleep(0.75)
         out.extend(x["title"][5:] for x in data.get("query", {}).get("categorymembers", []))
         cont = data.get("continue", {}).get("cmcontinue")
         if not cont:
