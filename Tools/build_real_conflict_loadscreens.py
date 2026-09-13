@@ -128,8 +128,8 @@ def image_info(session: requests.Session, filename: str) -> dict | None:
 
 def image_info_batch(session: requests.Session, filenames: list[str]) -> dict[str, dict]:
     results: dict[str, dict] = {}
-    for start in range(0, len(filenames), 10):
-        batch = filenames[start:start + 10]
+    for start in range(0, len(filenames), 50):
+        batch = filenames[start:start + 50]
         data = api_get(
             session,
             {
@@ -145,7 +145,7 @@ def image_info_batch(session: requests.Session, filenames: list[str]) -> dict[st
             info = (page.get("imageinfo") or [None])[0]
             if title.startswith("File:") and info:
                 results[title[5:]] = info
-        time.sleep(0.5)
+        time.sleep(1.25)
     return results
 
 
