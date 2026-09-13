@@ -15851,7 +15851,7 @@
 		<uiIndex>2063</uiIndex>
 		<szWeaponName>S&amp;W M&amp;P15R</szWeaponName>
 		<ubWeaponClass>3</ubWeaponClass>
-		<ubWeaponType>6</ubWeaponType>
+		<ubWeaponType>4</ubWeaponType>
 		<ubCalibre>7</ubCalibre>
 		<ubReadyTime>7</ubReadyTime>
 		<ubShotsPer4Turns>14.81</ubShotsPer4Turns>
