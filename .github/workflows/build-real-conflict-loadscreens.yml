@@ -1,0 +1,49 @@
+name: Build real conflict loadscreens
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - install/all-2026-09-12
+    paths:
+      - Tools/build_real_conflict_loadscreens.py
+      - Tools/real_conflict_loadscreens.json
+      - .github/workflows/build-real-conflict-loadscreens.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install image tools
+        run: python -m pip install --disable-pip-version-check pillow requests
+
+      - name: Build archival loading screens
+        run: python Tools/build_real_conflict_loadscreens.py
+
+      - name: Commit generated game assets
+        shell: bash
+        run: |
+          if git diff --quiet -- Data-Vengeance/Loadscreens/RealConflict; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Data-Vengeance/Loadscreens/RealConflict
+          git commit -m "Add real-conflict loading screen photo batch"
+          git push
