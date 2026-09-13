@@ -42,6 +42,18 @@
     {
       "name": "Peruvian armed conflict",
       "primary_pool": "RURAL_MILITARY"
+    },
+    {
+      "name": "Nicaraguan Revolution",
+      "primary_pool": "JUNGLE_MILITARY"
+    },
+    {
+      "name": "Contras (Nicaragua)",
+      "primary_pool": "JUNGLE_MILITARY"
+    },
+    {
+      "name": "Operation Golden Pheasant",
+      "primary_pool": "AIRFIELD"
     }
   ],
   "seed_files": [
