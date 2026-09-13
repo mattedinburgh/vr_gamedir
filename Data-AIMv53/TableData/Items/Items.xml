@@ -9319,6 +9319,8 @@
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<BR_ROF>44</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
