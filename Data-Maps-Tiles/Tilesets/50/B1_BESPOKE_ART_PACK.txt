@@ -1,0 +1,26 @@
+B1 BESPOKE ORONEGRO ART PACK - PASS 1
+
+Direct in-game .b1tc replacements. No B1.dat changes.
+
+FACADES
+B1_BUILD_31 - faded turquoise worker housing: peeling plaster, humid streaks, lower-wall grime, branching cracks, exposed-brick patches and cement repairs.
+B1_BUILD_35 - faded ochre worker/commercial facades with the same coherent weathering language.
+B1_BUILD_36 - dusty salmon/brick-toned housing with exposed masonry and patch repairs.
+B1_BUILD_40 - pale green/dirty ivory concrete housing with water damage and age variation.
+
+ROOFS
+B1_W-ROOF2 - rusted corrugated metal, mismatched replacement sheets, corrosion and occasional perforations.
+B1_Oil_OROOF - darker refinery roof treatment with soot/oil exposure, rust and repairs.
+B1_Rooffan - faded blue-grey corrugated roofing with rust and patch plates.
+
+ROADS
+B1_ROADTLE2 - cracked, dirty, oil-stained road surfaces with dark worn/pothole patches and exposed aggregate.
+
+Compatibility preserved:
+- frame count
+- frame width/height
+- X/Y offsets
+- frame order
+- STI/JSD identity
+- JSD collision/structure data
+- map references and B1.dat
