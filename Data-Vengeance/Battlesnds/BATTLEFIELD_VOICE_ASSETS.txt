@@ -1,37 +1,55 @@
-Battlefield casualty voice assets
-=================================
+Battlefield reaction audio
+==========================
 
-Files:
-- m_medic.ogg
-- f_medic.ogg
+Purpose
+-------
+Event-driven battlefield speech and casualty audio for Vengeance Reloaded.
 
-Source:
-Kenney Voiceover Pack (2015)
+New CC0 recordings
+------------------
+30 distinct Kenney Voiceover Pack military callouts:
+- 15 male
+- 15 female
+
+Events/phrases:
+call_for_backup, cover_me, fire_in_the_hole, get_down, go_go_go, hold,
+look_out, medic, reloading, rpg, sniper, suppressing_fire,
+target_destroyed, target_engaged, watch_my_back.
+
+Locations:
+- Data-Vengeance/Voice/Battlefield/Male/
+- Data-Vengeance/Voice/Battlefield/Female/
+
+The earlier casualty implementation also keeps convenience copies:
+- Data-Vengeance/Battlesnds/m_medic.ogg
+- Data-Vengeance/Battlesnds/f_medic.ogg
+
+Source and license
+------------------
+Kenney Voiceover Pack
 https://kenney.nl/assets/voiceover-pack
+Creative Commons CC0 1.0 / public-domain dedication.
+Attribution is not required; provenance is retained here.
 
-License:
-Creative Commons CC0 1.0 / public domain dedication.
-Attribution is not required. Source retained here for provenance.
-
-Integration:
-The Vengeance casualty-audio code uses these clips only for generic/no-profile
-soldiers. Named mercenaries keep their original character voice and existing
-QUOTE_SERIOUSLY_WOUNDED dialogue.
-
-Engine integration:
+Event integration
+-----------------
 vr_source / install/all-2026-09-12
-- a00451333cae2ccca93444840c1d01c7d46af2cd - casualty battle sound IDs
-- 7f7c54990bb1528918daa7f84a781701c749852b - reactive casualty audio logic
-- 08c415fbf71e92901bedd6e436835d7491d5caac - casualty preload safety audit
+- a00451333cae2ccca93444840c1d01c7d46af2cd - casualty battle-sound IDs
+- 7f7c54990bb1528918daa7f84a781701c749852b - reactive casualty audio
+- 08c415fbf71e92901bedd6e436835d7491d5caac - casualty preload safety
+- b89d3aae77afa2d0055a177c6fd365321d6b3a31 - shared event-driven battlefield reaction router
+- a5624173b84a948d6181736d45853d55608c5d85 - bleeding/medic routing
 
-Shared battlefield reaction bank
---------------------------------
-Male bank: 15 CC0 event callouts imported from Kenney Voiceover Pack.
-Male batch 1: call_for_backup, cover_me, fire_in_the_hole, get_down.
-Male batch 2: go_go_go, hold, look_out, medic.
-Male batch 3: reloading, rpg, sniper, suppressing_fire.
-Male batch 4: target_destroyed, target_engaged, watch_my_back.
-Female batch 1: call_for_backup, cover_me, fire_in_the_hole, get_down.
-Female batch 2: go_go_go, hold, look_out, medic.
-Female batch 3: reloading, rpg, sniper, suppressing_fire.
-Female batch 4: target_destroyed, target_engaged, watch_my_back.
+vr_gamedir / install/all-2026-09-12
+- ea95463c0185c4a3dcae048915cf6073f0bf4455 - event-frequency tuning
+
+Design
+------
+The shared CC0 bank is an occasional alternative to Vengeance's native
+per-class/per-voice taunts, not a replacement. The release data already contains
+5,742 voice-taunt OGG files; 4,803 are in combat-event categories. This gives the
+event router a very large reaction pool without duplicating or padding the mod
+with irrelevant announcer clips.
+
+A 1.8 second sector-wide gate prevents the shared military callouts from
+overlapping into noise. Existing per-soldier taunt delays remain active.
