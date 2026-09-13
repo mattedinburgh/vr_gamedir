@@ -30765,7 +30765,6 @@
 		<BrightLightVisionRangeBonus>70</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>70</PercentTunnelVision>
 		<ScopeMagFactor>7</ScopeMagFactor>
-		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 		<STAND_MODIFIERS>
@@ -36295,7 +36294,6 @@
 		<PercentTunnelVision>50</PercentTunnelVision>
 		<ScopeMagFactor>5</ScopeMagFactor>
 		<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
-		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 		<STAND_MODIFIERS>
@@ -36340,7 +36338,6 @@
 		<BrightLightVisionRangeBonus>40</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>40</PercentTunnelVision>
 		<ScopeMagFactor>4</ScopeMagFactor>
-		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 		<STAND_MODIFIERS>
@@ -36385,7 +36382,6 @@
 		<BrightLightVisionRangeBonus>40</BrightLightVisionRangeBonus>
 		<PercentTunnelVision>40</PercentTunnelVision>
 		<ScopeMagFactor>4</ScopeMagFactor>
-		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 		<STAND_MODIFIERS>
@@ -55819,7 +55815,6 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1009</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
-		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 		<PercentReadyTimeAPReduction>30</PercentReadyTimeAPReduction>
@@ -55869,7 +55864,6 @@
 		<BR_ROF>750</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
-		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 		<PercentReadyTimeAPReduction>30</PercentReadyTimeAPReduction>
@@ -59415,7 +59409,6 @@
 		<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
 		<DamageChance>9</DamageChance>
 		<DirtIncreaseFactor>19.0</DirtIncreaseFactor>
-		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 		<STAND_MODIFIERS>
