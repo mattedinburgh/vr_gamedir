@@ -53844,7 +53844,7 @@
 		<BigGunList>1</BigGunList>
 		<BR_NewInventory>1</BR_NewInventory>
 		<BR_UsedInventory>0</BR_UsedInventory>
-		<BR_ROF>24</BR_ROF>
+		<BR_ROF>650</BR_ROF>
 		<HideMuzzleFlash>1</HideMuzzleFlash>
 		<DefaultAttachment>209</DefaultAttachment>
 		<DefaultAttachment>999</DefaultAttachment>
