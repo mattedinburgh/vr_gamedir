@@ -1,0 +1,8 @@
+B1 ORONEGRO REGIONAL SIGNAGE - PASS 7
+
+True-colour wall-decal siblings for B1's existing sign/decal slots:
+- ACASIGN.b1tc: larger weathered industrial signs with Spanish labels such as PELIGRO, PETROLEO, NO FUMAR, TALLER, ENTRADA, BODEGA and SALIDA.
+- A-SIGN1.b1tc: smaller local/industrial signs: ALTO, ACEITE, PRIVADO, OBREROS, TALLER, BODEGA, etc.
+- G-DECAL1.b1tc: small faded local wall markings/poster-style cues.
+
+All preserve the existing map references; they are pixel-only visual replacements for the authored wall-decal frames.
