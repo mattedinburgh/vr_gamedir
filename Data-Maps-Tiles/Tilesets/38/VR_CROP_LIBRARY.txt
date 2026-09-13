@@ -1,0 +1,18 @@
+VR REUSABLE CROP LIBRARY
+========================
+True-colour B1TC v1 visual sprite families. 10 frames per family so each family
+fits a standard JA2 decoration/debris tile type without increasing tile enums.
+
+VR_CROP_MASTER   Mixed active sheet: 3 dense, 2 medium, sparse, stubble,
+                 trampled, field edge, wet/reed crop.
+VR_CROP_DENSE    Very thick mature crop; overlapping tall stalks and seed heads.
+VR_CROP_ROWS     Ordered planted rows with alternating diagonal perspective.
+VR_CROP_MEDIUM   Normal healthy field crop.
+VR_CROP_SPARSE   Thin / failed / drought-damaged crop.
+VR_CROP_STUBBLE  Harvested field, short cut stalks and loose straw.
+VR_CROP_TRAMPLED Flattened plants with a visible passage/vehicle/foot lane.
+VR_CROP_EDGE     Dense-to-open transition pieces for field boundaries.
+VR_CROP_WET      Tall humid/wetland crop and shallow wet ground accents.
+
+All are visual-only unless a future sector explicitly pairs them with JSD.
+They are intended to be reusable across A3 and future rural/farm sectors.
