@@ -17,3 +17,8 @@ Integration:
 The Vengeance casualty-audio code uses these clips only for generic/no-profile
 soldiers. Named mercenaries keep their original character voice and existing
 QUOTE_SERIOUSLY_WOUNDED dialogue.
+
+Engine integration:
+vr_source / install/all-2026-09-12
+- a00451333cae2ccca93444840c1d01c7d46af2cd - casualty battle sound IDs
+- 7f7c54990bb1528918daa7f84a781701c749852b - reactive casualty audio logic
