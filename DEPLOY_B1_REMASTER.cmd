@@ -50,7 +50,14 @@ if %RC% GEQ 8 (
 )
 
 rem B1 also uses these oil-rig-specific visual families.
-for %%F in (Oil_decal.sti Oil_decal.b1tc Oil_Debris.sti Oil_Debris.b1tc) do (
+for %%F in (
+    Oil_decal.sti Oil_decal.b1tc
+    Oil_Debris.sti Oil_Debris.b1tc
+    Oil_Crane2.sti Oil_Crane2.b1tc
+    Oil_Cranes.sti Oil_Cranes.b1tc
+    Oil_furn.sti Oil_furn.b1tc
+    Oil_lamp.sti Oil_lamp.b1tc
+) do (
     if exist "%SRC%\%%F" copy /Y "%SRC%\%%F" "%DST%\%%F" >nul
 )
 
@@ -63,6 +70,10 @@ for %%F in (
     B1_WELFLOR3.b1tc
     B1_BUILD_36.b1tc
     B1_W-ROOF2.b1tc
+    Oil_Crane2.b1tc
+    Oil_Cranes.b1tc
+    Oil_furn.b1tc
+    Oil_lamp.b1tc
 ) do (
     if not exist "%DST%\%%F" (
         echo   MISSING: %%F
