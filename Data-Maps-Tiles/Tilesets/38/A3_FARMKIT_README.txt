@@ -16,3 +16,12 @@ A3_LANDMARKS.b1tc     16  scarecrow, hay, tank, sign, crate stack, lean-to, trou
 The source-side A3 farm composer places these as reusable multi-tile visual
 blocks. No JSD is attached: they deliberately do not alter collision, cover,
 LOS, pathfinding, room IDs, quest grids or authored A3 geometry.
+
+
+Reusable crop master library
+----------------------------
+A larger sector-agnostic crop set now lives in:
+Data-Maps-Tiles/FarmKit/
+
+It includes low, medium, thick/tall, tropical broadleaf, dry/dead, trampled and row-transition crop families.
+Use those master B1TC files for future rural sectors instead of creating A3-specific copies unless a tileset profile needs one.
