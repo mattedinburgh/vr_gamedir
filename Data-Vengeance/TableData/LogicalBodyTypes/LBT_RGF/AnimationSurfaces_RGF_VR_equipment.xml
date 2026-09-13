@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<AnimSurfaces>
 <AnimSurface name="RGF_EMPTY_RUN_eod_v" file="Anims\LOBOT\RGF\F_N_RUN_eod_v.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="12" profile="-1" />
 <AnimSurface name="RGF_DUAL_SDSTP_eod_v" file="Anims\LOBOT\RGF\F_DBL_SDSP_eod_v.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="12" profile="-1" />
 <AnimSurface name="RGF_PISTOL_SDSTP_eod_v" file="Anims\LOBOT\RGF\F_P_SDSP_eod_v.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="12" profile="-1" />
@@ -1963,4 +1961,3 @@
 <AnimSurface name="RGF_HELIDROP_HELMET" file="Anims\LOBOT\RGF\f_heli_helmet.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "1" framesperdir="70" profile="-1" />
 <AnimSurface name="RGF_CROUCH_MORTAR_HELMET" file="Anims\LOBOT\RGF\F_MORTAR_helmet.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_CROUCH.JSD" directions = "8" framesperdir="51" profile="-1" />
 <AnimSurface name="RGF_SLAP_HELMET" file="Anims\LOBOT\RGF\F_N_SLAP_helmet.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="37" profile="-1" />
-</AnimSurfaces>
