@@ -58326,7 +58326,7 @@
 		<szBRName>Erma MP40</szBRName>
 		<szBRDesc>The Classic WWII SMG from the Nazis has a relatively low rate of fire making this gun easily controllable in full auto.</szBRDesc>
 		<usItemClass>2</usItemClass>
-		<ubClassIndex>2103</ubClassIndex>
+		<ubClassIndex>2132</ubClassIndex>
 		<AvailableAttachmentPoint>4096</AvailableAttachmentPoint>			<!-- Muzzle - Flash Suppressor -->
 		<AvailableAttachmentPoint>524288</AvailableAttachmentPoint>			<!-- Sights - Aperture Sights -->
 		<AvailableAttachmentPoint>34359738368</AvailableAttachmentPoint>	<!-- Internal - Rod and Spring -->
@@ -58367,7 +58367,7 @@
 		<szBRDesc>NOT FOR SALE.</szBRDesc>
 		<usItemClass>4</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>
-		<ubClassIndex>3097</ubClassIndex>
+		<ubClassIndex>2133</ubClassIndex>
 		<ubCursor>4</ubCursor>
 		<ubGraphicType>6</ubGraphicType>
 		<ubGraphicNum>417</ubGraphicNum>
@@ -59269,7 +59269,7 @@
 		<szBRName>Hunter Knife</szBRName>
 		<szBRDesc>Russian Hunter Knife.</szBRDesc>
 		<usItemClass>4</usItemClass>
-		<ubClassIndex>37</ubClassIndex>
+		<ubClassIndex>2150</ubClassIndex>
 		<ubCursor>4</ubCursor>
 		<ubGraphicType>4</ubGraphicType>
 		<ubGraphicNum>687</ubGraphicNum>
@@ -59295,7 +59295,7 @@
 		<szBRDesc>Also known as the Tanker Garand, the T26 arose from requests by various Army combat commands for a shortened version of the standard M1 rifle for use in jungle or mobile warfare.</szBRDesc>
 		<usItemClass>2</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>
-		<ubClassIndex>683</ubClassIndex>
+		<ubClassIndex>2151</ubClassIndex>
 		<AvailableAttachmentPoint>8</AvailableAttachmentPoint>		<!-- Laser - LAM -->
 		<AvailableAttachmentPoint>64</AvailableAttachmentPoint>		<!-- UB - Bayonet -->
 		<AvailableAttachmentPoint>4096</AvailableAttachmentPoint>	<!-- Muzzle - Flash Suppressor -->
@@ -59381,7 +59381,7 @@
 		<szBRName>Beretta ARX160</szBRName>
 		<szBRDesc>Created for Italy's Soldato Futuro program, this modular weapon system makes use of Polymers and a lightweight chrome-lined barrel as well as a short-stroke piston system to reduce recoil.</szBRDesc>
 		<usItemClass>2</usItemClass>
-		<ubClassIndex>2124</ubClassIndex>
+		<ubClassIndex>2153</ubClassIndex>
 		<AvailableAttachmentPoint>4</AvailableAttachmentPoint>	   <!-- Laser - Small -->
 		<AvailableAttachmentPoint>8</AvailableAttachmentPoint>			<!-- Laser - LAM -->
 		<AvailableAttachmentPoint>16</AvailableAttachmentPoint>			<!-- Laser - Rifle Lam -->
