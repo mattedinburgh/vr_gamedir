@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "target_width": 1920,
+  "target_height": 1080,
+  "max_total": 120,
+  "max_per_category": 36,
+  "min_width": 1200,
+  "min_height": 700,
+  "categories": [
+    {
+      "name": "Operation Just Cause",
+      "primary_pool": "TOWN_MILITARY"
+    },
+    {
+      "name": "Operation Urgent Fury",
+      "primary_pool": "JUNGLE_MILITARY"
+    },
+    {
+      "name": "Salvadoran Civil War",
+      "primary_pool": "RURAL_MILITARY"
+    },
+    {
+      "name": "Peruvian armed conflict",
+      "primary_pool": "RURAL_MILITARY"
+    }
+  ],
+  "seed_files": [
+    {
+      "file": "US Army Special Forces helping with Colombian parachuters.jpg",
+      "primary_pool": "AIRFIELD",
+      "date": "1985-06-29",
+      "note": "Joint U.S.-Colombian counterinsurgency exercise, Colombia"
+    },
+    {
+      "file": "US Army Special Forces inspect Clombian paratroopers.jpg",
+      "primary_pool": "AIRFIELD",
+      "date": "1985-06-29",
+      "note": "Joint U.S.-Colombian counterinsurgency exercise, Colombia"
+    },
+    {
+      "file": "Defense.gov News Photo 100802-M-9093S-030 - U.S. Marine Corps Cpl. Blaho instructs his squad on where to cross a river while training with Colombian marines on jungle warfare in Colombia on.jpg",
+      "primary_pool": "JUNGLE",
+      "date": "2010-08-02",
+      "note": "Jungle warfare training with Colombian marines"
+    },
+    {
+      "file": "Salvadoran troops exit from a US Army CH-47 Chinook helicopter while practicing helicopter assault tactics with members of the 7th Special Forces during Exercise GRANADERO I DF-ST-85-13156.jpg",
+      "primary_pool": "AIRFIELD",
+      "date": "1984-05-14",
+      "note": "Salvadoran troops during Exercise Granadero I"
+    },
+    {
+      "file": "PanamaJustCause1991.jpg",
+      "primary_pool": "ARMOR",
+      "date": "1989-12-20",
+      "note": "Operation Just Cause"
+    },
+    {
+      "file": "US Marines at Grenville town Grenada 1983.JPEG",
+      "primary_pool": "TOWN_MILITARY",
+      "date": "1983-10-25",
+      "note": "Operation Urgent Fury"
+    },
+    {
+      "file": "82nd Airborne soldiers on Grenada 1983.jpg",
+      "primary_pool": "JUNGLE_MILITARY",
+      "date": "1983-10-25",
+      "note": "Operation Urgent Fury"
+    },
+    {
+      "file": "UH-60As over Port Salines airport Grenada 1983.JPEG",
+      "primary_pool": "AIRFIELD",
+      "date": "1983-10-25",
+      "note": "Operation Urgent Fury"
+    },
+    {
+      "file": "St.GeorgeGrenada1983.jpg",
+      "primary_pool": "COAST_TOWN",
+      "date": "1983-10-31",
+      "note": "St. George's, Grenada during Operation Urgent Fury"
+    },
+    {
+      "file": "Madden Dam.jpg",
+      "primary_pool": "INFRASTRUCTURE",
+      "date": "1989-12-31",
+      "note": "Operation Just Cause historical photo"
+    },
+    {
+      "file": "Salvadoran Army 4th Brigade barracks after an attack in 1983.png",
+      "primary_pool": "RUINS_MILITARY",
+      "date": "1983-12",
+      "note": "Salvadoran Civil War"
+    },
+    {
+      "file": "Ejército patrulla las calles en el Limazo de 1975.jpg",
+      "primary_pool": "TOWN_MILITARY",
+      "date": "1975-02-05",
+      "note": "Peruvian Army patrol during the Limazo"
+    }
+  ],
+  "exclude_title_terms": [
+    "map",
+    "flag",
+    "logo",
+    "badge",
+    "insignia",
+    "medal",
+    "memorial",
+    "portrait",
+    "poster",
+    "diagram",
+    "chart",
+    "grave",
+    "cemetery",
+    "book cover",
+    "stamp",
+    "coin",
+    "dead",
+    "wounded",
+    "casualty",
+    "casualties",
+    "body",
+    "bodies",
+    "corpse",
+    "killed",
+    "injured",
+    "funeral"
+  ]
+}
