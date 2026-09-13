@@ -15282,7 +15282,7 @@
 		<ubWeaponType>6</ubWeaponType>
 		<ubCalibre>10</ubCalibre>
 		<ubReadyTime>14</ubReadyTime>
-		<ubShotsPer4Turns>14.00</ubShotsPer4Turns>
+		<ubShotsPer4Turns>12.5</ubShotsPer4Turns>
 		<ubBurstPenalty>7</ubBurstPenalty>
 		<ubBulletSpeed>22</ubBulletSpeed>
 		<ubImpact>32</ubImpact>
@@ -15307,7 +15307,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<AutoPenalty>8</AutoPenalty>
 		<ManualReloadSound>572</ManualReloadSound>
-		<nAccuracy>75</nAccuracy>
+		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
