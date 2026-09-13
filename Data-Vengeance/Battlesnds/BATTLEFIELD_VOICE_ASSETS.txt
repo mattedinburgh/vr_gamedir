@@ -32,3 +32,4 @@ Male batch 2: go_go_go, hold, look_out, medic.
 Male batch 3: reloading, rpg, sniper, suppressing_fire.
 Male batch 4: target_destroyed, target_engaged, watch_my_back.
 Female batch 1: call_for_backup, cover_me, fire_in_the_hole, get_down.
+Female batch 2: go_go_go, hold, look_out, medic.
