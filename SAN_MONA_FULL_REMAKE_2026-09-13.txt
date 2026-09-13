@@ -1,0 +1,13 @@
+SAN MONA FULL REMAKE — 2026-09-13
+Playable-layout remake, not a palette-only remaster.
+
+C5: six new roofed buildings with real floors/wall collision/room IDs; back-lot plaza; street cover; trucks; streetlamps.
+C6: five intact new buildings plus one burned roofless ruin; new square; cover; trucks; motorcycles.
+D5: seven new LAWLESS buildings; Kingpin-controlled forecourt; vehicles, motorcycles, hard cover.
+D4: four mine offices/sheds plus two ruins; staging yard; industrial cover/equipment.
+D4_B1: new 4x4 side chamber carved from cave collision.
+D5_B1: new 4x4 side chamber plus richer stash-area detail.
+
+Protected: Tony/Hans/Shady Lady/Maria/Angel/boxing/Kingpin/mine/stash landmark structures are not relocated.
+All data after room information is byte-for-byte preserved: items, lights, map info, soldier/NPC placements, exit grids, door tables, edgepoints and schedules.
+Map dimensions/tileset IDs are unchanged and every per-grid layer count remains within the 4-bit format limit.
