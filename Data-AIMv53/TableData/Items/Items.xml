@@ -567,9 +567,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>20.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -9847,9 +9847,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>22.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -16727,9 +16727,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>50.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -17122,9 +17122,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>20.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -20539,9 +20539,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>24.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -20585,9 +20585,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>24.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -20631,9 +20631,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>24.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -22020,9 +22020,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>12.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -22065,9 +22065,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>12.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -22109,9 +22109,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>12.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -22153,9 +22153,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>12.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -32433,9 +32433,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>14.6</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -32900,9 +32900,9 @@
 		<DamageChance>10</DamageChance>
 		<DirtIncreaseFactor>15.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58585,9 +58585,9 @@
 		<DamageChance>12</DamageChance>
 		<DirtIncreaseFactor>20.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58633,9 +58633,9 @@
 		<DamageChance>12</DamageChance>
 		<DirtIncreaseFactor>20.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58982,9 +58982,9 @@
 		<DamageChance>12</DamageChance>
 		<DirtIncreaseFactor>20.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -59717,9 +59717,9 @@
 		<DamageChance>12</DamageChance>
 		<DirtIncreaseFactor>21.0</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
-			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
-			<PercentCounterForceAccuracy>-20</PercentCounterForceAccuracy>
-			<AimLevels>1</AimLevels>
+			<PercentMaxCounterForce>0</PercentMaxCounterForce>
+			<PercentCounterForceAccuracy>0</PercentCounterForceAccuracy>
+			<AimLevels>0</AimLevels>
 		</STAND_MODIFIERS>
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
