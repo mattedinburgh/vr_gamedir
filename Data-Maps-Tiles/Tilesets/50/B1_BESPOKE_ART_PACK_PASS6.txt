@@ -1,0 +1,8 @@
+B1 ORONEGRO STREET DETAIL PACK - PASS 6
+
+Three additional B1-only visual families:
+- B1_CONCRETE_RUBBLE.b1tc: broken concrete chunks, cracks and protruding rusty rebar.
+- B1_WOOD_PALLETS.b1tc: intact/broken pallets, rough boards and damaged timber.
+- B1_STREET_JUNK.b1tc: tyres, pipe offcuts, rusted sheet metal, cable spools, bottles/cans/plastic.
+
+Designed for the currently-unused DEBRISROCKS/DEBRISWOOD/DEBRISMISC slots in B1. Visual-only; no JSD structure/collision.
