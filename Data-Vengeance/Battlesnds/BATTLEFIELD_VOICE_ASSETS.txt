@@ -22,3 +22,4 @@ Engine integration:
 vr_source / install/all-2026-09-12
 - a00451333cae2ccca93444840c1d01c7d46af2cd - casualty battle sound IDs
 - 7f7c54990bb1528918daa7f84a781701c749852b - reactive casualty audio logic
+- 08c415fbf71e92901bedd6e436835d7491d5caac - casualty preload safety audit
