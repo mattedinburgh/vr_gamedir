@@ -3,16 +3,36 @@
   "target_width": 1920,
   "target_height": 1080,
   "max_total": 200,
-  "max_per_category": 55,
+  "max_per_category": 80,
   "min_width": 1200,
   "min_height": 700,
   "categories": [
     {
-      "name": "Operation Just Cause",
+      "name": "Colombian armed conflict",
+      "primary_pool": "JUNGLE_MILITARY"
+    },
+    {
+      "name": "Army of Colombia",
+      "primary_pool": "JUNGLE_MILITARY"
+    },
+    {
+      "name": "United States invasion of Panama",
       "primary_pool": "TOWN_MILITARY"
     },
     {
+      "name": "1989 in Panama",
+      "primary_pool": "JUNGLE_MILITARY"
+    },
+    {
       "name": "Operation Urgent Fury",
+      "primary_pool": "JUNGLE_MILITARY"
+    },
+    {
+      "name": "82nd Airborne Division in Operation Urgent Fury",
+      "primary_pool": "JUNGLE_MILITARY"
+    },
+    {
+      "name": "United States Marine Corps in Grenada",
       "primary_pool": "JUNGLE_MILITARY"
     },
     {
@@ -124,6 +144,17 @@
     "corpse",
     "killed",
     "injured",
-    "funeral"
+    "funeral",
+    "ceremony",
+    "group photo",
+    "national anthem",
+    "delegation",
+    "conference",
+    "peace talks",
+    "museum",
+    "protest",
+    "mural",
+    "arrival ceremony",
+    "return to the states"
   ]
 }
