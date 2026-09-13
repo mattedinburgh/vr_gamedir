@@ -28,3 +28,4 @@ Shared battlefield reaction bank
 --------------------------------
 Male bank: 15 CC0 event callouts imported from Kenney Voiceover Pack.
 Male batch 1: call_for_backup, cover_me, fire_in_the_hole, get_down.
+Male batch 2: go_go_go, hold, look_out, medic.
