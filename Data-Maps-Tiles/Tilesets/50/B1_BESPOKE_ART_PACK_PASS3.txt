@@ -1,0 +1,21 @@
+B1 BESPOKE ORONEGRO ART PACK - PASS 3 / HERO INDUSTRIAL OBJECTS
+
+Converted directly from the authored STI frame geometry into true-colour B1TC siblings.
+
+Oil_Crane2.b1tc
+- 9 frames
+- weathered steel, richer grey/blue metal, layered rust, chipped exposed metal, oil/dirt accumulation
+
+Oil_Cranes.b1tc
+- 12 frames
+- same industrial language, preserving all original frame offsets and dimensions
+
+Oil_furn.b1tc
+- 24 frames
+- refinery machinery/furniture repainted into faded industrial greens/blues/browns, grease, rust, worn safety paint and edge wear
+
+Oil_lamp.b1tc
+- 12 frames
+- corroded posts/housings with warm dirty lamp highlights and richer true-colour metal variation
+
+No map/JSD/collision edits. Loader automatically prefers the B1TC sibling over the STI with the same basename.
