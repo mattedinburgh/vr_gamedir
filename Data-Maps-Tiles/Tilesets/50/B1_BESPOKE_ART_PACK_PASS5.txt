@@ -1,0 +1,8 @@
+B1 ORONEGRO STREET DETAIL PACK - PASS 5
+
+New true-colour, B1-only visual families:
+- B1_ROAD_DAMAGE.b1tc: 10 frames. Five petroleum/oil puddle variants with dark wet centres, dirty halos and subtle rainbow sheen; five failed-asphalt/pothole variants with broken edges, cracks and exposed aggregate.
+- B1_STREET_RUBBISH.b1tc: 10 frames. Cardboard, trash bags, cans/bottles, paper, scrap and loose street waste.
+- B1_STREET_BINS.b1tc: 10 frames. Rusted drums, battered galvanized bins, improvised sack containers and blue plastic bins with rubbish around their bases.
+
+These are intended for B1-only runtime visual dressing using currently-unused decoration slots. They are non-structural: no cover, LOS, pathing or collision change.
