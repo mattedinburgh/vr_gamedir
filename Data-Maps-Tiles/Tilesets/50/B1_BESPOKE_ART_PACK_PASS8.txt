@@ -1,0 +1,7 @@
+B1 ORONEGRO DETAIL PACK - PASS 8
+
+Two more B1-only visual families:
+- B1_ROOF_PROPS.b1tc: rooftop black water tanks, blue barrels, rusted tanks, TV antenna, satellite dish, loose corrugated patch sheets, tarp/tools and improvised vent/duct.
+- B1_DRAINAGE.b1tc: open concrete drains, broken rusty grates, oily runoff and algae-stained gutters.
+
+Designed for B1's unused DEBRISWEEDS / DEBRISGRASS tile types and placed at runtime as non-structural visual dressing.
