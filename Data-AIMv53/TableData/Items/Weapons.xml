@@ -16673,7 +16673,7 @@
 		<ubImpact>32</ubImpact>
 		<ubDeadliness>42</ubDeadliness>
 		<bAccuracy>4</bAccuracy>
-		<ubMagSize>42</ubMagSize>
+		<ubMagSize>30</ubMagSize>
 		<usRange>415</usRange>
 		<usReloadDelay>200</usReloadDelay>
 		<BurstAniDelay>46</BurstAniDelay>
