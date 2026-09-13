@@ -13303,9 +13303,9 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
 		<Handling>16</Handling>
-		<usOverheatingJamThreshold>4000</usOverheatingJamThreshold>
+		<usOverheatingJamThreshold>30000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>5000</usOverheatingDamageThreshold>
-		<usOverheatingSingleShotTemperature>500</usOverheatingSingleShotTemperature>
+		<usOverheatingSingleShotTemperature>400</usOverheatingSingleShotTemperature>
 	</WEAPON>
 	<WEAPON>
 		<uiIndex>1626</uiIndex>
@@ -16651,7 +16651,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<AutoPenalty>7</AutoPenalty>
 		<ManualReloadSound>476</ManualReloadSound>
-		<nAccuracy>27</nAccuracy>
+		<nAccuracy>14</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>12</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
