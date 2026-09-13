@@ -14868,9 +14868,9 @@
 		<APsToReload>28</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
-		<AutoPenalty>7</AutoPenalty>
+		<AutoPenalty>9</AutoPenalty>
 		<ManualReloadSound>476</ManualReloadSound>
-		<nAccuracy>48</nAccuracy>
+		<nAccuracy>33</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>6</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
@@ -14909,9 +14909,9 @@
 		<APsToReload>28</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
-		<AutoPenalty>8</AutoPenalty>
+		<AutoPenalty>9</AutoPenalty>
 		<ManualReloadSound>476</ManualReloadSound>
-		<nAccuracy>43</nAccuracy>
+		<nAccuracy>33</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>6</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
@@ -14951,9 +14951,9 @@
 		<APsToReload>28</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
-		<AutoPenalty>7</AutoPenalty>
+		<AutoPenalty>8</AutoPenalty>
 		<ManualReloadSound>476</ManualReloadSound>
-		<nAccuracy>47</nAccuracy>
+		<nAccuracy>14</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>6</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
@@ -14992,9 +14992,9 @@
 		<APsToReload>28</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
-		<AutoPenalty>7</AutoPenalty>
+		<AutoPenalty>8</AutoPenalty>
 		<ManualReloadSound>476</ManualReloadSound>
-		<nAccuracy>44</nAccuracy>
+		<nAccuracy>37</nAccuracy>
 		<bRecoilY>7</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
 		<Handling>11</Handling>
@@ -15034,7 +15034,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<AutoPenalty>8</AutoPenalty>
 		<ManualReloadSound>572</ManualReloadSound>
-		<nAccuracy>65</nAccuracy>
+		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
@@ -15157,7 +15157,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<AutoPenalty>8</AutoPenalty>
 		<ManualReloadSound>572</ManualReloadSound>
-		<nAccuracy>61</nAccuracy>
+		<nAccuracy>63</nAccuracy>
 		<bRecoilX>4</bRecoilX>
 		<bRecoilY>11</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
@@ -15198,7 +15198,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<AutoPenalty>8</AutoPenalty>
 		<ManualReloadSound>572</ManualReloadSound>
-		<nAccuracy>67</nAccuracy>
+		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>9</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
@@ -15239,7 +15239,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<AutoPenalty>8</AutoPenalty>
 		<ManualReloadSound>572</ManualReloadSound>
-		<nAccuracy>67</nAccuracy>
+		<nAccuracy>57</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
@@ -15322,7 +15322,7 @@
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<AutoPenalty>8</AutoPenalty>
 		<ManualReloadSound>572</ManualReloadSound>
-		<nAccuracy>65</nAccuracy>
+		<nAccuracy>63</nAccuracy>
 		<bRecoilX>2</bRecoilX>
 		<bRecoilY>10</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
@@ -15402,7 +15402,7 @@
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
 		<ManualReloadSound>476</ManualReloadSound>
-		<nAccuracy>67</nAccuracy>
+		<nAccuracy>68</nAccuracy>
 		<bRecoilY>6</bRecoilY>
 		<ubAimLevels>4</ubAimLevels>
 		<Handling>12</Handling>
