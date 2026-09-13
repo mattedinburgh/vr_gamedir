@@ -182,3 +182,134 @@ The source planner module is intentionally isolated from
 4. the project compiles cleanly,
 5. dry-run output is reviewed.
 
+
+
+## Implementation status — isolated work branch
+
+The planner now has executable source-side planning code but remains disconnected
+from live soldier creation.
+
+Implemented:
+
+- balanced equipment cells aligned with tactical AI fireteam scale:
+  - minimum normal cell 5
+  - target 8
+  - maximum 10
+- class-balanced cells for administrator / regular / elite mixes
+- mandatory + optional role tickets with a protected rifle core
+- class suitability when assigning role tickets
+- deterministic role-ticket consumption independent of creation order
+- loadout intent (ammo, smoke, hand grenades, specialist ammunition)
+- specialist support profiles:
+  - grenade launcher
+  - light AT
+  - RPG
+  - mortar
+- role-aware primary-gun ranking from existing Vengeance gun tables
+- role-aware optic/attachment scoring
+- NAS-compatible attachment package construction on a temporary weapon object
+- role-aware LBE scoring and coherent LBE package construction
+- deterministic complete equipment recommendations for audit
+- structural validation of squad plans and loadout plans
+
+The planner does **not** call `GenerateRandomEquipment()`, does not alter live
+inventory generation, and does not consume game RNG from the live path.
+
+## Tactical AI alignment
+
+The existing Vengeance AI already uses fireteam sizes that fit this equipment
+design:
+
+- target: 8
+- normal maximum: 9
+- merged maximum: 10
+
+The loadout-cell planner therefore uses a target of 8 and a 5-10 normal design
+range rather than inventing a second squad-size system.
+
+Examples from the current cell splitter:
+
+- 11 -> 6 + 5
+- 15 -> 8 + 7
+- 16 -> 8 + 8
+- 17 -> 9 + 8
+- 20 -> 7 + 7 + 6
+- 24 -> 8 + 8 + 8
+- 30 -> 8 + 8 + 7 + 7
+
+The eventual activation should register each planned equipment-cell identity
+with the AI fireteam layer after tactical soldier creation, so equipment and AI
+organization remain coherent.
+
+## Current enemy creation integration points
+
+Static defenders eventually pass through:
+
+`AddSoldierInitListEnemyDefenceSoldiers -> CreateDetailedPlacementGivenBasicPlacementInfo -> GenerateRandomEquipment`
+
+Strategic/mobile reinforcements pass through:
+
+`AddEnemiesToBattle -> TacticalCreate*Enemy -> CreateDetailedPlacementGivenBasicPlacementInfo -> GenerateRandomEquipment`
+
+These are the intended future activation points. They have not been changed on
+the playable branch.
+
+## Class-specific pools
+
+The planner deliberately reuses the existing Vengeance pools and follows the
+same `fSoldierClassSpecificItemTables` fallback semantics as live code.
+
+This preserves authored faction identity instead of replacing the Vengeance
+tables with stock 1.13 tables.
+
+A data audit found a stale-looking admin attachment entry:
+
+- `ItemChoices_Enemy_Admin.xml`
+- `ubChoices = 20`
+- `bItemNo21 = 2859`
+
+Item 2859 is not present in the active Items, Attachments or Weapons XMLs.
+Therefore the planner intentionally respects `ubChoices=20` and does **not**
+"fix" it to 21. The current count safely excludes that stale entry.
+
+## Specialist equipment separation
+
+Hand grenades and specialist ammunition are now separate planning concepts.
+
+Examples:
+
+- grenadier:
+  - ordinary rifle magazines
+  - 1-2 hand grenades
+  - smoke
+  - 4-7 launcher rounds
+- AT specialist:
+  - ordinary compact fighting load
+  - light AT at earlier professional progression
+  - RPG later
+  - RPG ammunition only when applicable
+- mortar:
+  - personal weapon load
+  - minimal hand grenades
+  - dedicated mortar-shell allowance
+
+This avoids the old pattern where the same `bGrenades` counter represents
+hand grenades, launcher rounds, rockets or mortar shells depending on unrelated
+random rolls.
+
+## Activation boundary
+
+Before this planner is allowed into live gameplay:
+
+1. compile the isolated source branch successfully,
+2. add an explicit creation-batch context around static defenders and
+   reinforcements,
+3. consume preplanned class role tickets during creation,
+4. translate the recommendation into actual inventory objects,
+5. register planned equipment-cell identity with the tactical AI fireteam
+   layer,
+6. leave autoresolve on the old path initially,
+7. run new-save tactical tests across early/mid/late progression,
+8. inspect generated kits and drop economy,
+9. only then consider merging to `install/all-2026-09-12`.
+
