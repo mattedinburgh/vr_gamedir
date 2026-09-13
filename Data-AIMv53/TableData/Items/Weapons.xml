@@ -18579,7 +18579,7 @@
 		<ubShotsPer4Turns>15.8</ubShotsPer4Turns>
 		<ubBurstPenalty>7</ubBurstPenalty>
 		<ubBulletSpeed>22</ubBulletSpeed>
-		<ubImpact>36</ubImpact>
+		<ubImpact>29</ubImpact>
 		<ubDeadliness>23</ubDeadliness>
 		<bAccuracy>5</bAccuracy>
 		<ubMagSize>15</ubMagSize>
