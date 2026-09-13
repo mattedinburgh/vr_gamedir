@@ -271,7 +271,7 @@ def main() -> int:
 
         accepted = 0
         for fn in names:
-            if accepted >= max_per_category or len(candidates) >= max_candidates:
+            if accepted >= max_per_category:
                 break
             key = fn.casefold()
             if key in seen or excluded_title(fn, exclude_terms):
@@ -285,7 +285,7 @@ def main() -> int:
     seed_count = len(cfg.get("seed_files", []))
     tail = candidates[seed_count:]
     random.Random(0x4A4132).shuffle(tail)
-    candidates = candidates[:seed_count] + tail
+    candidates = (candidates[:seed_count] + tail)[:max_candidates]
 
     pool_counts: dict[str, int] = defaultdict(int)
     origin_counts: dict[str, int] = defaultdict(int)

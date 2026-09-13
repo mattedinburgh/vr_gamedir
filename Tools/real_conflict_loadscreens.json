@@ -194,6 +194,6 @@
     "plaza de bolivar"
   ],
   "minimum_total": 100,
-  "max_candidates": 1200,
+  "max_candidates": 1800,
   "max_per_origin": 30
 }
