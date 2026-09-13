@@ -1,0 +1,64 @@
+name: Normalize real conflict loadscreens to RGB
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - install/all-2026-09-12
+    paths:
+      - Tools/convert_real_conflict_loadscreens_rgb.py
+      - .github/workflows/normalize-real-conflict-loadscreens.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: real-conflict-loadscreens-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  normalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            Tools
+            Data-Vengeance/Loadscreens/RealConflict
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Pillow
+        run: python -m pip install --disable-pip-version-check pillow
+
+      - name: Convert and verify RGB loadscreens
+        run: python Tools/convert_real_conflict_loadscreens_rgb.py
+
+      - name: Commit corrected assets
+        shell: bash
+        run: |
+          git add Data-Vengeance/Loadscreens/RealConflict
+          if git diff --cached --quiet; then
+            echo "No asset changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Normalize documentary loadscreens to RGB PNG"
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git pull --rebase origin install/all-2026-09-12
+            if git push; then
+              exit 0
+            fi
+            echo "Branch advanced; retrying push (attempt $attempt/8)."
+            sleep $((attempt * 2))
+          done
+          exit 1
