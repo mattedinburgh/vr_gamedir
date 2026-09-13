@@ -13498,7 +13498,7 @@
 		<sLocknLoadSound>108</sLocknLoadSound>
 		<SilencedSound>156</SilencedSound>
 		<bBurstAP>9</bBurstAP>
-		<bAutofireShotsPerFiveAP>5</bAutofireShotsPerFiveAP>
+		<bAutofireShotsPerFiveAP>4</bAutofireShotsPerFiveAP>
 		<APsToReload>20</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>18</MaxDistForMessyDeath>
@@ -13596,7 +13596,7 @@
 		<ubReadyTime>2</ubReadyTime>
 		<ubShotsPer4Turns>18</ubShotsPer4Turns>
 		<ubShotsPerBurst>3</ubShotsPerBurst>
-		<ubBurstPenalty>1</ubBurstPenalty>
+		<ubBurstPenalty>5</ubBurstPenalty>
 		<ubBulletSpeed>22</ubBulletSpeed>
 		<ubImpact>27</ubImpact>
 		<ubDeadliness>19</ubDeadliness>
@@ -13613,8 +13613,8 @@
 		<sReloadSound>101</sReloadSound>
 		<sLocknLoadSound>107</sLocknLoadSound>
 		<SilencedSound>157</SilencedSound>
-		<bBurstAP>1</bBurstAP>
-		<bAutofireShotsPerFiveAP>6</bAutofireShotsPerFiveAP>
+		<bBurstAP>8</bBurstAP>
+		<bAutofireShotsPerFiveAP>5</bAutofireShotsPerFiveAP>
 		<APsToReload>15</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
@@ -13653,8 +13653,8 @@
 		<sReloadSound>101</sReloadSound>
 		<sLocknLoadSound>107</sLocknLoadSound>
 		<SilencedSound>156</SilencedSound>
-		<bBurstAP>3</bBurstAP>
-		<bAutofireShotsPerFiveAP>3</bAutofireShotsPerFiveAP>
+		<bBurstAP>14</bBurstAP>
+		<bAutofireShotsPerFiveAP>2</bAutofireShotsPerFiveAP>
 		<APsToReload>25</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
@@ -14489,7 +14489,7 @@
 		<sReloadSound>102</sReloadSound>
 		<sLocknLoadSound>108</sLocknLoadSound>
 		<SilencedSound>156</SilencedSound>
-		<bBurstAP>3</bBurstAP>
+		<bBurstAP>12</bBurstAP>
 		<bAutofireShotsPerFiveAP>3</bAutofireShotsPerFiveAP>
 		<APsToReload>20</APsToReload>
 		<SwapClips>1</SwapClips>
@@ -14530,8 +14530,8 @@
 		<sReloadSound>102</sReloadSound>
 		<sLocknLoadSound>108</sLocknLoadSound>
 		<SilencedSound>156</SilencedSound>
-		<bBurstAP>2</bBurstAP>
-		<bAutofireShotsPerFiveAP>5</bAutofireShotsPerFiveAP>
+		<bBurstAP>11</bBurstAP>
+		<bAutofireShotsPerFiveAP>4</bAutofireShotsPerFiveAP>
 		<APsToReload>20</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>15</MaxDistForMessyDeath>
@@ -14571,8 +14571,8 @@
 		<sReloadSound>102</sReloadSound>
 		<sLocknLoadSound>108</sLocknLoadSound>
 		<SilencedSound>156</SilencedSound>
-		<bBurstAP>2</bBurstAP>
-		<bAutofireShotsPerFiveAP>5</bAutofireShotsPerFiveAP>
+		<bBurstAP>11</bBurstAP>
+		<bAutofireShotsPerFiveAP>4</bAutofireShotsPerFiveAP>
 		<APsToReload>20</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>15</MaxDistForMessyDeath>
@@ -16088,9 +16088,9 @@
 		<ubWeaponClass>3</ubWeaponClass>
 		<ubWeaponType>6</ubWeaponType>
 		<ubCalibre>12</ubCalibre>
-		<ubReadyTime>11</ubReadyTime>
+		<ubReadyTime>13</ubReadyTime>
 		<ubShotsPer4Turns>14.73</ubShotsPer4Turns>
-		<ubBurstPenalty>6</ubBurstPenalty>
+		<ubBurstPenalty>7</ubBurstPenalty>
 		<ubBulletSpeed>22</ubBulletSpeed>
 		<ubImpact>27</ubImpact>
 		<ubDeadliness>29</ubDeadliness>
@@ -16130,7 +16130,7 @@
 		<ubCalibre>12</ubCalibre>
 		<ubReadyTime>9</ubReadyTime>
 		<ubShotsPer4Turns>15.94</ubShotsPer4Turns>
-		<ubBurstPenalty>6</ubBurstPenalty>
+		<ubBurstPenalty>7</ubBurstPenalty>
 		<ubBulletSpeed>22</ubBulletSpeed>
 		<ubImpact>27</ubImpact>
 		<ubDeadliness>29</ubDeadliness>
@@ -18451,7 +18451,7 @@
 		<ubCalibre>3</ubCalibre>
 		<ubReadyTime>15</ubReadyTime>
 		<ubShotsPer4Turns>14.53</ubShotsPer4Turns>
-		<ubBurstPenalty>16</ubBurstPenalty>
+		<ubBurstPenalty>7</ubBurstPenalty>
 		<ubBulletSpeed>22</ubBulletSpeed>
 		<ubImpact>26</ubImpact>
 		<ubDeadliness>15</ubDeadliness>
@@ -18469,7 +18469,7 @@
 		<sLocknLoadSound>107</sLocknLoadSound>
 		<SilencedSound>157</SilencedSound>
 		<bBurstAP>15</bBurstAP>
-		<bAutofireShotsPerFiveAP>3</bAutofireShotsPerFiveAP>
+		<bAutofireShotsPerFiveAP>2</bAutofireShotsPerFiveAP>
 		<APsToReload>30</APsToReload>
 		<SwapClips>1</SwapClips>
 		<MaxDistForMessyDeath>7</MaxDistForMessyDeath>
@@ -18617,7 +18617,7 @@
 		<ubCalibre>10</ubCalibre>
 		<ubReadyTime>15</ubReadyTime>
 		<ubShotsPer4Turns>12.85</ubShotsPer4Turns>
-		<ubBurstPenalty>8</ubBurstPenalty>
+		<ubBurstPenalty>7</ubBurstPenalty>
 		<ubBulletSpeed>22</ubBulletSpeed>
 		<ubImpact>32</ubImpact>
 		<ubDeadliness>30</ubDeadliness>
@@ -18642,9 +18642,9 @@
 		<AutoPenalty>9</AutoPenalty>
 		<ManualReloadSound>572</ManualReloadSound>
 		<nAccuracy>63</nAccuracy>
-		<bRecoilX>5</bRecoilX>
-		<bRecoilY>12</bRecoilY>
-		<ubAimLevels>5</ubAimLevels>
+		<bRecoilX>4</bRecoilX>
+		<bRecoilY>11</bRecoilY>
+		<ubAimLevels>4</ubAimLevels>
 		<Handling>11</Handling>
 		<usOverheatingJamThreshold>40000</usOverheatingJamThreshold>
 		<usOverheatingDamageThreshold>11200</usOverheatingDamageThreshold>
