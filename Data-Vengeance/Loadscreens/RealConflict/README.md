@@ -2,19 +2,20 @@
 
 These loading screens are derived from real archival photographs.
 Only Wikimedia Commons files whose metadata explicitly reports Public Domain or CC0 are included.
+The builder refuses to publish a partial pack below the configured minimum image count.
 Edits are limited to crop, resize, restrained tonal grading, and palette quantization.
 
-Generated screens: **5**
+Generated screens: **139**
 
 ## Pools
 
-- **AF**: 24
-- **AR**: 3
+- **AF**: 47
+- **AR**: 5
 - **CT**: 1
-- **IN**: 2
-- **JM**: 60
+- **IN**: 3
+- **JM**: 72
 - **RU**: 1
-- **TM**: 5
+- **TM**: 10
 
 Full source, author and licensing metadata is in SOURCES.csv.
 
