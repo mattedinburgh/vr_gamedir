@@ -27,3 +27,4 @@ vr_source / install/all-2026-09-12
 Shared battlefield reaction bank
 --------------------------------
 Male bank: 15 CC0 event callouts imported from Kenney Voiceover Pack.
+Male batch 1: call_for_backup, cover_me, fire_in_the_hole, get_down.
