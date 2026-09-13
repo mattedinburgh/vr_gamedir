@@ -53013,6 +53013,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1030</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>24.6</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53062,6 +53064,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<PercentAPReduction>-5</PercentAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>38</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53108,6 +53112,8 @@
 		<BR_ROF>30</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>24</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53149,6 +53155,8 @@
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<BR_ROF>1100</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53183,6 +53191,8 @@
 		<BigGunList>1</BigGunList>
 		<BR_ROF>500</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53231,6 +53241,8 @@
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<BR_ROF>360</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53277,6 +53289,8 @@
 		<HideMuzzleFlash>1</HideMuzzleFlash>
 		<DefaultAttachment>1007</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>45</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53383,6 +53397,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>30</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>8</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53431,6 +53447,8 @@
 		<PercentTunnelVision>15</PercentTunnelVision>
 		<DefaultAttachment>1010</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>28</DirtIncreaseFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2014</uiIndex>
@@ -53474,6 +53492,8 @@
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<DefaultAttachment>1010</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>28</DirtIncreaseFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2015</uiIndex>
@@ -53522,6 +53542,8 @@
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<DefaultAttachment>1010</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>28</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53568,6 +53590,8 @@
 		<BurstToHitBonus>5</BurstToHitBonus>
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2017</uiIndex>
@@ -53613,6 +53637,8 @@
 		<BurstToHitBonus>5</BurstToHitBonus>
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53655,6 +53681,8 @@
 		<BurstToHitBonus>5</BurstToHitBonus>
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>23</DirtIncreaseFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2019</uiIndex>
@@ -53699,6 +53727,8 @@
 		<BR_ROF>600</BR_ROF>
 		<DefaultAttachment>1008</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53747,6 +53777,8 @@
 		<SciFi>1</SciFi>
 		<BR_ROF>600</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>40</DamageChance>
+		<DirtIncreaseFactor>28</DirtIncreaseFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2021</uiIndex>
@@ -53786,6 +53818,8 @@
 		<SciFi>1</SciFi>
 		<BR_ROF>240</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>20</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53832,6 +53866,8 @@
 		<ToHitBonus>-10</ToHitBonus>
 		<DefaultAttachment>208</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>8</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53878,6 +53914,8 @@
 		<DefaultAttachment>999</DefaultAttachment>
 		<DefaultAttachment>1003</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>47</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53957,6 +53995,8 @@
 		<BR_ROF>600</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>5</DamageChance>
+		<DirtIncreaseFactor>19</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -53992,6 +54032,8 @@
 		<BR_ROF>700</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>7</DamageChance>
+		<DirtIncreaseFactor>18</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54027,6 +54069,8 @@
 		<BR_ROF>600</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>8</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54070,6 +54114,8 @@
 		<BR_ROF>35</BR_ROF>
 		<DefaultAttachment>1007</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54119,6 +54165,8 @@
 		<DefaultAttachment>949</DefaultAttachment>
 		<DefaultAttachment>1011</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>15</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54167,6 +54215,8 @@
 		<DefaultAttachment>1005</DefaultAttachment>
 		<DefaultAttachment>1006</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>14.6</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54215,6 +54265,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1007</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>14.6</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54265,6 +54317,8 @@
 		<DefaultAttachment>1009</DefaultAttachment>
 		<DefaultAttachment>1010</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54306,6 +54360,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>30</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>24</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54346,6 +54402,8 @@
 		<ToHitBonus>-15</ToHitBonus>
 		<DefaultAttachment>208</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>90</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54400,6 +54458,8 @@
 		<PercentTunnelVision>15</PercentTunnelVision>
 		<DefaultAttachment>1029</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>28</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54437,6 +54497,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>30</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>21</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54486,6 +54548,8 @@
 		<BR_ROF>750</BR_ROF>
 		<DefaultAttachment>1008</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54531,6 +54595,8 @@
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<DefaultAttachment>387</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54576,6 +54642,8 @@
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<DefaultAttachment>387</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54622,6 +54690,8 @@
 		<HideMuzzleFlash>1</HideMuzzleFlash>
 		<DefaultAttachment>387</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54665,6 +54735,8 @@
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<DefaultAttachment>387</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>42</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54696,6 +54768,8 @@
 		<BR_ROF>600</BR_ROF>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>5</DamageChance>
+		<DirtIncreaseFactor>19</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54728,6 +54802,8 @@
 		<BR_ROF>600</BR_ROF>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>6</DamageChance>
+		<DirtIncreaseFactor>18</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54761,6 +54837,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>11</DamageChance>
+		<DirtIncreaseFactor>19</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54794,6 +54872,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>8</DamageChance>
+		<DirtIncreaseFactor>19</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54830,6 +54910,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>7</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54866,6 +54948,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>7</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54902,6 +54986,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>7</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54936,6 +55022,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>5</DamageChance>
+		<DirtIncreaseFactor>19</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -54980,6 +55068,8 @@
 		<BR_ROF>800</BR_ROF>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>60</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55024,6 +55114,8 @@
 		<BR_ROF>800</BR_ROF>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>38</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55065,6 +55157,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>15</DamageChance>
+		<DirtIncreaseFactor>40</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55109,6 +55203,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>44.3</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55154,6 +55250,8 @@
 		<DefaultAttachment>1001</DefaultAttachment>
 		<DefaultAttachment>1009</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>60</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55199,6 +55297,8 @@
 		<DefaultAttachment>1001</DefaultAttachment>
 		<DefaultAttachment>1010</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>41</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55244,6 +55344,8 @@
 		<DefaultAttachment>1001</DefaultAttachment>
 		<DefaultAttachment>1003</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55291,6 +55393,8 @@
 		<DefaultAttachment>1001</DefaultAttachment>
 		<DefaultAttachment>1003</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>24</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55336,6 +55440,8 @@
 		<DefaultAttachment>1001</DefaultAttachment>
 		<DefaultAttachment>1003</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>24</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55381,6 +55487,8 @@
 		<DefaultAttachment>1001</DefaultAttachment>
 		<DefaultAttachment>1003</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>24</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55423,6 +55531,8 @@
 		<DefaultAttachment>1001</DefaultAttachment>
 		<DefaultAttachment>1003</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>30</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55464,6 +55574,8 @@
 		<DefaultAttachment>1001</DefaultAttachment>
 		<DefaultAttachment>1003</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>27</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55504,6 +55616,8 @@
 		<BR_NewInventory>1</BR_NewInventory>
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55549,6 +55663,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1009</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55590,6 +55706,8 @@
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<BR_ROF>800</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>38.8</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55638,6 +55756,8 @@
 		<BR_ROF>900</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>7</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55682,6 +55802,8 @@
 		<BR_NewInventory>1</BR_NewInventory>
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>8</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55728,6 +55850,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1009</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>15</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55775,6 +55899,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1009</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>15</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55820,6 +55946,8 @@
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 		<PercentReadyTimeAPReduction>30</PercentReadyTimeAPReduction>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
 			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
 		
@@ -55869,6 +55997,8 @@
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 		<PercentReadyTimeAPReduction>30</PercentReadyTimeAPReduction>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
 			<PercentMaxCounterForce>-20</PercentMaxCounterForce>
 		
@@ -55918,6 +56048,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>207</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55955,6 +56087,8 @@
 		<HideMuzzleFlash>1</HideMuzzleFlash>
 		<DefaultAttachment>207</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -55997,6 +56131,8 @@
 		<BR_ROF>25</BR_ROF>
 		<DefaultAttachment>208</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56036,6 +56172,8 @@
 		<ToHitBonus>-10</ToHitBonus>
 		<DefaultAttachment>209</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>21</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56082,6 +56220,8 @@
 		<DefaultAttachment>208</DefaultAttachment>
 		<DefaultAttachment>209</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>8</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56128,6 +56268,8 @@
 		<PercentTunnelVision>20</PercentTunnelVision>
 		<DefaultAttachment>1004</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>40</DamageChance>
+		<DirtIncreaseFactor>28</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56176,6 +56318,8 @@
 		<PercentTunnelVision>20</PercentTunnelVision>
 		<DefaultAttachment>1004</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>20</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56218,6 +56362,8 @@
 		<BR_ROF>25</BR_ROF>
 		<DefaultAttachment>1007</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>40</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56256,6 +56402,8 @@
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<BR_ROF>32</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56370,6 +56518,8 @@
 		<BR_ROF>24</BR_ROF>
 		<DefaultAttachment>208</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>45</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56412,6 +56562,8 @@
 		<BR_ROF>24</BR_ROF>
 		<DefaultAttachment>208</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56444,6 +56596,8 @@
 		<Sinks>1</Sinks>
 		<BR_ROF>850</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56485,6 +56639,8 @@
 		<ToHitBonus>-10</ToHitBonus>
 		<DefaultAttachment>1030</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56532,6 +56688,8 @@
 		<BR_ROF>600</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>21</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56570,6 +56728,8 @@
 		<BR_ROF>20</BR_ROF>
 		<DefaultAttachment>1029</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>40</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56616,6 +56776,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>30</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56658,6 +56820,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1009</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>27</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56732,6 +56896,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>25</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56779,6 +56945,8 @@
 		<BR_ROF>750</BR_ROF>
 		<ToHitBonus>-1</ToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>27</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56825,6 +56993,8 @@
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<DefaultAttachment>1001</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>27</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -56897,6 +57067,8 @@
 		<BR_ROF>20</BR_ROF>
 		<PercentReloadTimeAPReduction>-30</PercentReloadTimeAPReduction>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>43</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57109,6 +57281,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>26</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57152,6 +57326,8 @@
 		<BR_ROF>24</BR_ROF>
 		<DefaultAttachment>208</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>30</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57192,6 +57368,8 @@
 		<BurstToHitBonus>3</BurstToHitBonus>
 		<AutoFireToHitBonus>3</AutoFireToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS>
 			<PercentHandling>-10</PercentHandling>
 			<PercentMaxCounterForce>30</PercentMaxCounterForce>
@@ -57234,6 +57412,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>28</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57272,6 +57452,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>25</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2106</uiIndex>
@@ -57306,6 +57488,8 @@
 		<PercentNoiseReduction>80</PercentNoiseReduction>
 		<HideMuzzleFlash>1</HideMuzzleFlash>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2107</uiIndex>
@@ -57339,6 +57523,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>1200</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57377,6 +57563,8 @@
 		<BR_ROF>30</BR_ROF>
 		<DefaultAttachment>2850</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57417,6 +57605,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>30</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57460,6 +57650,8 @@
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<BR_ROF>800</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57507,6 +57699,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1008</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57555,6 +57749,8 @@
 		<DefaultAttachment>209</DefaultAttachment>
 		<DefaultAttachment>1008</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>24</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57598,6 +57794,8 @@
 		<BR_ROF>22</BR_ROF>
 		<DefaultAttachment>1000</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>47</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57644,6 +57842,8 @@
 		<ToHitBonus>-11</ToHitBonus>
 		<DefaultAttachment>208</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57693,6 +57893,8 @@
 		<ToHitBonus>-1</ToHitBonus>
 		<DefaultAttachment>1008</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57731,6 +57933,8 @@
 		<BurstToHitBonus>5</BurstToHitBonus>
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57773,6 +57977,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>500</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57813,6 +58019,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>700</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>24</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57852,6 +58060,8 @@
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<BR_ROF>30</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>24</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57886,6 +58096,8 @@
 		<BR_UsedInventory>0</BR_UsedInventory>
 		<BR_ROF>28</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57928,6 +58140,8 @@
 		<BigGunList>1</BigGunList>
 		<BR_ROF>24</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>40</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -57967,6 +58181,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>35</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58014,6 +58230,8 @@
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<DefaultAttachment>913</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58063,6 +58281,8 @@
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<DefaultAttachment>902</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>22</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58110,6 +58330,8 @@
 		<PercentAPReduction>10</PercentAPReduction>
 		<DefaultAttachment>1010</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58155,6 +58377,8 @@
 		<DefaultAttachment>2183</DefaultAttachment>
 		<NewInv>1</NewInv>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>8</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58194,6 +58418,8 @@
 		<DefaultAttachment>1636</DefaultAttachment>
 		<DefaultAttachment>1007</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58231,6 +58457,8 @@
 		<BR_UsedInventory>1</BR_UsedInventory>
 		<BR_ROF>20</BR_ROF>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2129</uiIndex>
@@ -58265,6 +58493,8 @@
 		<DefaultAttachment>2932</DefaultAttachment>
 		<DefaultAttachment>208</DefaultAttachment>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>8</DamageChance>
+		<DirtIncreaseFactor>50</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58396,6 +58626,8 @@
 		<BurstToHitBonus>3</BurstToHitBonus>
 		<AutoFireToHitBonus>3</AutoFireToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>42</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -58868,6 +59100,8 @@
 		<PercentNoiseReduction>0</PercentNoiseReduction>
 		<HideMuzzleFlash>0</HideMuzzleFlash>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>20</DirtIncreaseFactor>
 	</ITEM>
 	<ITEM>
 		<uiIndex>2143</uiIndex>
@@ -59467,6 +59701,8 @@
 		<ToHitBonus>5</ToHitBonus>
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>28</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -59560,6 +59796,8 @@
 		<ToHitBonus>5</ToHitBonus>
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<usOverheatingCooldownFactor>110</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>14</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
@@ -59616,6 +59854,8 @@
 		<ToHitBonus>0</ToHitBonus>
 		<AutoFireToHitBonus>5</AutoFireToHitBonus>
 		<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		<DamageChance>10</DamageChance>
+		<DirtIncreaseFactor>23</DirtIncreaseFactor>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
