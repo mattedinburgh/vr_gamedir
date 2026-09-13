@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<AnimSurfaces>
 <AnimSurface name="BGMEMPTY_RUN_Flakvest" file="Anims\LOBOT\BGM\M_N_RUN_Flakvest.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="12" profile="-1" />
 <AnimSurface name="BGMDUAL_SDSTP_Flakvest" file="Anims\LOBOT\BGM\M_DBL_SDSP_Flakvest.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="12" profile="-1" />
 <AnimSurface name="BGMPISTOL_WALK_Flakvest" file="Anims\LOBOT\BGM\M_P_WALK_Flakvest.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="12" profile="-1" />
@@ -1506,4 +1504,3 @@
 <AnimSurface name="BGM_WATER_EMPTY_DROWN_Dynhelm" file="Anims\LOBOT\BGM\MW_DROWN_Dynhelm.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="13" profile="-1" />
 <AnimSurface name="BGM_WATER_DUAL_AIM_Dynhelm" file="Anims\LOBOT\BGM\MW_DBLSHOT_Dynhelm.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="25" profile="-1" />
 <AnimSurface name="BGM_CROUCH_MORTAR_Dynhelm" file="Anims\LOBOT\BGM\M_MORTAR_Dynhelm.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_CROUCH.JSD" directions = "8" framesperdir="51" profile="-1" />
-</AnimSurfaces>
