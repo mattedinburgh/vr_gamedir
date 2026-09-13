@@ -1,0 +1,24 @@
+B1 BESPOKE ORONEGRO ART PACK - PASS 2
+
+Direct in-game B1TC surface repaint.
+
+FLOORS
+- B1_P-FLOOR3: cracked industrial concrete, oil/damp wear, aggregate and dark patches.
+- B1_WELFLOR1: worn terracotta/worker-interior floor.
+- B1_WELFLOR2: faded cement/green-grey floor.
+- B1_WELFLOR3: worn grey tile treatment with dirty joints.
+
+GROUND
+- B1_T_SAND1 / B1_T_SAND3: dry-to-humid compacted dirt variation, stones, dark organic/mud spots.
+- B1_T_TRAIL: compacted poor-road/trail treatment with track marks and wear.
+
+VEGETATION
+- B1_GRASS1 and B1_TRPGRAS 1-4: mixed tropical green, stressed/dry yellow blades, darker humid growth.
+
+WATER
+- B1_TR_WATER / B1_TRWATER2: polluted green-brown industrial water with dirty variation and subtle surface sheen.
+
+REFINERY GRIME
+- Oil_decal / Oil_Debris: stronger oxidized metal, soot, petroleum-darkened surfaces and rust.
+
+All original frame counts, dimensions, offsets and map identities are preserved.
