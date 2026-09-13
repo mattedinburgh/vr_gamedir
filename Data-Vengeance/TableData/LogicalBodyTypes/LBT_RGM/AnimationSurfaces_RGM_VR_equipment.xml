@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<AnimSurfaces>
 <AnimSurface name="RGMEMPTY_RUN_eod_v" file="Anims\LOBOT\RGM\S_N_RUN_eod_v.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="12" profile="-1" />
 <AnimSurface name="RGMDUAL_SDSTP_eod_v" file="Anims\LOBOT\RGM\S_DBL_SDSP_eod_v.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="12" profile="-1" />
 <AnimSurface name="RGMPISTOL_WALK_eod_v" file="Anims\LOBOT\RGM\S_P_WALK_eod_v.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="12" profile="-1" />
@@ -2090,4 +2088,3 @@
 <AnimSurface name="WATER_EMPTY_DROWN_HELMET" file="Anims\LOBOT\RGM\SW_DROWN_helmet.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="13" profile="-1" />
 <AnimSurface name="WATER_DUAL_AIM_HELMET" file="Anims\LOBOT\RGM\SW_DBLSHOT_helmet.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_STAND.JSD" directions = "8" framesperdir="25" profile="-1" />
 <AnimSurface name="CROUCH_MORTAR_HELMET" file="Anims\LOBOT\RGM\S_MORTAR_helmet.STI" flags="0" structdata="ANIMS\STRUCTDATA\M_CROUCH.JSD" directions = "8" framesperdir="51" profile="-1" />
-</AnimSurfaces>
