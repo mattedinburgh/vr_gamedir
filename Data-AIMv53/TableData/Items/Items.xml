@@ -72936,7 +72936,7 @@
 		<Inseparable>1</Inseparable>
 		<ToHitBonus>15</ToHitBonus>
 		<BestLaserRange>350</BestLaserRange>
-		<PercentAPReduction>33</PercentAPReduction>
+		<PercentAPReduction>25</PercentAPReduction>
 		<CamoBonus>-17</CamoBonus>
 		<UrbanCamoBonus>-17</UrbanCamoBonus>
 		<DesertCamoBonus>-17</DesertCamoBonus>
@@ -75303,7 +75303,7 @@
 		<BestLaserRange>350</BestLaserRange>
 		<AimBonus>13</AimBonus>
 		<MinRangeForAimBonus>40</MinRangeForAimBonus>
-		<PercentAPReduction>33</PercentAPReduction>
+		<PercentAPReduction>25</PercentAPReduction>
 		<CamoBonus>-17</CamoBonus>
 		<UrbanCamoBonus>-17</UrbanCamoBonus>
 		<DesertCamoBonus>-17</DesertCamoBonus>
@@ -76548,7 +76548,6 @@
 		<BigGunList>1</BigGunList>
 		<Inseparable>1</Inseparable>
 		<ToHitBonus>-1</ToHitBonus>
-		<AutoFireToHitBonus>-1</AutoFireToHitBonus>
 		<AttachmentSystem>1</AttachmentSystem>
 	</ITEM>
 	<ITEM>
@@ -76606,7 +76605,6 @@
 		<BigGunList>1</BigGunList>
 		<Inseparable>1</Inseparable>
 		<ToHitBonus>-2</ToHitBonus>
-		<AutoFireToHitBonus>-1</AutoFireToHitBonus>
 		<AttachmentSystem>1</AttachmentSystem>
 	</ITEM>
 	<ITEM>
