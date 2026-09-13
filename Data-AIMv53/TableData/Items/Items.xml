@@ -49631,7 +49631,7 @@
 		<uiIndex>1709</uiIndex>
 		<szItemName>Sleeping bag</szItemName>
 		<szLongItemName>Sleeping bag</szLongItemName>
-		<szItemDesc>A basic sleeeping bag. Beats the bare floor.</szItemDesc>
+		<szItemDesc>A basic sleeping bag with an integrated ground mat. Makes field sleep substantially more restorative.</szItemDesc>
 		<szBRName>Sleeping bag</szBRName>
 		<szBRDesc>No more sleeping on the dirty floor! Sweet dreams, sugar.</szBRDesc>
 		<usItemClass>268435456</usItemClass>
@@ -49648,7 +49648,7 @@
 		<ShowStatus>1</ShowStatus>
 		<BR_NewInventory>2</BR_NewInventory>
 		<BR_UsedInventory>6</BR_UsedInventory>
-		<SleepModifier>20</SleepModifier>
+		<SleepModifier>30</SleepModifier>
 		<STAND_MODIFIERS />
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
