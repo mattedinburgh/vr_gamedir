@@ -109,6 +109,29 @@ def image_info(session: requests.Session, filename: str) -> dict | None:
     return info
 
 
+def image_info_batch(session: requests.Session, filenames: list[str]) -> dict[str, dict]:
+    results: dict[str, dict] = {}
+    for start in range(0, len(filenames), 10):
+        batch = filenames[start:start + 10]
+        data = api_get(
+            session,
+            {
+                "action": "query",
+                "prop": "imageinfo",
+                "titles": "|".join("File:" + name for name in batch),
+                "iiprop": "url|size|mime|extmetadata",
+                "iiurlwidth": "1920",
+            },
+        )
+        for page in data.get("query", {}).get("pages", {}).values():
+            title = page.get("title", "")
+            info = (page.get("imageinfo") or [None])[0]
+            if title.startswith("File:") and info:
+                results[title[5:]] = info
+        time.sleep(0.5)
+    return results
+
+
 def meta_value(info: dict, key: str) -> str:
     return clean_html(info.get("extmetadata", {}).get(key, {}).get("value", ""))
 
@@ -231,12 +254,16 @@ def main() -> int:
     records: list[dict[str, str]] = []
     accepted_total = 0
 
+    # Resolve metadata in small batches. Wikimedia explicitly recommends
+    # thumbnail delivery instead of repeated full-original downloads.
+    infos = image_info_batch(session, [filename for filename, _, _ in candidates])
+
     for filename, default_pool, origin in candidates:
         if accepted_total >= max_total:
             break
 
         try:
-            info = image_info(session, filename)
+            info = infos.get(filename)
             if not info or not is_redistribution_safe(info):
                 continue
             if info.get("mime") not in ("image/jpeg", "image/png"):
@@ -256,7 +283,8 @@ def main() -> int:
             dest_dir.mkdir(parents=True, exist_ok=True)
             dest = dest_dir / f"{pool}_{seq:03d}_{width}x{height}.png"
 
-            raw = download_image(session, info["url"])
+            raw = download_image(session, info.get("thumburl") or info["url"])
+            time.sleep(0.35)
             img = prepare_image(raw, width, height)
             img.save(dest, format="PNG", optimize=True, compress_level=9)
 
