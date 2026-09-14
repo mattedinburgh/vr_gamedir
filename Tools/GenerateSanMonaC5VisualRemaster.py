@@ -190,11 +190,16 @@ def remaster_frame(frame, kind, seed):
                 slab=n2(col,row,19)
                 grain=(n2(x,y,23)-0.5)*9
                 if seam:
-                    put(x,y,75+light*0.30,71+light*0.28,64+light*0.25,a)
+                    put(x,y,60+light*0.28,57+light*0.26,50+light*0.22,a)
                 else:
-                    base=124 + slab*18
-                    grime=-10 if (n2(x//3,y//3,29)>0.89) else 0
-                    put(x,y,base+light+grain+grime,base-8+light+grain*0.7+grime,base-18+light*0.8+grain*0.5+grime,a)
+                    # Sun-baked, traffic-dulled paving rather than clean pale stone.
+                    base=104 + slab*15
+                    dirt=n2(x//3,y//3,29)
+                    grime=-14 if dirt>0.84 else 0
+                    oil=-24 if n2(x//5,y//5,30)>0.965 else 0
+                    put(x,y,base+4+light+grain+grime+oil,
+                              base-3+light+grain*0.7+grime+oil,
+                              base-13+light*0.8+grain*0.5+grime+oil,a)
 
             elif kind == "stucco":
                 # Preserve openings/joinery, completely repaint broad plaster.
@@ -229,9 +234,17 @@ def remaster_frame(frame, kind, seed):
                            62+light*0.45+ridge_light*0.30-rust_boost*0.25+fine*0.30,a)
 
             elif kind == "metal":
-                # Dark oxidised street metal with crisp highlights.
-                edge=(n2(x,y,47)-0.5)*8
-                put(x,y,52+lum*0.42+edge,57+lum*0.43+edge,61+lum*0.45+edge,a)
+                # San Mona street furniture: old dark-painted steel, oxidised and
+                # repeatedly repaired. Bright pixels near the lamp head become warm
+                # dirty glass; the pole itself stays dark rather than modern silver.
+                edge=(n2(x,y,47)-0.5)*7
+                if lum > 165 and y < h*0.42:
+                    put(x,y,190+light*0.45+edge,166+light*0.38+edge,104+light*0.25+edge,a)
+                else:
+                    rust=10 if n2(x//2,y//3,49)>0.91 else 0
+                    put(x,y,34+lum*0.24+edge+rust,
+                              38+lum*0.25+edge-rust*0.15,
+                              40+lum*0.27+edge-rust*0.28,a)
 
             elif kind == "decal":
                 # Keep lettering/sign identity intact; clean contrast only.
@@ -342,7 +355,7 @@ def contact_sheet(name, original, remastered):
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     PREVIEW.mkdir(parents=True,exist_ok=True)
-    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","style_version":2,"art_direction":"sun-faded poor South-American vice/commercial district","assets":[]}
+    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","style_version":"2.1","art_direction":"sun-faded poor South-American vice/commercial district","assets":[]}
     for n,(rel,kind) in SOURCES.items():
         src=ROOT/rel
         if not src.exists():
@@ -373,7 +386,7 @@ Scope invariant:
 Vengeance resolves the original logical STI/JSD identity while preferring a B1TC
 sibling for pixels. These files therefore alter appearance only.
 
-Style v2 uses material-aware redraw recipes rather than blanket recolouring. It focuses on existing San Mona road/paving/streetscape plus selected
+Style v2.1 uses material-aware redraw recipes rather than blanket recolouring. Pavement is traffic-dulled and stained; street lamps are old dark-painted/oxidised steel with warm dirty lamp glass. It focuses on existing San Mona road/paving/streetscape plus selected
 building/roof/interior/urban families whose matching STI source is present in the
 repository. Missing inherited base-game families are deliberately left untouched
 until they are extracted exactly; nothing is guessed.
