@@ -35,6 +35,7 @@ SOURCES = {
     "Streetlamp": ("Data-Maps-Tiles/Tilesets/18/Streetlamp.sti", "metal"),
     "BUILD_24": ("Data-Maps-Tiles/Tilesets/51/BUILD_24.STI", "stucco"),
     "SLANT_12": ("Data-Maps-Tiles/Tilesets/51/SLANT_12.STI", "roof"),
+    "C5_FLAT_R3": ("Data-Maps-Tiles/Tilesets/0/FLAT_R3.sti", "flatroof"),
     "FURN_MIX": ("Data-Maps-Tiles/Tilesets/51/FURN_MIX.STI", "interior"),
     "LAWLESS": ("Data-Maps-Tiles/Tilesets/9/LAWLESS.STI", "urban"),
     "LAWLESS2": ("Data-Maps-Tiles/Tilesets/53/LAWLESS2.STI", "urban"),
@@ -233,6 +234,20 @@ def remaster_frame(frame, kind, seed):
                            83+light*0.60+ridge_light*0.45-rust_boost*0.18+fine*0.45,
                            62+light*0.45+ridge_light*0.30-rust_boost*0.25+fine*0.30,a)
 
+            elif kind == "flatroof":
+                # Dominant C5 flat-roof family: sun-bleached concrete/tar with
+                # patch repairs, water staining and fine aggregate.  RGB is newly
+                # synthesized; original pixels only guide local light/shadow.
+                coarse=(n2(x//5,y//5,61)-0.5)*13
+                fine=(n2(x,y,67)-0.5)*9
+                patch=n2(x//9,y//7,71)
+                stain=n2(x//4,y//4,73)
+                patch_shift=-15 if patch>0.87 else (8 if patch<0.08 else 0)
+                water=-12 if stain>0.92 else 0
+                edge_dirt=-8 if (x<2 or y<2 or x>w-3 or y>h-3) else 0
+                base=126 + light*0.72 + coarse + fine + patch_shift + water + edge_dirt
+                put(x,y,base+7,base+1,base-10,a)
+
             elif kind == "metal":
                 # San Mona street furniture: old dark-painted steel, oxidised and
                 # repeatedly repaired. Bright pixels near the lamp head become warm
@@ -355,7 +370,7 @@ def contact_sheet(name, original, remastered):
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     PREVIEW.mkdir(parents=True,exist_ok=True)
-    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","style_version":"2.1","art_direction":"sun-faded poor South-American vice/commercial district","assets":[]}
+    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","style_version":"2.2","art_direction":"sun-faded poor South-American vice/commercial district","assets":[]}
     for n,(rel,kind) in SOURCES.items():
         src=ROOT/rel
         if not src.exists():
@@ -386,7 +401,7 @@ Scope invariant:
 Vengeance resolves the original logical STI/JSD identity while preferring a B1TC
 sibling for pixels. These files therefore alter appearance only.
 
-Style v2.1 uses material-aware redraw recipes rather than blanket recolouring. Pavement is traffic-dulled and stained; street lamps are old dark-painted/oxidised steel with warm dirty lamp glass. It focuses on existing San Mona road/paving/streetscape plus selected
+Style v2.2 uses material-aware redraw recipes rather than blanket recolouring. Pavement is traffic-dulled and stained; street lamps are old dark-painted/oxidised steel with warm dirty lamp glass. C5_FLAT_R3 redraws the dominant inherited flat-roof family while the engine keeps the original generic FLAT_R3 structure metadata. It focuses on existing San Mona road/paving/streetscape plus selected
 building/roof/interior/urban families whose matching STI source is present in the
 repository. Missing inherited base-game families are deliberately left untouched
 until they are extracted exactly; nothing is guessed.
