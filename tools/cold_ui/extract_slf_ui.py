@@ -19,7 +19,7 @@ from typing import Dict, List, Tuple
 LIBHEADER = struct.Struct("<256s256siiHHB3xi")
 DIRENTRY = struct.Struct("<256sIIBB2xIIH2x")
 FILE_OK = 0
-EXTRACTOR_VERSION = "cold-ui-slf-v3"
+EXTRACTOR_VERSION = "cold-ui-slf-v4"
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -162,12 +162,13 @@ def main() -> int:
         "manifest": str(manifest_path),
         "output_root": str(output),
         "archives": [],
-        "summary": {"extracted": 0, "unchanged": 0, "missing": 0},
+        "summary": {"extracted": 0, "unchanged": 0, "missing": 0, "optional_missing": 0},
     }
 
     missing: List[str] = []
 
     for archive in spec["archives"]:
+        optional_targets = {norm_name(x) for x in archive.get("optional_targets", [])}
         rel_archive = Path(archive["archive"])
         src = root / rel_archive
         archive_row = {
@@ -199,6 +200,8 @@ def main() -> int:
             for wanted in archive["targets"]:
                 target_path = safe_target(wanted)
                 row = {"target": wanted}
+                if norm_name(wanted) in optional_targets:
+                    row["optional"] = True
 
                 loose_src, loose_layer = find_loose_source(
                     root, loose_roots, archive["mount"], wanted
@@ -240,10 +243,15 @@ def main() -> int:
                     raise
 
                 if hit is None:
-                    row["status"] = "missing"
+                    if norm_name(wanted) in optional_targets:
+                        row["status"] = "optional-missing"
+                        row["optional"] = True
+                        report["summary"]["optional_missing"] += 1
+                    else:
+                        row["status"] = "missing"
+                        report["summary"]["missing"] += 1
+                        missing.append(f"{archive['archive']}::{wanted}")
                     archive_row["targets"].append(row)
-                    report["summary"]["missing"] += 1
-                    missing.append(f"{archive['archive']}::{wanted}")
                     continue
 
                 name, off, length = hit
