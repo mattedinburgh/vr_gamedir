@@ -56,6 +56,10 @@ jobs:
           $null = [scriptblock]::Create((Get-Content -Raw "./COLD_UI.ps1"))
           Write-Host "COLD_UI.ps1 syntax OK"
 
+      - name: Exercise PowerShell cold UI pipeline
+        shell: pwsh
+        run: ./COLD_UI.ps1 -Mode Build -Stage 2 -GameRoot .
+
       - name: Build non-live cold UI overlay
         run: >
           python tools/cold_ui/prepare_cold_ui.py
