@@ -13,6 +13,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: inventory-icon-pilot
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,7 +25,30 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: pilot/inventory-icons-20-2026-09-14
-          fetch-depth: 0
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            Tools/build_inventory_icon_pilot.py
+            Data-AIMv53/BigItems/GUN01.STI
+            Data-AIMv53/BigItems/GUN02.STI
+            Data-AIMv53/BigItems/GUN03.STI
+            Data-AIMv53/BigItems/GUN04.STI
+            Data-AIMv53/BigItems/GUN05.STI
+            Data-AIMv53/BigItems/GUN06.STI
+            Data-AIMv53/BigItems/GUN07.STI
+            Data-AIMv53/BigItems/GUN08.STI
+            Data-AIMv53/BigItems/GUN09.STI
+            Data-AIMv53/BigItems/GUN10.STI
+            Data-AIMv53/BigItems/Gun11.sti
+            Data-AIMv53/BigItems/GUN110.STI
+            Data-AIMv53/BigItems/GUN13.STI
+            Data-AIMv53/BigItems/GUN14.STI
+            Data-AIMv53/BigItems/GUN15.STI
+            Data-AIMv53/BigItems/Gun16.sti
+            Data-AIMv53/BigItems/GUN17.STI
+            Data-AIMv53/BigItems/GUN18.STI
+            Data-AIMv53/BigItems/GUN19.STI
+            Data-AIMv53/BigItems/GUN20.STI
 
       - name: Set up Python
         uses: actions/setup-python@v5
