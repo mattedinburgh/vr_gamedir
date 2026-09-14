@@ -1,0 +1,43 @@
+name: Generate Vengeance ambience
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - "Tools/generate_vr_ambience.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          sparse-checkout: |
+            Tools
+            Data-Vengeance/Sounds
+          sparse-checkout-cone-mode: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate original ambience assets
+        run: python Tools/generate_vr_ambience.py
+
+      - name: Commit changed assets only
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Data-Vengeance/Sounds/VR_Ambience
+          if git diff --cached --quiet; then
+            echo "No ambience asset changes."
+            exit 0
+          fi
+          git commit -m "Generate Vengeance ambient sound library"
+          git push
