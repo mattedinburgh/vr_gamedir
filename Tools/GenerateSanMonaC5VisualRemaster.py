@@ -116,117 +116,158 @@ def read_sti(path: Path):
                                              "subimages":1,"original_size":original,
                                              "stored_size":stored,"appdata_size":appdata_size}
 
-def rgb_grade(r,g,b,kind):
-    # Preserve luminance hierarchy/silhouette; change material/color character only.
-    y = 0.299*r + 0.587*g + 0.114*b
-    if kind == "road":
-        # dusty charcoal/brown cobble with stronger stone separation
-        nr = y*0.90 + r*0.18 + 12
-        ng = y*0.84 + g*0.12 + 8
-        nb = y*0.72 + b*0.10 + 3
-    elif kind == "paving":
-        nr = y*0.95 + r*0.10 + 10
-        ng = y*0.90 + g*0.08 + 8
-        nb = y*0.80 + b*0.07 + 5
-    elif kind == "stucco":
-        # faded ochre/cream plaster, slightly sun-bleached
-        nr = y*0.90 + 32
-        ng = y*0.76 + 23
-        nb = y*0.58 + 14
-    elif kind == "roof":
-        # weathered red-brown/corrugated material
-        nr = y*0.82 + r*0.20 + 24
-        ng = y*0.55 + g*0.12 + 12
-        nb = y*0.42 + b*0.08 + 8
-    elif kind == "metal":
-        nr = y*0.78 + 15
-        ng = y*0.80 + 16
-        nb = y*0.82 + 18
-    elif kind == "decal":
-        nr = r*1.08 + 6
-        ng = g*1.03 + 4
-        nb = b*0.94
-    elif kind == "interior":
-        nr = r*1.05 + 3
-        ng = g*1.01 + 2
-        nb = b*0.92
-    else: # urban
-        nr = r*1.05 + y*0.04 + 3
-        ng = g*1.00 + y*0.02 + 2
-        nb = b*0.93
-    return tuple(max(0,min(255,int(v))) for v in (nr,ng,nb))
+def clamp(v):
+    return max(0,min(255,int(v)))
 
-def inside_alpha(im, x, y, radius=1):
-    if x < radius or y < radius or x >= im.width-radius or y >= im.height-radius:
-        return False
-    p = im.load()
-    return all(p[x+dx,y+dy][3] > 0 for dx in range(-radius,radius+1) for dy in range(-radius,radius+1))
+def luminance(r,g,b):
+    return 0.299*r + 0.587*g + 0.114*b
 
-def add_material_detail(im: Image.Image, kind: str, seed: int):
-    rng = random.Random(seed)
-    px = im.load()
-
-    # Fine material variation inside existing opaque silhouette only.
-    for y in range(im.height):
-        for x in range(im.width):
-            r,g,b,a = px[x,y]
-            if not a: continue
-            n = rng.randint(-5,5)
-            if kind in ("stucco","roof","road","paving"):
-                r=max(0,min(255,r+n)); g=max(0,min(255,g+n)); b=max(0,min(255,b+n))
-                px[x,y]=(r,g,b,a)
-
-    draw = ImageDraw.Draw(im, "RGBA")
-    opaque = [(x,y) for y in range(im.height) for x in range(im.width) if px[x,y][3] and inside_alpha(im,x,y,1)]
-    if not opaque: return im
-
-    if kind == "stucco":
-        # restrained hairline cracks + damp/grime marks, never outside original sprite
-        for _ in range(max(1, len(opaque)//500)):
-            x,y = rng.choice(opaque)
-            pts=[(x,y)]
-            for __ in range(rng.randint(2,5)):
-                x += rng.choice((-1,0,1)); y += rng.choice((0,1,1,2))
-                if 0 <= x < im.width and 0 <= y < im.height and px[x,y][3]:
-                    pts.append((x,y))
-            if len(pts)>1: draw.line(pts, fill=(65,48,36,75), width=1)
-        # lower-edge dirt wash only on opaque pixels
-        for x,y in rng.sample(opaque, min(len(opaque), max(1,len(opaque)//25))):
-            if y > im.height*0.60:
-                r,g,b,a=px[x,y]; px[x,y]=(max(0,r-16),max(0,g-14),max(0,b-11),a)
-    elif kind == "roof":
-        for x,y in rng.sample(opaque, min(len(opaque), max(1,len(opaque)//18))):
-            r,g,b,a=px[x,y]
-            px[x,y]=(min(255,r+16),max(0,g-7),max(0,b-8),a)
-    elif kind in ("road","paving"):
-        # subtle dirt/oil spotting contained in existing opaque tile
-        for _ in range(max(1,len(opaque)//900)):
-            x,y=rng.choice(opaque)
-            rad=rng.randint(1,3)
-            for yy in range(max(0,y-rad),min(im.height,y+rad+1)):
-                for xx in range(max(0,x-rad),min(im.width,x+rad+1)):
-                    if px[xx,yy][3]:
-                        r,g,b,a=px[xx,yy]
-                        px[xx,yy]=(max(0,r-10),max(0,g-9),max(0,b-7),a)
-    return im
+def saturation_span(r,g,b):
+    return max(r,g,b)-min(r,g,b)
 
 def remaster_frame(frame, kind, seed):
+    """Redraw material while preserving exact alpha, dimensions and offsets."""
     ox,oy,w,h,pix = frame
-    im = Image.frombytes("RGBA",(w,h),pix)
-    data=[]
-    for r,g,b,a in im.getdata():
-        if a == 0:
-            data.append((0,0,0,0))
-        else:
-            nr,ng,nb = rgb_grade(r,g,b,kind)
-            data.append((nr,ng,nb,a))
-    im.putdata(data)
-    im = add_material_detail(im,kind,seed)
-    # modest clarity; preserve pixel footprint, do not resize.
-    rgb = im.convert("RGB").filter(ImageFilter.UnsharpMask(radius=0.65, percent=105, threshold=3))
-    alpha = im.getchannel("A")
-    im = Image.merge("RGBA",(*rgb.split(),alpha))
-    return ox,oy,w,h,im.tobytes()
+    src = Image.frombytes("RGBA",(w,h),pix)
+    out = Image.new("RGBA",(w,h),(0,0,0,0))
+    sp=src.load(); dp=out.load(); rng=random.Random(seed)
+
+    # Stable palette per frame.  Structural darks/details remain recognisable;
+    # broad material surfaces are repainted rather than merely recoloured.
+    stucco_palettes=[
+        (174,139,86),   # faded ochre
+        (185,169,130),  # dirty cream
+        (132,154,143),  # faded green/blue
+        (166,117,91),   # sun-faded terracotta
+    ]
+    stucco_base=stucco_palettes[(seed>>3)%len(stucco_palettes)]
+
+    for y in range(h):
+        for x in range(w):
+            r,g,b,a=sp[x,y]
+            if not a: continue
+            lum=luminance(r,g,b); sat=saturation_span(r,g,b)
+            local=((x*17+y*29+(seed&255))%13)-6
+
+            if kind == "stucco":
+                # BUILD_24 contains plaster panels plus dark frames/bars/openings.
+                # Repaint only broad neutral mid/high-value wall material; preserve
+                # dark joinery/openings and strongly coloured details.
+                wallish = lum > 58 and sat < 72
+                if wallish:
+                    shade=(lum-118)*0.43
+                    rr=stucco_base[0]+shade+local
+                    gg=stucco_base[1]+shade+local
+                    bb=stucco_base[2]+shade+local
+                    # lower-wall grime / sun bleaching
+                    if y > h*0.70: rr-=10; gg-=11; bb-=9
+                    if y < h*0.20: rr+=5; gg+=5; bb+=4
+                    dp[x,y]=(clamp(rr),clamp(gg),clamp(bb),a)
+                else:
+                    # Preserve bars, windows, damage and trim, just clean the palette.
+                    dp[x,y]=(clamp(r*1.02+4),clamp(g*1.01+3),clamp(b*0.96+2),a)
+
+            elif kind == "roof":
+                # Repaint roof sheets as weathered corrugated metal but retain
+                # original luminance so beams/undersides and slope remain readable.
+                if lum > 48:
+                    shade=(lum-105)*0.52
+                    rr=143+shade+local
+                    gg=78+shade*0.55+local*0.4
+                    bb=52+shade*0.40
+                    dp[x,y]=(clamp(rr),clamp(gg),clamp(bb),a)
+                else:
+                    dp[x,y]=(clamp(r*0.88+9),clamp(g*0.76+7),clamp(b*0.67+6),a)
+
+            elif kind == "road":
+                # Dusty brown-grey cobbles, keeping the original stone relief.
+                shade=(lum-100)*0.70
+                rr=104+shade+local*0.55
+                gg=91+shade+local*0.45
+                bb=72+shade*0.85
+                dp[x,y]=(clamp(rr),clamp(gg),clamp(bb),a)
+
+            elif kind == "paving":
+                shade=(lum-112)*0.68
+                rr=132+shade+local*0.45
+                gg=121+shade+local*0.40
+                bb=103+shade*0.85
+                dp[x,y]=(clamp(rr),clamp(gg),clamp(bb),a)
+
+            elif kind == "metal":
+                # Street lamps: neutral dark metal with readable highlights.
+                dp[x,y]=(clamp(lum*0.86+16),clamp(lum*0.88+17),clamp(lum*0.91+19),a)
+
+            elif kind == "decal":
+                # Keep sign identity/text legible; deepen blacks and strengthen colour.
+                if lum < 65:
+                    dp[x,y]=(clamp(r*0.78),clamp(g*0.78),clamp(b*0.78),a)
+                else:
+                    dp[x,y]=(clamp(r*1.12+5),clamp(g*1.08+4),clamp(b*1.03+2),a)
+
+            elif kind == "interior":
+                # Furniture remains itself; richer wood/cloth and clearer shading.
+                dp[x,y]=(clamp(r*1.07+3),clamp(g*1.02+2),clamp(b*0.93+1),a)
+
+            else: # urban props
+                dp[x,y]=(clamp(r*1.08+2),clamp(g*1.03+2),clamp(b*0.96+1),a)
+
+    p=out.load()
+    def opaque(xx,yy):
+        return 0 <= xx < w and 0 <= yy < h and p[xx,yy][3] > 0
+
+    if kind == "stucco":
+        # Add restrained material features only to wall-like pixels.  These are
+        # visual marks inside the existing sprite; alpha/footprint never changes.
+        candidates=[]
+        for yy in range(2,h-2):
+            for xx in range(2,w-2):
+                r0,g0,b0,a0=sp[xx,yy]
+                if a0 and luminance(r0,g0,b0)>65 and saturation_span(r0,g0,b0)<70:
+                    candidates.append((xx,yy))
+        if candidates:
+            draw=ImageDraw.Draw(out,"RGBA")
+            for _ in range(min(3,max(1,len(candidates)//600))):
+                x,y=rng.choice(candidates); pts=[(x,y)]
+                for __ in range(rng.randint(3,7)):
+                    x+=rng.choice((-1,0,1)); y+=rng.choice((0,1,1,2))
+                    if opaque(x,y): pts.append((x,y))
+                if len(pts)>2: draw.line(pts,fill=(64,52,43,115),width=1)
+            # A few tiny exposed-brick chips, not whole random patches.
+            for _ in range(min(6,max(1,len(candidates)//450))):
+                x,y=rng.choice(candidates)
+                if opaque(x,y):
+                    r1,g1,b1,a1=p[x,y]; p[x,y]=(clamp(r1-35),clamp(g1-45),clamp(b1-42),a1)
+
+    elif kind == "roof":
+        # Corrugation/rust is painted inside the existing roof silhouette.
+        for yy in range(h):
+            for xx in range(w):
+                if not opaque(xx,yy): continue
+                r,g,b,a=p[xx,yy]
+                if ((xx + yy*2 + (seed&7)) % 7)==0 and luminance(r,g,b)>55:
+                    p[xx,yy]=(clamp(r+12),clamp(g-7),clamp(b-8),a)
+                if ((xx*5 + yy*3 + seed) % 97)==0:
+                    p[xx,yy]=(clamp(r+25),clamp(g-13),clamp(b-13),a)
+
+    elif kind in ("road","paving"):
+        # Reinforce existing masonry with subtle joints/dirt, contained by alpha.
+        for yy in range(h):
+            for xx in range(w):
+                if not opaque(xx,yy): continue
+                r,g,b,a=p[xx,yy]
+                period=9 if kind=="road" else 11
+                joint=((xx+yy+(seed&7))%period==0 and (xx-yy+(seed>>4))%5==0)
+                if joint:
+                    p[xx,yy]=(clamp(r-16),clamp(g-15),clamp(b-13),a)
+                elif ((xx*37+yy*61+seed)%241)==0:
+                    p[xx,yy]=(clamp(r-18),clamp(g-16),clamp(b-13),a)
+
+    # Fine clarity only; never resize or alter alpha.
+    rgb=out.convert("RGB").filter(ImageFilter.UnsharpMask(radius=0.6,percent=115,threshold=2))
+    alpha=out.getchannel("A")
+    out=Image.merge("RGBA",(*rgb.split(),alpha))
+    return ox,oy,w,h,out.tobytes()
 
 def write_b1tc(path: Path, frames):
     header=bytearray(b"B1TC")+struct.pack("<HH",1,len(frames))
