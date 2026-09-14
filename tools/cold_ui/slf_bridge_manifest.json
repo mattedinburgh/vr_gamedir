@@ -48,5 +48,14 @@
         "x.sti"
       ]
     }
+  ],
+  "loose_roots": [
+    "Data-UI",
+    "Data-PCM",
+    "Data-AIMv53",
+    "Data-Maps-Tiles",
+    "Data-Vengeance",
+    "Data-1.13",
+    "Data"
   ]
 }
