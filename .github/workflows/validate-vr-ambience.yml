@@ -19,16 +19,21 @@ on:
       - "VALIDATE_AMBIENCE.ps1"
       - ".github/workflows/validate-vr-ambience.yml"
   workflow_dispatch:
+  workflow_run:
+    workflows: [ "Generate Vengeance ambience" ]
+    types: [ completed ]
 
 permissions:
   contents: read
 
 jobs:
   validate:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event_name == 'workflow_run' && 'master' || github.sha }}
           sparse-checkout: |
             Data-Vengeance/SectorAmbience.ini
             Data-Vengeance/Sounds/VR_Ambience
