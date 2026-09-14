@@ -76,6 +76,7 @@ function Assert-ColdUiBuild {
     $report = Get-Content -Raw $PrepareReport | ConvertFrom-Json
     $bad = @($report.assets | Where-Object {
         $_.status -eq "missing-source" -or
+        ($_.status -eq "optional-missing-source" -and -not $_.optional) -or
         ($_.PSObject.Properties.Name -contains "structural_bytes_identical" -and $_.structural_bytes_identical -eq $false) -or
         ($_.policy -eq "preserve" -and
             $_.PSObject.Properties.Name -contains "input_sha256" -and
@@ -88,7 +89,7 @@ function Assert-ColdUiBuild {
         throw "Cold UI validation failed for: $names"
     }
 
-    $expected = @($report.assets | Where-Object { $_.status -ne "missing-source" }).Count
+    $expected = @($report.assets | Where-Object { $_.status -ne "missing-source" -and $_.status -ne "optional-missing-source" }).Count
     $actual = @(Get-ChildItem $OverlayBuild -Recurse -File | Where-Object { $_.Name -ne ".cold_ui_state.json" }).Count
 
     if ($actual -lt $expected) {
