@@ -1,6 +1,6 @@
 {
   "name": "Vengeance cold UI pilot",
-  "notes": "Non-live overlay. Stage 1 targets active Kaerar replacement UI; stage 2 expands into Vengeance-only screens. Item/weapon art is intentionally excluded.",
+  "notes": "Non-live overlay. Stage 1 targets active Kaerar replacement UI; stage 2 expands into Vengeance-only screens; stage 3 adds selected base-SLF chrome after read-only bridge extraction. Item/weapon art is intentionally excluded.",
   "assets": [
     {
       "source": "Data-UI/INTERFACE/Bottom_Bar.sti",
@@ -271,6 +271,210 @@
       "mount_path": "LAPTOP/SORTBY.sti",
       "stage": 2,
       "role": "Bobby Ray control"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/Bars.sti",
+      "mount_path": "INTERFACE/Bars.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/backpack_buttons.sti",
+      "mount_path": "INTERFACE/backpack_buttons.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/bottom_bar_buttons.sti",
+      "mount_path": "INTERFACE/bottom_bar_buttons.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/gold_key_button.sti",
+      "mount_path": "INTERFACE/gold_key_button.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/infobox.sti",
+      "mount_path": "INTERFACE/infobox.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/infobox_background.sti",
+      "mount_path": "INTERFACE/infobox_background.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/infobox_interface.sti",
+      "mount_path": "INTERFACE/infobox_interface.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/inventory_buttons.sti",
+      "mount_path": "INTERFACE/inventory_buttons.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/inventory_buttons_2.sti",
+      "mount_path": "INTERFACE/inventory_buttons_2.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/itembox.sti",
+      "mount_path": "INTERFACE/itembox.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/itemdescdonebutton.sti",
+      "mount_path": "INTERFACE/itemdescdonebutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/iteminfoadvancedbutton.sti",
+      "mount_path": "INTERFACE/iteminfoadvancedbutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/iteminfotabbutton.sti",
+      "mount_path": "INTERFACE/iteminfotabbutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/iteminfotacticaltabbutton.sti",
+      "mount_path": "INTERFACE/iteminfotacticaltabbutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/map_border_buttons.sti",
+      "mount_path": "INTERFACE/map_border_buttons.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/map_screen_bottom_arrows.sti",
+      "mount_path": "INTERFACE/map_screen_bottom_arrows.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/bookmarkbottom.sti",
+      "mount_path": "LAPTOP/bookmarkbottom.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/bookmarkmiddle.sti",
+      "mount_path": "LAPTOP/bookmarkmiddle.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/bookmarktop.sti",
+      "mount_path": "LAPTOP/bookmarktop.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/buttonsforlaptop.sti",
+      "mount_path": "LAPTOP/buttonsforlaptop.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/CatalogueButton.sti",
+      "mount_path": "LAPTOP/CatalogueButton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/CatalogueButton1.sti",
+      "mount_path": "LAPTOP/CatalogueButton1.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/downloadbot.sti",
+      "mount_path": "LAPTOP/downloadbot.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/downloadmid.sti",
+      "mount_path": "LAPTOP/downloadmid.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/downloadtop.sti",
+      "mount_path": "LAPTOP/downloadtop.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/errorbutton.sti",
+      "mount_path": "LAPTOP/errorbutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/hilite.sti",
+      "mount_path": "LAPTOP/hilite.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/NextButton.sti",
+      "mount_path": "LAPTOP/NextButton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/OrderFormButton.sti",
+      "mount_path": "LAPTOP/OrderFormButton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/PreviousButton.sti",
+      "mount_path": "LAPTOP/PreviousButton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/programtitlebar.sti",
+      "mount_path": "LAPTOP/programtitlebar.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/taskbar.sti",
+      "mount_path": "LAPTOP/taskbar.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/webpages.sti",
+      "mount_path": "LAPTOP/webpages.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/x.sti",
+      "mount_path": "LAPTOP/x.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge"
     }
   ]
 }
