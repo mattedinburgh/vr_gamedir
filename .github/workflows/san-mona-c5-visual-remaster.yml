@@ -1,0 +1,95 @@
+name: San Mona C5 visual remaster
+
+on:
+  push:
+    branches:
+      - install/all-2026-09-12
+    paths:
+      - 'Tools/GenerateSanMonaC5VisualRemaster.py'
+      - '.github/workflows/san-mona-c5-visual-remaster.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: san-mona-c5-visual-remaster
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: install/all-2026-09-12
+          fetch-depth: 0
+
+      - name: Install image tooling
+        run: python3 -m pip install --disable-pip-version-check pillow
+
+      - name: Generate graphics-only B1TC siblings
+        run: python3 Tools/GenerateSanMonaC5VisualRemaster.py
+
+      - name: Validate graphics-only invariant
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Checking that map/JSD/gameplay data were not modified..."
+          if git status --porcelain | grep -Ei 'Data-Maps-Tiles/maps/|\.jsd$|Ja2Set\.dat\.xml'; then
+            echo "ERROR: graphics-only invariant violated"
+            exit 1
+          fi
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, struct
+          root=Path('Data-Maps-Tiles/Tilesets/18')
+          manifest=json.loads((root/'SAN_MONA_C5_VISUAL_REMASTER.json').read_text())
+          assert manifest['sector']=='C5'
+          assert manifest['tileset']==18
+          assert manifest['mode']=='graphics-only'
+          assert manifest['assets'], 'no generated visual families'
+          for a in manifest['assets']:
+              p=root/a['b1tc']
+              b=p.read_bytes()
+              assert b[:4]==b'B1TC', p
+              version,frames=struct.unpack_from('<HH',b,4)
+              assert version==1
+              assert frames==a['frames'], (p,frames,a['frames'])
+              assert len(b) > 8 + 16*frames
+              print(p.name,frames,len(b))
+          print('Validated',len(manifest['assets']),'graphics-only families')
+          PY
+
+      - name: Upload before-after tile sheets
+        uses: actions/upload-artifact@v4
+        with:
+          name: san-mona-c5-tile-comparisons
+          path: san_mona_preview/*.png
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Commit generated visual assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Data-Maps-Tiles/Tilesets/18/*.b1tc \
+                  Data-Maps-Tiles/Tilesets/18/SAN_MONA_C5_VISUAL_REMASTER.json \
+                  Data-Maps-Tiles/Tilesets/18/SAN_MONA_C5_VISUAL_REMASTER_README.txt
+          if git diff --cached --quiet; then
+            echo "San Mona visual pack unchanged."
+            exit 0
+          fi
+          # Final staged-file guard: only visual B1TC/manifest/readme are allowed.
+          bad="$(git diff --cached --name-only | grep -Ev '^Data-Maps-Tiles/Tilesets/18/([^/]+\.b1tc|SAN_MONA_C5_VISUAL_REMASTER\.json|SAN_MONA_C5_VISUAL_REMASTER_README\.txt)$' || true)"
+          if [ -n "$bad" ]; then
+            echo "ERROR: disallowed staged files:"
+            echo "$bad"
+            exit 1
+          fi
+          git commit -m "Art: generate graphics-only San Mona C5 remaster"
+          git pull --rebase origin install/all-2026-09-12
+          git push origin HEAD:install/all-2026-09-12
