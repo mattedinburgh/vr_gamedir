@@ -31140,12 +31140,13 @@
 		<uiIndex>1022</uiIndex>
 		<szItemName>Rag</szItemName>
 		<szLongItemName>Rag</szLongItemName>
-		<szItemDesc>A torn scrap of cloth.  Completely devoid of snot.</szItemDesc>
+		<szItemDesc>A torn scrap of cloth. Not sterile, but useful for emergency bleeding control. It can also clean blood from blades, remove camouflage, or serve as a wick.</szItemDesc>
 		<szBRName>Rag</szBRName>
 		<szBRDesc>Not for sale through BR.</szBRDesc>
-		<usItemClass>268435456</usItemClass>
+		<usItemClass>4096</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>		
 		<nasAttachmentClass>1</nasAttachmentClass>
+		<ubCursor>5</ubCursor>
 		<ItemFlag>1024</ItemFlag>
 		<ubGraphicType>5</ubGraphicType>
 		<ubGraphicNum>204</ubGraphicNum>
@@ -31154,9 +31155,15 @@
 		<ItemSize>10</ItemSize>
 		<usPrice>1</usPrice>
 		<ubCoolness>1</ubCoolness>		
+		<Damageable>1</Damageable>
+		<WaterDamages>1</WaterDamages>
+		<ShowStatus>1</ShowStatus>
 		<BigGunList>1</BigGunList>
 		<Attachment>1</Attachment>
 		<HiddenAddon>1</HiddenAddon>
+		<Medical>1</Medical>
+		<PercentStatusDrainReduction>-200</PercentStatusDrainReduction>
+		<FirstAidKit>1</FirstAidKit>
 	</ITEM>
 	<ITEM>
 		<uiIndex>1023</uiIndex>
