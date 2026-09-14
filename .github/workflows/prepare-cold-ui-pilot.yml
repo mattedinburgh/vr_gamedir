@@ -28,6 +28,13 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            tools/cold_ui
+            Data-UI
+            Data-Vengeance/Interface
+            Data-Vengeance/Laptop
+          sparse-checkout-cone-mode: true
 
       - uses: actions/setup-python@v5
         with:
