@@ -74,7 +74,10 @@ def cold_rgb(rgb: Tuple[int, int, int], strength: float, policy: str = "chrome")
     elif s >= 0.55 and v >= 0.25 and 0.25 <= h <= 0.45:       # status green
         local *= 0.12
     elif s >= 0.75 and v >= 0.80 and 0.13 <= h <= 0.19:       # true bright warning yellow
-        local *= 0.15
+        # Yellow warning affordances must remain immediately recognisable.
+        # The first research-informed policy test showed 0.15 still cooled
+        # them too aggressively relative to neutral panel chrome.
+        local *= 0.08
 
     # Existing blues/cyans already belong to the intended language.
     if s >= 0.25 and 0.48 <= h <= 0.72:
