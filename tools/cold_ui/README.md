@@ -68,3 +68,17 @@ python tools/cold_ui/prepare_cold_ui.py --stage 1 --previews
 This does not activate or deploy anything. Preview files are written under `build/cold-ui-preview`.
 
 For every indexed STI recolour, the report records hashes of all bytes outside the palette and requires them to remain identical. This explicitly verifies that frame geometry, offsets, compressed pixel runs, transparency and app data were not changed by the palette pass.
+
+
+## Stage 3: base-SLF bridge (prepared, not run)
+
+The source audit found UI chrome that Vengeance loads from the original JA2 SLF archives rather than from loose files in `vr_gamedir`. A read-only extractor is prepared for those files:
+
+```powershell
+python tools/cold_ui/extract_slf_ui.py --game-root "C:\path\to\Jagged Alliance 2"
+python tools/cold_ui/prepare_cold_ui.py --stage 3 --write --previews
+```
+
+The extractor reads `Data/Interface.slf` and `Data/Laptop.slf` and copies only the allow-listed UI files into `build/cold-ui-base-extract`. It does not modify the SLF archives, the installed game, or VFS configuration.
+
+Stage 3 is deliberately separate from the GitHub-only Stage 1/2 work so the project remains reproducible and the bridge is used only where GitHub has no loose source asset.
