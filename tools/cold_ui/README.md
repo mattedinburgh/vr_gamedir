@@ -41,7 +41,7 @@ Prepare the separate overlay:
 
 ```powershell
 python -m pip install pillow
-python tools/cold_ui/prepare_cold_ui.py --stage 1 --write
+python tools/cold_ui/prepare_cold_ui.py --stage 1 --write --previews
 ```
 
 Incremental generation is the default. Only changed/new source assets are regenerated.
@@ -55,3 +55,16 @@ python tools/cold_ui/prepare_cold_ui.py --stage 1 --write --force
 ## Going live later
 
 Do **not** mount the generated overlay yet. After visual review, the intended activation is a separate VFS profile mounted after the existing `ui` profile. That activation change is deliberately not part of this branch preparation step.
+
+
+## Real asset review previews
+
+The pilot can now decode the actual indexed ETRLE STI frames and produce side-by-side **current vs cold-pilot** PNG sheets:
+
+```powershell
+python tools/cold_ui/prepare_cold_ui.py --stage 1 --previews
+```
+
+This does not activate or deploy anything. Preview files are written under `build/cold-ui-preview`.
+
+For every indexed STI recolour, the report records hashes of all bytes outside the palette and requires them to remain identical. This explicitly verifies that frame geometry, offsets, compressed pixel runs, transparency and app data were not changed by the palette pass.
