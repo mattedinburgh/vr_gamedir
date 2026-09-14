@@ -100,15 +100,6 @@ foreach ($relativeRoot in $assetRoots) {
     }
 }
 
-# Small legacy-path VR cues used by the authored profiles.
-$legacyAmbientRoot = Join-Path $RepoRoot "Data-Vengeance\AMBIENT"
-if (Test-Path $legacyAmbientRoot) {
-    Get-ChildItem -File $legacyAmbientRoot -Filter "VR_*.wav" | ForEach-Object {
-        $relative = $_.FullName.Substring($RepoRoot.Length).TrimStart('\')
-        Copy-ChangedFile $_.FullName (Join-Path $GameRoot $relative)
-    }
-}
-
 Write-Host ""
 Write-Host ("Ambience deploy complete: {0} updated, {1} unchanged." -f $Copied, $Skipped)
 Write-Host "Use -Force only for clean recovery or when you deliberately want every ambience file recopied."
