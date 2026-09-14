@@ -329,7 +329,8 @@
       "mount_path": "INTERFACE/backpack_buttons.sti",
       "stage": 3,
       "role": "base-SLF UI chrome bridge",
-      "policy": "chrome"
+      "policy": "chrome",
+      "optional": true
     },
     {
       "source": "build/cold-ui-base-extract/INTERFACE/bottom_bar_buttons.sti",
@@ -357,14 +358,16 @@
       "mount_path": "INTERFACE/infobox_background.sti",
       "stage": 3,
       "role": "base-SLF UI chrome bridge",
-      "policy": "chrome"
+      "policy": "chrome",
+      "optional": true
     },
     {
       "source": "build/cold-ui-base-extract/INTERFACE/infobox_interface.sti",
       "mount_path": "INTERFACE/infobox_interface.sti",
       "stage": 3,
       "role": "base-SLF UI chrome bridge",
-      "policy": "chrome"
+      "policy": "chrome",
+      "optional": true
     },
     {
       "source": "build/cold-ui-base-extract/INTERFACE/inventory_buttons.sti",
@@ -399,21 +402,24 @@
       "mount_path": "INTERFACE/iteminfoadvancedbutton.sti",
       "stage": 3,
       "role": "base-SLF UI chrome bridge",
-      "policy": "chrome"
+      "policy": "chrome",
+      "optional": true
     },
     {
       "source": "build/cold-ui-base-extract/INTERFACE/iteminfotabbutton.sti",
       "mount_path": "INTERFACE/iteminfotabbutton.sti",
       "stage": 3,
       "role": "base-SLF UI chrome bridge",
-      "policy": "chrome"
+      "policy": "chrome",
+      "optional": true
     },
     {
       "source": "build/cold-ui-base-extract/INTERFACE/iteminfotacticaltabbutton.sti",
       "mount_path": "INTERFACE/iteminfotacticaltabbutton.sti",
       "stage": 3,
       "role": "base-SLF UI chrome bridge",
-      "policy": "chrome"
+      "policy": "chrome",
+      "optional": true
     },
     {
       "source": "build/cold-ui-base-extract/INTERFACE/map_border_buttons.sti",
