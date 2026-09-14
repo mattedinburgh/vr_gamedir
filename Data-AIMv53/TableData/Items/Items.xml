@@ -49428,7 +49428,7 @@
 		<ubWeight>85</ubWeight>
 		<ItemSize>23</ItemSize>
 		<usPrice>1500</usPrice>
-		<ubCoolness>6</ubCoolness>
+		<ubCoolness>2</ubCoolness>
 		<bRepairEase>-2</bRepairEase>
 		<Damageable>1</Damageable>
 		<Repairable>1</Repairable>
@@ -49461,7 +49461,7 @@
 		<ubPerPocket>6</ubPerPocket>
 		<ItemSize>11</ItemSize>
 		<usPrice>200</usPrice>
-		<ubCoolness>5</ubCoolness>
+		<ubCoolness>2</ubCoolness>
 		<Damageable>1</Damageable>
 		<Attachment>1</Attachment>
 		<WaterDamages>1</WaterDamages>
