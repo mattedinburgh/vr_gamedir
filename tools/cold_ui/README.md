@@ -7,7 +7,7 @@ This directory prepares the cold steel-blue UI direction without making it live.
 - The active `vfs_config.Vengeance.ini` is **not changed**.
 - Existing `Data-UI` and `Data-Vengeance` assets are **not modified**.
 - Generated files go to a separate overlay such as `build/Data-UI-ColdPilot`.
-- The workflow is manual-only (`workflow_dispatch`) and uploads an artifact; it does not deploy, copy into a game install, or commit generated binaries.
+- GitHub CI validates the repository-backed Stage 1/2 assets automatically. Stage 3 is validated locally because it reads the user's own original JA2 SLF archives; those proprietary assets are never committed.
 - Item/weapon icons are intentionally outside this UI-first pilot.
 
 ## Research-informed methodology
@@ -37,7 +37,9 @@ This is the safest way to make the existing Vengeance UI colder without changing
 
 **Stage 1**: the active `Data-UI` / Kaerar replacement layer: inventory, tactical bottom panels, map panels, sector inventory, laptop shell and Bobby Ray grids.
 
-**Stage 2**: Vengeance-only panels not already supplied by `Data-UI`: map background, options, prebattle, laptop desktop and category backgrounds.
+**Stage 2**: Vengeance-only panels not already supplied by `Data-UI`. Lore/content artwork (map, cinematic options background, laptop desktop art) is preserved byte-for-byte; surrounding interface chrome is themed.
+
+**Stage 3**: inherited base-JA2 interface/laptop chrome extracted read-only from the user's own `Interface.slf` and `Laptop.slf`. The strict bridge refuses ambiguous filename matches, reports hashes, and fails on missing allow-listed assets.
 
 ## Local audit
 
@@ -80,15 +82,61 @@ This does not activate or deploy anything. Preview files are written under `buil
 For every indexed STI recolour, the report records hashes of all bytes outside the palette and requires them to remain identical. This explicitly verifies that frame geometry, offsets, compressed pixel runs, transparency and app data were not changed by the palette pass.
 
 
-## Stage 3: base-SLF bridge (prepared, not run)
+## Stage 3: strict base-SLF bridge
 
-The source audit found UI chrome that Vengeance loads from the original JA2 SLF archives rather than from loose files in `vr_gamedir`. A read-only extractor is prepared for those files:
+The source audit found UI chrome that Vengeance loads from the original JA2 SLF archives rather than from loose files in `vr_gamedir`. The bridge reads only the allow-listed files from the user's own installation:
 
 ```powershell
 python tools/cold_ui/extract_slf_ui.py --game-root "C:\path\to\Jagged Alliance 2"
 python tools/cold_ui/prepare_cold_ui.py --stage 3 --write --previews
 ```
 
-The extractor reads `Data/Interface.slf` and `Data/Laptop.slf` and copies only the allow-listed UI files into `build/cold-ui-base-extract`. It does not modify the SLF archives, the installed game, or VFS configuration.
+The v2 extractor:
 
-Stage 3 is deliberately separate from the GitHub-only Stage 1/2 work so the project remains reproducible and the bridge is used only where GitHub has no loose source asset.
+- validates SLF directory/data bounds before reading;
+- matches exact archive paths first;
+- permits basename fallback only when it is unique;
+- fails on ambiguous matches;
+- fails on missing required assets unless explicitly run with `--allow-missing`;
+- records SHA-256 hashes for archives and extracted files;
+- verifies every staged write.
+
+It never changes the SLF archives.
+
+## One-command Windows pipeline
+
+The repository root now contains `COLD_UI.ps1`.
+
+Build the complete Stage 3 overlay without touching the live VFS:
+
+```powershell
+.\COLD_UI.ps1 -Mode Build -GameRoot "C:\VENGENCE\Jagged Alliance 2"
+```
+
+Incrementally copy only new/changed cold UI assets into `Data-UI-Cold`, but leave them inactive:
+
+```powershell
+.\COLD_UI.ps1 -Mode Deploy -GameRoot "C:\VENGENCE\Jagged Alliance 2"
+```
+
+Build, incrementally deploy and activate the dedicated VFS layer after the existing `ui` profile:
+
+```powershell
+.\COLD_UI.ps1 -Mode Activate -GameRoot "C:\VENGENCE\Jagged Alliance 2"
+```
+
+Disable the VFS layer while preserving deployed files:
+
+```powershell
+.\COLD_UI.ps1 -Mode Rollback -GameRoot "C:\VENGENCE\Jagged Alliance 2"
+```
+
+Disable it and delete the dedicated overlay directory:
+
+```powershell
+.\COLD_UI.ps1 -Mode Rollback -RemoveOverlay -GameRoot "C:\VENGENCE\Jagged Alliance 2"
+```
+
+Deployment is incremental by default and keeps a state file so stale files previously deployed by this pipeline can be removed safely. `-Force` is available for clean recovery/revalidation.
+
+The activation edit is deliberately narrow: it adds/removes only the `coldui` profile and `datacoldui_dir` location. A pre-activation VFS backup is also kept for emergency recovery.
