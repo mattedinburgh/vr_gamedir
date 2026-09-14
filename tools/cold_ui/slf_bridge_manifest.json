@@ -1,0 +1,52 @@
+{
+  "name": "Vengeance cold UI base-SLF bridge",
+  "notes": "Read-only extraction targets for UI chrome that Vengeance source references but vr_gamedir does not store as loose override files. Extraction is staging only.",
+  "archives": [
+    {
+      "archive": "Data/Interface.slf",
+      "mount": "INTERFACE",
+      "targets": [
+        "Bars.sti",
+        "backpack_buttons.sti",
+        "bottom_bar_buttons.sti",
+        "gold_key_button.sti",
+        "infobox.sti",
+        "infobox_background.sti",
+        "infobox_interface.sti",
+        "inventory_buttons.sti",
+        "inventory_buttons_2.sti",
+        "itembox.sti",
+        "itemdescdonebutton.sti",
+        "iteminfoadvancedbutton.sti",
+        "iteminfotabbutton.sti",
+        "iteminfotacticaltabbutton.sti",
+        "map_border_buttons.sti",
+        "map_screen_bottom_arrows.sti"
+      ]
+    },
+    {
+      "archive": "Data/Laptop.slf",
+      "mount": "LAPTOP",
+      "targets": [
+        "bookmarkbottom.sti",
+        "bookmarkmiddle.sti",
+        "bookmarktop.sti",
+        "buttonsforlaptop.sti",
+        "CatalogueButton.sti",
+        "CatalogueButton1.sti",
+        "downloadbot.sti",
+        "downloadmid.sti",
+        "downloadtop.sti",
+        "errorbutton.sti",
+        "hilite.sti",
+        "NextButton.sti",
+        "OrderFormButton.sti",
+        "PreviousButton.sti",
+        "programtitlebar.sti",
+        "taskbar.sti",
+        "webpages.sti",
+        "x.sti"
+      ]
+    }
+  ]
+}
