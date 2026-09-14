@@ -50,6 +50,9 @@ jobs:
       - name: Run Stage 3 SLF bridge checks
         run: python tools/cold_ui/test_slf_extract.py
 
+      - name: Check Stage 3 manifest consistency
+        run: python tools/cold_ui/test_manifest_consistency.py
+
       - name: Parse PowerShell cold UI pipeline
         shell: pwsh
         run: |
