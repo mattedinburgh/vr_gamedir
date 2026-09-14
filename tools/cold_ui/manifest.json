@@ -1,6 +1,6 @@
 {
   "name": "Vengeance cold UI pilot",
-  "notes": "Non-live overlay. Research-informed v4: semantic-aware VFS asset theming. Stage 1 targets active Kaerar replacement UI; stage 2 expands into Vengeance-only screens; stage 3 adds selected base-SLF chrome after read-only bridge extraction. Item/weapon art is intentionally excluded.",
+  "notes": "Non-live overlay. Research-informed v4: semantic-aware VFS asset theming. Chrome is cooled; semantic colours are protected; content/lore artwork such as maps, cinematic backgrounds and laptop desktop art is preserved. Stage 1 targets active Kaerar replacement UI; stage 2 expands into Vengeance-only screens; stage 3 adds selected base-SLF chrome after read-only bridge extraction. Item/weapon art is intentionally excluded.",
   "assets": [
     {
       "source": "Data-UI/INTERFACE/Bottom_Bar.sti",
@@ -203,42 +203,42 @@
       "mount_path": "INTERFACE/B_MAP.pcx",
       "stage": 2,
       "role": "map background",
-      "policy": "mixed"
+      "policy": "preserve"
     },
     {
       "source": "Data-Vengeance/Interface/B_MAP_800x600.pcx",
       "mount_path": "INTERFACE/B_MAP_800x600.pcx",
       "stage": 2,
       "role": "map background",
-      "policy": "mixed"
+      "policy": "preserve"
     },
     {
       "source": "Data-Vengeance/Interface/B_MAP_1024x768.pcx",
       "mount_path": "INTERFACE/B_MAP_1024x768.pcx",
       "stage": 2,
       "role": "map background",
-      "policy": "mixed"
+      "policy": "preserve"
     },
     {
       "source": "Data-Vengeance/Interface/OptionsScreenBackground.sti",
       "mount_path": "INTERFACE/OptionsScreenBackground.sti",
       "stage": 2,
       "role": "options screen",
-      "policy": "mixed"
+      "policy": "preserve"
     },
     {
       "source": "Data-Vengeance/Interface/OptionsScreenBackground_800x600.sti",
       "mount_path": "INTERFACE/OptionsScreenBackground_800x600.sti",
       "stage": 2,
       "role": "options screen",
-      "policy": "mixed"
+      "policy": "preserve"
     },
     {
       "source": "Data-Vengeance/Interface/OptionsScreenBackground_1024x768.sti",
       "mount_path": "INTERFACE/OptionsScreenBackground_1024x768.sti",
       "stage": 2,
       "role": "options screen",
-      "policy": "mixed"
+      "policy": "preserve"
     },
     {
       "source": "Data-Vengeance/Interface/PREBATTLEBUTTON.STI",
@@ -273,7 +273,7 @@
       "mount_path": "LAPTOP/Desktop.pcx",
       "stage": 2,
       "role": "laptop desktop",
-      "policy": "mixed"
+      "policy": "preserve"
     },
     {
       "source": "Data-Vengeance/Laptop/Ammobackground.STI",
