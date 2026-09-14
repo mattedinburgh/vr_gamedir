@@ -134,13 +134,10 @@ def remaster_frame(frame, kind, seed):
 
     # Stable palette per frame.  Structural darks/details remain recognisable;
     # broad material surfaces are repainted rather than merely recoloured.
-    stucco_palettes=[
-        (174,139,86),   # faded ochre
-        (185,169,130),  # dirty cream
-        (132,154,143),  # faded green/blue
-        (166,117,91),   # sun-faded terracotta
-    ]
-    stucco_base=stucco_palettes[(seed>>3)%len(stucco_palettes)]
+    # A single file is one architectural material family. Keep it coherent across
+    # all frames/orientations; variation belongs between tile families, not between
+    # adjacent pieces of the same wall.
+    stucco_base=(181,150,101)  # sun-faded ochre plaster
 
     for y in range(h):
         for x in range(w):
@@ -168,16 +165,19 @@ def remaster_frame(frame, kind, seed):
                     dp[x,y]=(clamp(r*1.02+4),clamp(g*1.01+3),clamp(b*0.96+2),a)
 
             elif kind == "roof":
-                # Repaint roof sheets as weathered corrugated metal but retain
-                # original luminance so beams/undersides and slope remain readable.
-                if lum > 48:
-                    shade=(lum-105)*0.52
-                    rr=143+shade+local
-                    gg=78+shade*0.55+local*0.4
-                    bb=52+shade*0.40
+                # SLANT_12 contains both corrugated sheet and its wooden/dark support
+                # frame. Redraw the sheet only. Dark support pixels keep their
+                # original material identity instead of becoming orange.
+                sheetish = (lum > 92) or (lum > 55 and g >= r*0.92 and g >= b*0.90)
+                if sheetish:
+                    shade=(lum-112)*0.48
+                    rr=137+shade+local*0.55
+                    gg=79+shade*0.42+local*0.20
+                    bb=55+shade*0.30
                     dp[x,y]=(clamp(rr),clamp(gg),clamp(bb),a)
                 else:
-                    dp[x,y]=(clamp(r*0.88+9),clamp(g*0.76+7),clamp(b*0.67+6),a)
+                    # preserve timber/steel understructure; only improve separation
+                    dp[x,y]=(clamp(r*0.97+3),clamp(g*0.94+3),clamp(b*0.91+3),a)
 
             elif kind == "road":
                 # Dusty brown-grey cobbles, keeping the original stone relief.
@@ -245,10 +245,14 @@ def remaster_frame(frame, kind, seed):
             for xx in range(w):
                 if not opaque(xx,yy): continue
                 r,g,b,a=p[xx,yy]
-                if ((xx + yy*2 + (seed&7)) % 7)==0 and luminance(r,g,b)>55:
-                    p[xx,yy]=(clamp(r+12),clamp(g-7),clamp(b-8),a)
+                sr,sg,sb,sa=sp[xx,yy]
+                sl=luminance(sr,sg,sb)
+                sheetish=(sl > 92) or (sl > 55 and sg >= sr*0.92 and sg >= sb*0.90)
+                if not sheetish: continue
+                if ((xx + yy*2 + (seed&7)) % 7)==0:
+                    p[xx,yy]=(clamp(r+11),clamp(g-6),clamp(b-7),a)
                 if ((xx*5 + yy*3 + seed) % 97)==0:
-                    p[xx,yy]=(clamp(r+25),clamp(g-13),clamp(b-13),a)
+                    p[xx,yy]=(clamp(r+22),clamp(g-11),clamp(b-12),a)
 
     elif kind in ("road","paving"):
         # Reinforce existing masonry with subtle joints/dirt, contained by alpha.
