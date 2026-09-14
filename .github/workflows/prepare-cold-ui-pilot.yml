@@ -1,6 +1,15 @@
 name: Prepare cold UI pilot
 
 on:
+  push:
+    branches:
+      - art/cold-ui-pilot
+    paths:
+      - "tools/cold_ui/**"
+      - ".github/workflows/prepare-cold-ui-pilot.yml"
+      - "Data-UI/**"
+      - "Data-Vengeance/Interface/**"
+      - "Data-Vengeance/Laptop/**"
   workflow_dispatch:
     inputs:
       stage:
