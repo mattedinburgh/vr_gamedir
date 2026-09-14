@@ -26,7 +26,7 @@ STCI_INDEXED = 0x0008
 STCI_RGB = 0x0004
 STCI_ETRLE_COMPRESSED = 0x0020
 STCI_HEADER_SIZE = 64
-PROFILE_VERSION = "cold-ui-v2"
+PROFILE_VERSION = "cold-ui-v3"
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -49,9 +49,15 @@ def cold_rgb(rgb: Tuple[int, int, int], strength: float) -> Tuple[int, int, int]
 
     local = max(0.0, min(1.0, strength))
 
-    # Preserve strong semantic warning/status colours (reds, oranges, yellows, greens).
-    if s >= 0.58 and (h <= 0.17 or 0.20 <= h <= 0.47):
+    # Preserve only clearly semantic colours. Warm brown/orange/gold chrome is
+    # intentionally NOT protected: converting that material language is the point
+    # of the cold-theme pass.
+    if s >= 0.65 and v >= 0.35 and (h <= 0.03 or h >= 0.97):  # warning red
         local *= 0.10
+    elif s >= 0.55 and v >= 0.25 and 0.25 <= h <= 0.45:       # status green
+        local *= 0.12
+    elif s >= 0.75 and v >= 0.80 and 0.13 <= h <= 0.19:       # true bright warning yellow
+        local *= 0.15
 
     # Existing blues/cyans already belong to the intended language.
     if s >= 0.25 and 0.48 <= h <= 0.72:
@@ -68,17 +74,17 @@ def cold_rgb(rgb: Tuple[int, int, int], strength: float) -> Tuple[int, int, int]
     # Cold target preserves luminance but changes the material read:
     # dark navy -> gunmetal -> steel-blue -> icy grey.
     if lum < 0.16:
-        tr = lum * 0.56
-        tg = lum * 0.76 + 0.006
-        tb = lum * 0.98 + 0.018
+        tr = lum * 0.42
+        tg = lum * 0.72 + 0.004
+        tb = lum * 1.15 + 0.022
     elif lum > 0.82:
-        tr = lum * 0.90
-        tg = lum * 0.965
-        tb = min(1.0, lum * 1.025 + 0.005)
+        tr = lum * 0.84
+        tg = lum * 0.95
+        tb = min(1.0, lum * 1.06 + 0.006)
     else:
-        tr = max(0.0, lum * 0.70 - 0.012)
-        tg = min(1.0, lum * 0.88 + 0.012)
-        tb = min(1.0, lum * 1.055 + 0.032)
+        tr = max(0.0, lum * 0.58 - 0.008)
+        tg = min(1.0, lum * 0.86 + 0.010)
+        tb = min(1.0, lum * 1.18 + 0.035)
 
     nr = r * (1.0 - local) + tr * local
     ng = g * (1.0 - local) + tg * local
@@ -345,7 +351,7 @@ def main() -> int:
     ap.add_argument("--source-root", default=".")
     ap.add_argument("--output-root", default="build/Data-UI-ColdPilot")
     ap.add_argument("--stage", type=int, default=1)
-    ap.add_argument("--strength", type=float, default=0.64)
+    ap.add_argument("--strength", type=float, default=0.72)
     ap.add_argument("--write", action="store_true", help="Actually write the separate pilot overlay.")
     ap.add_argument("--force", action="store_true", help="Ignore incremental state and rebuild selected assets.")
     ap.add_argument("--previews", action="store_true", help="Generate real before/after PNG review sheets without activating the UI.")
