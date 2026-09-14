@@ -1,0 +1,2323 @@
+{
+  "source": "SaveGame23.sav extracted inventory",
+  "unique_item_ids": 94,
+  "unique_graphics": 92,
+  "ai_mark": "red AI, bottom-left of every changed icon",
+  "deployment": "NOT DEPLOYED; run INSTALL_SAVE23_ICONS.ps1 manually",
+  "items": [
+    {
+      "id": 2,
+      "name": "Glock 18",
+      "short": "Glock 18",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 2
+    },
+    {
+      "id": 8,
+      "name": "Colt M1911A1",
+      "short": "M1911A1",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 8
+    },
+    {
+      "id": 17,
+      "name": "SKS",
+      "short": "SKS",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 17
+    },
+    {
+      "id": 19,
+      "name": "M24",
+      "short": "M24",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 19
+    },
+    {
+      "id": 22,
+      "name": "Ruger Mini-14",
+      "short": "Mini-14",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 22
+    },
+    {
+      "id": 37,
+      "name": "Combat Knife",
+      "short": "Knife",
+      "class": 4,
+      "graphic_type": 1,
+      "graphic_num": 79
+    },
+    {
+      "id": 38,
+      "name": "Throwing Knife",
+      "short": "Throw. Knife",
+      "class": 8,
+      "graphic_type": 1,
+      "graphic_num": 53
+    },
+    {
+      "id": 71,
+      "name": "9x19mm Pistol Mag, 15",
+      "short": "9x19mm Mag 15",
+      "class": 1024,
+      "graphic_type": 1,
+      "graphic_num": 363
+    },
+    {
+      "id": 72,
+      "name": "9x19mm SMG Mag",
+      "short": "9x19mm SMG Mag",
+      "class": 1024,
+      "graphic_type": 1,
+      "graphic_num": 35
+    },
+    {
+      "id": 73,
+      "name": "9x19mm Pistol Mag, 15 AP",
+      "short": "9x19mm Mag 15 AP",
+      "class": 1024,
+      "graphic_type": 1,
+      "graphic_num": 365
+    },
+    {
+      "id": 94,
+      "name": "5.56x45mm Mag, 30 AP",
+      "short": "5.56x45mm Mag 30 AP",
+      "class": 1024,
+      "graphic_type": 1,
+      "graphic_num": 7
+    },
+    {
+      "id": 96,
+      "name": "7.62x39mm Mag, 10 AP",
+      "short": "7.62x39mm Mag 10 AP",
+      "class": 1024,
+      "graphic_type": 1,
+      "graphic_num": 22
+    },
+    {
+      "id": 132,
+      "name": "Tear Gas Grenade",
+      "short": "Tear Gas",
+      "class": 256,
+      "graphic_type": 1,
+      "graphic_num": 48
+    },
+    {
+      "id": 134,
+      "name": "Mini Grenade",
+      "short": "Mini Grenade",
+      "class": 256,
+      "graphic_type": 1,
+      "graphic_num": 50
+    },
+    {
+      "id": 139,
+      "name": "C1",
+      "short": "C1",
+      "class": 512,
+      "graphic_type": 1,
+      "graphic_num": 45
+    },
+    {
+      "id": 145,
+      "name": "Shaped Charge",
+      "short": "Shaped Charge",
+      "class": 512,
+      "graphic_type": 1,
+      "graphic_num": 107
+    },
+    {
+      "id": 146,
+      "name": "Chemical Break Light",
+      "short": "Break Light",
+      "class": 256,
+      "graphic_type": 2,
+      "graphic_num": 24
+    },
+    {
+      "id": 151,
+      "name": "Smoke Grenade",
+      "short": "Smoke Grenade",
+      "class": 256,
+      "graphic_type": 1,
+      "graphic_num": 98
+    },
+    {
+      "id": 164,
+      "name": "Kevlar Vest",
+      "short": "Kevlar Vest",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 64
+    },
+    {
+      "id": 165,
+      "name": "Treated Kevlar Vest",
+      "short": "Kevlar-18 Vest",
+      "class": 2048,
+      "graphic_type": 6,
+      "graphic_num": 16
+    },
+    {
+      "id": 170,
+      "name": "Kevlar Leggings",
+      "short": "Kevlar Pants",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 67
+    },
+    {
+      "id": 177,
+      "name": "Kevlar Helmet",
+      "short": "Kevlar Helmet",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 63
+    },
+    {
+      "id": 183,
+      "name": "Ceramic Plating",
+      "short": "Ceramic Plates",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 191
+    },
+    {
+      "id": 196,
+      "name": "Guardian Vest",
+      "short": "Guardian Vest",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 137
+    },
+    {
+      "id": 199,
+      "name": "Compact Binoculars",
+      "short": "Comp. Binoc.",
+      "class": 268435456,
+      "graphic_type": 5,
+      "graphic_num": 546
+    },
+    {
+      "id": 203,
+      "name": "Tool Kit",
+      "short": "Tool Kit",
+      "class": 8192,
+      "graphic_type": 2,
+      "graphic_num": 21
+    },
+    {
+      "id": 205,
+      "name": "Wood Camouflage Kit",
+      "short": "Camo - Wood",
+      "class": 8192,
+      "graphic_type": 1,
+      "graphic_num": 514
+    },
+    {
+      "id": 208,
+      "name": "Sniper Scope, 10x",
+      "short": "Scope 10x",
+      "class": 268435456,
+      "graphic_type": 5,
+      "graphic_num": 171
+    },
+    {
+      "id": 210,
+      "name": "Extended Ear",
+      "short": "Extended Ear",
+      "class": 32768,
+      "graphic_type": 1,
+      "graphic_num": 77
+    },
+    {
+      "id": 211,
+      "name": "Night Vision Goggles, Gen. I",
+      "short": "NVG I",
+      "class": 32768,
+      "graphic_type": 5,
+      "graphic_num": 285
+    },
+    {
+      "id": 212,
+      "name": "Ballistic Combat Goggles",
+      "short": "Combat Goggles",
+      "class": 32768,
+      "graphic_type": 5,
+      "graphic_num": 55
+    },
+    {
+      "id": 213,
+      "name": "Gas Mask",
+      "short": "Gas Mask",
+      "class": 32768,
+      "graphic_type": 1,
+      "graphic_num": 75
+    },
+    {
+      "id": 214,
+      "name": "Canteen",
+      "short": "Canteen",
+      "class": 268435456,
+      "graphic_type": 2,
+      "graphic_num": 5
+    },
+    {
+      "id": 222,
+      "name": "Energy Booster",
+      "short": "Energy Boost",
+      "class": 268435456,
+      "graphic_type": 1,
+      "graphic_num": 70
+    },
+    {
+      "id": 235,
+      "name": "Regeneration Booster",
+      "short": "Regen Boost",
+      "class": 268435456,
+      "graphic_type": 1,
+      "graphic_num": 70
+    },
+    {
+      "id": 241,
+      "name": "Laser Sight",
+      "short": "Laser Sight",
+      "class": 268435456,
+      "graphic_type": 5,
+      "graphic_num": 51
+    },
+    {
+      "id": 242,
+      "name": "Remote Bomb Trigger",
+      "short": "Remote Trigger",
+      "class": 268435456,
+      "graphic_type": 5,
+      "graphic_num": 54
+    },
+    {
+      "id": 243,
+      "name": "Wire Cutters",
+      "short": "Wire Cutters",
+      "class": 268435456,
+      "graphic_type": 1,
+      "graphic_num": 88
+    },
+    {
+      "id": 246,
+      "name": "Night Vision Goggles, Gen. II",
+      "short": "NVG II",
+      "class": 32768,
+      "graphic_type": 5,
+      "graphic_num": 286
+    },
+    {
+      "id": 283,
+      "name": "Zylon Combat Vest",
+      "short": "Zylon Combat Vest",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 207
+    },
+    {
+      "id": 294,
+      "name": "SWAT Leggings",
+      "short": "SWAT Pants",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 195
+    },
+    {
+      "id": 345,
+      "name": "Uzi",
+      "short": "Uzi",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 127
+    },
+    {
+      "id": 401,
+      "name": ".45 Hi-Cap Pistol Mag",
+      "short": ".45 Hi-Cap Mag",
+      "class": 1024,
+      "graphic_type": 1,
+      "graphic_num": 374
+    },
+    {
+      "id": 474,
+      "name": ".30 Car Mag, AP",
+      "short": ".30 Car AP",
+      "class": 1024,
+      "graphic_type": 1,
+      "graphic_num": 684
+    },
+    {
+      "id": 545,
+      "name": "12 Gauge Shells, 2",
+      "short": "12g Shells 2",
+      "class": 1024,
+      "graphic_type": 2,
+      "graphic_num": 22
+    },
+    {
+      "id": 546,
+      "name": "12 Gauge Shells, 2 Buckshot",
+      "short": "12g Shells 2 BS",
+      "class": 1024,
+      "graphic_type": 2,
+      "graphic_num": 4
+    },
+    {
+      "id": 593,
+      "name": "Ka-Bar Cutlass",
+      "short": "KB Cutlass",
+      "class": 4,
+      "graphic_type": 5,
+      "graphic_num": 519
+    },
+    {
+      "id": 596,
+      "name": "Heavy Throwing Knife",
+      "short": "Hvy Throw. Knife",
+      "class": 8,
+      "graphic_type": 5,
+      "graphic_num": 184
+    },
+    {
+      "id": 600,
+      "name": "Rambo Knife",
+      "short": "Rambo Knife",
+      "class": 4,
+      "graphic_type": 5,
+      "graphic_num": 187
+    },
+    {
+      "id": 632,
+      "name": "Colt M16A4",
+      "short": "M16A4",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 86
+    },
+    {
+      "id": 633,
+      "name": "Colt M4A1",
+      "short": "M4A1",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 264
+    },
+    {
+      "id": 692,
+      "name": "Mini-Uzi",
+      "short": "Mini-Uzi",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 227
+    },
+    {
+      "id": 713,
+      "name": "SIG SG 550",
+      "short": "SG550",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 184
+    },
+    {
+      "id": 726,
+      "name": "Steyr AUG HBAR",
+      "short": "AUG HBAR",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 98
+    },
+    {
+      "id": 731,
+      "name": "Street Sweeper",
+      "short": "Street Sweeper",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 198
+    },
+    {
+      "id": 759,
+      "name": "MAB PA-15",
+      "short": "PA-15",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 269
+    },
+    {
+      "id": 810,
+      "name": "Twaron Helmet",
+      "short": "Tw. Helmet",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 176
+    },
+    {
+      "id": 811,
+      "name": "Twaron Leggings",
+      "short": "Tw. Pants",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 189
+    },
+    {
+      "id": 812,
+      "name": "Twaron Vest",
+      "short": "Tw. Vest",
+      "class": 2048,
+      "graphic_type": 5,
+      "graphic_num": 190
+    },
+    {
+      "id": 1003,
+      "name": "Flash Suppressor",
+      "short": "Flash Suppressor",
+      "class": 268435456,
+      "graphic_type": 5,
+      "graphic_num": 149
+    },
+    {
+      "id": 1027,
+      "name": "Urban Camouflage Kit",
+      "short": "Camo - Urban",
+      "class": 8192,
+      "graphic_type": 1,
+      "graphic_num": 513
+    },
+    {
+      "id": 1029,
+      "name": "Small Scope, 2x",
+      "short": "Scope 2x",
+      "class": 268435456,
+      "graphic_type": 5,
+      "graphic_num": 525
+    },
+    {
+      "id": 1057,
+      "name": "5.56x45mm Mag, 42 AP",
+      "short": "5.56x45mm Mag 42 AP",
+      "class": 1024,
+      "graphic_type": 1,
+      "graphic_num": 593
+    },
+    {
+      "id": 1078,
+      "name": "Beretta Cx4 Storm",
+      "short": "Cx4 Storm",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 366
+    },
+    {
+      "id": 1089,
+      "name": "TT Utility Vest",
+      "short": "TAC-1B Vest",
+      "class": 131072,
+      "graphic_type": 4,
+      "graphic_num": 646
+    },
+    {
+      "id": 1090,
+      "name": "Load Bearing Equipment Harness",
+      "short": "LBE Harness",
+      "class": 131072,
+      "graphic_type": 5,
+      "graphic_num": 698
+    },
+    {
+      "id": 1091,
+      "name": "Holster",
+      "short": "Holster",
+      "class": 131072,
+      "graphic_type": 5,
+      "graphic_num": 695
+    },
+    {
+      "id": 1097,
+      "name": "TIMS Combat Pack",
+      "short": "TIMS Pack",
+      "class": 131072,
+      "graphic_type": 5,
+      "graphic_num": 689
+    },
+    {
+      "id": 1098,
+      "name": "Tactical Tailor 3-Day Pack",
+      "short": "TT 3-Day Pack",
+      "class": 131072,
+      "graphic_type": 5,
+      "graphic_num": 690
+    },
+    {
+      "id": 1172,
+      "name": "Canteen / Equipment Pouch Leg Rig",
+      "short": "Cant.-Equip.",
+      "class": 131072,
+      "graphic_type": 5,
+      "graphic_num": 716
+    },
+    {
+      "id": 1178,
+      "name": "MAT-49",
+      "short": "MAT-49",
+      "class": 2,
+      "graphic_type": 0,
+      "graphic_num": 329
+    },
+    {
+      "id": 1183,
+      "name": "Match Sights",
+      "short": "Match Sights",
+      "class": 268435456,
+      "graphic_type": 1,
+      "graphic_num": 724
+    },
+    {
+      "id": 1204,
+      "name": "First Aid Leg Rig",
+      "short": "1st Aid Rig",
+      "class": 131072,
+      "graphic_type": 5,
+      "graphic_num": 744
+    },
+    {
+      "id": 1525,
+      "name": "Rifle Sling",
+      "short": "Rifle Sling",
+      "class": 268435456,
+      "graphic_type": 2,
+      "graphic_num": 218
+    },
+    {
+      "id": 1570,
+      "name": "PET bottle",
+      "short": "PET bottle",
+      "class": 268435456,
+      "graphic_type": 2,
+      "graphic_num": 123
+    },
+    {
+      "id": 1576,
+      "name": "Gun Cleaning Kit",
+      "short": "Cleaning Kit",
+      "class": 8192,
+      "graphic_type": 2,
+      "graphic_num": 134
+    },
+    {
+      "id": 1618,
+      "name": "Black army trousers",
+      "short": "Black pants",
+      "class": 8192,
+      "graphic_type": 2,
+      "graphic_num": 147
+    },
+    {
+      "id": 1646,
+      "name": "Equipment Leg Rig",
+      "short": "Equipment LR",
+      "class": 131072,
+      "graphic_type": 2,
+      "graphic_num": 168
+    },
+    {
+      "id": 1647,
+      "name": "Bomb Pouch Leg Rig",
+      "short": "Bomb Pouch",
+      "class": 131072,
+      "graphic_type": 2,
+      "graphic_num": 169
+    },
+    {
+      "id": 1663,
+      "name": "7 RD Shotgun Bandolier",
+      "short": "Shotgun Bandolier",
+      "class": 131072,
+      "graphic_type": 2,
+      "graphic_num": 217
+    },
+    {
+      "id": 1709,
+      "name": "Sleeping bag",
+      "short": "Sleeping bag",
+      "class": 268435456,
+      "graphic_type": 2,
+      "graphic_num": 223
+    },
+    {
+      "id": 2117,
+      "name": "M2 Carbine",
+      "short": "M2 Carbine",
+      "class": 2,
+      "graphic_type": 4,
+      "graphic_num": 545
+    },
+    {
+      "id": 2144,
+      "name": "IMI Uzi MP2",
+      "short": "Uzi MP2",
+      "class": 2,
+      "graphic_type": 4,
+      "graphic_num": 681
+    },
+    {
+      "id": 2145,
+      "name": "Marlin Camp Carbine 9",
+      "short": "Marlin CC 9",
+      "class": 2,
+      "graphic_type": 4,
+      "graphic_num": 682
+    },
+    {
+      "id": 2420,
+      "name": "C4 Small Charge",
+      "short": "C4 Small",
+      "class": 512,
+      "graphic_type": 5,
+      "graphic_num": 45
+    },
+    {
+      "id": 2462,
+      "name": "TNT stick",
+      "short": "TNT stick",
+      "class": 256,
+      "graphic_type": 6,
+      "graphic_num": 437
+    },
+    {
+      "id": 2502,
+      "name": "Woodland Camo Pants",
+      "short": "Woodland Pants",
+      "class": 2048,
+      "graphic_type": 6,
+      "graphic_num": 259
+    },
+    {
+      "id": 2515,
+      "name": "Jeans",
+      "short": "Jeans",
+      "class": 2048,
+      "graphic_type": 4,
+      "graphic_num": 606
+    },
+    {
+      "id": 2520,
+      "name": "Knee Pads Urban Camo",
+      "short": "Knee Pads UC",
+      "class": 2048,
+      "graphic_type": 4,
+      "graphic_num": 608
+    },
+    {
+      "id": 2612,
+      "name": "TT-2C Medic Vest",
+      "short": "TT-2C Vest",
+      "class": 131072,
+      "graphic_type": 4,
+      "graphic_num": 642
+    },
+    {
+      "id": 2618,
+      "name": "Sniper Magazines Leg Rig",
+      "short": "Sniper Leg Rig",
+      "class": 131072,
+      "graphic_type": 6,
+      "graphic_num": 146
+    },
+    {
+      "id": 2699,
+      "name": "Carabiner LR",
+      "short": "Carabiner LR",
+      "class": 131072,
+      "graphic_type": 2,
+      "graphic_num": 215
+    },
+    {
+      "id": 2700,
+      "name": "Rifle Sling LBE",
+      "short": "Rifle Sling LBE",
+      "class": 131072,
+      "graphic_type": 2,
+      "graphic_num": 218
+    },
+    {
+      "id": 2801,
+      "name": "Coca Leaves",
+      "short": "Coca Leaves",
+      "class": 268435456,
+      "graphic_type": 6,
+      "graphic_num": 369
+    }
+  ],
+  "big_items": [
+    {
+      "file": "GUN02.STI",
+      "graphic_type": 0,
+      "graphic_num": 2,
+      "profile": "weapon_polymer",
+      "items": [
+        {
+          "id": 2,
+          "name": "Glock 18"
+        }
+      ],
+      "source_sha256": "c47dcbb5d64080b01a74569c7bc8031ac2a1cfe3322f07044ac5e02680f8e3b2",
+      "output_sha256": "4a53122807ca64a48146d37f5157b3d524b777c4ae0fad6099e11805424041fe",
+      "subimages": 1
+    },
+    {
+      "file": "GUN08.STI",
+      "graphic_type": 0,
+      "graphic_num": 8,
+      "profile": "weapon_steel",
+      "items": [
+        {
+          "id": 8,
+          "name": "Colt M1911A1"
+        }
+      ],
+      "source_sha256": "7b271fa864295586d5e012a9acf0a669a0aa79f43b24bc6563cd75cf651c5e92",
+      "output_sha256": "64da087000e437832935522d261aadae87b4408cf3f809c2ab5ee41be6f8fe9a",
+      "subimages": 1
+    },
+    {
+      "file": "GUN17.STI",
+      "graphic_type": 0,
+      "graphic_num": 17,
+      "profile": "weapon_wood",
+      "items": [
+        {
+          "id": 17,
+          "name": "SKS"
+        }
+      ],
+      "source_sha256": "89fded2ce39065541af5f7a95a221b0c13e435f2ad086b44c1ce0bed7a6dce72",
+      "output_sha256": "84ae0c3dc45f7f9576c85d9d4babea73fea5c771fae776e2f1593b821dcdb509",
+      "subimages": 1
+    },
+    {
+      "file": "GUN19.STI",
+      "graphic_type": 0,
+      "graphic_num": 19,
+      "profile": "weapon_steel",
+      "items": [
+        {
+          "id": 19,
+          "name": "M24"
+        }
+      ],
+      "source_sha256": "9ee4123af99bf8ee6e8bb6a60126d5336ed0694b57d5ca55e448033199190366",
+      "output_sha256": "d751731c68f3c57e30c326de1ea0d410f2e33fa7a0b490b325a2819e70b20cfc",
+      "subimages": 1
+    },
+    {
+      "file": "GUN22.STI",
+      "graphic_type": 0,
+      "graphic_num": 22,
+      "profile": "weapon_wood",
+      "items": [
+        {
+          "id": 22,
+          "name": "Ruger Mini-14"
+        }
+      ],
+      "source_sha256": "defe14bd57ec2294c341786fa124a94fabbb6de17229cde9750f5088e932d9a1",
+      "output_sha256": "4364b14e9a180e30e1d05183403821eb1b78149a0132c69d31084ffcc233a2fe",
+      "subimages": 1
+    },
+    {
+      "file": "GUN86.sti",
+      "graphic_type": 0,
+      "graphic_num": 86,
+      "profile": "weapon_polymer",
+      "items": [
+        {
+          "id": 632,
+          "name": "Colt M16A4"
+        }
+      ],
+      "source_sha256": "c689d99ac3f1b77f5caa8f1eed3e29f70ac652e5bd1048490070c7d929bb4b73",
+      "output_sha256": "0426af31ea58dc784a30016d3ebd73d7ffc04a3350519702b237f58afae31ef7",
+      "subimages": 1
+    },
+    {
+      "file": "gun98.sti",
+      "graphic_type": 0,
+      "graphic_num": 98,
+      "profile": "weapon_polymer",
+      "items": [
+        {
+          "id": 726,
+          "name": "Steyr AUG HBAR"
+        }
+      ],
+      "source_sha256": "dc3bfce926683afefff50cac80ec19afa0aec279095cc04a709c930b771867de",
+      "output_sha256": "d9737e7265334281f33c63cd98108870f558b9deb02dbce377a0817c37e048bf",
+      "subimages": 1
+    },
+    {
+      "file": "gun127.STI",
+      "graphic_type": 0,
+      "graphic_num": 127,
+      "profile": "weapon_polymer",
+      "items": [
+        {
+          "id": 345,
+          "name": "Uzi"
+        }
+      ],
+      "source_sha256": "89de650309c9e2b7750d0c8beaa372a14188a809ea53d0a9fef1c436014dd02d",
+      "output_sha256": "a0c9e8ba96cf5ba0f784e82737f41f1f8e96f7ca5f9ecf3c8feea7543f66a58b",
+      "subimages": 1
+    },
+    {
+      "file": "GUN184.sti",
+      "graphic_type": 0,
+      "graphic_num": 184,
+      "profile": "weapon_polymer",
+      "items": [
+        {
+          "id": 713,
+          "name": "SIG SG 550"
+        }
+      ],
+      "source_sha256": "3877ad833d9b43898f5b1f42711542436512f8d5c40aa3c704a4ff03c0bdd655",
+      "output_sha256": "c95cf01886159032cacc8128c4b3ad09aed857db55693f663a285edba0fb0f86",
+      "subimages": 1
+    },
+    {
+      "file": "Gun198.sti",
+      "graphic_type": 0,
+      "graphic_num": 198,
+      "profile": "weapon_steel",
+      "items": [
+        {
+          "id": 731,
+          "name": "Street Sweeper"
+        }
+      ],
+      "source_sha256": "cdf525bdaa4d8ab8091957045d576e77901de66b073b2f23027764e27d927841",
+      "output_sha256": "0414f9b7c93ed4b9107a2789a03cf0778eb00157c8fab3572f780f9dbe3f65b7",
+      "subimages": 1
+    },
+    {
+      "file": "gun227.sti",
+      "graphic_type": 0,
+      "graphic_num": 227,
+      "profile": "weapon_polymer",
+      "items": [
+        {
+          "id": 692,
+          "name": "Mini-Uzi"
+        }
+      ],
+      "source_sha256": "4bf8288ec967818c787ff3c5108d2c9004eccd5cc9294581b01c41ef4980bdad",
+      "output_sha256": "091b6547f5c495d7a88b9470b8f2c432747fae29d8657cdc262531ae9e859825",
+      "subimages": 1
+    },
+    {
+      "file": "Gun264.STI",
+      "graphic_type": 0,
+      "graphic_num": 264,
+      "profile": "weapon_polymer",
+      "items": [
+        {
+          "id": 633,
+          "name": "Colt M4A1"
+        }
+      ],
+      "source_sha256": "e1c1a05b769e20c6a8c7a06a22b7d3dc5599f32150b363c37be1e92bf629b28e",
+      "output_sha256": "d2d9e0f344a5f993218c7a909335aa7657c83832c0a97515314d783a6f2d17a5",
+      "subimages": 1
+    },
+    {
+      "file": "GUN269.sti",
+      "graphic_type": 0,
+      "graphic_num": 269,
+      "profile": "weapon_steel",
+      "items": [
+        {
+          "id": 759,
+          "name": "MAB PA-15"
+        }
+      ],
+      "source_sha256": "a9166a0a189f95aec7a924f336b00385571ae512bf4fafaca3b33be665423df3",
+      "output_sha256": "74c01eddba50b24b0e7100690313013356b238b49c7b632ed7d7e70c85d89771",
+      "subimages": 1
+    },
+    {
+      "file": "gun329.sti",
+      "graphic_type": 0,
+      "graphic_num": 329,
+      "profile": "weapon_steel",
+      "items": [
+        {
+          "id": 1178,
+          "name": "MAT-49"
+        }
+      ],
+      "source_sha256": "8f9ecc2359c33340d1db438bcb54e783a95c35cc85b5ba78445c3635fb286930",
+      "output_sha256": "3337cb2fbdb8e6f5db638d025b2b06c43932bd4379340717831e60768f167ff6",
+      "subimages": 1
+    },
+    {
+      "file": "gun366.sti",
+      "graphic_type": 0,
+      "graphic_num": 366,
+      "profile": "weapon_steel",
+      "items": [
+        {
+          "id": 1078,
+          "name": "Beretta Cx4 Storm"
+        }
+      ],
+      "source_sha256": "cb80499d65098af2d04729bba859cb70869f184c6cf9eb94aad9b6815558be76",
+      "output_sha256": "bcabf3573f1e1a1f7f374ab7dbb601dc3fce63d4cceb6fcb36a0b4d9298ba062",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM07.STI",
+      "graphic_type": 1,
+      "graphic_num": 7,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 94,
+          "name": "5.56x45mm Mag, 30 AP"
+        }
+      ],
+      "source_sha256": "969dd79a0c7a29d621d2380cb09714f4e357ee45a4a9c3cf616b8e92d82169c7",
+      "output_sha256": "2aebd006e271b2e5e7c16ef14293ee2d570bc2571df615c635478ff42fc81923",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM22.STI",
+      "graphic_type": 1,
+      "graphic_num": 22,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 96,
+          "name": "7.62x39mm Mag, 10 AP"
+        }
+      ],
+      "source_sha256": "06381f5ead26439b62fdbacb3bf52f70f95d1e6686760621ee0e703787962ea2",
+      "output_sha256": "308f3fa1e75863a0326871734d98c6f581dad53eee4063d0222523040ba8bec5",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM35.STI",
+      "graphic_type": 1,
+      "graphic_num": 35,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 72,
+          "name": "9x19mm SMG Mag"
+        }
+      ],
+      "source_sha256": "5ba895259bea75b4b1e5b27d0c641e5a790fa93b307900826193937b7db5f374",
+      "output_sha256": "7e88afc75d773bb2476a4f724715506a0d7325fd0efd08495009c9272823a0d2",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM45.STI",
+      "graphic_type": 1,
+      "graphic_num": 45,
+      "profile": "explosive",
+      "items": [
+        {
+          "id": 139,
+          "name": "C1"
+        }
+      ],
+      "source_sha256": "59cf028ea83b8e7356d8d22a220d2f86c406e26554b5a0c22cd7abbed1ad9b63",
+      "output_sha256": "1f4a8e8b83489ac91c71308d618a9fe4f6c51ae1fda23de8ee33f632f28ca7ac",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM48.STI",
+      "graphic_type": 1,
+      "graphic_num": 48,
+      "profile": "explosive",
+      "items": [
+        {
+          "id": 132,
+          "name": "Tear Gas Grenade"
+        }
+      ],
+      "source_sha256": "1b666216d63ebeffca7e5fbdd66af7e7286355f8d4905f8918ba5afabf02b11e",
+      "output_sha256": "5325537565d5e9d5845020ed13b74f76c62cf6ff30d3e060ee6170c5f2523111",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM50.STI",
+      "graphic_type": 1,
+      "graphic_num": 50,
+      "profile": "explosive",
+      "items": [
+        {
+          "id": 134,
+          "name": "Mini Grenade"
+        }
+      ],
+      "source_sha256": "25bfbc8f466c14e6a5e2d731ec39c853a2c26dd9b534c9975f37b8aa5405e0a3",
+      "output_sha256": "270526bad4117e7b4a3aa5e78697b718ea0115505b2bbb49867e96fdac35b04e",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM53.STI",
+      "graphic_type": 1,
+      "graphic_num": 53,
+      "profile": "blade",
+      "items": [
+        {
+          "id": 38,
+          "name": "Throwing Knife"
+        }
+      ],
+      "source_sha256": "b5bce4437d4bed805fc4ca9112b766152c3ce01ebe54554948c62118c96d01de",
+      "output_sha256": "c70ce80b63ce36ebab167f0eab66551809cbaab10bd35c25abbb292c02fd0d05",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM70.STI",
+      "graphic_type": 1,
+      "graphic_num": 70,
+      "profile": "medical",
+      "items": [
+        {
+          "id": 222,
+          "name": "Energy Booster"
+        },
+        {
+          "id": 235,
+          "name": "Regeneration Booster"
+        }
+      ],
+      "source_sha256": "598985e73395e0a76d3439802f4a12d76dc6ffc84db79ccc0ab2436a9418e3a4",
+      "output_sha256": "d7ffd934fe6044873ad78f238862efcfefeb5a84fb3736eb86c266ba313562a8",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM75.STI",
+      "graphic_type": 1,
+      "graphic_num": 75,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 213,
+          "name": "Gas Mask"
+        }
+      ],
+      "source_sha256": "22585aa63dad7fa507010f7996e86cacf9a1c9f4899f224f4da89e35351e32f2",
+      "output_sha256": "bfe450320d61fb7743af1ad3e0bd2a14ae2137e558d318caccbbb054818760f8",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM77.STI",
+      "graphic_type": 1,
+      "graphic_num": 77,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 210,
+          "name": "Extended Ear"
+        }
+      ],
+      "source_sha256": "aafb9381dda5e45ac3a348c1efa5734bcbf65f6c2adf95f947bde9dbb8a3c8f9",
+      "output_sha256": "73a31e8e8468f1b775378ea39213d7c1379d14c80b28689697cb37f3b0ca4e23",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM79.STI",
+      "graphic_type": 1,
+      "graphic_num": 79,
+      "profile": "blade",
+      "items": [
+        {
+          "id": 37,
+          "name": "Combat Knife"
+        }
+      ],
+      "source_sha256": "ed818a385f2488337d823463cbe31155f748164c3d076c1c469d88d7a65fe325",
+      "output_sha256": "8b187c9c8005ecbbfb37abb24d95d7cfdefcb57f9a68ff661ddd4b00b41b1fdc",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM88.STI",
+      "graphic_type": 1,
+      "graphic_num": 88,
+      "profile": "metal",
+      "items": [
+        {
+          "id": 243,
+          "name": "Wire Cutters"
+        }
+      ],
+      "source_sha256": "c7cc403cecd65109acc665155d52aedfee7be4a12b461c782036c0305878a29c",
+      "output_sha256": "b6273f665a5c92adcba5ba19ccbc48a368f60bf952472097a6e951c1224051ee",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM98.STI",
+      "graphic_type": 1,
+      "graphic_num": 98,
+      "profile": "explosive",
+      "items": [
+        {
+          "id": 151,
+          "name": "Smoke Grenade"
+        }
+      ],
+      "source_sha256": "71a1fe569fbdc861277fc728d2bf71d4d6e72c25962cb89d983cc8d961a830e3",
+      "output_sha256": "f9b7cfa20695061615d0ca3ee4b93da577f1566b622bfc4ef8d16b170f2ddf54",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM107.STI",
+      "graphic_type": 1,
+      "graphic_num": 107,
+      "profile": "explosive",
+      "items": [
+        {
+          "id": 145,
+          "name": "Shaped Charge"
+        }
+      ],
+      "source_sha256": "6846dab493985d29aba98c9eabcc35e1db144a5f4504b18662fd0d81c1fc3ec8",
+      "output_sha256": "d98a33d4a73756dcb7e67463b88eebec9514e14721ec19a14e04b3daeccb1447",
+      "subimages": 1
+    },
+    {
+      "file": "p1item363.sti",
+      "graphic_type": 1,
+      "graphic_num": 363,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 71,
+          "name": "9x19mm Pistol Mag, 15"
+        }
+      ],
+      "source_sha256": "c4da400bb0c09b86b6c8841c45db1501808651daf83de5aba6470d8912b7b17f",
+      "output_sha256": "91c15fd8eac48ae3cf28e17464c389fe5b750f3bafefb39320d342096444da82",
+      "subimages": 1
+    },
+    {
+      "file": "p1item365.sti",
+      "graphic_type": 1,
+      "graphic_num": 365,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 73,
+          "name": "9x19mm Pistol Mag, 15 AP"
+        }
+      ],
+      "source_sha256": "71ce9b50a4da8393fd4d53ede1aa08bf50d6afb2e41e1db67291abd35a35a4f4",
+      "output_sha256": "51c9f27b0b7cfe94db8b0803c51b9dca0c16689a0f3ebf3b944182a095944d7a",
+      "subimages": 1
+    },
+    {
+      "file": "p1item374.sti",
+      "graphic_type": 1,
+      "graphic_num": 374,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 401,
+          "name": ".45 Hi-Cap Pistol Mag"
+        }
+      ],
+      "source_sha256": "a2be3fb57434a04185a36bb50f5a5bae3e9f9c0a7b41ef141725eb9d7bad9bfb",
+      "output_sha256": "cde18003b3d7d639b1bd76fdd732b7cc12a829d0df4d44270f2ee0d44b84175c",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM513.sti",
+      "graphic_type": 1,
+      "graphic_num": 513,
+      "profile": "medical",
+      "items": [
+        {
+          "id": 1027,
+          "name": "Urban Camouflage Kit"
+        }
+      ],
+      "source_sha256": "fcdeb64bda07449d0200a4dd7a768d840ef6d030c796eca52c800748bf3ad3f8",
+      "output_sha256": "89f66b6fd77c7167e94dd1ec84f7d6b4ae4bc3a12b23275150e8e9777a5c7088",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM514.sti",
+      "graphic_type": 1,
+      "graphic_num": 514,
+      "profile": "medical",
+      "items": [
+        {
+          "id": 205,
+          "name": "Wood Camouflage Kit"
+        }
+      ],
+      "source_sha256": "660b93f2ca04d7b819977f0ae429eb23a0b3b635c5270a93d4a3fc2c83656d71",
+      "output_sha256": "213b79c138d72bfdcd2eb37b70f7dc1c9b43db9d2014f093837c1d4e05395af0",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM593.sti",
+      "graphic_type": 1,
+      "graphic_num": 593,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 1057,
+          "name": "5.56x45mm Mag, 42 AP"
+        }
+      ],
+      "source_sha256": "9a5e7546b7b0de5c11c54f5e2f70430f7c02239d72ed123f159c899ecaf7451e",
+      "output_sha256": "cade68c0ff5de122e27b8471812254a48e3020cf749fdf72122802731736f897",
+      "subimages": 1
+    },
+    {
+      "file": "p1item684.sti",
+      "graphic_type": 1,
+      "graphic_num": 684,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 474,
+          "name": ".30 Car Mag, AP"
+        }
+      ],
+      "source_sha256": "e9d72eb6536988b0e871ac267e0d94fe7056b8419ec542df9ef7ab16fb6044b0",
+      "output_sha256": "33609616b458bccba34b1264ca651c6fcd0862b6aa2e2b9f6f00aec47a27438e",
+      "subimages": 1
+    },
+    {
+      "file": "P1ITEM724.sti",
+      "graphic_type": 1,
+      "graphic_num": 724,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 1183,
+          "name": "Match Sights"
+        }
+      ],
+      "source_sha256": "41dbf5af6cfe8dcc88da3b1182832a75905e449f267b4e15884f6ec782c90d89",
+      "output_sha256": "65dbd0c7466db99f54b1ee60a37384b036d753b3cae445e744bc19a75686eb44",
+      "subimages": 1
+    },
+    {
+      "file": "P2ITEM04.STI",
+      "graphic_type": 2,
+      "graphic_num": 4,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 546,
+          "name": "12 Gauge Shells, 2 Buckshot"
+        }
+      ],
+      "source_sha256": "c8606695776fdcf01596481af21e3f1fd37d830fad285b183168438a9f14cbce",
+      "output_sha256": "b7b19c5c04036bc334c5192188be0b08e8ffa807beeb7c23e5a1035f7da2ed1c",
+      "subimages": 1
+    },
+    {
+      "file": "P2ITEM05.STI",
+      "graphic_type": 2,
+      "graphic_num": 5,
+      "profile": "container",
+      "items": [
+        {
+          "id": 214,
+          "name": "Canteen"
+        }
+      ],
+      "source_sha256": "584a47cf130fe304223d2551072a03bb2c5ec1a52fde93d1a3728675a17f6ac4",
+      "output_sha256": "57f387b0cdeb7a92390fd5028cb4c5737496a912f4c0082b322e04d2b7a59765",
+      "subimages": 1
+    },
+    {
+      "file": "P2ITEM21.STI",
+      "graphic_type": 2,
+      "graphic_num": 21,
+      "profile": "medical",
+      "items": [
+        {
+          "id": 203,
+          "name": "Tool Kit"
+        }
+      ],
+      "source_sha256": "0dbd1835c80caa3471285f0b645254c4d4d4aa233654e6478c338a31c83659df",
+      "output_sha256": "a80a27f4dcfdca16b3e1805cd0b5602befa67889fb2b86163a32c86854cac964",
+      "subimages": 1
+    },
+    {
+      "file": "P2ITEM22.STI",
+      "graphic_type": 2,
+      "graphic_num": 22,
+      "profile": "ammo",
+      "items": [
+        {
+          "id": 545,
+          "name": "12 Gauge Shells, 2"
+        }
+      ],
+      "source_sha256": "3517528578a810450ec29c2844f44802cf33cda20416df30d4b9d20388a1ce5b",
+      "output_sha256": "69e3ae6259c97ccfbebaa397384c55b675cae1febcafaad6db3098fd16c3307d",
+      "subimages": 1
+    },
+    {
+      "file": "P2ITEM24.STI",
+      "graphic_type": 2,
+      "graphic_num": 24,
+      "profile": "explosive",
+      "items": [
+        {
+          "id": 146,
+          "name": "Chemical Break Light"
+        }
+      ],
+      "source_sha256": "f4166d1869792ea02dd4c20aa970c30c4b49e42e8211ad11c2b775f89f869879",
+      "output_sha256": "8dc1274075d394a7234efea192083404bea056452b11d85f7c0df1c81c95348d",
+      "subimages": 1
+    },
+    {
+      "file": "p2item123.sti",
+      "graphic_type": 2,
+      "graphic_num": 123,
+      "profile": "container",
+      "items": [
+        {
+          "id": 1570,
+          "name": "PET bottle"
+        }
+      ],
+      "source_sha256": "ae4b1faa9e5fb68c4703974b36e389237f8c39c241094d67e7214b267f48e973",
+      "output_sha256": "8ee5ece900963d4149bd0896e040afa9de244274ab4bae71f4462095f4a3fc32",
+      "subimages": 1
+    },
+    {
+      "file": "p2item134.sti",
+      "graphic_type": 2,
+      "graphic_num": 134,
+      "profile": "medical",
+      "items": [
+        {
+          "id": 1576,
+          "name": "Gun Cleaning Kit"
+        }
+      ],
+      "source_sha256": "6204438063e71d3043cea738834a4e6fe38873d935526d93b1bce35dd3620e1a",
+      "output_sha256": "d20bc3452a349d21984b0f1f7baeafb28736dccc6baca2be39d2c87e87123111",
+      "subimages": 1
+    },
+    {
+      "file": "p2item147.sti",
+      "graphic_type": 2,
+      "graphic_num": 147,
+      "profile": "medical",
+      "items": [
+        {
+          "id": 1618,
+          "name": "Black army trousers"
+        }
+      ],
+      "source_sha256": "b68d98c19b0ab367416916ace573042b4cadaeefc032a5f10453d30a37957514",
+      "output_sha256": "ae1d1630870ccad27ed1aebef0c0c1df41b727333565f09c3f2970e32b0b6d28",
+      "subimages": 1
+    },
+    {
+      "file": "P2ITEM168.STI",
+      "graphic_type": 2,
+      "graphic_num": 168,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1646,
+          "name": "Equipment Leg Rig"
+        }
+      ],
+      "source_sha256": "7a882cdf1b305c9fdbfe4026cf36b5c977ce2876861d2b9b5c84b33598a3edd3",
+      "output_sha256": "175b9b549b3ec533174f5899846674a5080a79c864cbc17c56a2773252d0b309",
+      "subimages": 1
+    },
+    {
+      "file": "P2ITEM169.STI",
+      "graphic_type": 2,
+      "graphic_num": 169,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1647,
+          "name": "Bomb Pouch Leg Rig"
+        }
+      ],
+      "source_sha256": "51fb43b6bac885abc9b1617acbc8275c1798929a5c7c3a22c60b869db210683f",
+      "output_sha256": "be620be89b32d2d1434aeea59c2e86d6ea20b1a2fa6ca3953b4e22404156ffe3",
+      "subimages": 1
+    },
+    {
+      "file": "p2item215.sti",
+      "graphic_type": 2,
+      "graphic_num": 215,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 2699,
+          "name": "Carabiner LR"
+        }
+      ],
+      "source_sha256": "cd3df725895089193e738d2c3fcf6f3e36489efbd19f726d3d842134d2743f1a",
+      "output_sha256": "f75d795b4f9a2c4bdf5535f5cf788f6a22ba8558555e8a2c263452e51c2b572f",
+      "subimages": 1
+    },
+    {
+      "file": "p2item217.sti",
+      "graphic_type": 2,
+      "graphic_num": 217,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1663,
+          "name": "7 RD Shotgun Bandolier"
+        }
+      ],
+      "source_sha256": "a84417a8fca8586b8956d32da2d4802ece7cd44fcdb71b41c4bb3ec046a8c421",
+      "output_sha256": "0d91376347ccd7bba9a17d9c67881e216c9e411a37940162d9ff421353d1ee84",
+      "subimages": 1
+    },
+    {
+      "file": "p2item218.sti",
+      "graphic_type": 2,
+      "graphic_num": 218,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1525,
+          "name": "Rifle Sling"
+        },
+        {
+          "id": 2700,
+          "name": "Rifle Sling LBE"
+        }
+      ],
+      "source_sha256": "3064cfe44d7e801fb868077ef6a04560299251e7f1dbe88e87d41a32b38d6355",
+      "output_sha256": "97c0ea9af7bcb73f232401974cb1f20768cceee54e0a13dba13e34925fcb8b5e",
+      "subimages": 1
+    },
+    {
+      "file": "p2item223.sti",
+      "graphic_type": 2,
+      "graphic_num": 223,
+      "profile": "neutral",
+      "items": [
+        {
+          "id": 1709,
+          "name": "Sleeping bag"
+        }
+      ],
+      "source_sha256": "3c6fc9fbdbb291c011c8fec240328c403779ab7f258bdfb20d46d745e99e3107",
+      "output_sha256": "51cdb24a6c776c0f71749cbd9f7d61c44154b73d03f3dafe3bb11834993761c4",
+      "subimages": 1
+    },
+    {
+      "file": "P4ITEM545.STI",
+      "graphic_type": 4,
+      "graphic_num": 545,
+      "profile": "weapon_wood",
+      "items": [
+        {
+          "id": 2117,
+          "name": "M2 Carbine"
+        }
+      ],
+      "source_sha256": "66979b63131e98e564ea394bdd617da4513f9a08c06ab1e0cc02ce044cf84881",
+      "output_sha256": "f60ea5da0462e866c313502e602a1d04093a68c9c0f82031a3f4e5322f3c6baf",
+      "subimages": 1
+    },
+    {
+      "file": "P4ITEM606.STI",
+      "graphic_type": 4,
+      "graphic_num": 606,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 2515,
+          "name": "Jeans"
+        }
+      ],
+      "source_sha256": "fd31b8f3c8175a5131bad8a799b3b806bf85ca6f18ba82e28a1fef59e752cc8e",
+      "output_sha256": "9ed50d8910b9e2d4dab470d3df7e374142096f97549ccf2987032b8d68299fae",
+      "subimages": 1
+    },
+    {
+      "file": "P4ITEM608.STI",
+      "graphic_type": 4,
+      "graphic_num": 608,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 2520,
+          "name": "Knee Pads Urban Camo"
+        }
+      ],
+      "source_sha256": "10f721b263d99c4b8be0e6a81f99b6a40fffdef5dbb993a8636c9caf156db5fd",
+      "output_sha256": "08127d23ef462e27f2743bd5c34ab928d12d930fc33cad016ca9d544dede9ae9",
+      "subimages": 1
+    },
+    {
+      "file": "P4ITEM642.STI",
+      "graphic_type": 4,
+      "graphic_num": 642,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 2612,
+          "name": "TT-2C Medic Vest"
+        }
+      ],
+      "source_sha256": "fce0e99334cea2b14d2947b276a2238a03b707e5a84e8ff11c6302cb58c859b9",
+      "output_sha256": "e1ea379d0f95b3f881fa1f3645f86fe1ce33df5a50db6f2eb4b53b6b650ba163",
+      "subimages": 1
+    },
+    {
+      "file": "P4ITEM646.STI",
+      "graphic_type": 4,
+      "graphic_num": 646,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1089,
+          "name": "TT Utility Vest"
+        }
+      ],
+      "source_sha256": "e4d5239706316f317f674cc56ad08eac81a91b54ca3d636d3eb55eb76bc05bfc",
+      "output_sha256": "c2a4cd61783fc2bc9c29ede36445b009bd54c49c4730f47327bee61e2fe43981",
+      "subimages": 1
+    },
+    {
+      "file": "P4ITEM681.STI",
+      "graphic_type": 4,
+      "graphic_num": 681,
+      "profile": "weapon_polymer",
+      "items": [
+        {
+          "id": 2144,
+          "name": "IMI Uzi MP2"
+        }
+      ],
+      "source_sha256": "c52b20e17fed14b877d77193afd694155c558885335081d63cb38a644a46a1e6",
+      "output_sha256": "75ca36af68206319edc6554240b20c53ded495baed6220231c3073ab1cd6e388",
+      "subimages": 1
+    },
+    {
+      "file": "P4ITEM682.STI",
+      "graphic_type": 4,
+      "graphic_num": 682,
+      "profile": "weapon_wood",
+      "items": [
+        {
+          "id": 2145,
+          "name": "Marlin Camp Carbine 9"
+        }
+      ],
+      "source_sha256": "f38fc03adbfd37a99e93c93a34e81b56c51132c5790f9a7bdd57007ab97f0799",
+      "output_sha256": "8fdfc9bcc63d0eca19a0683952aa15261b14d9511244103761d747368bc766e9",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM45.STI",
+      "graphic_type": 5,
+      "graphic_num": 45,
+      "profile": "explosive",
+      "items": [
+        {
+          "id": 2420,
+          "name": "C4 Small Charge"
+        }
+      ],
+      "source_sha256": "41a0fdd0bc9b541a10a4efdee3557518edcfeafea3713e1c323daa3709546730",
+      "output_sha256": "f6e79f639d20253e1699acad33949a1afb5bfa530584dbbd2482696f5e175069",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM51.STI",
+      "graphic_type": 5,
+      "graphic_num": 51,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 241,
+          "name": "Laser Sight"
+        }
+      ],
+      "source_sha256": "c99b22ff0bbf6f2ff1ce9cd0673d7aac4d72825ba0d4626f086f9ab19f4c9e95",
+      "output_sha256": "2a350dc76f389be37090422c2092e33f9706b630e6a8cd8c245ecabc65d9b9cb",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM54.STI",
+      "graphic_type": 5,
+      "graphic_num": 54,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 242,
+          "name": "Remote Bomb Trigger"
+        }
+      ],
+      "source_sha256": "54d3a28af0787f04a8a7b26418fd81a54b08f91447543843233cb5723d9f5c52",
+      "output_sha256": "76455f983812b1be71470f7e19b9ff42895a58656323a3ed7749e1a4a5b4f88e",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM55.STI",
+      "graphic_type": 5,
+      "graphic_num": 55,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 212,
+          "name": "Ballistic Combat Goggles"
+        }
+      ],
+      "source_sha256": "b85a22417b67b895104a712b6e6a9a3eb1352d34215b16adadc5c802e8533860",
+      "output_sha256": "023cc5f73db0144c2c21266c3be4cdc89a4f2a82d652f8a451ee0131321c339a",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM63.STI",
+      "graphic_type": 5,
+      "graphic_num": 63,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 177,
+          "name": "Kevlar Helmet"
+        }
+      ],
+      "source_sha256": "13f2d61184395dfcf3575c37a56f2dcd576c12cd4d12b27dcbd06f21f6e10315",
+      "output_sha256": "e9d1574a95c1f0fa668e59f387cb17ea5e0216a6aae27f530787100d9a993af1",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM64.STI",
+      "graphic_type": 5,
+      "graphic_num": 64,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 164,
+          "name": "Kevlar Vest"
+        }
+      ],
+      "source_sha256": "aec95794ac415269929816c9f15c43de13c90554ed5bde2defae5e2e2b99e4d6",
+      "output_sha256": "74247df6c2eda2df4c073e03bb7542f65b0240f5440a163f4caf7dbee44336b1",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM67.STI",
+      "graphic_type": 5,
+      "graphic_num": 67,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 170,
+          "name": "Kevlar Leggings"
+        }
+      ],
+      "source_sha256": "04114ea28b9464a15c18ecfbfd5b588c895a4bf9aa58cff362eccdb9a7482d7b",
+      "output_sha256": "a72999b64ea2d5eab777ad7026285d3ab8ae86628f61daf7ae2a765038ebf527",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM137.STI",
+      "graphic_type": 5,
+      "graphic_num": 137,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 196,
+          "name": "Guardian Vest"
+        }
+      ],
+      "source_sha256": "0bd68585c23358904db37de2ca16c1d093d3b8dced8a2655016ef34558cf9508",
+      "output_sha256": "38f57f805a88dcfd08b9f95d5680eebf1f99576b6942a5802c9ead659de9e7e4",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM149.STI",
+      "graphic_type": 5,
+      "graphic_num": 149,
+      "profile": "neutral",
+      "items": [
+        {
+          "id": 1003,
+          "name": "Flash Suppressor"
+        }
+      ],
+      "source_sha256": "93a1d6a2de1c76b7bf0222816c9faf855abd3be15068ba027c860546334d5d33",
+      "output_sha256": "3ee18f572a169890dc548c554f6b5f0840701230efb1e5153cf0c32d3aca73c9",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM171.STI",
+      "graphic_type": 5,
+      "graphic_num": 171,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 208,
+          "name": "Sniper Scope, 10x"
+        }
+      ],
+      "source_sha256": "57a0e94345c0a2d05c21377d6ab167ccc75af64195a40d8bf855934b37db6ed6",
+      "output_sha256": "89a9cf8d7dc610a5765c3060ef7f812eb9023f56427d0c225880a0a2eae4902b",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM176.STI",
+      "graphic_type": 5,
+      "graphic_num": 176,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 810,
+          "name": "Twaron Helmet"
+        }
+      ],
+      "source_sha256": "ad5fb4895df738929d207acf6fbc8a7b5d6759fd7c62f2f6b0c5704929f07c76",
+      "output_sha256": "05c2a8e915a165f245a09d7294091c71e2636d6c42361a4a5f018bf7659a615a",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM184.STI",
+      "graphic_type": 5,
+      "graphic_num": 184,
+      "profile": "blade",
+      "items": [
+        {
+          "id": 596,
+          "name": "Heavy Throwing Knife"
+        }
+      ],
+      "source_sha256": "f441c2d08070fdcede93c9a684b40d71ffa9e675cf7997f3068c3aec97c7a3e8",
+      "output_sha256": "032004f8a404318607a981af6ca6a1a60e35692596ecee3a7fc8658860872d3e",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM187.STI",
+      "graphic_type": 5,
+      "graphic_num": 187,
+      "profile": "blade",
+      "items": [
+        {
+          "id": 600,
+          "name": "Rambo Knife"
+        }
+      ],
+      "source_sha256": "69a2e5ed3d57e162f29983b23fd7a06851fe4930026eac40faeac600068d10f5",
+      "output_sha256": "471f2673d2bfa80450ce6c4f5cb451f4e3e859cd32d95b4cdefe3a96bd9f786d",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM189.STI",
+      "graphic_type": 5,
+      "graphic_num": 189,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 811,
+          "name": "Twaron Leggings"
+        }
+      ],
+      "source_sha256": "4c86f3ee00364d4bcfb19539c432ca78782a68740de0bd4fdd60137435b13b9b",
+      "output_sha256": "83591dcec38c3911d98d73de943a8a540be1522fc04798368dc6e8c955a8a364",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM190.STI",
+      "graphic_type": 5,
+      "graphic_num": 190,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 812,
+          "name": "Twaron Vest"
+        }
+      ],
+      "source_sha256": "243657a85718b8ffb7662b6365df633cca26aa101e5489a465d64e6904267263",
+      "output_sha256": "d8c5c4f3007dec88752ee198cddc3739039e6070e65e4b859b897db386d989a9",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM191.STI",
+      "graphic_type": 5,
+      "graphic_num": 191,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 183,
+          "name": "Ceramic Plating"
+        }
+      ],
+      "source_sha256": "d37619349d1879e128f154b15f5a9d43cd7e38e9c436828bea726e1e9fa03033",
+      "output_sha256": "05f4ea89f90201318b2f161650bc7c0a684b960847ed8856235ce0872cdc2122",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM195.STI",
+      "graphic_type": 5,
+      "graphic_num": 195,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 294,
+          "name": "SWAT Leggings"
+        }
+      ],
+      "source_sha256": "cc46013452028e0f8e92ca3e9a8c153ddc8d56ce238a502565c489c8e41b21ae",
+      "output_sha256": "f2c918d3abad8bb1181308c62a462767d7862ec8ba7dc1cdaea0fe24d862494a",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM207.STI",
+      "graphic_type": 5,
+      "graphic_num": 207,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 283,
+          "name": "Zylon Combat Vest"
+        }
+      ],
+      "source_sha256": "a5dff10f9be2b76f930ac25fd547ac5ce240350b65c581ac7677eff7900a6ebc",
+      "output_sha256": "901e84468438e4cc610818f4f0c651264ed9eda72961a5a10b3724adb1c4f7d3",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM285.STI",
+      "graphic_type": 5,
+      "graphic_num": 285,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 211,
+          "name": "Night Vision Goggles, Gen. I"
+        }
+      ],
+      "source_sha256": "504790d8a7c3f0f44fbd43ab61e7928ef888c62c2ba08ccd762cc990d93898af",
+      "output_sha256": "efcc9f5c6d64fcdca372db82cf0fa00145ec23b90a1543f15b1d8fd8a3360248",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM286.STI",
+      "graphic_type": 5,
+      "graphic_num": 286,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 246,
+          "name": "Night Vision Goggles, Gen. II"
+        }
+      ],
+      "source_sha256": "f5c0750aee5190a3162191c57220944b8c41485e28bacfe2dd97dbbc3e039ea8",
+      "output_sha256": "8b09479c70bcc2046313a829506d3f53e7ac6886b7bb050ffc1362b957451805",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM519.STI",
+      "graphic_type": 5,
+      "graphic_num": 519,
+      "profile": "blade",
+      "items": [
+        {
+          "id": 593,
+          "name": "Ka-Bar Cutlass"
+        }
+      ],
+      "source_sha256": "966d6e3557946c238bdea739fe32bb214b7545bed519cb4103d1faf39f85c8df",
+      "output_sha256": "a0e9881b9595701b095613317fb52548dc969ec982deb369bd7ece95bf002ac8",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM525.STI",
+      "graphic_type": 5,
+      "graphic_num": 525,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 1029,
+          "name": "Small Scope, 2x"
+        }
+      ],
+      "source_sha256": "43e8a7951525476ded77cfe3c6a8cb3e6ec2d2f2e150f3e21108f49377a17af0",
+      "output_sha256": "9838288b25db25cf499f9e44581cb9d8f4caef9c2a8478d6a62379b45cf5c7d0",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM546.STI",
+      "graphic_type": 5,
+      "graphic_num": 546,
+      "profile": "optic",
+      "items": [
+        {
+          "id": 199,
+          "name": "Compact Binoculars"
+        }
+      ],
+      "source_sha256": "d88b32540f399f49fb5310773d7385ee273e7f6a1ea1e488264d39fc07673947",
+      "output_sha256": "4134991599466c4c6659db2431a0d7b9923aa029a9f2030e5b1e607a0db172a9",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM689.STI",
+      "graphic_type": 5,
+      "graphic_num": 689,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1097,
+          "name": "TIMS Combat Pack"
+        }
+      ],
+      "source_sha256": "95fbbe5b422b725c0d618c136be51bc38726fad6e8f16555f8bae9ccb9e5288b",
+      "output_sha256": "4025799b9edfcaca2a2d89c831c3c863cb131b204cf2b44a34ce01db7b1d5b6e",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM690.STI",
+      "graphic_type": 5,
+      "graphic_num": 690,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1098,
+          "name": "Tactical Tailor 3-Day Pack"
+        }
+      ],
+      "source_sha256": "2295b9641f7193a7d17da50529ecc9b955c8a919d9125e1debd6da9fd2bf4423",
+      "output_sha256": "e4d49b9aa38b6306f377efa5ea4310cb0842a2f813ed7d228ead3cb3a9d3163d",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM695.STI",
+      "graphic_type": 5,
+      "graphic_num": 695,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1091,
+          "name": "Holster"
+        }
+      ],
+      "source_sha256": "6c541e5a1b38ca35ff742cf15bc0c44ce9945f63ceb58a0a6ad80a8c5006ad0b",
+      "output_sha256": "9d762b3247706e25975d0d5e789ed1d0976e9b52808e02adf87c83901aac0410",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM698.STI",
+      "graphic_type": 5,
+      "graphic_num": 698,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1090,
+          "name": "Load Bearing Equipment Harness"
+        }
+      ],
+      "source_sha256": "5de4c82b6d7edb98ea194d8689f8c23727c67565010fa56a53e0908f10991d4f",
+      "output_sha256": "fbfbac2e94b823ef7237f3fc4de0755d98a5663684f7a4797d5d2eaf885dccde",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM716.STI",
+      "graphic_type": 5,
+      "graphic_num": 716,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1172,
+          "name": "Canteen / Equipment Pouch Leg Rig"
+        }
+      ],
+      "source_sha256": "07215efd062450fa115a4c5da511d982b4e3771a0ca57f57710bd38aac27bc82",
+      "output_sha256": "72853d6b8cda5d6c79bc868cd0e44bd5f5cfd3c5291865a3e9b1598156bc4122",
+      "subimages": 1
+    },
+    {
+      "file": "P5ITEM744.STI",
+      "graphic_type": 5,
+      "graphic_num": 744,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 1204,
+          "name": "First Aid Leg Rig"
+        }
+      ],
+      "source_sha256": "85cd50cd5a0c49d8c51b0548b6e4ac22f1181266b35d198b823a3284451c8260",
+      "output_sha256": "2edcb9a6a83da4da97fc644cdc92770f2e19e61a6fd52e144d65dd8500a0e14e",
+      "subimages": 1
+    },
+    {
+      "file": "P6ITEM16.STI",
+      "graphic_type": 6,
+      "graphic_num": 16,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 165,
+          "name": "Treated Kevlar Vest"
+        }
+      ],
+      "source_sha256": "0b06d627ea8ff74c436ded648cf6325ddb783ead77ffb482229d6336f5d3f3a2",
+      "output_sha256": "6a3051887d0004ca53fd24b4e2fd3d7d5f83c1709bd7a725b19f3b4f65fc1b41",
+      "subimages": 1
+    },
+    {
+      "file": "P6ITEM146.STI",
+      "graphic_type": 6,
+      "graphic_num": 146,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 2618,
+          "name": "Sniper Magazines Leg Rig"
+        }
+      ],
+      "source_sha256": "55e6357b30d1ac94e90a761d655087e48f8632c0119a19f4c09dfa8267dbcdeb",
+      "output_sha256": "6ae554c7b60574385d634c338ce42bf3729e0155b95c666b046c17a0292b5f11",
+      "subimages": 1
+    },
+    {
+      "file": "P6ITEM259.STI",
+      "graphic_type": 6,
+      "graphic_num": 259,
+      "profile": "fabric",
+      "items": [
+        {
+          "id": 2502,
+          "name": "Woodland Camo Pants"
+        }
+      ],
+      "source_sha256": "0dbaf79c2ddfbfdc5b23045d0fc1060e9e102843ca0a45d0f13157a85e954148",
+      "output_sha256": "52cb13dcd93709d65dee84d611187fc4b863a79386bd908d30403a8f4323f3aa",
+      "subimages": 1
+    },
+    {
+      "file": "P6ITEM369.STI",
+      "graphic_type": 6,
+      "graphic_num": 369,
+      "profile": "organic",
+      "items": [
+        {
+          "id": 2801,
+          "name": "Coca Leaves"
+        }
+      ],
+      "source_sha256": "e2ecdaf1878354f43a55c83a75fe19ca54a43484d7fd1778093da139e332e7d2",
+      "output_sha256": "6e6f8b85208ae9e61373db8f7fe6988cb9f0b76174bb8704e3c3dac63a010290",
+      "subimages": 1
+    },
+    {
+      "file": "p6item437.sti",
+      "graphic_type": 6,
+      "graphic_num": 437,
+      "profile": "explosive",
+      "items": [
+        {
+          "id": 2462,
+          "name": "TNT stick"
+        }
+      ],
+      "source_sha256": "a978bafbee450ecc1b7a682e40fbadce0e45bbe1708fb7785149e5d74204dd4d",
+      "output_sha256": "faf2eb41dc00e52dd980fbae4093de479ac039070cdd0c43a37a2f5af8f36d15",
+      "subimages": 1
+    }
+  ],
+  "medium_sheets": [
+    {
+      "file": "MDGUNS.sti",
+      "graphic_type": 0,
+      "changed_count": 15,
+      "source_sha256": "c430fd2b47e559d5a346219cfa7426754ad1fc65f8a883e3504533074d920b0b",
+      "output_sha256": "96c81d27f4f395fd0cb3ca98cf95a448a401eeb4bc21ac676056a0a6e01f0666",
+      "subimages": 372,
+      "changed_subimages": [
+        2,
+        8,
+        17,
+        19,
+        22,
+        86,
+        98,
+        127,
+        184,
+        198,
+        227,
+        264,
+        269,
+        329,
+        366
+      ],
+      "untouched_subimages_verified": 357,
+      "red_palette_index": 31,
+      "shadow_palette_index": 33
+    },
+    {
+      "file": "MDP1ITEMS.sti",
+      "graphic_type": 1,
+      "changed_count": 22,
+      "source_sha256": "3b0208908d1dd76c0dc68836e2551e2253e53b94e109672441ee147a244429a5",
+      "output_sha256": "a120ae176a2462edf8681a5830ed7865284bc2fd727fafa385191fb7a23b88b1",
+      "subimages": 898,
+      "changed_subimages": [
+        7,
+        22,
+        35,
+        45,
+        48,
+        50,
+        53,
+        70,
+        75,
+        77,
+        79,
+        88,
+        98,
+        107,
+        363,
+        365,
+        374,
+        513,
+        514,
+        593,
+        684,
+        724
+      ],
+      "untouched_subimages_verified": 876,
+      "red_palette_index": 255,
+      "shadow_palette_index": 1
+    },
+    {
+      "file": "MDP2ITEMS.STI",
+      "graphic_type": 2,
+      "changed_count": 14,
+      "source_sha256": "74db772ebd59cfbc4b7e335853ab8e21a5b1ea843947b70ec020c224482af44c",
+      "output_sha256": "27f34f8125eaf4dfdd2bc5b525a6a1d5fe7b571a37026dc77684e9e505b13fbb",
+      "subimages": 224,
+      "changed_subimages": [
+        4,
+        5,
+        21,
+        22,
+        24,
+        123,
+        134,
+        147,
+        168,
+        169,
+        215,
+        217,
+        218,
+        223
+      ],
+      "untouched_subimages_verified": 210,
+      "red_palette_index": 255,
+      "shadow_palette_index": 228
+    },
+    {
+      "file": "MDP4ITEMS.sti",
+      "graphic_type": 4,
+      "changed_count": 7,
+      "source_sha256": "b869df155a9a5f4a68668f5baa2bae67bd4e8b652d9f11d606bdc3141f64eeb9",
+      "output_sha256": "359075ebe726daab25c0593916966df0e52d222bcb36efc3f1b27fb1cd731655",
+      "subimages": 696,
+      "changed_subimages": [
+        545,
+        606,
+        608,
+        642,
+        646,
+        681,
+        682
+      ],
+      "untouched_subimages_verified": 689,
+      "red_palette_index": 2,
+      "shadow_palette_index": 53
+    },
+    {
+      "file": "MDP5ITEMS.sti",
+      "graphic_type": 5,
+      "changed_count": 29,
+      "source_sha256": "58b83ff2416ed6b3baca98ed208c3d41fdc4c86e65b3b65acbb043e355a7eb75",
+      "output_sha256": "8b707b2e8a4c0697e8757eee0a36d866d10c5175d0556f4c08fdce9084e3015a",
+      "subimages": 1059,
+      "changed_subimages": [
+        45,
+        51,
+        54,
+        55,
+        63,
+        64,
+        67,
+        137,
+        149,
+        171,
+        176,
+        184,
+        187,
+        189,
+        190,
+        191,
+        195,
+        207,
+        285,
+        286,
+        519,
+        525,
+        546,
+        689,
+        690,
+        695,
+        698,
+        716,
+        744
+      ],
+      "untouched_subimages_verified": 1030,
+      "red_palette_index": 255,
+      "shadow_palette_index": 1
+    },
+    {
+      "file": "MDP6ITEMS.STI",
+      "graphic_type": 6,
+      "changed_count": 5,
+      "source_sha256": "638f7cca80c4f8ca601dbe582c652c84a89b204a3f9f35b2611f2065c23e0873",
+      "output_sha256": "c33415e635ff9485f5f07f42f570fe1dbb39301b5de9ed8ab6f5be4dc0d66565",
+      "subimages": 458,
+      "changed_subimages": [
+        16,
+        146,
+        259,
+        369,
+        437
+      ],
+      "untouched_subimages_verified": 453,
+      "red_palette_index": 255,
+      "shadow_palette_index": 228
+    }
+  ]
+}
