@@ -126,150 +126,199 @@ def saturation_span(r,g,b):
     return max(r,g,b)-min(r,g,b)
 
 def remaster_frame(frame, kind, seed):
-    """Redraw material while preserving exact alpha, dimensions and offsets."""
+    """Material-aware redraw while preserving exact alpha, dimensions and offsets."""
     ox,oy,w,h,pix = frame
     src = Image.frombytes("RGBA",(w,h),pix)
     out = Image.new("RGBA",(w,h),(0,0,0,0))
     sp=src.load(); dp=out.load(); rng=random.Random(seed)
 
-    # Stable palette per frame.  Structural darks/details remain recognisable;
-    # broad material surfaces are repainted rather than merely recoloured.
-    # A single file is one architectural material family. Keep it coherent across
-    # all frames/orientations; variation belongs between tile families, not between
-    # adjacent pieces of the same wall.
-    stucco_base=(181,150,101)  # sun-faded ochre plaster
+    def hnoise(x,y,scale=1):
+        # Cheap deterministic texture noise. Low amplitude avoids visible seams
+        # between separate road/wall sprites while breaking the flat 1990s palette.
+        xx=x//max(1,scale); yy=y//max(1,scale)
+        v=((xx*73856093) ^ (yy*19349663) ^ (seed*83492791)) & 255
+        return (v-127.5)/127.5
+
+    def material_rgb(base, lum, x, y, contrast=0.55, grain=7.0):
+        shade=(lum-112.0)*contrast
+        fine=hnoise(x,y,1)*grain
+        broad=hnoise(x,y,5)*(grain*0.45)
+        return tuple(clamp(c+shade+fine+broad) for c in base)
+
+    # Muted, sun-beaten San Mona palette: poor commercial town rather than
+    # saturated theme-park colour. Source luminance remains the lighting guide.
+    STUCCO=(166,143,101)
+    ROAD=(98,92,80)
+    PAVING=(130,122,108)
+    ROOF=(119,78,63)
+    METAL=(69,72,72)
 
     for y in range(h):
         for x in range(w):
             r,g,b,a=sp[x,y]
-            if not a: continue
-            lum=luminance(r,g,b); sat=saturation_span(r,g,b)
-            local=((x*17+y*29+(seed&255))%13)-6
+            if not a:
+                continue
+            lum=luminance(r,g,b)
+            sat=saturation_span(r,g,b)
 
             if kind == "stucco":
-                # BUILD_24 contains plaster panels plus dark frames/bars/openings.
-                # Repaint only broad neutral mid/high-value wall material; preserve
-                # dark joinery/openings and strongly coloured details.
-                wallish = lum > 58 and sat < 72
+                # Neutral mid/high-value regions are plaster; dark/saturated source
+                # pixels are openings, bars, trim or damage and keep their identity.
+                wallish = lum > 55 and sat < 78
                 if wallish:
-                    shade=(lum-118)*0.43
-                    rr=stucco_base[0]+shade+local
-                    gg=stucco_base[1]+shade+local
-                    bb=stucco_base[2]+shade+local
-                    # lower-wall grime / sun bleaching
-                    if y > h*0.70: rr-=10; gg-=11; bb-=9
-                    if y < h*0.20: rr+=5; gg+=5; bb+=4
-                    dp[x,y]=(clamp(rr),clamp(gg),clamp(bb),a)
+                    rr,gg,bb=material_rgb(STUCCO,lum,x,y,0.48,7.0)
+                    # Capillary grime near ground and mild bleaching near top.
+                    t=y/max(1,h-1)
+                    if t>0.68:
+                        dirt=(t-0.68)/0.32
+                        rr=clamp(rr-18*dirt); gg=clamp(gg-17*dirt); bb=clamp(bb-13*dirt)
+                    elif t<0.18:
+                        rr=clamp(rr+5); gg=clamp(gg+5); bb=clamp(bb+4)
+                    dp[x,y]=(rr,gg,bb,a)
                 else:
-                    # Preserve bars, windows, damage and trim, just clean the palette.
-                    dp[x,y]=(clamp(r*1.02+4),clamp(g*1.01+3),clamp(b*0.96+2),a)
+                    # Keep joinery/openings nearly intact but age them slightly.
+                    neutral=0.92
+                    dp[x,y]=(clamp(r*neutral+5),clamp(g*neutral+4),clamp(b*neutral+3),a)
 
             elif kind == "roof":
-                # SLANT_12 contains both corrugated sheet and its wooden/dark support
-                # frame. Redraw the sheet only. Dark support pixels keep their
-                # original material identity instead of becoming orange.
-                sheetish = (lum > 92) or (lum > 55 and g >= r*0.92 and g >= b*0.90)
+                # Preserve dark timber/support pieces; repaint sheet material.
+                sheetish = (lum > 88) or (lum > 52 and sat < 85)
                 if sheetish:
-                    shade=(lum-112)*0.48
-                    rr=137+shade+local*0.55
-                    gg=79+shade*0.42+local*0.20
-                    bb=55+shade*0.30
-                    dp[x,y]=(clamp(rr),clamp(gg),clamp(bb),a)
+                    rr,gg,bb=material_rgb(ROOF,lum,x,y,0.43,6.0)
+                    # Fine alternating highlight/dark rib effect, intentionally
+                    # subtle because sprite orientations vary across the family.
+                    rib=((x+y+(seed&7))%5)
+                    if rib==0:
+                        rr=clamp(rr+7); gg=clamp(gg+4); bb=clamp(bb+3)
+                    elif rib==3:
+                        rr=clamp(rr-5); gg=clamp(gg-4); bb=clamp(bb-3)
+                    # Sparse rust blooms.
+                    n=hnoise(x,y,3)
+                    if n>0.72:
+                        rr=clamp(rr+20); gg=clamp(gg-10); bb=clamp(bb-12)
+                    dp[x,y]=(rr,gg,bb,a)
                 else:
-                    # preserve timber/steel understructure; only improve separation
-                    dp[x,y]=(clamp(r*0.97+3),clamp(g*0.94+3),clamp(b*0.91+3),a)
+                    dp[x,y]=(clamp(r*0.91+5),clamp(g*0.88+4),clamp(b*0.84+4),a)
 
             elif kind == "road":
-                # Dusty brown-grey cobbles, keeping the original stone relief.
-                shade=(lum-100)*0.70
-                rr=104+shade+local*0.55
-                gg=91+shade+local*0.45
-                bb=72+shade*0.85
-                dp[x,y]=(clamp(rr),clamp(gg),clamp(bb),a)
+                rr,gg,bb=material_rgb(ROAD,lum,x,y,0.66,4.5)
+                # Retain original stone relief while making mortar/joints darker.
+                if lum < 78:
+                    rr=clamp(rr-8); gg=clamp(gg-8); bb=clamp(bb-7)
+                # Very sparse ingrained dirt/oil; no large frame-specific patches.
+                n=hnoise(x,y,4)
+                if n>0.82:
+                    rr=clamp(rr-13); gg=clamp(gg-12); bb=clamp(bb-10)
+                elif n<-0.86:
+                    rr=clamp(rr+7); gg=clamp(gg+6); bb=clamp(bb+5)
+                dp[x,y]=(rr,gg,bb,a)
 
             elif kind == "paving":
-                shade=(lum-112)*0.68
-                rr=132+shade+local*0.45
-                gg=121+shade+local*0.40
-                bb=103+shade*0.85
-                dp[x,y]=(clamp(rr),clamp(gg),clamp(bb),a)
+                rr,gg,bb=material_rgb(PAVING,lum,x,y,0.60,4.0)
+                if hnoise(x,y,6)>0.84:
+                    rr=clamp(rr-9); gg=clamp(gg-9); bb=clamp(bb-8)
+                dp[x,y]=(rr,gg,bb,a)
 
             elif kind == "metal":
-                # Street lamps: neutral dark metal with readable highlights.
-                dp[x,y]=(clamp(lum*0.86+16),clamp(lum*0.88+17),clamp(lum*0.91+19),a)
+                # Painted/galvanised street furniture with restrained rust.
+                rr,gg,bb=material_rgb(METAL,lum,x,y,0.72,3.5)
+                if hnoise(x,y,3)>0.88 and lum<150:
+                    rr=clamp(rr+25); gg=clamp(gg-9); bb=clamp(bb-13)
+                dp[x,y]=(rr,gg,bb,a)
 
             elif kind == "decal":
-                # Keep sign identity/text legible; deepen blacks and strengthen colour.
-                if lum < 65:
-                    dp[x,y]=(clamp(r*0.78),clamp(g*0.78),clamp(b*0.78),a)
+                # Signs remain readable: deepen blacks, fade whites, restrain neon.
+                if lum < 55:
+                    dp[x,y]=(clamp(r*0.76),clamp(g*0.76),clamp(b*0.76),a)
+                elif sat>80:
+                    dp[x,y]=(clamp(r*1.03+2),clamp(g*1.00+1),clamp(b*0.96),a)
                 else:
-                    dp[x,y]=(clamp(r*1.12+5),clamp(g*1.08+4),clamp(b*1.03+2),a)
+                    dp[x,y]=(clamp(r*0.98+6),clamp(g*0.97+5),clamp(b*0.93+3),a)
 
             elif kind == "interior":
-                # Furniture remains itself; richer wood/cloth and clearer shading.
-                dp[x,y]=(clamp(r*1.07+3),clamp(g*1.02+2),clamp(b*0.93+1),a)
+                # Furniture stays recognisable but picks up warmer wood/cloth depth.
+                if r>g*1.10 and r>b*1.12:
+                    dp[x,y]=(clamp(r*1.02+3),clamp(g*0.95+2),clamp(b*0.88+1),a)
+                else:
+                    dp[x,y]=(clamp(r*1.00+2),clamp(g*0.98+2),clamp(b*0.94+1),a)
 
-            else: # urban props
-                dp[x,y]=(clamp(r*1.08+2),clamp(g*1.03+2),clamp(b*0.96+1),a)
+            else: # mixed urban props
+                # Preserve object semantics. Add modest contrast/patina only.
+                if sat<38 and lum>65:
+                    n=hnoise(x,y,2)
+                    dp[x,y]=(clamp(r*0.98+n*5+3),clamp(g*0.97+n*4+3),clamp(b*0.94+n*3+2),a)
+                else:
+                    dp[x,y]=(clamp(r*1.01+1),clamp(g*0.99+1),clamp(b*0.96+1),a)
 
     p=out.load()
+
     def opaque(xx,yy):
-        return 0 <= xx < w and 0 <= yy < h and p[xx,yy][3] > 0
+        return 0 <= xx < w and 0 <= yy < h and sp[xx,yy][3] > 0
+
+    def wall_candidate(xx,yy):
+        if not opaque(xx,yy):
+            return False
+        r0,g0,b0,a0=sp[xx,yy]
+        return luminance(r0,g0,b0)>62 and saturation_span(r0,g0,b0)<75
 
     if kind == "stucco":
-        # Add restrained material features only to wall-like pixels.  These are
-        # visual marks inside the existing sprite; alpha/footprint never changes.
-        candidates=[]
-        for yy in range(2,h-2):
-            for xx in range(2,w-2):
-                r0,g0,b0,a0=sp[xx,yy]
-                if a0 and luminance(r0,g0,b0)>65 and saturation_span(r0,g0,b0)<70:
-                    candidates.append((xx,yy))
+        candidates=[(xx,yy) for yy in range(2,h-2) for xx in range(2,w-2) if wall_candidate(xx,yy)]
         if candidates:
-            draw=ImageDraw.Draw(out,"RGBA")
-            for _ in range(min(3,max(1,len(candidates)//600))):
-                x,y=rng.choice(candidates); pts=[(x,y)]
-                for __ in range(rng.randint(3,7)):
-                    x+=rng.choice((-1,0,1)); y+=rng.choice((0,1,1,2))
-                    if opaque(x,y): pts.append((x,y))
-                if len(pts)>2: draw.line(pts,fill=(64,52,43,115),width=1)
-            # A few tiny exposed-brick chips, not whole random patches.
-            for _ in range(min(6,max(1,len(candidates)//450))):
+            # Hairline plaster cracks: connected, sparse and confined to wall pixels.
+            for _ in range(min(4,max(1,len(candidates)//520))):
                 x,y=rng.choice(candidates)
-                if opaque(x,y):
-                    r1,g1,b1,a1=p[x,y]; p[x,y]=(clamp(r1-35),clamp(g1-45),clamp(b1-42),a1)
+                for __ in range(rng.randint(4,10)):
+                    if wall_candidate(x,y):
+                        rr,gg,bb,aa=p[x,y]
+                        p[x,y]=(clamp(rr-43),clamp(gg-39),clamp(bb-31),aa)
+                    x += rng.choice((-1,0,1))
+                    y += rng.choice((0,1,1,1,2))
+            # Small chipped plaster exposing dull brick, never giant random blotches.
+            for _ in range(min(7,max(1,len(candidates)//360))):
+                x,y=rng.choice(candidates)
+                for dx,dy in ((0,0),(1,0),(0,1)):
+                    xx=x+dx; yy=y+dy
+                    if wall_candidate(xx,yy):
+                        rr,gg,bb,aa=p[xx,yy]
+                        p[xx,yy]=(clamp(126+(rr-150)*0.18),clamp(75+(gg-130)*0.12),clamp(54+(bb-95)*0.10),aa)
+            # Narrow rain/grime streaks beginning below darker features.
+            for _ in range(min(3,max(1,w//24))):
+                x=rng.randrange(max(1,w))
+                y0=rng.randrange(max(1,h//3),max(2,h*2//3))
+                for yy in range(y0,min(h,y0+rng.randint(5,14))):
+                    if wall_candidate(x,yy):
+                        rr,gg,bb,aa=p[x,yy]
+                        p[x,yy]=(clamp(rr-10),clamp(gg-11),clamp(bb-10),aa)
 
     elif kind == "roof":
-        # Corrugation/rust is painted inside the existing roof silhouette.
-        for yy in range(h):
-            for xx in range(w):
-                if not opaque(xx,yy): continue
-                r,g,b,a=p[xx,yy]
-                sr,sg,sb,sa=sp[xx,yy]
-                sl=luminance(sr,sg,sb)
-                sheetish=(sl > 92) or (sl > 55 and sg >= sr*0.92 and sg >= sb*0.90)
-                if not sheetish: continue
-                if ((xx + yy*2 + (seed&7)) % 7)==0:
-                    p[xx,yy]=(clamp(r+11),clamp(g-6),clamp(b-7),a)
-                if ((xx*5 + yy*3 + seed) % 97)==0:
-                    p[xx,yy]=(clamp(r+22),clamp(g-11),clamp(b-12),a)
+        # A handful of darker repair/rust flecks, constrained to existing sheet.
+        for _ in range(max(1,(w*h)//900)):
+            x=rng.randrange(max(1,w)); y=rng.randrange(max(1,h))
+            if not opaque(x,y):
+                continue
+            sr,sg,sb,sa=sp[x,y]
+            if luminance(sr,sg,sb)<65:
+                continue
+            for dx,dy in ((0,0),(1,0),(0,1)):
+                xx=x+dx; yy=y+dy
+                if opaque(xx,yy):
+                    rr,gg,bb,aa=p[xx,yy]
+                    p[xx,yy]=(clamp(rr-20),clamp(gg-16),clamp(bb-13),aa)
 
     elif kind in ("road","paving"):
-        # Reinforce existing masonry with subtle joints/dirt, contained by alpha.
-        for yy in range(h):
-            for xx in range(w):
-                if not opaque(xx,yy): continue
-                r,g,b,a=p[xx,yy]
-                period=9 if kind=="road" else 11
-                joint=((xx+yy+(seed&7))%period==0 and (xx-yy+(seed>>4))%5==0)
-                if joint:
-                    p[xx,yy]=(clamp(r-16),clamp(g-15),clamp(b-13),a)
-                elif ((xx*37+yy*61+seed)%241)==0:
-                    p[xx,yy]=(clamp(r-18),clamp(g-16),clamp(b-13),a)
+        # Tiny cracks/wear marks only where pixels already exist.
+        crack_count=max(0,min(3,(w*h)//2400))
+        for _ in range(crack_count):
+            x=rng.randrange(max(1,w)); y=rng.randrange(max(1,h))
+            for __ in range(rng.randint(3,7)):
+                if opaque(x,y):
+                    rr,gg,bb,aa=p[x,y]
+                    p[x,y]=(clamp(rr-17),clamp(gg-17),clamp(bb-15),aa)
+                x+=rng.choice((-1,0,1)); y+=rng.choice((-1,0,1))
 
-    # Fine clarity only; never resize or alter alpha.
-    rgb=out.convert("RGB").filter(ImageFilter.UnsharpMask(radius=0.6,percent=115,threshold=2))
-    alpha=out.getchannel("A")
+    # Crisp but not oversharpened. Restore source alpha verbatim after filtering.
+    rgb=out.convert("RGB").filter(ImageFilter.UnsharpMask(radius=0.55,percent=105,threshold=3))
+    alpha=src.getchannel("A")
     out=Image.merge("RGBA",(*rgb.split(),alpha))
     return ox,oy,w,h,out.tobytes()
 
@@ -308,7 +357,7 @@ def contact_sheet(name, original, remastered):
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     PREVIEW.mkdir(parents=True,exist_ok=True)
-    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","assets":[]}
+    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","style_version":2,"art_direction":"sun-faded poor South-American vice/commercial district","assets":[]}
     for n,(rel,kind) in SOURCES.items():
         src=ROOT/rel
         if not src.exists():
@@ -339,7 +388,7 @@ Scope invariant:
 Vengeance resolves the original logical STI/JSD identity while preferring a B1TC
 sibling for pixels. These files therefore alter appearance only.
 
-This first pass focuses on existing San Mona road/paving/streetscape plus selected
+Style v2 uses material-aware redraw recipes rather than blanket recolouring. It focuses on existing San Mona road/paving/streetscape plus selected
 building/roof/interior/urban families whose matching STI source is present in the
 repository. Missing inherited base-game families are deliberately left untouched
 until they are extracted exactly; nothing is guessed.
