@@ -2,6 +2,8 @@
   "sector": "C5",
   "tileset": 18,
   "mode": "graphics-only",
+  "style_version": 2,
+  "art_direction": "sun-faded poor South-American vice/commercial district",
   "assets": [
     {
       "logical_name": "Cobble_Road.STI",
