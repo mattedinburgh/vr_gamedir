@@ -3,7 +3,8 @@
   "tileset": 18,
   "mode": "graphics-only",
   "style_version": "2.3",
-  "art_direction": "sun-faded poor South-American vice/commercial district",
+  "art_direction": "1980s Latin-American / Central-American poor vice-commercial district, grounded in period archival references",
+  "master_scale": 4,
   "assets": [
     {
       "logical_name": "Cobble_Road.STI",
@@ -205,6 +206,19 @@
           38
         ]
       ],
+      "native_resolution": {
+        "width_min": 61,
+        "width_max": 170,
+        "height_min": 34,
+        "height_max": 92
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 244,
+        "width_max": 680,
+        "height_min": 136,
+        "height_max": 368
+      },
       "sti_meta": {
         "width": 800,
         "height": 600,
@@ -2095,6 +2109,19 @@
           17
         ]
       ],
+      "native_resolution": {
+        "width_min": 13,
+        "width_max": 48,
+        "height_min": 10,
+        "height_max": 25
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 52,
+        "width_max": 192,
+        "height_min": 40,
+        "height_max": 100
+      },
       "sti_meta": {
         "width": 48,
         "height": 25,
@@ -2173,6 +2200,19 @@
           20
         ]
       ],
+      "native_resolution": {
+        "width_min": 38,
+        "width_max": 42,
+        "height_min": 19,
+        "height_max": 20
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 152,
+        "width_max": 168,
+        "height_min": 76,
+        "height_max": 80
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -2263,6 +2303,19 @@
           37
         ]
       ],
+      "native_resolution": {
+        "width_min": 34,
+        "width_max": 92,
+        "height_min": 37,
+        "height_max": 158
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 136,
+        "width_max": 368,
+        "height_min": 148,
+        "height_max": 632
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -2671,6 +2724,19 @@
           62
         ]
       ],
+      "native_resolution": {
+        "width_min": 22,
+        "width_max": 82,
+        "height_min": 12,
+        "height_max": 79
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 88,
+        "width_max": 328,
+        "height_min": 48,
+        "height_max": 316
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -2761,6 +2827,19 @@
           97
         ]
       ],
+      "native_resolution": {
+        "width_min": 105,
+        "width_max": 110,
+        "height_min": 54,
+        "height_max": 99
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 420,
+        "width_max": 440,
+        "height_min": 216,
+        "height_max": 396
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -2851,6 +2930,19 @@
           61
         ]
       ],
+      "native_resolution": {
+        "width_min": 40,
+        "width_max": 52,
+        "height_min": 20,
+        "height_max": 61
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 160,
+        "width_max": 208,
+        "height_min": 80,
+        "height_max": 244
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -2929,6 +3021,19 @@
           36
         ]
       ],
+      "native_resolution": {
+        "width_min": 26,
+        "width_max": 63,
+        "height_min": 24,
+        "height_max": 50
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 104,
+        "width_max": 252,
+        "height_min": 96,
+        "height_max": 200
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -3091,6 +3196,19 @@
           44
         ]
       ],
+      "native_resolution": {
+        "width_min": 21,
+        "width_max": 82,
+        "height_min": 28,
+        "height_max": 64
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 84,
+        "width_max": 328,
+        "height_min": 112,
+        "height_max": 256
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -3253,6 +3371,19 @@
           44
         ]
       ],
+      "native_resolution": {
+        "width_min": 18,
+        "width_max": 82,
+        "height_min": 22,
+        "height_max": 70
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 72,
+        "width_max": 328,
+        "height_min": 88,
+        "height_max": 280
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -3415,6 +3546,19 @@
           33
         ]
       ],
+      "native_resolution": {
+        "width_min": 25,
+        "width_max": 60,
+        "height_min": 21,
+        "height_max": 61
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 100,
+        "width_max": 240,
+        "height_min": 84,
+        "height_max": 244
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -3493,6 +3637,19 @@
           40
         ]
       ],
+      "native_resolution": {
+        "width_min": 10,
+        "width_max": 19,
+        "height_min": 25,
+        "height_max": 41
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 40,
+        "width_max": 76,
+        "height_min": 100,
+        "height_max": 164
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
@@ -3553,6 +3710,19 @@
           41
         ]
       ],
+      "native_resolution": {
+        "width_min": 18,
+        "width_max": 19,
+        "height_min": 26,
+        "height_max": 41
+      },
+      "working_master_resolution": {
+        "scale": 4,
+        "width_min": 72,
+        "width_max": 76,
+        "height_min": 104,
+        "height_max": 164
+      },
       "sti_meta": {
         "width": 640,
         "height": 480,
