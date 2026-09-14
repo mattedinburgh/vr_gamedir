@@ -418,10 +418,11 @@ def main() -> int:
             "stage": entry.get("stage", 1),
             "role": entry.get("role", ""),
             "policy": str(entry.get("policy", "chrome")),
+            "optional": bool(entry.get("optional", False)),
         }
 
         if not src.exists():
-            row["status"] = "missing-source"
+            row["status"] = "optional-missing-source" if row["optional"] else "missing-source"
             report["assets"].append(row)
             continue
 
