@@ -24639,6 +24639,7 @@
 		<usItemClass>2048</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>
 		<ubClassIndex>70</ubClassIndex>
+		<FlakJacket>1</FlakJacket>
 		<ubGraphicType>2</ubGraphicType>
 		<ubWeight>23</ubWeight>
 		<ItemSize>26</ItemSize>
@@ -24669,6 +24670,7 @@
 		<usItemClass>2048</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>
 		<ubClassIndex>71</ubClassIndex>
+		<FlakJacket>1</FlakJacket>
 		<ubGraphicType>2</ubGraphicType>
 		<ubWeight>52</ubWeight>
 		<ItemSize>26</ItemSize>
@@ -24696,6 +24698,7 @@
 		<usItemClass>2048</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>
 		<ubClassIndex>72</ubClassIndex>
+		<FlakJacket>1</FlakJacket>
 		<ubGraphicType>2</ubGraphicType>
 		<ubWeight>57</ubWeight>
 		<ItemSize>26</ItemSize>
@@ -25031,6 +25034,7 @@
 		<usItemClass>2048</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>
 		<ubClassIndex>82</ubClassIndex>
+		<FlakJacket>1</FlakJacket>
 		<ubGraphicType>2</ubGraphicType>
 		<ubWeight>21</ubWeight>
 		<ItemSize>26</ItemSize>
@@ -25062,6 +25066,7 @@
 		<usItemClass>2048</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>
 		<ubClassIndex>83</ubClassIndex>
+		<FlakJacket>1</FlakJacket>
 		<ubGraphicType>2</ubGraphicType>
 		<ubWeight>44</ubWeight>
 		<ItemSize>26</ItemSize>
@@ -25090,6 +25095,7 @@
 		<usItemClass>2048</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>
 		<ubClassIndex>84</ubClassIndex>
+		<FlakJacket>1</FlakJacket>
 		<ubGraphicType>2</ubGraphicType>
 		<ubWeight>51</ubWeight>
 		<ItemSize>26</ItemSize>
