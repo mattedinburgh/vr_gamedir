@@ -1,4 +1,4 @@
-name: Prepare cold UI pilot
+name: Validate cold UI
 
 on:
   push:
@@ -113,7 +113,7 @@ jobs:
       - name: Upload pilot only
         uses: actions/upload-artifact@v4
         with:
-          name: cold-ui-pilot-stage-${{ inputs.stage || '2' }}
+          name: cold-ui-stage-${{ inputs.stage || '2' }}
           path: |
             build/Data-UI-ColdPilot
             build/cold-ui-preview
