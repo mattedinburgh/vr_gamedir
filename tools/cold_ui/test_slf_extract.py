@@ -5,7 +5,7 @@ from __future__ import annotations
 import tempfile
 from pathlib import Path
 
-from extract_slf_ui import DIRENTRY, FILE_OK, LIBHEADER, build_lookup, index_slf, resolve_target
+from extract_slf_ui import DIRENTRY, FILE_OK, LIBHEADER, build_lookup, find_loose_source, index_slf, resolve_target
 
 
 def pad(text: bytes, size: int) -> bytes:
@@ -79,6 +79,37 @@ def main():
             assert "ambiguous basename" in str(exc)
         else:
             raise AssertionError("duplicate basename should be rejected")
+
+        # Loose VFS data must override the base SLF source, with the declared
+        # layer order deciding which installed loose copy wins.
+        root = Path(td) / "game"
+        low = root / "Data-1.13" / "INTERFACE"
+        high = root / "Data-UI" / "INTERFACE"
+        low.mkdir(parents=True)
+        high.mkdir(parents=True)
+        (low / "backpack_buttons.sti").write_bytes(b"LOW")
+        (high / "backpack_buttons.sti").write_bytes(b"HIGH")
+
+        hit, layer = find_loose_source(
+            root,
+            ["Data-UI", "Data-Vengeance", "Data-1.13", "Data"],
+            "INTERFACE",
+            "backpack_buttons.sti",
+        )
+        assert hit is not None
+        assert hit.read_bytes() == b"HIGH"
+        assert layer == "Data-UI"
+
+        (high / "backpack_buttons.sti").unlink()
+        hit, layer = find_loose_source(
+            root,
+            ["Data-UI", "Data-Vengeance", "Data-1.13", "Data"],
+            "INTERFACE",
+            "backpack_buttons.sti",
+        )
+        assert hit is not None
+        assert hit.read_bytes() == b"LOW"
+        assert layer == "Data-1.13"
 
     print("SLF bridge synthetic checks passed")
 
