@@ -2,7 +2,7 @@
   "sector": "C5",
   "tileset": 18,
   "mode": "graphics-only",
-  "style_version": "2.1",
+  "style_version": "2.2",
   "art_direction": "sun-faded poor South-American vice/commercial district",
   "assets": [
     {
@@ -2768,6 +2768,96 @@
         "subimages": 12,
         "original_size": 307200,
         "stored_size": 51169,
+        "appdata_size": 0
+      }
+    },
+    {
+      "logical_name": "C5_FLAT_R3.STI",
+      "b1tc": "C5_FLAT_R3.b1tc",
+      "source": "Data-Maps-Tiles/Tilesets/0/FLAT_R3.sti",
+      "kind": "flatroof",
+      "frames": 12,
+      "frame_geometry": [
+        [
+          -5,
+          -10,
+          45,
+          31
+        ],
+        [
+          -1,
+          -10,
+          45,
+          31
+        ],
+        [
+          -5,
+          -12,
+          50,
+          33
+        ],
+        [
+          -1,
+          1,
+          40,
+          20
+        ],
+        [
+          0,
+          1,
+          40,
+          20
+        ],
+        [
+          0,
+          0,
+          40,
+          22
+        ],
+        [
+          0,
+          -10,
+          44,
+          31
+        ],
+        [
+          -5,
+          -10,
+          45,
+          32
+        ],
+        [
+          0,
+          1,
+          40,
+          20
+        ],
+        [
+          0,
+          1,
+          40,
+          20
+        ],
+        [
+          0,
+          1,
+          40,
+          20
+        ],
+        [
+          -12,
+          -40,
+          52,
+          61
+        ]
+      ],
+      "sti_meta": {
+        "width": 640,
+        "height": 480,
+        "flags": 40,
+        "subimages": 12,
+        "original_size": 307200,
+        "stored_size": 9432,
         "appdata_size": 0
       }
     },
