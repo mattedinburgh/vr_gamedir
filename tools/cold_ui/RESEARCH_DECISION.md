@@ -49,3 +49,27 @@ If larger controls at 1920x1080 are wanted without sacrificing tactical viewport
 - **Blind palette cooling:** safe structurally but can corrupt semantic reds/greens and embedded artwork.
 - **Immediate full responsive rewrite:** feasible, but disproportionate risk for a colour/material redesign and harder to validate alongside ongoing Vengeance gameplay changes.
 - **Edit base Vengeance assets in place:** poor rollback and conflicts with the VFS layering model.
+
+
+## Additional findings from forum/source review
+
+- Bear's Pit discussions confirm that classic 1.13 effectively has three basic interface widths (640, 800 and 1024) and that merely increasing screen resolution does not make the tactical panel itself wider. This reinforces the decision not to mix a responsive-layout rewrite into the skinning project.
+  - https://thepit.ja-galaxy-forum.com/index.php?goto=351756&t=msg&th=21864
+- The same Ja2+AI development thread documents an experimental path using PNG tactical-panel backgrounds such as `Bottom_Bar.png` / `Bottom_Bar_1024x768.png` and separate left/right panel PNGs. This is a strong precedent for Phase B: true-colour authored replacement surfaces at unchanged logical geometry, rather than giant resized STI sprites.
+- Bear's Pit Vengeance discussion shows that the mod has historically updated individual interface pieces (for example NewGoldPiece and Bobby Ray backgrounds) while preserving the broader interface structure. That matches the incremental VFS-skin strategy.
+  - https://thepit.ja-galaxy-forum.com/index.php?t=msg&th=23264
+- Current community reports on Steam/Reddit still describe native high-resolution UI as too small and generally solve readability through lower logical resolution plus output scaling. This confirms that renderer scaling and interface-art modernisation are separate problems.
+  - https://steamcommunity.com/app/12370/discussions/0/5733664933462475957/
+  - https://www.reddit.com/r/JaggedAlliance/comments/r9fncw/
+
+## Implementation status
+
+The chosen methodology is now implemented as three stages:
+
+1. repository-backed Kaerar/Vengeance UI chrome;
+2. Vengeance-only UI with lore/content artwork preserved byte-for-byte;
+3. strict local extraction of 34 inherited Interface/Laptop SLF chrome assets from the user's own JA2 installation.
+
+Stage 3 deliberately does not source original JA2 proprietary graphics from GitHub or third-party downloads. The local bridge validates archive bounds, rejects ambiguous filenames, hashes sources and outputs, and fails on missing required targets.
+
+`COLD_UI.ps1` provides build, incremental deploy, activation and rollback. CI exercises the Stage 1/2 build path, the SLF parser using a synthetic archive, manifest consistency, PowerShell parsing, VFS activation order, and rollback. The only step CI cannot execute is extraction of the user's proprietary SLF assets.
