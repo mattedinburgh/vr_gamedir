@@ -45,35 +45,58 @@ def fade_edges(x: list[float], seconds: float = 0.05) -> None:
 
 
 def noise_bed(rng: random.Random, n: int, smooth: float, high: float = 0.0) -> list[float]:
+    """Periodic filtered noise.
+
+    The raw excitation repeats exactly and the one-pole filter is warmed over
+    several cycles before we keep the final pass. This removes the tiny step
+    that plain random noise creates at a loop boundary.
+    """
+    raw = [rng.uniform(-1.0, 1.0) for _ in range(n)]
     out = [0.0] * n
     lp = 0.0
-    for i in range(n):
-        white = rng.uniform(-1.0, 1.0)
-        lp += smooth * (white - lp)
-        out[i] = lp + high * white
+
+    for cycle in range(5):
+        keep = cycle == 4
+        for i, white in enumerate(raw):
+            lp += smooth * (white - lp)
+            if keep:
+                out[i] = lp + high * white
+
     return out
-
-
 def add_tone(x: list[float], freq: float, amp: float, wobble: float = 0.0, wobble_hz: float = 0.2) -> None:
+    # Quantise oscillators to an integer number of cycles over the buffer.
+    # For loops this makes both carrier and modulation phase-continuous.
+    duration = len(x) / SR
+    if duration > 0:
+        freq = max(1.0 / duration, round(freq * duration) / duration)
+        wobble_hz = max(1.0 / duration, round(wobble_hz * duration) / duration)
+
     phase = 0.0
     for i in range(len(x)):
         t = i / SR
         f = freq * (1.0 + wobble * math.sin(TAU * wobble_hz * t))
         phase += TAU * f / SR
         x[i] += amp * math.sin(phase)
-
-
 def add_pulsed_noise(x: list[float], rng: random.Random, period: float, width: float, amp: float, smooth: float = 0.04) -> None:
+    duration = len(x) / SR
+    if duration > 0:
+        cycles = max(1, round(duration / period))
+        period = duration / cycles
+
+    raw = [rng.uniform(-1.0, 1.0) for _ in range(len(x))]
     lp = 0.0
-    for i in range(len(x)):
-        t = i / SR
-        p = (t % period) / period
-        env = math.exp(-((p - 0.35) / width) ** 2)
-        white = rng.uniform(-1.0, 1.0)
-        lp += smooth * (white - lp)
-        x[i] += amp * env * lp
 
-
+    # Warm the filter against the repeating excitation, then emit one cycle.
+    for cycle in range(4):
+        keep = cycle == 3
+        for i, white in enumerate(raw):
+            lp += smooth * (white - lp)
+            if not keep:
+                continue
+            t = i / SR
+            p = (t % period) / period
+            env = math.exp(-((p - 0.35) / width) ** 2)
+            x[i] += amp * env * lp
 def add_chirp(x: list[float], start: float, dur: float, f0: float, f1: float, amp: float, harmonic: float = 0.2) -> None:
     a = max(0, int(start * SR))
     b = min(len(x), int((start + dur) * SR))
@@ -99,6 +122,18 @@ def add_impact(x: list[float], start: float, freqs: tuple[float, ...], amp: floa
         x[i] += amp * env * v / len(freqs)
 
 
+def write_loop(name: str, samples: list[float]) -> None:
+    """Write a continuous bed without edge fades.
+
+    Loop primitives are generated periodic; removing edge fades avoids the
+    audible volume dip/reset that the earlier 9-second beds produced.
+    """
+    if samples:
+        mean = sum(samples) / len(samples)
+        samples = [v - mean for v in samples]
+    write_wav(name, samples)
+
+
 def base_loop(seed: int, seconds: float, smooth: float, level: float, high: float = 0.0) -> list[float]:
     rng = random.Random(seed)
     n = int(seconds * SR)
@@ -108,31 +143,31 @@ def base_loop(seed: int, seconds: float, smooth: float, level: float, high: floa
 
 
 def make_loops() -> None:
-    seconds = 9.0
+    seconds = 12.0
 
     # Rural
     x = base_loop(10, seconds, 0.006, 0.36, 0.025)
     add_pulsed_noise(x, random.Random(11), 5.2, 0.20, 0.08, 0.015)
     add_chirp(x, 1.2, .32, 1900, 2800, .08)
     add_chirp(x, 6.1, .28, 2400, 1700, .06)
-    fade_edges(x); write_wav("rural_day.wav", x)
+    write_loop("rural_day.wav", x)
 
     x = base_loop(12, seconds, 0.004, 0.22, 0.015)
     add_tone(x, 4200, .012, .05, .8)
     add_tone(x, 5100, .008, .06, 1.1)
-    fade_edges(x); write_wav("rural_night.wav", x)
+    write_loop("rural_night.wav", x)
 
     # Forest
     x = base_loop(20, seconds, 0.01, 0.34, 0.02)
     add_pulsed_noise(x, random.Random(21), 3.8, .18, .12, .02)
     add_chirp(x, 2.0, .26, 1500, 2600, .08)
     add_chirp(x, 6.5, .22, 3100, 2300, .06)
-    fade_edges(x); write_wav("forest_day.wav", x)
+    write_loop("forest_day.wav", x)
 
     x = base_loop(22, seconds, 0.008, 0.22, 0.01)
     add_tone(x, 3600, .014, .07, .6)
     add_tone(x, 4700, .012, .08, 1.0)
-    fade_edges(x); write_wav("forest_night.wav", x)
+    write_loop("forest_night.wav", x)
 
     # Jungle
     x = base_loop(30, seconds, 0.012, 0.37, 0.028)
@@ -140,113 +175,114 @@ def make_loops() -> None:
     add_chirp(x, .9, .30, 2200, 3600, .09)
     add_chirp(x, 4.1, .24, 3200, 2100, .08)
     add_chirp(x, 7.1, .34, 1700, 3000, .08)
-    fade_edges(x); write_wav("jungle_day.wav", x)
+    write_loop("jungle_day.wav", x)
 
     x = base_loop(32, seconds, 0.01, 0.28, 0.018)
     add_tone(x, 3900, .018, .10, .7)
     add_tone(x, 5200, .015, .09, 1.15)
     add_pulsed_noise(x, random.Random(33), 2.4, .15, .08, .02)
-    fade_edges(x); write_wav("jungle_night.wav", x)
+    write_loop("jungle_night.wav", x)
 
     # Farm
     x = base_loop(40, seconds, 0.005, 0.28, 0.02)
     add_tone(x, 90, .018, .03, .08)
     add_chirp(x, 1.7, .30, 1800, 2600, .07)
     add_impact(x, 5.8, (420, 690, 980), .025, .18)
-    fade_edges(x); write_wav("farm_day.wav", x)
+    write_loop("farm_day.wav", x)
 
     x = base_loop(41, seconds, 0.004, 0.18, 0.01)
     add_tone(x, 4300, .014, .07, .8)
     add_tone(x, 5200, .01, .08, 1.05)
-    fade_edges(x); write_wav("farm_night.wav", x)
+    write_loop("farm_night.wav", x)
 
     # City
     x = base_loop(50, seconds, 0.02, 0.20, 0.05)
     add_tone(x, 52, .025, .10, .05)
     add_tone(x, 96, .015, .08, .08)
     add_pulsed_noise(x, random.Random(51), 4.5, .22, .08, .08)
-    fade_edges(x); write_wav("city_day.wav", x)
+    write_loop("city_day.wav", x)
 
     x = base_loop(52, seconds, 0.014, 0.16, 0.035)
     add_tone(x, 50, .022, .08, .05)
     add_tone(x, 100, .012, .06, .09)
-    fade_edges(x); write_wav("city_night.wav", x)
+    write_loop("city_night.wav", x)
 
     # San Mona: city plus distant low club pulse.
     x = base_loop(60, seconds, 0.018, 0.20, 0.04)
     add_tone(x, 58, .03, .06, .08)
     add_pulsed_noise(x, random.Random(61), 3.2, .16, .07, .08)
-    fade_edges(x); write_wav("sanmona_day.wav", x)
+    add_tone(x, 146, .006, .18, .16)
+    write_loop("sanmona_day.wav", x)
 
     x = base_loop(62, seconds, 0.012, 0.16, 0.03)
-    for beat in [0.5, 1.1, 2.5, 3.1, 4.5, 5.1, 6.5, 7.1, 8.5]:
+    for beat in [0.55, 1.22, 2.78, 3.46, 5.05, 6.31, 7.88, 9.42, 10.73]:
         add_impact(x, beat, (48, 72), .035, .11)
     add_tone(x, 52, .02, .04, .07)
-    fade_edges(x); write_wav("sanmona_night.wav", x)
+    write_loop("sanmona_night.wav", x)
 
     # Coast
     x = base_loop(70, seconds, 0.025, 0.28, 0.055)
     add_pulsed_noise(x, random.Random(71), 3.6, .27, .26, .035)
-    fade_edges(x); write_wav("coast_day.wav", x)
+    write_loop("coast_day.wav", x)
 
     x = base_loop(72, seconds, 0.02, 0.24, 0.04)
     add_pulsed_noise(x, random.Random(73), 4.0, .29, .22, .03)
-    fade_edges(x); write_wav("coast_night.wav", x)
+    write_loop("coast_night.wav", x)
 
     # Desert
     x = base_loop(80, seconds, 0.003, 0.30, 0.015)
     add_pulsed_noise(x, random.Random(81), 5.8, .30, .12, .008)
-    fade_edges(x); write_wav("desert_day.wav", x)
+    write_loop("desert_day.wav", x)
 
     x = base_loop(82, seconds, 0.0025, 0.18, 0.008)
     add_tone(x, 4300, .006, .08, .7)
-    fade_edges(x); write_wav("desert_night.wav", x)
+    write_loop("desert_night.wav", x)
 
     # Swamp
     x = base_loop(90, seconds, 0.018, 0.28, 0.03)
     add_tone(x, 130, .012, .18, .25)
     add_pulsed_noise(x, random.Random(91), 2.7, .18, .10, .03)
-    fade_edges(x); write_wav("swamp_day.wav", x)
+    write_loop("swamp_day.wav", x)
 
     x = base_loop(92, seconds, 0.015, 0.25, 0.02)
     add_tone(x, 120, .018, .20, .24)
     add_tone(x, 3900, .012, .09, .8)
     add_tone(x, 4900, .010, .09, 1.1)
-    fade_edges(x); write_wav("swamp_night.wav", x)
+    write_loop("swamp_night.wav", x)
 
     # Industrial
     x = base_loop(100, seconds, 0.012, 0.15, 0.025)
     add_tone(x, 50, .07, .02, .06)
     add_tone(x, 100, .025, .03, .09)
     add_tone(x, 180, .012, .05, .13)
-    fade_edges(x); write_wav("industrial_day.wav", x)
+    write_loop("industrial_day.wav", x)
 
     x = base_loop(101, seconds, 0.010, 0.12, 0.018)
     add_tone(x, 50, .06, .02, .06)
     add_tone(x, 100, .022, .03, .09)
-    fade_edges(x); write_wav("industrial_night.wav", x)
+    write_loop("industrial_night.wav", x)
 
     # Military
     x = base_loop(110, seconds, 0.01, 0.14, 0.018)
     add_tone(x, 60, .038, .04, .06)
     add_tone(x, 120, .014, .04, .09)
-    fade_edges(x); write_wav("military_day.wav", x)
+    write_loop("military_day.wav", x)
 
     x = base_loop(111, seconds, 0.008, 0.10, 0.012)
     add_tone(x, 60, .032, .03, .06)
     add_tone(x, 120, .012, .03, .09)
-    fade_edges(x); write_wav("military_night.wav", x)
+    write_loop("military_night.wav", x)
 
     # Airport
     x = base_loop(120, seconds, 0.015, 0.15, 0.03)
     add_tone(x, 72, .035, .10, .08)
     add_tone(x, 144, .012, .08, .11)
     add_pulsed_noise(x, random.Random(121), 6.5, .35, .12, .02)
-    fade_edges(x); write_wav("airport_day.wav", x)
+    write_loop("airport_day.wav", x)
 
     x = base_loop(122, seconds, 0.012, 0.11, 0.02)
     add_tone(x, 72, .028, .08, .08)
-    fade_edges(x); write_wav("airport_night.wav", x)
+    write_loop("airport_night.wav", x)
 
     # Underground / mine / sewer
     x = base_loop(130, seconds, 0.02, 0.10, 0.004)
@@ -254,29 +290,29 @@ def make_loops() -> None:
     add_tone(x, 76, .012, .04, .08)
     add_impact(x, 3.1, (540, 790), .018, .25)
     add_impact(x, 7.2, (420, 660), .016, .24)
-    fade_edges(x); write_wav("underground.wav", x)
+    write_loop("underground.wav", x)
 
     x = base_loop(131, seconds, 0.025, 0.12, 0.006)
     add_tone(x, 42, .035, .02, .05)
     add_impact(x, 2.4, (620, 870), .019, .28)
     add_impact(x, 6.0, (510, 760), .017, .26)
-    fade_edges(x); write_wav("mine.wav", x)
+    write_loop("mine.wav", x)
 
     x = base_loop(132, seconds, 0.03, 0.14, 0.008)
     add_tone(x, 47, .03, .03, .05)
     add_pulsed_noise(x, random.Random(133), 2.8, .26, .08, .04)
-    fade_edges(x); write_wav("sewer.wav", x)
+    write_loop("sewer.wav", x)
 
     # Dam
     x = base_loop(140, seconds, 0.035, 0.23, 0.05)
     add_tone(x, 52, .035, .03, .07)
     add_pulsed_noise(x, random.Random(141), 2.2, .35, .20, .05)
-    fade_edges(x); write_wav("dam_day.wav", x)
+    write_loop("dam_day.wav", x)
 
     x = base_loop(142, seconds, 0.03, 0.18, 0.035)
     add_tone(x, 52, .032, .03, .07)
     add_pulsed_noise(x, random.Random(143), 2.4, .35, .17, .05)
-    fade_edges(x); write_wav("dam_night.wav", x)
+    write_loop("dam_night.wav", x)
 
 
 def oneshot(name: str, seconds: float, seed: int) -> tuple[list[float], random.Random]:
