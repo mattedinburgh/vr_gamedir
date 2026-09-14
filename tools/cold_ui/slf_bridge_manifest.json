@@ -22,6 +22,14 @@
         "iteminfotacticaltabbutton.sti",
         "map_border_buttons.sti",
         "map_screen_bottom_arrows.sti"
+      ],
+      "optional_targets": [
+        "backpack_buttons.sti",
+        "infobox_background.sti",
+        "infobox_interface.sti",
+        "iteminfoadvancedbutton.sti",
+        "iteminfotabbutton.sti",
+        "iteminfotacticaltabbutton.sti"
       ]
     },
     {
