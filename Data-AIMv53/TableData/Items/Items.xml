@@ -31140,7 +31140,7 @@
 		<uiIndex>1022</uiIndex>
 		<szItemName>Rag</szItemName>
 		<szLongItemName>Rag</szLongItemName>
-		<szItemDesc>A torn scrap of cloth. Not sterile, but useful for emergency bleeding control. It can also clean blood from blades, remove camouflage, or serve as a wick.</szItemDesc>
+		<szItemDesc>A crude improvised pressure dressing. It stops bleeding and secures fresh wounds like a first aid kit, but works very slowly and is consumed rapidly. Also useful for cleaning blades, removing camouflage, or as a wick.</szItemDesc>
 		<szBRName>Rag</szBRName>
 		<szBRDesc>Not for sale through BR.</szBRDesc>
 		<usItemClass>4096</usItemClass>
@@ -31162,7 +31162,6 @@
 		<Attachment>1</Attachment>
 		<HiddenAddon>1</HiddenAddon>
 		<Medical>1</Medical>
-		<PercentStatusDrainReduction>-200</PercentStatusDrainReduction>
 		<FirstAidKit>1</FirstAidKit>
 	</ITEM>
 	<ITEM>
