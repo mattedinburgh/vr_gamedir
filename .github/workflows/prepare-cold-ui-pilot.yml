@@ -51,7 +51,7 @@ jobs:
           python tools/cold_ui/prepare_cold_ui.py
           --manifest tools/cold_ui/manifest.json
           --output-root build/Data-UI-ColdPilot
-          --stage ${{ inputs.stage || '1' }}
+          --stage ${{ inputs.stage || '2' }}
           --strength ${{ inputs.strength || '0.72' }}
           --write
           --previews
@@ -61,7 +61,7 @@ jobs:
       - name: Upload pilot only
         uses: actions/upload-artifact@v4
         with:
-          name: cold-ui-pilot-stage-${{ inputs.stage || '1' }}
+          name: cold-ui-pilot-stage-${{ inputs.stage || '2' }}
           path: |
             build/Data-UI-ColdPilot
             build/cold-ui-preview
