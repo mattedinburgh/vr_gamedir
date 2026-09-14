@@ -2,6 +2,9 @@
 """Synthetic tests for the Stage 3 SLF bridge parser and resolver."""
 from __future__ import annotations
 
+import json
+import subprocess
+import sys
 import tempfile
 from pathlib import Path
 
@@ -110,6 +113,48 @@ def main():
         assert hit is not None
         assert hit.read_bytes() == b"LOW"
         assert layer == "Data-1.13"
+
+        # End-to-end: a missing variant-specific target must be reported
+        # but must not make extraction fail.
+        e2e_root = Path(td) / "e2e"
+        (e2e_root / "Data").mkdir(parents=True)
+        fixture = e2e_root / "Data" / "Interface.slf"
+        write_fixture(fixture)
+        manifest = Path(td) / "bridge.json"
+        manifest.write_text(
+            json.dumps({
+                "archives": [{
+                    "archive": "Data/Interface.slf",
+                    "mount": "INTERFACE",
+                    "targets": ["inventory_buttons.sti", "variant_only.sti"],
+                    "optional_targets": ["variant_only.sti"],
+                }],
+                "loose_roots": ["Data-1.13", "Data"],
+            }),
+            encoding="utf-8",
+        )
+        output = Path(td) / "out"
+        report = Path(td) / "report.json"
+        proc = subprocess.run(
+            [
+                sys.executable,
+                str(Path(__file__).with_name("extract_slf_ui.py")),
+                "--game-root", str(e2e_root),
+                "--manifest", str(manifest),
+                "--output-root", str(output),
+                "--report", str(report),
+            ],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        assert proc.returncode == 0, proc.stderr + proc.stdout
+        report_data = json.loads(report.read_text(encoding="utf-8"))
+        assert report_data["summary"]["optional_missing"] == 1
+        rows = report_data["archives"][0]["targets"]
+        optional = next(x for x in rows if x["target"] == "variant_only.sti")
+        assert optional["status"] == "optional-missing"
+        assert optional["optional"] is True
 
     print("SLF bridge synthetic checks passed")
 
