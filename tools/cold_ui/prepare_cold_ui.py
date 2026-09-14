@@ -26,7 +26,7 @@ STCI_INDEXED = 0x0008
 STCI_RGB = 0x0004
 STCI_ETRLE_COMPRESSED = 0x0020
 STCI_HEADER_SIZE = 64
-PROFILE_VERSION = "cold-ui-v3"
+PROFILE_VERSION = "cold-ui-v4"
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -37,8 +37,15 @@ def clamp8(v: float) -> int:
     return max(0, min(255, int(round(v))))
 
 
-def cold_rgb(rgb: Tuple[int, int, int], strength: float) -> Tuple[int, int, int]:
-    """Shift UI chrome toward cold navy/steel/cyan while protecting semantic colours."""
+def cold_rgb(rgb: Tuple[int, int, int], strength: float, policy: str = "chrome") -> Tuple[int, int, int]:
+    """Shift UI chrome toward cold navy/steel/cyan while protecting semantic colours.
+
+    policy controls how aggressively an asset is themed:
+    - chrome: panel/button/frame material; full treatment
+    - mixed: chrome plus embedded artwork; conservative treatment
+    - semantic: warning/status/state artwork; minimal treatment
+    - preserve: leave colour untouched
+    """
     r8, g8, b8 = rgb
     if r8 == 0 and g8 == 0 and b8 == 0:
         return rgb
@@ -48,6 +55,16 @@ def cold_rgb(rgb: Tuple[int, int, int], strength: float) -> Tuple[int, int, int]
     lum = 0.2126 * r + 0.7152 * g + 0.0722 * b
 
     local = max(0.0, min(1.0, strength))
+    policy_key = str(policy).strip().lower()
+    policy_factor = {
+        "chrome": 1.00,
+        "mixed": 0.58,
+        "semantic": 0.18,
+        "preserve": 0.00,
+    }.get(policy_key, 0.58)
+    local *= policy_factor
+    if local <= 0.0:
+        return rgb
 
     # Preserve only clearly semantic colours. Warm brown/orange/gold chrome is
     # intentionally NOT protected: converting that material language is the point
@@ -92,7 +109,7 @@ def cold_rgb(rgb: Tuple[int, int, int], strength: float) -> Tuple[int, int, int]
     return clamp8(nr * 255), clamp8(ng * 255), clamp8(nb * 255)
 
 
-def recolour_sti(data: bytes, strength: float) -> Tuple[bytes, Dict[str, object]]:
+def recolour_sti(data: bytes, strength: float, policy: str = "chrome") -> Tuple[bytes, Dict[str, object]]:
     if len(data) < STCI_HEADER_SIZE or data[:4] != b"STCI":
         raise ValueError("not an STCI file")
 
@@ -106,6 +123,7 @@ def recolour_sti(data: bytes, strength: float) -> Tuple[bytes, Dict[str, object]
         "width_header": width,
         "height_header": height,
         "depth": depth,
+        "policy": policy,
     }
 
     if not (flags & STCI_INDEXED):
@@ -136,7 +154,7 @@ def recolour_sti(data: bytes, strength: float) -> Tuple[bytes, Dict[str, object]
         if idx == 0:
             continue
 
-        new = cold_rgb(old, strength)
+        new = cold_rgb(old, strength, policy)
         if new != old:
             out[off:off + 3] = bytes(new)
             changed += 1
@@ -289,10 +307,10 @@ def require_pillow():
         ) from exc
 
 
-def recolour_raster(src: Path, dst: Path, strength: float) -> Dict[str, object]:
+def recolour_raster(src: Path, dst: Path, strength: float, policy: str = "chrome") -> Dict[str, object]:
     Image = require_pillow()
     with Image.open(src) as img:
-        meta: Dict[str, object] = {"format": img.format, "mode": img.mode, "size": list(img.size)}
+        meta: Dict[str, object] = {"format": img.format, "mode": img.mode, "size": list(img.size), "policy": policy}
 
         if img.mode == "P":
             palette = img.getpalette()
@@ -308,7 +326,7 @@ def recolour_raster(src: Path, dst: Path, strength: float) -> Dict[str, object]:
                     continue
                 off = idx * 3
                 old = tuple(palette[off:off + 3])
-                new = cold_rgb(old, strength)
+                new = cold_rgb(old, strength, policy)
                 if new != old:
                     palette[off:off + 3] = list(new)
                     changed += 1
@@ -323,7 +341,7 @@ def recolour_raster(src: Path, dst: Path, strength: float) -> Dict[str, object]:
         rgba = img.convert("RGBA")
         pixels = []
         for r, g, b, a in rgba.getdata():
-            nr, ng, nb = cold_rgb((r, g, b), strength)
+            nr, ng, nb = cold_rgb((r, g, b), strength, policy)
             pixels.append((nr, ng, nb, a))
         rgba.putdata(pixels)
 
@@ -394,6 +412,7 @@ def main() -> int:
             "mount_path": str(mount).replace("\\", "/"),
             "stage": entry.get("stage", 1),
             "role": entry.get("role", ""),
+            "policy": str(entry.get("policy", "chrome")),
         }
 
         if not src.exists():
@@ -404,7 +423,7 @@ def main() -> int:
         raw = src.read_bytes()
         input_hash = sha256_bytes(raw)
         state_key = row["source"]
-        signature = f"{PROFILE_VERSION}:{args.strength:.4f}:{input_hash}"
+        signature = f"{PROFILE_VERSION}:{args.strength:.4f}:{row['policy']}:{input_hash}"
 
         if not args.force and state.get(state_key) == signature and dst.exists():
             row["status"] = "incremental-skip"
@@ -419,7 +438,7 @@ def main() -> int:
         if not args.write:
             row["status"] = "audit-only"
             if suffix == ".sti":
-                themed_bytes, meta = recolour_sti(raw, args.strength)
+                themed_bytes, meta = recolour_sti(raw, args.strength, str(row["policy"]))
                 row.update(meta)
                 if args.previews:
                     preview_dst = preview_root / mount.parent / f"{mount.name}.compare.png"
@@ -431,7 +450,7 @@ def main() -> int:
         dst.parent.mkdir(parents=True, exist_ok=True)
 
         if suffix == ".sti":
-            out, meta = recolour_sti(raw, args.strength)
+            out, meta = recolour_sti(raw, args.strength, str(row["policy"]))
             dst.write_bytes(out)
             row.update(meta)
             if args.previews:
@@ -439,7 +458,7 @@ def main() -> int:
                 row.update(render_sti_compare(raw, out, preview_dst))
                 row["preview_path"] = str(preview_dst)
         elif suffix in {".png", ".pcx"}:
-            row.update(recolour_raster(src, dst, args.strength))
+            row.update(recolour_raster(src, dst, args.strength, str(row["policy"])))
             if args.previews:
                 preview_dst = preview_root / mount.parent / f"{mount.name}.compare.png"
                 row.update(render_raster_compare(src, dst, preview_dst))
