@@ -46,6 +46,15 @@ jobs:
       - name: Run cold UI policy checks
         run: python tools/cold_ui/test_policy.py
 
+      - name: Run Stage 3 SLF bridge checks
+        run: python tools/cold_ui/test_slf_extract.py
+
+      - name: Parse PowerShell cold UI pipeline
+        shell: pwsh
+        run: |
+          $null = [scriptblock]::Create((Get-Content -Raw "./COLD_UI.ps1"))
+          Write-Host "COLD_UI.ps1 syntax OK"
+
       - name: Build non-live cold UI overlay
         run: >
           python tools/cold_ui/prepare_cold_ui.py
