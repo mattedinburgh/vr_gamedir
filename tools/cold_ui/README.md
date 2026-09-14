@@ -140,3 +140,8 @@ Disable it and delete the dedicated overlay directory:
 Deployment is incremental by default and keeps a state file so stale files previously deployed by this pipeline can be removed safely. `-Force` is available for clean recovery/revalidation.
 
 The activation edit is deliberately narrow: it adds/removes only the `coldui` profile and `datacoldui_dir` location. A pre-activation VFS backup is also kept for emergency recovery.
+
+
+### Stage 3 VFS/variant handling
+
+Stage 3 resolves installed loose VFS layers before the original SLF. Six historical/new-inventory interface names are variant-specific optional assets: they are themed when present and reported/skipped when absent. Required assets still fail closed.
