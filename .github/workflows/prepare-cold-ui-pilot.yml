@@ -1,0 +1,47 @@
+name: Prepare cold UI pilot
+
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "Pilot stage (1 = active Data-UI, 2 = include Vengeance-only screens)"
+        required: true
+        default: "1"
+      strength:
+        description: "Cold palette strength 0.0-1.0"
+        required: true
+        default: "0.64"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install raster support
+        run: python -m pip install pillow
+
+      - name: Build non-live cold UI overlay
+        run: >
+          python tools/cold_ui/prepare_cold_ui.py
+          --manifest tools/cold_ui/manifest.json
+          --output-root build/Data-UI-ColdPilot
+          --stage ${{ inputs.stage }}
+          --strength ${{ inputs.strength }}
+          --write
+          --report build/cold-ui-report.json
+
+      - name: Upload pilot only
+        uses: actions/upload-artifact@v4
+        with:
+          name: cold-ui-pilot-stage-${{ inputs.stage }}
+          path: |
+            build/Data-UI-ColdPilot
+            build/cold-ui-report.json
+          if-no-files-found: error

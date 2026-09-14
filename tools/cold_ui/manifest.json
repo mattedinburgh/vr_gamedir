@@ -1,0 +1,276 @@
+{
+  "name": "Vengeance cold UI pilot",
+  "notes": "Non-live overlay. Stage 1 targets active Kaerar replacement UI; stage 2 expands into Vengeance-only screens. Item/weapon art is intentionally excluded.",
+  "assets": [
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar.sti",
+      "mount_path": "INTERFACE/Bottom_Bar.sti",
+      "stage": 1,
+      "role": "tactical bottom bar"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_1024x768.STI",
+      "mount_path": "INTERFACE/Bottom_Bar_1024x768.STI",
+      "stage": 1,
+      "role": "tactical bottom bar"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_10_1024x768.sti",
+      "mount_path": "INTERFACE/Bottom_Bar_10_1024x768.sti",
+      "stage": 1,
+      "role": "tactical bottom bar"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_800x600.sti",
+      "mount_path": "INTERFACE/Bottom_Bar_800x600.sti",
+      "stage": 1,
+      "role": "tactical bottom bar"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_8_1024x768.sti",
+      "mount_path": "INTERFACE/Bottom_Bar_8_1024x768.sti",
+      "stage": 1,
+      "role": "tactical bottom bar"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_8_800x600.sti",
+      "mount_path": "INTERFACE/Bottom_Bar_8_800x600.sti",
+      "stage": 1,
+      "role": "tactical bottom bar"
+    },
+    {
+      "source": "Data-UI/INTERFACE/CHARINFO.STI",
+      "mount_path": "INTERFACE/CHARINFO.STI",
+      "stage": 1,
+      "role": "character info chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/CONTRACTBUTTON.STI",
+      "mount_path": "INTERFACE/CONTRACTBUTTON.STI",
+      "stage": 1,
+      "role": "button chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/DONE_BUTTON2.sti",
+      "mount_path": "INTERFACE/DONE_BUTTON2.sti",
+      "stage": 1,
+      "role": "button chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/GOLD_FRONT.STI",
+      "mount_path": "INTERFACE/GOLD_FRONT.STI",
+      "stage": 1,
+      "role": "panel chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/INVENTORY_GOLD_FRONT.sti",
+      "mount_path": "INTERFACE/INVENTORY_GOLD_FRONT.sti",
+      "stage": 1,
+      "role": "inventory panel chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/INV_FRN.STI",
+      "mount_path": "INTERFACE/INV_FRN.STI",
+      "stage": 1,
+      "role": "inventory panel chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Inventory_Bottom_Panel_1024x768.STI",
+      "mount_path": "INTERFACE/Inventory_Bottom_Panel_1024x768.STI",
+      "stage": 1,
+      "role": "inventory panel"
+    },
+    {
+      "source": "Data-UI/INTERFACE/MAPINV_1024x768.sti",
+      "mount_path": "INTERFACE/MAPINV_1024x768.sti",
+      "stage": 1,
+      "role": "map inventory"
+    },
+    {
+      "source": "Data-UI/INTERFACE/MBS_1024x768.sti",
+      "mount_path": "INTERFACE/MBS_1024x768.sti",
+      "stage": 1,
+      "role": "map screen chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Map_Bord_1024x768.STI",
+      "mount_path": "INTERFACE/Map_Bord_1024x768.STI",
+      "stage": 1,
+      "role": "map border"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Map_Screen_Bottom_1024x768.STI",
+      "mount_path": "INTERFACE/Map_Screen_Bottom_1024x768.STI",
+      "stage": 1,
+      "role": "map bottom panel"
+    },
+    {
+      "source": "Data-UI/INTERFACE/OverheadInterface_1024x768.STI",
+      "mount_path": "INTERFACE/OverheadInterface_1024x768.STI",
+      "stage": 1,
+      "role": "overhead interface"
+    },
+    {
+      "source": "Data-UI/INTERFACE/P_CLOSE.STI",
+      "mount_path": "INTERFACE/P_CLOSE.STI",
+      "stage": 1,
+      "role": "panel state"
+    },
+    {
+      "source": "Data-UI/INTERFACE/P_DEAD.STI",
+      "mount_path": "INTERFACE/P_DEAD.STI",
+      "stage": 1,
+      "role": "panel state"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Sector_Inventory_1024x768.STI",
+      "mount_path": "INTERFACE/Sector_Inventory_1024x768.STI",
+      "stage": 1,
+      "role": "sector inventory"
+    },
+    {
+      "source": "Data-UI/LAPTOP/AMMOGRID.sti",
+      "mount_path": "LAPTOP/AMMOGRID.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid"
+    },
+    {
+      "source": "Data-UI/LAPTOP/ARMOURGRID.sti",
+      "mount_path": "LAPTOP/ARMOURGRID.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid"
+    },
+    {
+      "source": "Data-UI/LAPTOP/GUNSGRID.sti",
+      "mount_path": "LAPTOP/GUNSGRID.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid"
+    },
+    {
+      "source": "Data-UI/LAPTOP/LAPTOP3.png",
+      "mount_path": "LAPTOP/LAPTOP3.png",
+      "stage": 1,
+      "role": "laptop shell"
+    },
+    {
+      "source": "Data-UI/LAPTOP/LIGHTS.STI",
+      "mount_path": "LAPTOP/LIGHTS.STI",
+      "stage": 1,
+      "role": "laptop indicators"
+    },
+    {
+      "source": "Data-UI/LAPTOP/MISCGRID.sti",
+      "mount_path": "LAPTOP/MISCGRID.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid"
+    },
+    {
+      "source": "Data-UI/LAPTOP/Usedgrid.sti",
+      "mount_path": "LAPTOP/Usedgrid.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid"
+    },
+    {
+      "source": "Data-Vengeance/Interface/B_MAP.pcx",
+      "mount_path": "INTERFACE/B_MAP.pcx",
+      "stage": 2,
+      "role": "map background"
+    },
+    {
+      "source": "Data-Vengeance/Interface/B_MAP_800x600.pcx",
+      "mount_path": "INTERFACE/B_MAP_800x600.pcx",
+      "stage": 2,
+      "role": "map background"
+    },
+    {
+      "source": "Data-Vengeance/Interface/B_MAP_1024x768.pcx",
+      "mount_path": "INTERFACE/B_MAP_1024x768.pcx",
+      "stage": 2,
+      "role": "map background"
+    },
+    {
+      "source": "Data-Vengeance/Interface/OptionsScreenBackground.sti",
+      "mount_path": "INTERFACE/OptionsScreenBackground.sti",
+      "stage": 2,
+      "role": "options screen"
+    },
+    {
+      "source": "Data-Vengeance/Interface/OptionsScreenBackground_800x600.sti",
+      "mount_path": "INTERFACE/OptionsScreenBackground_800x600.sti",
+      "stage": 2,
+      "role": "options screen"
+    },
+    {
+      "source": "Data-Vengeance/Interface/OptionsScreenBackground_1024x768.sti",
+      "mount_path": "INTERFACE/OptionsScreenBackground_1024x768.sti",
+      "stage": 2,
+      "role": "options screen"
+    },
+    {
+      "source": "Data-Vengeance/Interface/PREBATTLEBUTTON.STI",
+      "mount_path": "INTERFACE/PREBATTLEBUTTON.STI",
+      "stage": 2,
+      "role": "prebattle button"
+    },
+    {
+      "source": "Data-Vengeance/Interface/PREBATTLEPANEL.STI",
+      "mount_path": "INTERFACE/PREBATTLEPANEL.STI",
+      "stage": 2,
+      "role": "prebattle panel"
+    },
+    {
+      "source": "Data-Vengeance/Interface/PREBATTLEPANEL_800x600.STI",
+      "mount_path": "INTERFACE/PREBATTLEPANEL_800x600.STI",
+      "stage": 2,
+      "role": "prebattle panel"
+    },
+    {
+      "source": "Data-Vengeance/Interface/PREBATTLEPANEL_1024x768.STI",
+      "mount_path": "INTERFACE/PREBATTLEPANEL_1024x768.STI",
+      "stage": 2,
+      "role": "prebattle panel"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Desktop.pcx",
+      "mount_path": "LAPTOP/Desktop.pcx",
+      "stage": 2,
+      "role": "laptop desktop"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Ammobackground.STI",
+      "mount_path": "LAPTOP/Ammobackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Armourbackground.STI",
+      "mount_path": "LAPTOP/Armourbackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Gunbackground.STI",
+      "mount_path": "LAPTOP/Gunbackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Miscbackground.STI",
+      "mount_path": "LAPTOP/Miscbackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Usedbackground.STI",
+      "mount_path": "LAPTOP/Usedbackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/SORTBY.sti",
+      "mount_path": "LAPTOP/SORTBY.sti",
+      "stage": 2,
+      "role": "Bobby Ray control"
+    }
+  ]
+}

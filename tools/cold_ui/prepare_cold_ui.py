@@ -1,0 +1,317 @@
+#!/usr/bin/env python3
+"""
+Prepare a non-live cold-colour UI overlay for JA2 Vengeance.
+
+Safety properties:
+- Source assets are never modified.
+- Output goes to a separate overlay root (default: build/Data-UI-ColdPilot).
+- STI indexed images are recoloured by palette only; ETRLE pixel data,
+  subimage dimensions, offsets, transparency runs, and app data remain byte-identical.
+- Incremental by default. Use --force only for a clean rebuild.
+- Nothing edits vfs_config.Vengeance.ini or deploys to a game directory.
+"""
+
+from __future__ import annotations
+
+import argparse
+import colorsys
+import hashlib
+import json
+import shutil
+import struct
+from pathlib import Path
+from typing import Dict, Iterable, List, Tuple
+
+STCI_INDEXED = 0x0008
+STCI_RGB = 0x0004
+STCI_HEADER_SIZE = 64
+PROFILE_VERSION = "cold-ui-v1"
+
+
+def sha256_bytes(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+
+def clamp8(v: float) -> int:
+    return max(0, min(255, int(round(v))))
+
+
+def cold_rgb(rgb: Tuple[int, int, int], strength: float) -> Tuple[int, int, int]:
+    """Shift UI chrome toward cold navy/steel/cyan while protecting semantic colours."""
+    r8, g8, b8 = rgb
+    if r8 == 0 and g8 == 0 and b8 == 0:
+        return rgb
+
+    r, g, b = r8 / 255.0, g8 / 255.0, b8 / 255.0
+    h, s, v = colorsys.rgb_to_hsv(r, g, b)
+    lum = 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+    local = max(0.0, min(1.0, strength))
+
+    # Preserve strong semantic warning/status colours (reds, oranges, yellows, greens).
+    if s >= 0.58 and (h <= 0.17 or 0.20 <= h <= 0.47):
+        local *= 0.10
+
+    # Existing blues/cyans already belong to the intended language.
+    if s >= 0.25 and 0.48 <= h <= 0.72:
+        local *= 0.22
+
+    # Highly saturated magenta/purple is usually semantic/art content, not chrome.
+    if s >= 0.60 and 0.78 <= h <= 0.95:
+        local *= 0.18
+
+    warmness = max(0.0, r - b)
+    neutrality = 1.0 - s
+    local *= min(1.0, 0.72 + 0.35 * warmness + 0.18 * neutrality)
+
+    # Cold target preserves luminance but changes the material read:
+    # dark navy -> gunmetal -> steel-blue -> icy grey.
+    if lum < 0.16:
+        tr = lum * 0.56
+        tg = lum * 0.76 + 0.006
+        tb = lum * 0.98 + 0.018
+    elif lum > 0.82:
+        tr = lum * 0.90
+        tg = lum * 0.965
+        tb = min(1.0, lum * 1.025 + 0.005)
+    else:
+        tr = max(0.0, lum * 0.70 - 0.012)
+        tg = min(1.0, lum * 0.88 + 0.012)
+        tb = min(1.0, lum * 1.055 + 0.032)
+
+    nr = r * (1.0 - local) + tr * local
+    ng = g * (1.0 - local) + tg * local
+    nb = b * (1.0 - local) + tb * local
+    return clamp8(nr * 255), clamp8(ng * 255), clamp8(nb * 255)
+
+
+def recolour_sti(data: bytes, strength: float) -> Tuple[bytes, Dict[str, object]]:
+    if len(data) < STCI_HEADER_SIZE or data[:4] != b"STCI":
+        raise ValueError("not an STCI file")
+
+    flags = struct.unpack_from("<I", data, 16)[0]
+    height, width = struct.unpack_from("<HH", data, 20)
+    depth = data[44]
+
+    meta: Dict[str, object] = {
+        "format": "STI",
+        "flags": flags,
+        "width_header": width,
+        "height_header": height,
+        "depth": depth,
+    }
+
+    if not (flags & STCI_INDEXED):
+        meta["action"] = "copied-unmodified-rgb-sti"
+        return data, meta
+
+    colours = struct.unpack_from("<I", data, 24)[0]
+    subimages = struct.unpack_from("<H", data, 28)[0]
+    meta["palette_colours"] = colours
+    meta["subimages"] = subimages
+
+    if colours <= 0 or colours > 256:
+        raise ValueError(f"unexpected STI palette size: {colours}")
+
+    palette_off = STCI_HEADER_SIZE
+    palette_end = palette_off + colours * 3
+    if palette_end > len(data):
+        raise ValueError("truncated STI palette")
+
+    out = bytearray(data)
+    changed = 0
+
+    for idx in range(colours):
+        off = palette_off + idx * 3
+        old = tuple(out[off:off + 3])
+
+        # Index 0 commonly participates in transparency conventions. Preserve it exactly.
+        if idx == 0:
+            continue
+
+        new = cold_rgb(old, strength)
+        if new != old:
+            out[off:off + 3] = bytes(new)
+            changed += 1
+
+    meta["action"] = "palette-retint"
+    meta["palette_entries_changed"] = changed
+    return bytes(out), meta
+
+
+def require_pillow():
+    try:
+        from PIL import Image  # type: ignore
+        return Image
+    except ImportError as exc:
+        raise RuntimeError(
+            "Pillow is required for PNG/PCX preparation. Install with: python -m pip install pillow"
+        ) from exc
+
+
+def recolour_raster(src: Path, dst: Path, strength: float) -> Dict[str, object]:
+    Image = require_pillow()
+    with Image.open(src) as img:
+        meta: Dict[str, object] = {"format": img.format, "mode": img.mode, "size": list(img.size)}
+
+        if img.mode == "P":
+            palette = img.getpalette()
+            if palette is None:
+                raise ValueError(f"{src}: indexed image has no palette")
+            palette = list(palette)
+            transparent = img.info.get("transparency")
+            transparent_index = transparent if isinstance(transparent, int) else None
+
+            changed = 0
+            for idx in range(min(256, len(palette) // 3)):
+                if idx == transparent_index:
+                    continue
+                off = idx * 3
+                old = tuple(palette[off:off + 3])
+                new = cold_rgb(old, strength)
+                if new != old:
+                    palette[off:off + 3] = list(new)
+                    changed += 1
+
+            out = img.copy()
+            out.putpalette(palette)
+            out.save(dst)
+            meta["action"] = "palette-retint"
+            meta["palette_entries_changed"] = changed
+            return meta
+
+        rgba = img.convert("RGBA")
+        pixels = []
+        for r, g, b, a in rgba.getdata():
+            nr, ng, nb = cold_rgb((r, g, b), strength)
+            pixels.append((nr, ng, nb, a))
+        rgba.putdata(pixels)
+
+        if src.suffix.lower() == ".pcx":
+            rgba.convert("RGB").save(dst, format="PCX")
+        else:
+            rgba.save(dst)
+
+        meta["action"] = "pixel-retint"
+        return meta
+
+
+def load_state(path: Path) -> Dict[str, object]:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--manifest", default="tools/cold_ui/manifest.json")
+    ap.add_argument("--source-root", default=".")
+    ap.add_argument("--output-root", default="build/Data-UI-ColdPilot")
+    ap.add_argument("--stage", type=int, default=1)
+    ap.add_argument("--strength", type=float, default=0.64)
+    ap.add_argument("--write", action="store_true", help="Actually write the separate pilot overlay.")
+    ap.add_argument("--force", action="store_true", help="Ignore incremental state and rebuild selected assets.")
+    ap.add_argument("--report", default="build/cold-ui-report.json")
+    args = ap.parse_args()
+
+    source_root = Path(args.source_root).resolve()
+    output_root = Path(args.output_root).resolve()
+    manifest_path = Path(args.manifest)
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+    state_path = output_root / ".cold_ui_state.json"
+    state = {} if args.force else load_state(state_path)
+    new_state: Dict[str, object] = dict(state)
+
+    report: Dict[str, object] = {
+        "profile_version": PROFILE_VERSION,
+        "stage": args.stage,
+        "strength": args.strength,
+        "write": args.write,
+        "output_root": str(output_root),
+        "assets": [],
+    }
+
+    for entry in manifest["assets"]:
+        if int(entry.get("stage", 1)) > args.stage:
+            continue
+
+        rel = Path(entry["source"])
+        mount = Path(entry["mount_path"])
+        src = source_root / rel
+        dst = output_root / mount
+
+        row: Dict[str, object] = {
+            "source": str(rel).replace("\\", "/"),
+            "mount_path": str(mount).replace("\\", "/"),
+            "stage": entry.get("stage", 1),
+            "role": entry.get("role", ""),
+        }
+
+        if not src.exists():
+            row["status"] = "missing-source"
+            report["assets"].append(row)
+            continue
+
+        raw = src.read_bytes()
+        input_hash = sha256_bytes(raw)
+        state_key = row["source"]
+        signature = f"{PROFILE_VERSION}:{args.strength:.4f}:{input_hash}"
+
+        if not args.force and state.get(state_key) == signature and dst.exists():
+            row["status"] = "incremental-skip"
+            row["input_sha256"] = input_hash
+            row["output_sha256"] = sha256_bytes(dst.read_bytes())
+            report["assets"].append(row)
+            continue
+
+        suffix = src.suffix.lower()
+        row["input_sha256"] = input_hash
+
+        if not args.write:
+            row["status"] = "audit-only"
+            if suffix == ".sti":
+                _, meta = recolour_sti(raw, args.strength)
+                row.update(meta)
+            report["assets"].append(row)
+            continue
+
+        dst.parent.mkdir(parents=True, exist_ok=True)
+
+        if suffix == ".sti":
+            out, meta = recolour_sti(raw, args.strength)
+            dst.write_bytes(out)
+            row.update(meta)
+        elif suffix in {".png", ".pcx"}:
+            row.update(recolour_raster(src, dst, args.strength))
+        else:
+            shutil.copy2(src, dst)
+            row["action"] = "copied-unmodified"
+
+        row["status"] = "written"
+        row["output_sha256"] = sha256_bytes(dst.read_bytes())
+        new_state[state_key] = signature
+        report["assets"].append(row)
+
+    report_path = Path(args.report)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
+
+    if args.write:
+        output_root.mkdir(parents=True, exist_ok=True)
+        state_path.write_text(json.dumps(new_state, indent=2), encoding="utf-8")
+
+    counts: Dict[str, int] = {}
+    for row in report["assets"]:
+        status = str(row.get("status", "unknown"))
+        counts[status] = counts.get(status, 0) + 1
+
+    print(json.dumps({"summary": counts, "report": str(report_path)}, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
