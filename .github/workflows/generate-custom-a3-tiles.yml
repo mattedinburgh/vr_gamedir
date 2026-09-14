@@ -25,6 +25,11 @@ jobs:
         with:
           ref: install/all-2026-09-12
           fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            Tools
+            Data-Maps-Tiles/Tilesets/38
+          sparse-checkout-cone-mode: true
 
       - name: Generate native B1TC pack
         run: python3 Tools/GenerateCustomA3Tiles.py
