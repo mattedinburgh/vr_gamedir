@@ -19,7 +19,7 @@ from typing import Dict, List, Tuple
 LIBHEADER = struct.Struct("<256s256siiHHB3xi")
 DIRENTRY = struct.Struct("<256sIIBB2xIIH2x")
 FILE_OK = 0
-EXTRACTOR_VERSION = "cold-ui-slf-v2"
+EXTRACTOR_VERSION = "cold-ui-slf-v3"
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -47,6 +47,16 @@ def safe_target(name: str) -> PurePosixPath:
     if p.is_absolute() or ".." in p.parts:
         raise ValueError(f"unsafe target path in manifest: {name!r}")
     return p
+
+
+def find_loose_source(root: Path, loose_roots, mount: str, wanted: str):
+    """Resolve a target from loose VFS data layers before falling back to SLF."""
+    rel = safe_target(wanted)
+    for layer in loose_roots:
+        candidate = (root / layer / mount).joinpath(*rel.parts)
+        if candidate.is_file():
+            return candidate, layer
+    return None, None
 
 
 def index_slf(path: Path) -> List[Tuple[str, int, int]]:
@@ -133,6 +143,18 @@ def main() -> int:
     output = Path(args.output_root).resolve()
     manifest_path = Path(args.manifest)
     spec = json.loads(manifest_path.read_text(encoding="utf-8"))
+    loose_roots = spec.get(
+        "loose_roots",
+        [
+            "Data-UI",
+            "Data-PCM",
+            "Data-AIMv53",
+            "Data-Maps-Tiles",
+            "Data-Vengeance",
+            "Data-1.13",
+            "Data",
+        ],
+    )
 
     report = {
         "extractor_version": EXTRACTOR_VERSION,
@@ -178,6 +200,37 @@ def main() -> int:
                 target_path = safe_target(wanted)
                 row = {"target": wanted}
 
+                loose_src, loose_layer = find_loose_source(
+                    root, loose_roots, archive["mount"], wanted
+                )
+                if loose_src is not None:
+                    data = loose_src.read_bytes()
+                    source_hash = sha256_bytes(data)
+                    dst = output / archive["mount"] / Path(*target_path.parts)
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+
+                    row.update({
+                        "source_kind": "loose-vfs",
+                        "source_layer": loose_layer,
+                        "source_path": str(loose_src),
+                        "length": len(data),
+                        "sha256": source_hash,
+                        "output": str(dst),
+                    })
+
+                    if not args.force and dst.is_file() and sha256_file(dst) == source_hash:
+                        row["status"] = "unchanged"
+                        report["summary"]["unchanged"] += 1
+                    else:
+                        dst.write_bytes(data)
+                        if sha256_file(dst) != source_hash:
+                            raise ValueError(f"{dst}: post-write hash mismatch")
+                        row["status"] = "extracted"
+                        report["summary"]["extracted"] += 1
+
+                    archive_row["targets"].append(row)
+                    continue
+
                 try:
                     hit, match_mode = resolve_target(wanted, exact, basenames)
                 except ValueError as exc:
@@ -204,6 +257,7 @@ def main() -> int:
                 source_hash = sha256_bytes(data)
 
                 row.update({
+                    "source_kind": "slf",
                     "archive_entry": name,
                     "match_mode": match_mode,
                     "offset": off,
