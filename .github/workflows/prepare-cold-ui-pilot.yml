@@ -1,0 +1,121 @@
+name: Validate cold UI
+
+on:
+  push:
+    branches:
+      - art/cold-ui-pilot
+    paths:
+      - "tools/cold_ui/**"
+      - "COLD_UI.ps1"
+      - ".github/workflows/prepare-cold-ui-pilot.yml"
+      - "Data-UI/**"
+      - "Data-Vengeance/Interface/**"
+      - "Data-Vengeance/Laptop/**"
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "Pilot stage (1 = active Data-UI, 2 = include Vengeance-only screens)"
+        required: true
+        default: "1"
+      strength:
+        description: "Cold palette strength 0.0-1.0"
+        required: true
+        default: "0.72"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            tools/cold_ui
+            Data-UI
+            Data-Vengeance/Interface
+            Data-Vengeance/Laptop
+          sparse-checkout-cone-mode: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install raster support
+        run: python -m pip install pillow
+
+      - name: Run cold UI policy checks
+        run: python tools/cold_ui/test_policy.py
+
+      - name: Run Stage 3 SLF bridge checks
+        run: python tools/cold_ui/test_slf_extract.py
+
+      - name: Check Stage 3 manifest consistency
+        run: python tools/cold_ui/test_manifest_consistency.py
+
+      - name: Parse PowerShell cold UI pipeline
+        shell: pwsh
+        run: |
+          $null = [scriptblock]::Create((Get-Content -Raw "./COLD_UI.ps1"))
+          Write-Host "COLD_UI.ps1 syntax OK"
+
+      - name: Exercise PowerShell cold UI pipeline
+        shell: pwsh
+        run: ./COLD_UI.ps1 -Mode Build -Stage 2 -GameRoot .
+
+      - name: Exercise VFS activation and rollback
+        shell: pwsh
+        run: |
+          $root = Join-Path $env:RUNNER_TEMP "cold-ui-vfs-test"
+          New-Item -ItemType Directory -Force -Path $root | Out-Null
+          @"
+          [vfs_config]
+          PROFILES = SlfLibs, Vanilla, v113, vengcore, pcm, ui, weapsounds, UserProf
+
+          [PROFILE_ui]
+          NAME = Existing UI
+          LOCATIONS = dataui_dir
+          PROFILE_ROOT =
+
+          [LOC_dataui_dir]
+          TYPE = DIRECTORY
+          PATH = Data-UI
+          MOUNT_POINT =
+          "@ | Set-Content -Path (Join-Path $root "vfs_config.Vengeance.ini")
+
+          ./COLD_UI.ps1 -Mode Activate -Stage 2 -GameRoot $root
+          $active = Get-Content -Raw (Join-Path $root "vfs_config.Vengeance.ini")
+          if ($active -notmatch 'PROFILES\s*=.*ui,\s*coldui') { throw "coldui was not mounted after ui" }
+          if ($active -notmatch '\[PROFILE_coldui\]') { throw "PROFILE_coldui missing after activation" }
+          if ($active -notmatch '\[LOC_datacoldui_dir\]') { throw "LOC_datacoldui_dir missing after activation" }
+
+          ./COLD_UI.ps1 -Mode Rollback -GameRoot $root -RemoveOverlay
+          $rolled = Get-Content -Raw (Join-Path $root "vfs_config.Vengeance.ini")
+          if ($rolled -match '(?im)^PROFILES\s*=.*\bcoldui\b') { throw "coldui still present in PROFILES after rollback" }
+          if ($rolled -match '\[PROFILE_coldui\]') { throw "PROFILE_coldui remained after rollback" }
+          if ($rolled -match '\[LOC_datacoldui_dir\]') { throw "LOC_datacoldui_dir remained after rollback" }
+          if ($rolled -notmatch '\[PROFILE_ui\]') { throw "existing UI profile was damaged by rollback" }
+          if (Test-Path (Join-Path $root "Data-UI-Cold")) { throw "overlay remained after -RemoveOverlay" }
+          Write-Host "VFS activation/rollback checks passed"
+
+      - name: Build non-live cold UI overlay
+        run: >
+          python tools/cold_ui/prepare_cold_ui.py
+          --manifest tools/cold_ui/manifest.json
+          --output-root build/Data-UI-ColdPilot
+          --stage ${{ inputs.stage || '2' }}
+          --strength ${{ inputs.strength || '0.72' }}
+          --write
+          --previews
+          --preview-root build/cold-ui-preview
+          --report build/cold-ui-report.json
+
+      - name: Upload pilot only
+        uses: actions/upload-artifact@v4
+        with:
+          name: cold-ui-stage-${{ inputs.stage || '2' }}
+          path: |
+            build/Data-UI-ColdPilot
+            build/cold-ui-preview
+            build/cold-ui-report.json
+          if-no-files-found: error

@@ -1,0 +1,565 @@
+{
+  "name": "Vengeance cold UI pilot",
+  "notes": "Non-live overlay. Research-informed v4: semantic-aware VFS asset theming. Chrome is cooled; semantic colours are protected; content/lore artwork such as maps, cinematic backgrounds and laptop desktop art is preserved. Stage 1 targets active Kaerar replacement UI; stage 2 expands into Vengeance-only screens; stage 3 adds selected base-SLF chrome after read-only bridge extraction. Item/weapon art is intentionally excluded.",
+  "assets": [
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar.sti",
+      "mount_path": "INTERFACE/Bottom_Bar.sti",
+      "stage": 1,
+      "role": "tactical bottom bar",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_1024x768.STI",
+      "mount_path": "INTERFACE/Bottom_Bar_1024x768.STI",
+      "stage": 1,
+      "role": "tactical bottom bar",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_10_1024x768.sti",
+      "mount_path": "INTERFACE/Bottom_Bar_10_1024x768.sti",
+      "stage": 1,
+      "role": "tactical bottom bar",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_800x600.sti",
+      "mount_path": "INTERFACE/Bottom_Bar_800x600.sti",
+      "stage": 1,
+      "role": "tactical bottom bar",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_8_1024x768.sti",
+      "mount_path": "INTERFACE/Bottom_Bar_8_1024x768.sti",
+      "stage": 1,
+      "role": "tactical bottom bar",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Bottom_Bar_8_800x600.sti",
+      "mount_path": "INTERFACE/Bottom_Bar_8_800x600.sti",
+      "stage": 1,
+      "role": "tactical bottom bar",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/CHARINFO.STI",
+      "mount_path": "INTERFACE/CHARINFO.STI",
+      "stage": 1,
+      "role": "character info chrome",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/CONTRACTBUTTON.STI",
+      "mount_path": "INTERFACE/CONTRACTBUTTON.STI",
+      "stage": 1,
+      "role": "button chrome",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/DONE_BUTTON2.sti",
+      "mount_path": "INTERFACE/DONE_BUTTON2.sti",
+      "stage": 1,
+      "role": "button chrome",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/GOLD_FRONT.STI",
+      "mount_path": "INTERFACE/GOLD_FRONT.STI",
+      "stage": 1,
+      "role": "panel chrome",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/INVENTORY_GOLD_FRONT.sti",
+      "mount_path": "INTERFACE/INVENTORY_GOLD_FRONT.sti",
+      "stage": 1,
+      "role": "inventory panel chrome",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/INV_FRN.STI",
+      "mount_path": "INTERFACE/INV_FRN.STI",
+      "stage": 1,
+      "role": "inventory panel chrome",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Inventory_Bottom_Panel_1024x768.STI",
+      "mount_path": "INTERFACE/Inventory_Bottom_Panel_1024x768.STI",
+      "stage": 1,
+      "role": "inventory panel",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/MAPINV_1024x768.sti",
+      "mount_path": "INTERFACE/MAPINV_1024x768.sti",
+      "stage": 1,
+      "role": "map inventory",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/MBS_1024x768.sti",
+      "mount_path": "INTERFACE/MBS_1024x768.sti",
+      "stage": 1,
+      "role": "map screen chrome",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Map_Bord_1024x768.STI",
+      "mount_path": "INTERFACE/Map_Bord_1024x768.STI",
+      "stage": 1,
+      "role": "map border",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Map_Screen_Bottom_1024x768.STI",
+      "mount_path": "INTERFACE/Map_Screen_Bottom_1024x768.STI",
+      "stage": 1,
+      "role": "map bottom panel",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/OverheadInterface_1024x768.STI",
+      "mount_path": "INTERFACE/OverheadInterface_1024x768.STI",
+      "stage": 1,
+      "role": "overhead interface",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/INTERFACE/P_CLOSE.STI",
+      "mount_path": "INTERFACE/P_CLOSE.STI",
+      "stage": 1,
+      "role": "panel state",
+      "policy": "semantic"
+    },
+    {
+      "source": "Data-UI/INTERFACE/P_DEAD.STI",
+      "mount_path": "INTERFACE/P_DEAD.STI",
+      "stage": 1,
+      "role": "panel state",
+      "policy": "semantic"
+    },
+    {
+      "source": "Data-UI/INTERFACE/Sector_Inventory_1024x768.STI",
+      "mount_path": "INTERFACE/Sector_Inventory_1024x768.STI",
+      "stage": 1,
+      "role": "sector inventory",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/LAPTOP/AMMOGRID.sti",
+      "mount_path": "LAPTOP/AMMOGRID.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/LAPTOP/ARMOURGRID.sti",
+      "mount_path": "LAPTOP/ARMOURGRID.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/LAPTOP/GUNSGRID.sti",
+      "mount_path": "LAPTOP/GUNSGRID.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/LAPTOP/LAPTOP3.png",
+      "mount_path": "LAPTOP/LAPTOP3.png",
+      "stage": 1,
+      "role": "laptop shell",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/LAPTOP/LIGHTS.STI",
+      "mount_path": "LAPTOP/LIGHTS.STI",
+      "stage": 1,
+      "role": "laptop indicators",
+      "policy": "semantic"
+    },
+    {
+      "source": "Data-UI/LAPTOP/MISCGRID.sti",
+      "mount_path": "LAPTOP/MISCGRID.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-UI/LAPTOP/Usedgrid.sti",
+      "mount_path": "LAPTOP/Usedgrid.sti",
+      "stage": 1,
+      "role": "Bobby Ray grid",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Interface/B_MAP.pcx",
+      "mount_path": "INTERFACE/B_MAP.pcx",
+      "stage": 2,
+      "role": "map background",
+      "policy": "preserve"
+    },
+    {
+      "source": "Data-Vengeance/Interface/B_MAP_800x600.pcx",
+      "mount_path": "INTERFACE/B_MAP_800x600.pcx",
+      "stage": 2,
+      "role": "map background",
+      "policy": "preserve"
+    },
+    {
+      "source": "Data-Vengeance/Interface/B_MAP_1024x768.pcx",
+      "mount_path": "INTERFACE/B_MAP_1024x768.pcx",
+      "stage": 2,
+      "role": "map background",
+      "policy": "preserve"
+    },
+    {
+      "source": "Data-Vengeance/Interface/OptionsScreenBackground.sti",
+      "mount_path": "INTERFACE/OptionsScreenBackground.sti",
+      "stage": 2,
+      "role": "options screen",
+      "policy": "preserve"
+    },
+    {
+      "source": "Data-Vengeance/Interface/OptionsScreenBackground_800x600.sti",
+      "mount_path": "INTERFACE/OptionsScreenBackground_800x600.sti",
+      "stage": 2,
+      "role": "options screen",
+      "policy": "preserve"
+    },
+    {
+      "source": "Data-Vengeance/Interface/OptionsScreenBackground_1024x768.sti",
+      "mount_path": "INTERFACE/OptionsScreenBackground_1024x768.sti",
+      "stage": 2,
+      "role": "options screen",
+      "policy": "preserve"
+    },
+    {
+      "source": "Data-Vengeance/Interface/PREBATTLEBUTTON.STI",
+      "mount_path": "INTERFACE/PREBATTLEBUTTON.STI",
+      "stage": 2,
+      "role": "prebattle button",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Interface/PREBATTLEPANEL.STI",
+      "mount_path": "INTERFACE/PREBATTLEPANEL.STI",
+      "stage": 2,
+      "role": "prebattle panel",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Interface/PREBATTLEPANEL_800x600.STI",
+      "mount_path": "INTERFACE/PREBATTLEPANEL_800x600.STI",
+      "stage": 2,
+      "role": "prebattle panel",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Interface/PREBATTLEPANEL_1024x768.STI",
+      "mount_path": "INTERFACE/PREBATTLEPANEL_1024x768.STI",
+      "stage": 2,
+      "role": "prebattle panel",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Desktop.pcx",
+      "mount_path": "LAPTOP/Desktop.pcx",
+      "stage": 2,
+      "role": "laptop desktop",
+      "policy": "preserve"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Ammobackground.STI",
+      "mount_path": "LAPTOP/Ammobackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Armourbackground.STI",
+      "mount_path": "LAPTOP/Armourbackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Gunbackground.STI",
+      "mount_path": "LAPTOP/Gunbackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Miscbackground.STI",
+      "mount_path": "LAPTOP/Miscbackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/Usedbackground.STI",
+      "mount_path": "LAPTOP/Usedbackground.STI",
+      "stage": 2,
+      "role": "Bobby Ray background",
+      "policy": "chrome"
+    },
+    {
+      "source": "Data-Vengeance/Laptop/SORTBY.sti",
+      "mount_path": "LAPTOP/SORTBY.sti",
+      "stage": 2,
+      "role": "Bobby Ray control",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/Bars.sti",
+      "mount_path": "INTERFACE/Bars.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/backpack_buttons.sti",
+      "mount_path": "INTERFACE/backpack_buttons.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome",
+      "optional": true
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/bottom_bar_buttons.sti",
+      "mount_path": "INTERFACE/bottom_bar_buttons.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/gold_key_button.sti",
+      "mount_path": "INTERFACE/gold_key_button.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/infobox.sti",
+      "mount_path": "INTERFACE/infobox.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/infobox_background.sti",
+      "mount_path": "INTERFACE/infobox_background.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome",
+      "optional": true
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/infobox_interface.sti",
+      "mount_path": "INTERFACE/infobox_interface.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome",
+      "optional": true
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/inventory_buttons.sti",
+      "mount_path": "INTERFACE/inventory_buttons.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/inventory_buttons_2.sti",
+      "mount_path": "INTERFACE/inventory_buttons_2.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/itembox.sti",
+      "mount_path": "INTERFACE/itembox.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/itemdescdonebutton.sti",
+      "mount_path": "INTERFACE/itemdescdonebutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/iteminfoadvancedbutton.sti",
+      "mount_path": "INTERFACE/iteminfoadvancedbutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome",
+      "optional": true
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/iteminfotabbutton.sti",
+      "mount_path": "INTERFACE/iteminfotabbutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome",
+      "optional": true
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/iteminfotacticaltabbutton.sti",
+      "mount_path": "INTERFACE/iteminfotacticaltabbutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome",
+      "optional": true
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/map_border_buttons.sti",
+      "mount_path": "INTERFACE/map_border_buttons.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/INTERFACE/map_screen_bottom_arrows.sti",
+      "mount_path": "INTERFACE/map_screen_bottom_arrows.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/bookmarkbottom.sti",
+      "mount_path": "LAPTOP/bookmarkbottom.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/bookmarkmiddle.sti",
+      "mount_path": "LAPTOP/bookmarkmiddle.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/bookmarktop.sti",
+      "mount_path": "LAPTOP/bookmarktop.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/buttonsforlaptop.sti",
+      "mount_path": "LAPTOP/buttonsforlaptop.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/CatalogueButton.sti",
+      "mount_path": "LAPTOP/CatalogueButton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/CatalogueButton1.sti",
+      "mount_path": "LAPTOP/CatalogueButton1.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/downloadbot.sti",
+      "mount_path": "LAPTOP/downloadbot.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/downloadmid.sti",
+      "mount_path": "LAPTOP/downloadmid.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/downloadtop.sti",
+      "mount_path": "LAPTOP/downloadtop.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/errorbutton.sti",
+      "mount_path": "LAPTOP/errorbutton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/hilite.sti",
+      "mount_path": "LAPTOP/hilite.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/NextButton.sti",
+      "mount_path": "LAPTOP/NextButton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/OrderFormButton.sti",
+      "mount_path": "LAPTOP/OrderFormButton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/PreviousButton.sti",
+      "mount_path": "LAPTOP/PreviousButton.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/programtitlebar.sti",
+      "mount_path": "LAPTOP/programtitlebar.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/taskbar.sti",
+      "mount_path": "LAPTOP/taskbar.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/webpages.sti",
+      "mount_path": "LAPTOP/webpages.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    },
+    {
+      "source": "build/cold-ui-base-extract/LAPTOP/x.sti",
+      "mount_path": "LAPTOP/x.sti",
+      "stage": 3,
+      "role": "base-SLF UI chrome bridge",
+      "policy": "chrome"
+    }
+  ]
+}
