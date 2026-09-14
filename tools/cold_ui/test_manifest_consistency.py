@@ -16,8 +16,11 @@ def main():
     bridge = json.loads((root / "slf_bridge_manifest.json").read_text(encoding="utf-8"))
 
     expected = {}
+    expected_optional = set()
     for archive in bridge["archives"]:
         mount = archive["mount"]
+        for target in archive.get("optional_targets", []):
+            expected_optional.add(norm(f"{mount}/{target}"))
         for target in archive["targets"]:
             mount_path = f"{mount}/{target}"
             key = norm(mount_path)
@@ -26,6 +29,7 @@ def main():
             expected[key] = mount_path
 
     actual = {}
+    actual_optional = set()
     for entry in manifest["assets"]:
         if int(entry.get("stage", 1)) != 3:
             continue
@@ -41,14 +45,24 @@ def main():
             f"build/cold-ui-base-extract/{mount_path}"
         )
         actual[key] = mount_path
+        if bool(entry.get("optional", False)):
+            actual_optional.add(key)
 
     missing = sorted(set(expected) - set(actual))
     extra = sorted(set(actual) - set(expected))
     assert not missing, f"SLF targets missing from theming manifest: {missing}"
     assert not extra, f"Stage 3 theming assets absent from SLF allow-list: {extra}"
     assert len(expected) == 34, f"unexpected Stage 3 target count: {len(expected)}"
+    assert expected_optional == actual_optional, (
+        f"optional Stage 3 mismatch: bridge={sorted(expected_optional)} "
+        f"manifest={sorted(actual_optional)}"
+    )
+    assert len(expected_optional) == 6, f"unexpected optional Stage 3 count: {len(expected_optional)}"
 
-    print(f"Stage 3 manifest consistency checks passed ({len(expected)} assets)")
+    print(
+        f"Stage 3 manifest consistency checks passed "
+        f"({len(expected)} assets, {len(expected_optional)} optional variants)"
+    )
 
 
 if __name__ == "__main__":
