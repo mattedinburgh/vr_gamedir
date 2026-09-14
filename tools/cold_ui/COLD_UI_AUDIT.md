@@ -54,3 +54,16 @@ Those are not changed yet because the correct final values should be chosen agai
 Several interface assets referenced by source are not loose files in `vr_gamedir` or the current GitHub mirror, for example base button/arrow/bar assets such as `map_border_buttons.sti`, `map_screen_bottom_arrows.sti`, `inventory_buttons.sti`, `Bars.sti`, and some laptop button sheets.
 
 They are inherited from the base SLF/VFS data. For a truly complete cold theme, those must later be extracted from the user's installed base data through a bridge/extraction step, then added as explicit cold overrides. That is intentionally deferred until after the GitHub-first pilot.
+
+
+## Quantified loose-vs-SLF coverage
+
+Cross-referencing the principal Vengeance inventory, item-info, map-bottom, Bobby Ray and laptop source files against the current `vr_gamedir` tree produced:
+
+- **91** referenced `INTERFACE/...` or `LAPTOP/...` assets in the audited source areas;
+- **29** already available as loose assets in the GitHub data stack;
+- **62** inherited from base archives rather than stored loose in the current repository.
+
+Not every inherited file needs recolouring. The bridge manifest therefore selects **34 theme-critical chrome/control assets** for the first base-SLF pass (panel bars, inventory/map buttons, info-box chrome, laptop title/task bars and Bobby Ray navigation chrome) instead of indiscriminately retinting character figures or semantic artwork.
+
+The bridge remains staging-only and is not executed by the default GitHub pilot.
