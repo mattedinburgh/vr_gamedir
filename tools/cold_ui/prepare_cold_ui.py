@@ -24,8 +24,9 @@ from typing import Dict, Iterable, List, Tuple
 
 STCI_INDEXED = 0x0008
 STCI_RGB = 0x0004
+STCI_ETRLE_COMPRESSED = 0x0020
 STCI_HEADER_SIZE = 64
-PROFILE_VERSION = "cold-ui-v1"
+PROFILE_VERSION = "cold-ui-v2"
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -134,9 +135,142 @@ def recolour_sti(data: bytes, strength: float) -> Tuple[bytes, Dict[str, object]
             out[off:off + 3] = bytes(new)
             changed += 1
 
+    # Safety invariant: palette bytes are the only bytes permitted to change.
+    before_non_palette = data[:palette_off] + data[palette_end:]
+    after_bytes = bytes(out)
+    after_non_palette = after_bytes[:palette_off] + after_bytes[palette_end:]
     meta["action"] = "palette-retint"
     meta["palette_entries_changed"] = changed
-    return bytes(out), meta
+    meta["non_palette_sha256_before"] = sha256_bytes(before_non_palette)
+    meta["non_palette_sha256_after"] = sha256_bytes(after_non_palette)
+    meta["structural_bytes_identical"] = before_non_palette == after_non_palette
+    return after_bytes, meta
+
+
+def decode_sti_subimages(data: bytes):
+    """Decode indexed ETRLE STI frames for review previews only."""
+    Image = require_pillow()
+    if len(data) < STCI_HEADER_SIZE or data[:4] != b"STCI":
+        raise ValueError("not an STCI file")
+
+    flags = struct.unpack_from("<I", data, 16)[0]
+    if not (flags & STCI_INDEXED) or not (flags & STCI_ETRLE_COMPRESSED):
+        return []
+
+    colours = struct.unpack_from("<I", data, 24)[0]
+    subimages = struct.unpack_from("<H", data, 28)[0]
+    if colours <= 0 or colours > 256:
+        raise ValueError(f"unexpected STI palette size: {colours}")
+
+    palette_off = STCI_HEADER_SIZE
+    table_off = palette_off + colours * 3
+    pixel_base = table_off + subimages * 16
+    if pixel_base > len(data):
+        raise ValueError("truncated STI metadata")
+
+    palette = [
+        tuple(data[palette_off + i * 3: palette_off + i * 3 + 3])
+        for i in range(colours)
+    ]
+
+    frames = []
+    for idx in range(subimages):
+        off = table_off + idx * 16
+        data_off, data_len, offset_x, offset_y, height, width = struct.unpack_from("<IIhhHH", data, off)
+        start = pixel_base + data_off
+        end = start + data_len
+        if start < pixel_base or end > len(data):
+            raise ValueError(f"STI frame {idx} has invalid data bounds")
+
+        rgba = bytearray(width * height * 4)
+        p = start
+        x = 0
+        y = 0
+
+        while p < end and y < height:
+            token = data[p]
+            p += 1
+            if token == 0:
+                y += 1
+                x = 0
+                continue
+
+            run = token & 0x7F
+            if token & 0x80:
+                x += run
+                continue
+
+            for _ in range(run):
+                if p >= end:
+                    raise ValueError(f"STI frame {idx} literal run exceeds data")
+                pal_idx = data[p]
+                p += 1
+                if y < height and x < width and pal_idx < len(palette):
+                    r, g, b = palette[pal_idx]
+                    px = (y * width + x) * 4
+                    rgba[px:px + 4] = bytes((r, g, b, 255))
+                x += 1
+
+        image = Image.frombytes("RGBA", (width, height), bytes(rgba))
+        frames.append({
+            "image": image,
+            "offset_x": offset_x,
+            "offset_y": offset_y,
+            "width": width,
+            "height": height,
+        })
+
+    return frames
+
+
+def render_sti_compare(before: bytes, after: bytes, dst: Path, max_frames: int = 8) -> Dict[str, object]:
+    """Write a real before/after PNG assembled from decoded STI frames."""
+    Image = require_pillow()
+    old_frames = decode_sti_subimages(before)
+    new_frames = decode_sti_subimages(after)
+    count = min(len(old_frames), len(new_frames), max_frames)
+    if count == 0:
+        return {"preview": "unsupported-sti-preview"}
+
+    gap = 12
+    row_gap = 8
+    rows = []
+    for i in range(count):
+        old = old_frames[i]["image"]
+        new = new_frames[i]["image"]
+        row_w = old.width + gap + new.width
+        row_h = max(old.height, new.height)
+        row = Image.new("RGBA", (row_w, row_h), (10, 15, 21, 255))
+        row.paste(old, (0, 0), old)
+        row.paste(new, (old.width + gap, 0), new)
+        rows.append(row)
+
+    sheet_w = max(r.width for r in rows)
+    sheet_h = sum(r.height for r in rows) + row_gap * (len(rows) - 1)
+    sheet = Image.new("RGBA", (sheet_w, sheet_h), (10, 15, 21, 255))
+    y = 0
+    for row in rows:
+        sheet.paste(row, (0, y))
+        y += row.height + row_gap
+
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    sheet.save(dst, format="PNG")
+    return {"preview": "written", "preview_frames": count, "preview_size": [sheet_w, sheet_h]}
+
+
+def render_raster_compare(src: Path, themed: Path, dst: Path) -> Dict[str, object]:
+    Image = require_pillow()
+    with Image.open(src) as a, Image.open(themed) as b:
+        a = a.convert("RGBA")
+        b = b.convert("RGBA")
+        gap = 12
+        h = max(a.height, b.height)
+        sheet = Image.new("RGBA", (a.width + gap + b.width, h), (10, 15, 21, 255))
+        sheet.paste(a, (0, 0), a)
+        sheet.paste(b, (a.width + gap, 0), b)
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        sheet.save(dst, format="PNG")
+        return {"preview": "written", "preview_size": [sheet.width, sheet.height]}
 
 
 def require_pillow():
@@ -214,11 +348,14 @@ def main() -> int:
     ap.add_argument("--strength", type=float, default=0.64)
     ap.add_argument("--write", action="store_true", help="Actually write the separate pilot overlay.")
     ap.add_argument("--force", action="store_true", help="Ignore incremental state and rebuild selected assets.")
+    ap.add_argument("--previews", action="store_true", help="Generate real before/after PNG review sheets without activating the UI.")
+    ap.add_argument("--preview-root", default="build/cold-ui-preview")
     ap.add_argument("--report", default="build/cold-ui-report.json")
     args = ap.parse_args()
 
     source_root = Path(args.source_root).resolve()
     output_root = Path(args.output_root).resolve()
+    preview_root = Path(args.preview_root).resolve()
     manifest_path = Path(args.manifest)
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
 
@@ -231,7 +368,9 @@ def main() -> int:
         "stage": args.stage,
         "strength": args.strength,
         "write": args.write,
+        "previews": args.previews,
         "output_root": str(output_root),
+        "preview_root": str(preview_root),
         "assets": [],
     }
 
@@ -274,8 +413,12 @@ def main() -> int:
         if not args.write:
             row["status"] = "audit-only"
             if suffix == ".sti":
-                _, meta = recolour_sti(raw, args.strength)
+                themed_bytes, meta = recolour_sti(raw, args.strength)
                 row.update(meta)
+                if args.previews:
+                    preview_dst = preview_root / mount.parent / f"{mount.name}.compare.png"
+                    row.update(render_sti_compare(raw, themed_bytes, preview_dst))
+                    row["preview_path"] = str(preview_dst)
             report["assets"].append(row)
             continue
 
@@ -285,8 +428,16 @@ def main() -> int:
             out, meta = recolour_sti(raw, args.strength)
             dst.write_bytes(out)
             row.update(meta)
+            if args.previews:
+                preview_dst = preview_root / mount.parent / f"{mount.name}.compare.png"
+                row.update(render_sti_compare(raw, out, preview_dst))
+                row["preview_path"] = str(preview_dst)
         elif suffix in {".png", ".pcx"}:
             row.update(recolour_raster(src, dst, args.strength))
+            if args.previews:
+                preview_dst = preview_root / mount.parent / f"{mount.name}.compare.png"
+                row.update(render_raster_compare(src, dst, preview_dst))
+                row["preview_path"] = str(preview_dst)
         else:
             shutil.copy2(src, dst)
             row["action"] = "copied-unmodified"
