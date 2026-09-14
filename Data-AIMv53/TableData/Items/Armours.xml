@@ -290,7 +290,7 @@
 	<ARMOUR>	<!-- Field Uniform AXED -->
 		<uiIndex>41</uiIndex>
 		<ubArmourClass>1</ubArmourClass>
-		<ubProtection>2</ubProtection>
+		<ubProtection>25</ubProtection>
 		<ubCoverage>85</ubCoverage>
 		<ubDegradePercent>25</ubDegradePercent>
 	</ARMOUR>
