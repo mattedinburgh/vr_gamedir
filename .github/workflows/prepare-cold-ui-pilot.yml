@@ -35,6 +35,8 @@ jobs:
           --stage ${{ inputs.stage }}
           --strength ${{ inputs.strength }}
           --write
+          --previews
+          --preview-root build/cold-ui-preview
           --report build/cold-ui-report.json
 
       - name: Upload pilot only
@@ -43,5 +45,6 @@ jobs:
           name: cold-ui-pilot-stage-${{ inputs.stage }}
           path: |
             build/Data-UI-ColdPilot
+            build/cold-ui-preview
             build/cold-ui-report.json
           if-no-files-found: error
