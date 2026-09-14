@@ -6,6 +6,7 @@ on:
       - art/cold-ui-pilot
     paths:
       - "tools/cold_ui/**"
+      - "COLD_UI.ps1"
       - ".github/workflows/prepare-cold-ui-pilot.yml"
       - "Data-UI/**"
       - "Data-Vengeance/Interface/**"
