@@ -1,0 +1,69 @@
+name: Generate custom A3 tiles
+
+on:
+  push:
+    branches:
+      - install/all-2026-09-12
+    paths:
+      - 'Tools/GenerateCustomA3Tiles.py'
+      - '.github/workflows/generate-custom-a3-tiles.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-custom-a3-tiles
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: install/all-2026-09-12
+          fetch-depth: 0
+
+      - name: Generate native B1TC pack
+        run: python3 Tools/GenerateCustomA3Tiles.py
+
+      - name: Validate B1TC headers and expected files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import struct
+          root=Path('Data-Maps-Tiles/Tilesets/38')
+          expected={
+            'VR_A3_TEX1.b1tc':35,'VR_A3_TEX2.b1tc':35,'VR_A3_TEX3.b1tc':35,
+            'VR_A3_TEX4.b1tc':35,'VR_A3_TEX5.b1tc':35,'VR_A3_TEX6.b1tc':37,
+            'VR_A3_TEX7.b1tc':49,'VR_A3_WATER.b1tc':50,'VR_A3_DEEPWATER.b1tc':37,
+            'VR_A3_CROPS.b1tc':10,'VR_A3_RUTS.b1tc':10,'VR_A3_PROPS.b1tc':10,
+            'VR_A3_ROCKS.b1tc':10,'VR_A3_WOOD.b1tc':10,'VR_A3_WEEDS.b1tc':10,
+            'VR_A3_IRRIGATION.b1tc':10,'VR_A3_JUNK.b1tc':10,
+          }
+          for name,count in expected.items():
+              p=root/name
+              b=p.read_bytes()
+              assert b[:4]==b'B1TC', name
+              version,frames=struct.unpack_from('<HH',b,4)
+              assert version==1 and frames==count,(name,version,frames,count)
+              assert len(b)>8+frames*16,name
+              print(name,frames,len(b))
+          PY
+
+      - name: Commit generated game assets
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Data-Maps-Tiles/Tilesets/38/VR_A3_*.b1tc Data-Maps-Tiles/Tilesets/38/VR_A3_CUSTOM_PACK_README.txt
+          if git diff --cached --quiet; then
+            echo "Generated pack unchanged."
+            exit 0
+          fi
+          git commit -m "Generate native custom A3 tile pack"
+          git pull --rebase origin install/all-2026-09-12
+          git push origin HEAD:install/all-2026-09-12
