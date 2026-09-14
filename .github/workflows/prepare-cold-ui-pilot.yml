@@ -60,6 +60,41 @@ jobs:
         shell: pwsh
         run: ./COLD_UI.ps1 -Mode Build -Stage 2 -GameRoot .
 
+      - name: Exercise VFS activation and rollback
+        shell: pwsh
+        run: |
+          $root = Join-Path $env:RUNNER_TEMP "cold-ui-vfs-test"
+          New-Item -ItemType Directory -Force -Path $root | Out-Null
+          @"
+          [vfs_config]
+          PROFILES = SlfLibs, Vanilla, v113, vengcore, pcm, ui, weapsounds, UserProf
+
+          [PROFILE_ui]
+          NAME = Existing UI
+          LOCATIONS = dataui_dir
+          PROFILE_ROOT =
+
+          [LOC_dataui_dir]
+          TYPE = DIRECTORY
+          PATH = Data-UI
+          MOUNT_POINT =
+          "@ | Set-Content -Path (Join-Path $root "vfs_config.Vengeance.ini")
+
+          ./COLD_UI.ps1 -Mode Activate -Stage 2 -GameRoot $root
+          $active = Get-Content -Raw (Join-Path $root "vfs_config.Vengeance.ini")
+          if ($active -notmatch 'PROFILES\s*=.*ui,\s*coldui') { throw "coldui was not mounted after ui" }
+          if ($active -notmatch '\[PROFILE_coldui\]') { throw "PROFILE_coldui missing after activation" }
+          if ($active -notmatch '\[LOC_datacoldui_dir\]') { throw "LOC_datacoldui_dir missing after activation" }
+
+          ./COLD_UI.ps1 -Mode Rollback -GameRoot $root -RemoveOverlay
+          $rolled = Get-Content -Raw (Join-Path $root "vfs_config.Vengeance.ini")
+          if ($rolled -match '(?im)^PROFILES\s*=.*\bcoldui\b') { throw "coldui still present in PROFILES after rollback" }
+          if ($rolled -match '\[PROFILE_coldui\]') { throw "PROFILE_coldui remained after rollback" }
+          if ($rolled -match '\[LOC_datacoldui_dir\]') { throw "LOC_datacoldui_dir remained after rollback" }
+          if ($rolled -notmatch '\[PROFILE_ui\]') { throw "existing UI profile was damaged by rollback" }
+          if (Test-Path (Join-Path $root "Data-UI-Cold")) { throw "overlay remained after -RemoveOverlay" }
+          Write-Host "VFS activation/rollback checks passed"
+
       - name: Build non-live cold UI overlay
         run: >
           python tools/cold_ui/prepare_cold_ui.py
