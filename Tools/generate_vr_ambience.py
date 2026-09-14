@@ -445,7 +445,91 @@ def make_one_shots() -> None:
     fade_edges(x); write_wav("electrical_tick.wav", x)
 
 
+def make_authored_location_cues() -> None:
+    """Distinctive but restrained location cues, synthesized from scratch."""
+
+    # Farm bell: two irregular metallic strikes. Kept subtle because it shares
+    # the pool with birds/animals and should be a rare landmark cue.
+    x, r = oneshot("farm_bell.wav", 2.1, 300)
+    add_impact(x, .16, (548, 823, 1277, 1741), .34, .22)
+    add_impact(x, .78, (530, 805, 1250, 1690), .25, .24)
+    fade_edges(x); write_wav("farm_bell.wav", x)
+
+    # Street/shop chime. Neutral enough for multiple Arulco towns, but not a
+    # copied real-world melody.
+    x, r = oneshot("street_chime.wav", 2.8, 301)
+    for start, freq, amp in (
+        (.05, 659.25, .24),
+        (.48, 783.99, .21),
+        (.91, 987.77, .19),
+        (1.40, 783.99, .17),
+    ):
+        a = int(start * SR)
+        for i in range(a, len(x)):
+            t = (i - a) / SR
+            if t > 1.6:
+                break
+            env = (1.0 - math.exp(-t / .004)) * math.exp(-t / .48)
+            x[i] += amp * env * (
+                math.sin(TAU * freq * t)
+                + .36 * math.sin(TAU * freq * 2.01 * t)
+                + .14 * math.sin(TAU * freq * 3.96 * t)
+            )
+    fade_edges(x); write_wav("street_chime.wav", x)
+
+    # Small glass/bottle clink for nightlife. Two impacts prevent it sounding
+    # like an interface notification.
+    x, r = oneshot("bottle_clink.wav", 1.7, 302)
+    add_impact(x, .06, (1710, 2360, 3290), .24, .075)
+    add_impact(x, .32, (1580, 2210, 3100), .16, .09)
+    fade_edges(x); write_wav("bottle_clink.wav", x)
+
+    # San Mona distant radio/guitar colour. This is an original short plucked
+    # phrase with a mildly Spanish/Phrygian contour, then softened into the
+    # background so it reads as diegetic ambience rather than soundtrack.
+    x, r = oneshot("sanmona_guitar_radio.wav", 4.6, 303)
+    notes = (
+        (.10, 329.63, .18),
+        (.52, 349.23, .16),
+        (.94, 329.63, .17),
+        (1.38, 293.66, .15),
+        (1.82, 261.63, .15),
+        (2.28, 246.94, .13),
+        (2.96, 329.63, .16),
+    )
+    for start, freq, amp in notes:
+        a = int(start * SR)
+        phase = 0.0
+        for i in range(a, len(x)):
+            t = (i - a) / SR
+            if t > 1.55:
+                break
+            # Fast attack, guitar-like decay, slight inharmonic upper partials.
+            env = (1.0 - math.exp(-t / .006)) * math.exp(-t / .72)
+            phase += TAU * freq / SR
+            x[i] += amp * env * (
+                math.sin(phase)
+                + .31 * math.sin(2.01 * phase + .2)
+                + .11 * math.sin(3.98 * phase + .5)
+            )
+
+    # Distant-radio treatment: low-pass the phrase and add very faint,
+    # deterministic noise. No speech or third-party sample is used.
+    lp = 0.0
+    hiss = 0.0
+    for i in range(len(x)):
+        white = r.uniform(-1.0, 1.0)
+        lp += .10 * (x[i] - lp)
+        hiss += .03 * (white - hiss)
+        t = i / SR
+        flutter = .985 + .015 * math.sin(TAU * .7 * t)
+        x[i] = (.58 * lp + .014 * hiss) * flutter
+
+    fade_edges(x, .18); write_wav("sanmona_guitar_radio.wav", x)
+
+
 if __name__ == "__main__":
     make_loops()
     make_one_shots()
+    make_authored_location_cues()
     print("Generated Vengeance ambience library in", OUT)
