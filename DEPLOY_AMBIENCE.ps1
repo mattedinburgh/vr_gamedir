@@ -6,6 +6,12 @@ param(
 $ErrorActionPreference = "Stop"
 $RepoRoot = $PSScriptRoot
 
+$validator = Join-Path $RepoRoot "VALIDATE_AMBIENCE.ps1"
+if (Test-Path $validator) {
+    & $validator -RepoRoot $RepoRoot
+    if ($LASTEXITCODE -ne 0) { throw "Ambience validation failed; deployment aborted." }
+}
+
 function Resolve-GameRoot {
     param([string]$Requested)
 
