@@ -21,6 +21,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "Data-Maps-Tiles" / "Tilesets" / "18"
 PREVIEW = ROOT / "san_mona_preview"
+MASTER_SCALE = 4  # authoring/reference target; final B1TC geometry stays native/exact
 
 STCI_ETRLE_COMPRESSED = 0x0020
 STCI_ZLIB_COMPRESSED = 0x0010
@@ -378,7 +379,7 @@ def contact_sheet(name, original, remastered):
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     PREVIEW.mkdir(parents=True,exist_ok=True)
-    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","style_version":"2.3","art_direction":"sun-faded poor South-American vice/commercial district","assets":[]}
+    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","style_version":"2.3","art_direction":"1980s Latin-American / Central-American poor vice-commercial district, grounded in period archival references","master_scale":MASTER_SCALE,"assets":[]}
     for n,(rel,kind) in SOURCES.items():
         src=ROOT/rel
         if not src.exists():
@@ -388,9 +389,20 @@ def main():
         dst=OUT/f"{n}.b1tc"
         write_b1tc(dst,new)
         contact_sheet(n,frames,new)
+        widths=[f[2] for f in frames]
+        heights=[f[3] for f in frames]
         manifest["assets"].append({
             "logical_name":n+".STI","b1tc":dst.name,"source":rel,"kind":kind,
             "frames":len(frames),"frame_geometry":[[f[0],f[1],f[2],f[3]] for f in frames],
+            "native_resolution":{
+                "width_min":min(widths),"width_max":max(widths),
+                "height_min":min(heights),"height_max":max(heights)
+            },
+            "working_master_resolution":{
+                "scale":MASTER_SCALE,
+                "width_min":min(widths)*MASTER_SCALE,"width_max":max(widths)*MASTER_SCALE,
+                "height_min":min(heights)*MASTER_SCALE,"height_max":max(heights)*MASTER_SCALE
+            },
             "sti_meta":meta,
         })
         print("generated",dst,len(frames),"frames")
