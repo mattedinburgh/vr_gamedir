@@ -31143,7 +31143,7 @@
 		<szItemDesc>A crude improvised pressure dressing. It stops bleeding and secures fresh wounds like a first aid kit, but works very slowly and is consumed rapidly. Also useful for cleaning blades, removing camouflage, or as a wick.</szItemDesc>
 		<szBRName>Rag</szBRName>
 		<szBRDesc>Not for sale through BR.</szBRDesc>
-		<usItemClass>4096</usItemClass>
+		<usItemClass>268435456</usItemClass>
 		<nasLayoutClass>1</nasLayoutClass>		
 		<nasAttachmentClass>1</nasAttachmentClass>
 		<ubCursor>5</ubCursor>
