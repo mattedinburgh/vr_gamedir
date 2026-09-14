@@ -454,7 +454,20 @@ def main() -> int:
 
         dst.parent.mkdir(parents=True, exist_ok=True)
 
-        if suffix == ".sti":
+        # Preserve-class assets are content/lore rather than chrome. Copy them
+        # byte-for-byte instead of round-tripping through an image encoder.
+        if str(row["policy"]).lower() == "preserve":
+            dst.write_bytes(raw)
+            row["action"] = "copied-unmodified-policy"
+            row["byte_identical_to_source"] = True
+            if args.previews:
+                preview_dst = preview_root / mount.parent / f"{mount.name}.compare.png"
+                if suffix == ".sti":
+                    row.update(render_sti_compare(raw, raw, preview_dst))
+                elif suffix in {".png", ".pcx"}:
+                    row.update(render_raster_compare(src, src, preview_dst))
+                row["preview_path"] = str(preview_dst)
+        elif suffix == ".sti":
             out, meta = recolour_sti(raw, args.strength, str(row["policy"]))
             dst.write_bytes(out)
             row.update(meta)
