@@ -124,4 +124,12 @@
 		<id>536870912</id>
 		<name>Phosphorus Grenade</name>
 	</ItemFlag>
+	<ItemFlag>
+		<id>1073741824</id>
+		<name>Improvised Bandage</name>
+	</ItemFlag>
+	<ItemFlag>
+		<id>1073742848</id>
+		<name>Camo Remover + Improvised Bandage</name>
+	</ItemFlag>
 </JA2Data>
