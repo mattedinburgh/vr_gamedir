@@ -50,7 +50,7 @@ function Invoke-Python {
     if ($py.Count -gt 1) { $prefix = $py[1..($py.Count - 1)] }
     & $exe @prefix @Arguments
     if ($LASTEXITCODE -ne 0) {
-        throw "Python command failed with exit code $LASTEXITCODE: $exe $($Arguments -join ' ')"
+        throw "Python command failed with exit code ${LASTEXITCODE}: $exe $($Arguments -join ' ')"
     }
 }
 
