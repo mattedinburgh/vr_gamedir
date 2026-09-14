@@ -76,3 +76,8 @@ Profiles/UserProfile_Vengeance/*.tga
 *.exe
 !MapEditor_Vengeance.exe
 !cnc-ddraw config.exe
+
+# Cold UI generated
+build/
+Data-UI-Cold/
+*.cold-ui.pre-activation.bak
