@@ -10,9 +10,19 @@ This directory prepares the cold steel-blue UI direction without making it live.
 - The workflow is manual-only (`workflow_dispatch`) and uploads an artifact; it does not deploy, copy into a game install, or commit generated binaries.
 - Item/weapon icons are intentionally outside this UI-first pilot.
 
+## Research-informed methodology
+
+The pilot now follows a hybrid approach chosen after reviewing current 1.13 documentation/source, historical 1.13 interface packs, JA2-Stracciatella scaling/layout work, and community reports about high-resolution UI size.
+
+1. **Theme through a VFS override layer first.** This is the established 1.13 modding pattern and keeps rollback trivial.
+2. **Preserve layout geometry.** Replacing art is low-risk; scaling every control, font and mouse region is a separate engine project.
+3. **Use semantic-aware theming, not a blind global tint.** Assets are classified as `chrome`, `mixed`, or `semantic`. Warning/status/state colours receive much less transformation than panel material.
+4. **Keep display scaling separate from art resolution.** Higher-resolution source art does not create extra on-screen detail unless the engine also draws it larger. Renderer/output scaling is therefore treated as a later readability option, not mixed into this visual pass.
+5. **Only consider dynamic/responsive UI after the skin is stable.** JA2-Stracciatella demonstrates that a dynamic tactical bottom bar is feasible, but that is a coordinate/layout subsystem change rather than an art replacement.
+
 ## Why palette-first
 
-Most JA2 UI STI files are indexed STCI images. Their 256-colour palette sits separately from ETRLE-compressed image/subimage data. The preparation tool changes palette RGB entries only, preserving:
+Most JA2 UI STI files are indexed STCI images. In v4 the palette transform is asset-policy-aware rather than uniformly aggressive. Their 256-colour palette sits separately from ETRLE-compressed image/subimage data. The preparation tool changes palette RGB entries only, preserving:
 
 - sprite/subimage dimensions,
 - X/Y offsets,
