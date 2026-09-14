@@ -235,12 +235,12 @@ def make_palette_and_indices(images: List[Image.Image]) -> Tuple[np.ndarray, Lis
     palette[1:] = colors[:255]
 
     indexed = []
-    color32 = palette[1:].astype(np.int16)
+    color32 = palette[1:].astype(np.int32)
     for a in arrays:
         h, w = a.shape[:2]
         idx = np.zeros((h, w), dtype=np.uint8)
         mask = a[..., 3] > 0
-        px = a[..., :3][mask].astype(np.int16)
+        px = a[..., :3][mask].astype(np.int32)
         if len(px):
             out = np.empty(len(px), dtype=np.uint8)
             for s in range(0, len(px), 4096):
