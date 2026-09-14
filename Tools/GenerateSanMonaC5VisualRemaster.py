@@ -191,16 +191,18 @@ def remaster_frame(frame, kind, seed):
                 slab=n2(col,row,19)
                 grain=(n2(x,y,23)-0.5)*9
                 if seam:
-                    put(x,y,60+light*0.28,57+light*0.26,50+light*0.22,a)
+                    put(x,y,48+light*0.24,46+light*0.22,41+light*0.20,a)
                 else:
-                    # Sun-baked, traffic-dulled paving rather than clean pale stone.
-                    base=104 + slab*15
+                    # Dirty, traffic-polished paving: warm grey-brown rather than
+                    # bright clean stone. Keep enough contrast for the slab pattern.
+                    base=88 + slab*14
                     dirt=n2(x//3,y//3,29)
-                    grime=-14 if dirt>0.84 else 0
-                    oil=-24 if n2(x//5,y//5,30)>0.965 else 0
-                    put(x,y,base+4+light+grain+grime+oil,
-                              base-3+light+grain*0.7+grime+oil,
-                              base-13+light*0.8+grain*0.5+grime+oil,a)
+                    grime=-16 if dirt>0.80 else (-7 if dirt>0.65 else 0)
+                    oil=-25 if n2(x//5,y//5,30)>0.95 else 0
+                    dust=6 if n2(x//6,y//4,32)>0.90 else 0
+                    put(x,y,base+7+light+grain+grime+oil+dust,
+                              base+1+light+grain*0.7+grime+oil+dust*0.6,
+                              base-9+light*0.8+grain*0.5+grime+oil+dust*0.25,a)
 
             elif kind == "stucco":
                 # Preserve openings/joinery, completely repaint broad plaster.
@@ -235,18 +237,24 @@ def remaster_frame(frame, kind, seed):
                            62+light*0.45+ridge_light*0.30-rust_boost*0.25+fine*0.30,a)
 
             elif kind == "flatroof":
-                # Dominant C5 flat-roof family: sun-bleached concrete/tar with
-                # patch repairs, water staining and fine aggregate.  RGB is newly
-                # synthesized; original pixels only guide local light/shadow.
-                coarse=(n2(x//5,y//5,61)-0.5)*13
-                fine=(n2(x,y,67)-0.5)*9
+                # Dominant C5 flat-roof family: dusty aged concrete/tar. Preserve
+                # embedded ladders/rails/metal fixtures as a distinct dark material.
+                detailish = lum > 112 or sat > 72
+                if detailish:
+                    metal_noise=(n2(x,y,79)-0.5)*8
+                    put(x,y,43+lum*0.30+metal_noise,
+                              47+lum*0.31+metal_noise,
+                              49+lum*0.33+metal_noise,a)
+                    continue
+                coarse=(n2(x//5,y//5,61)-0.5)*12
+                fine=(n2(x,y,67)-0.5)*8
                 patch=n2(x//9,y//7,71)
                 stain=n2(x//4,y//4,73)
-                patch_shift=-15 if patch>0.87 else (8 if patch<0.08 else 0)
-                water=-12 if stain>0.92 else 0
-                edge_dirt=-8 if (x<2 or y<2 or x>w-3 or y>h-3) else 0
-                base=126 + light*0.72 + coarse + fine + patch_shift + water + edge_dirt
-                put(x,y,base+7,base+1,base-10,a)
+                patch_shift=-18 if patch>0.86 else (5 if patch<0.07 else 0)
+                water=-15 if stain>0.89 else 0
+                edge_dirt=-10 if (x<2 or y<2 or x>w-3 or y>h-3) else 0
+                base=98 + light*0.60 + coarse + fine + patch_shift + water + edge_dirt
+                put(x,y,base+8,base+3,base-5,a)
 
             elif kind == "metal":
                 # San Mona street furniture: old dark-painted steel, oxidised and
@@ -370,7 +378,7 @@ def contact_sheet(name, original, remastered):
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     PREVIEW.mkdir(parents=True,exist_ok=True)
-    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","style_version":"2.2","art_direction":"sun-faded poor South-American vice/commercial district","assets":[]}
+    manifest={"sector":"C5","tileset":18,"mode":"graphics-only","style_version":"2.3","art_direction":"sun-faded poor South-American vice/commercial district","assets":[]}
     for n,(rel,kind) in SOURCES.items():
         src=ROOT/rel
         if not src.exists():
@@ -401,7 +409,7 @@ Scope invariant:
 Vengeance resolves the original logical STI/JSD identity while preferring a B1TC
 sibling for pixels. These files therefore alter appearance only.
 
-Style v2.2 uses material-aware redraw recipes rather than blanket recolouring. Pavement is traffic-dulled and stained; street lamps are old dark-painted/oxidised steel with warm dirty lamp glass. C5_FLAT_R3 redraws the dominant inherited flat-roof family while the engine keeps the original generic FLAT_R3 structure metadata. It focuses on existing San Mona road/paving/streetscape plus selected
+Style v2.3 uses material-aware redraw recipes rather than blanket recolouring. Pavement is darker, traffic-dulled and stained; street lamps are old dark-painted/oxidised steel with warm dirty lamp glass. C5_FLAT_R3 redraws the dominant inherited flat-roof family as aged dusty concrete/tar while preserving ladder/rail pixels as dark metal; the engine keeps the original generic FLAT_R3 structure metadata. It focuses on existing San Mona road/paving/streetscape plus selected
 building/roof/interior/urban families whose matching STI source is present in the
 repository. Missing inherited base-game families are deliberately left untouched
 until they are extracted exactly; nothing is guessed.
