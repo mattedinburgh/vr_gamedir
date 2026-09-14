@@ -10,7 +10,7 @@ Scope invariant:
 Vengeance resolves the original logical STI/JSD identity while preferring a B1TC
 sibling for pixels. These files therefore alter appearance only.
 
-Style v2.2 uses material-aware redraw recipes rather than blanket recolouring. Pavement is traffic-dulled and stained; street lamps are old dark-painted/oxidised steel with warm dirty lamp glass. C5_FLAT_R3 redraws the dominant inherited flat-roof family while the engine keeps the original generic FLAT_R3 structure metadata. It focuses on existing San Mona road/paving/streetscape plus selected
+Style v2.3 uses material-aware redraw recipes rather than blanket recolouring. Pavement is darker, traffic-dulled and stained; street lamps are old dark-painted/oxidised steel with warm dirty lamp glass. C5_FLAT_R3 redraws the dominant inherited flat-roof family as aged dusty concrete/tar while preserving ladder/rail pixels as dark metal; the engine keeps the original generic FLAT_R3 structure metadata. It focuses on existing San Mona road/paving/streetscape plus selected
 building/roof/interior/urban families whose matching STI source is present in the
 repository. Missing inherited base-game families are deliberately left untouched
 until they are extracted exactly; nothing is guessed.
