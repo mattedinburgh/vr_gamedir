@@ -33,10 +33,10 @@ function Get-PythonCommand {
     foreach ($candidate in @("python", "py")) {
         try {
             $cmd = Get-Command $candidate -ErrorAction Stop
-            if ($candidate -eq "py") {
-                return @($cmd.Source, "-3")
+            return [pscustomobject]@{
+                Exe = $cmd.Source
+                Prefix = if ($candidate -eq "py") { @("-3") } else { @() }
             }
-            return @($cmd.Source)
         } catch {}
     }
     throw "Python 3 was not found on PATH."
@@ -45,9 +45,8 @@ function Get-PythonCommand {
 function Invoke-Python {
     param([string[]]$Arguments)
     $py = Get-PythonCommand
-    $exe = $py[0]
-    $prefix = @()
-    if ($py.Count -gt 1) { $prefix = $py[1..($py.Count - 1)] }
+    $exe = $py.Exe
+    $prefix = @($py.Prefix)
     & $exe @prefix @Arguments
     if ($LASTEXITCODE -ne 0) {
         throw "Python command failed with exit code ${LASTEXITCODE}: $exe $($Arguments -join ' ')"
@@ -56,9 +55,8 @@ function Invoke-Python {
 
 function Ensure-Pillow {
     $py = Get-PythonCommand
-    $exe = $py[0]
-    $prefix = @()
-    if ($py.Count -gt 1) { $prefix = $py[1..($py.Count - 1)] }
+    $exe = $py.Exe
+    $prefix = @($py.Prefix)
 
     & $exe @prefix -c "import PIL" 2>$null
     if ($LASTEXITCODE -eq 0) { return }
@@ -286,7 +284,7 @@ function Set-ColdUiActivation {
         $text = [regex]::Replace($text, $pattern, "")
     }
 
-    Set-Content -Path $VfsPath -Value $text.TrimEnd() + $newline -Encoding Default
+    Set-Content -Path $VfsPath -Value ($text.TrimEnd() + $newline) -Encoding Default
     Write-Host "Cold UI VFS profile disabled."
 }
 
