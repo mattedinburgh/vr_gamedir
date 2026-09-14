@@ -223,14 +223,14 @@
 	<ENEMYITEMCHOICES>
 		<uiIndex>4</uiIndex>
 		<name>Kits</name>
-		<ubChoices>6</ubChoices>
+		<ubChoices>7</ubChoices>
 		<bItemNo1>201</bItemNo1>
 		<bItemNo2>202</bItemNo2>
 		<bItemNo3>204</bItemNo3>
 		<bItemNo4>205</bItemNo4>
 		<bItemNo5>1027</bItemNo5>
 		<bItemNo6>1028</bItemNo6>
-		<bItemNo7>0</bItemNo7>
+		<bItemNo7>201</bItemNo7>
 		<bItemNo8>0</bItemNo8>
 		<bItemNo9>0</bItemNo9>
 		<bItemNo10>0</bItemNo10>
