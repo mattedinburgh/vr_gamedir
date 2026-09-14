@@ -171,6 +171,8 @@ def recolour_sti(data: bytes, strength: float, policy: str = "chrome") -> Tuple[
     meta["non_palette_sha256_before"] = sha256_bytes(before_non_palette)
     meta["non_palette_sha256_after"] = sha256_bytes(after_non_palette)
     meta["structural_bytes_identical"] = before_non_palette == after_non_palette
+    if not meta["structural_bytes_identical"]:
+        raise ValueError("STI structural bytes changed outside the palette; refusing output")
     return after_bytes, meta
 
 
