@@ -78142,4 +78142,181 @@
 		<CROUCH_MODIFIERS />
 		<PRONE_MODIFIERS />
 	</ITEM>
+	<ITEM>
+			<uiIndex>3043</uiIndex>
+			<szItemName>12g Shells 2 RS</szItemName>
+			<szLongItemName>12 Gauge Shells, 2 Rubber Slug</szLongItemName>
+			<szItemDesc>Rubber slugs are used for riot control. They are less lethal than conventional 12 gauge ammunition, but can still seriously injure or kill at close range.</szItemDesc>
+			<szBRName>12g Shells 2</szBRName>
+			<szBRDesc>Deer hunting or man-hunting, a pair of shotgun slugs will put the quarry down.</szBRDesc>
+			<usItemClass>1024</usItemClass>
+			<nasLayoutClass>1</nasLayoutClass>
+			<ubClassIndex>709</ubClassIndex>
+			<ubGraphicType>2</ubGraphicType>
+			<ubGraphicNum>22</ubGraphicNum>
+			<ubWeight>2</ubWeight>
+			<ubPerPocket>8</ubPerPocket>
+			<ItemSize>11</ItemSize>
+			<usPrice>30</usPrice>
+			<ubCoolness>2</ubCoolness>
+			<Metal>1</Metal>
+			<Sinks>1</Sinks>
+			<BigGunList>1</BigGunList>
+			<RangeBonus>50</RangeBonus>
+			<DamageBonus>3</DamageBonus>
+			<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
+		</ITEM>
+	<ITEM>
+			<uiIndex>3044</uiIndex>
+			<szItemName>12g Shells 4 RS</szItemName>
+			<szLongItemName>12 Gauge Shells, 4 Rubber Slug</szLongItemName>
+			<szItemDesc>Rubber slugs are used for riot control. They are less lethal than conventional 12 gauge ammunition, but can still seriously injure or kill at close range.</szItemDesc>
+			<szBRName>12g Shells 4</szBRName>
+			<szBRDesc>Slugs can be utilized for a bevy of tactical applications.</szBRDesc>
+			<usItemClass>1024</usItemClass>
+			<nasLayoutClass>1</nasLayoutClass>
+			<ubClassIndex>710</ubClassIndex>
+			<ubGraphicType>2</ubGraphicType>
+			<ubGraphicNum>63</ubGraphicNum>
+			<ubWeight>3</ubWeight>
+			<ubPerPocket>8</ubPerPocket>
+			<ItemSize>13</ItemSize>
+			<usPrice>60</usPrice>
+			<ubCoolness>2</ubCoolness>
+			<Metal>1</Metal>
+			<Sinks>1</Sinks>
+			<BigGunList>1</BigGunList>
+			<RangeBonus>50</RangeBonus>
+			<DamageBonus>3</DamageBonus>
+			<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
+			<STAND_MODIFIERS />
+			<CROUCH_MODIFIERS />
+			<PRONE_MODIFIERS />
+		</ITEM>
+	<ITEM>
+			<uiIndex>3045</uiIndex>
+			<szItemName>12g Shells 7 RS</szItemName>
+			<szLongItemName>12 Gauge Shells, 7 Rubber Slug</szLongItemName>
+			<szItemDesc>Rubber slugs are used for riot control. They are less lethal than conventional 12 gauge ammunition, but can still seriously injure or kill at close range.</szItemDesc>
+			<szBRName>12g Shells 7</szBRName>
+			<szBRDesc>This is definitely the ammunition for real men only. This magazine contains 7 rounds of 12 gauge PolyCore slugs. Each round tears through body armor as though it were tissue paper.</szBRDesc>
+			<usItemClass>1024</usItemClass>
+			<nasLayoutClass>1</nasLayoutClass>
+			<ubClassIndex>711</ubClassIndex>
+			<ubGraphicType>2</ubGraphicType>
+			<ubGraphicNum>64</ubGraphicNum>
+			<ubWeight>6</ubWeight>
+			<ubPerPocket>6</ubPerPocket>
+			<ItemSize>14</ItemSize>
+			<usPrice>105</usPrice>
+			<ubCoolness>2</ubCoolness>
+			<Metal>1</Metal>
+			<Sinks>1</Sinks>
+			<RangeBonus>50</RangeBonus>
+			<DamageBonus>3</DamageBonus>
+			<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
+		</ITEM>
+	<ITEM>
+			<uiIndex>3046</uiIndex>
+			<szItemName>12g Shells 12 RS</szItemName>
+			<szLongItemName>12 Gauge Shells, 12 Rubber Slug</szLongItemName>
+			<szItemDesc>Rubber slugs are used for riot control. They are less lethal than conventional 12 gauge ammunition, but can still seriously injure or kill at close range.</szItemDesc>
+			<szBRName>12g Shells 12</szBRName>
+			<szBRDesc>12 slugs in rapid successing will turn your attackers into unidentifiable wrecks in no time.</szBRDesc>
+			<usItemClass>1024</usItemClass>
+			<nasLayoutClass>1</nasLayoutClass>
+			<ubClassIndex>712</ubClassIndex>
+			<ubGraphicType>2</ubGraphicType>
+			<ubGraphicNum>65</ubGraphicNum>
+			<ubWeight>10</ubWeight>
+			<ubPerPocket>6</ubPerPocket>
+			<ItemSize>19</ItemSize>
+			<usPrice>180</usPrice>
+			<ubCoolness>2</ubCoolness>
+			<Metal>1</Metal>
+			<Sinks>1</Sinks>
+			<BigGunList>1</BigGunList>
+			<RangeBonus>50</RangeBonus>
+			<DamageBonus>3</DamageBonus>
+			<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
+			<STAND_MODIFIERS />
+			<CROUCH_MODIFIERS />
+			<PRONE_MODIFIERS />
+		</ITEM>
+	<ITEM>
+			<uiIndex>3047</uiIndex>
+			<szItemName>12g Drum 20 RS</szItemName>
+			<szLongItemName>12 Gauge Drum, 20 Rubber Slug</szLongItemName>
+			<szItemDesc>Rubber slugs are used for riot control. They are less lethal than conventional 12 gauge ammunition, but can still seriously injure or kill at close range.</szItemDesc>
+			<szBRName>12g Drum 20</szBRName>
+			<szBRDesc>Blast gaping holes in any target with speed and ease.</szBRDesc>
+			<usItemClass>1024</usItemClass>
+			<nasLayoutClass>1</nasLayoutClass>
+			<ubClassIndex>713</ubClassIndex>
+			<ubGraphicType>1</ubGraphicType>
+			<ubGraphicNum>380</ubGraphicNum>
+			<ubWeight>16</ubWeight>
+			<ubPerPocket>4</ubPerPocket>
+			<ItemSize>22</ItemSize>
+			<usPrice>300</usPrice>
+			<ubCoolness>2</ubCoolness>
+			<Metal>1</Metal>
+			<Sinks>1</Sinks>
+			<BigGunList>1</BigGunList>
+			<RangeBonus>50</RangeBonus>
+			<DamageBonus>3</DamageBonus>
+			<usOverheatingCooldownFactor>100.0</usOverheatingCooldownFactor>
+			<STAND_MODIFIERS />
+			<CROUCH_MODIFIERS />
+			<PRONE_MODIFIERS />
+		</ITEM>
+	<ITEM>
+			<uiIndex>3048</uiIndex>
+			<szItemName>12g Box RS</szItemName>
+			<szLongItemName>12 Gauge Box, Rubber Slug</szLongItemName>
+			<szItemDesc>Rubber slugs are used for riot control. They are less lethal than conventional 12 gauge ammunition, but can still seriously injure or kill at close range.</szItemDesc>
+			<szBRName>12g Box</szBRName>
+			<szBRDesc>This box contains 25 12 gauge slugs that can punch through barriers and light armor with ease.</szBRDesc>
+			<usItemClass>1024</usItemClass>
+			<ubClassIndex>714</ubClassIndex>
+			<ubGraphicType>2</ubGraphicType>
+			<ubGraphicNum>92</ubGraphicNum>
+			<ubWeight>20</ubWeight>
+			<ubPerPocket>1</ubPerPocket>
+			<ItemSize>24</ItemSize>
+			<usPrice>125</usPrice>
+			<ubCoolness>2</ubCoolness>
+			<Metal>1</Metal>
+			<Sinks>1</Sinks>
+			<BR_NewInventory>6</BR_NewInventory>
+			<RangeBonus>50</RangeBonus>
+			<DamageBonus>3</DamageBonus>
+			<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+		</ITEM>
+	<ITEM>
+			<uiIndex>3049</uiIndex>
+			<szItemName>12g Crate RS</szItemName>
+			<szLongItemName>12 Gauge Ammo Crate, Rubber Slug</szLongItemName>
+			<szItemDesc>A bulk crate of 12 gauge rubber slugs for storage and resupply.</szItemDesc>
+			<szBRName>12g Crate</szBRName>
+			<szBRDesc>We are now providing several types of ammunition in bulk.  Please note the prices and weights of ammunition crates before purchasing.</szBRDesc>
+			<usItemClass>1024</usItemClass>
+			<nasLayoutClass>1</nasLayoutClass>
+			<ubClassIndex>715</ubClassIndex>
+			<ubGraphicType>4</ubGraphicType>
+			<ubGraphicNum>594</ubGraphicNum>
+			<ubWeight>800</ubWeight>
+			<ItemSize>34</ItemSize>
+			<usPrice>15000</usPrice>
+			<ubCoolness>2</ubCoolness>
+			<Metal>1</Metal>
+			<Sinks>1</Sinks>
+			<TwoHanded>1</TwoHanded>
+			<RangeBonus>50</RangeBonus>
+			<DamageBonus>3</DamageBonus>
+			<usOverheatingCooldownFactor>100</usOverheatingCooldownFactor>
+			<STAND_MODIFIERS />
+			<CROUCH_MODIFIERS />
+			<PRONE_MODIFIERS />
+		</ITEM>
 </ITEMLIST>
