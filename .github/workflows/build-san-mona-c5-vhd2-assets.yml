@@ -1,0 +1,123 @@
+name: Build San Mona C5 native VHD2 assets
+
+on:
+  push:
+    branches:
+      - feature/vhd-renderer-test
+    paths:
+      - '.github/workflows/build-san-mona-c5-vhd2-assets.yml'
+      - 'MapAssetTrigger/C5_VHD2.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: san-mona-c5-vhd2-gamedir
+  cancel-in-progress: true
+
+jobs:
+  generate-and-commit:
+    runs-on: windows-2022
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out only C5 contract and VHD2 paths
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          sparse-checkout: |
+            Data-Maps-Tiles/Tilesets/18
+            Data-Maps-Tiles/Tilesets/51
+            Data-Maps-Tiles/VHD2/TILESETS/18
+          sparse-checkout-cone-mode: false
+
+      - name: Install Pillow
+        shell: powershell
+        run: |
+          py -3 -m pip install --disable-pip-version-check Pillow
+          if($LASTEXITCODE-ne0){exit $LASTEXITCODE}
+
+      - name: Fetch pinned C5 generator
+        shell: powershell
+        run: |
+          $ErrorActionPreference='Stop'
+          $tools=Join-Path $env:GITHUB_WORKSPACE '_c5_tools'
+          New-Item -ItemType Directory -Force -Path $tools | Out-Null
+          $sourceSha='893fd7e08b6fc09fe8437423e572f08fd687e17f'
+          $base="https://raw.githubusercontent.com/mattedinburgh/vr_source/$sourceSha/Tools/SanMonaC5"
+          Invoke-WebRequest "$base/generate_vhd2_c5_pilot.py" -OutFile (Join-Path $tools 'generate_vhd2_c5_pilot.py') -UseBasicParsing
+          Invoke-WebRequest "$base/sti_contract.py" -OutFile (Join-Path $tools 'sti_contract.py') -UseBasicParsing
+          Write-Host "Pinned source generator: $sourceSha"
+
+      - name: Prepare canonical C5 structural contracts
+        shell: powershell
+        run: |
+          $ErrorActionPreference='Stop'
+          $dst=Join-Path $env:GITHUB_WORKSPACE 'C5Canonical'
+          New-Item -ItemType Directory -Force -Path $dst | Out-Null
+
+          $copies=@{
+            'Cobble_Road.sti'        = 'Data-Maps-Tiles\Tilesets\18\Cobble_Road.sti'
+            'Cobble_Road_Pieces.sti' = 'Data-Maps-Tiles\Tilesets\18\Cobble_Road_Pieces.sti'
+            'Pave_b.sti'             = 'Data-Maps-Tiles\Tilesets\18\Pave_b.sti'
+            'build_24.sti'           = 'Data-Maps-Tiles\Tilesets\51\BUILD_24.STI'
+            'slant_12.sti'           = 'Data-Maps-Tiles\Tilesets\51\SLANT_12.STI'
+          }
+
+          foreach($name in $copies.Keys){
+            $src=Join-Path $env:GITHUB_WORKSPACE $copies[$name]
+            if(-not(Test-Path $src)){throw "Canonical contract missing: $src"}
+            Copy-Item -LiteralPath $src -Destination (Join-Path $dst $name) -Force
+          }
+
+      - name: Generate native VHD2 scratch structural pilot
+        shell: powershell
+        run: |
+          $ErrorActionPreference='Stop'
+          $tools=Join-Path $env:GITHUB_WORKSPACE '_c5_tools'
+          $src=Join-Path $env:GITHUB_WORKSPACE 'C5Canonical'
+          $out=Join-Path $env:GITHUB_WORKSPACE 'C5VHD2'
+
+          py -3 (Join-Path $tools 'generate_vhd2_c5_pilot.py') --sti-root $src --out-root $out
+          if($LASTEXITCODE-ne0){exit $LASTEXITCODE}
+
+          $pack=Join-Path $out 'VHD2\TILESETS\18'
+          $assets=@(Get-ChildItem -LiteralPath $pack -File -Filter '*.b1tc')
+          if($assets.Count-ne5){throw "Expected five pilot B1TC assets; generated $($assets.Count)."}
+
+      - name: Promote pilot into VHD2 game-data layer
+        shell: powershell
+        run: |
+          $ErrorActionPreference='Stop'
+          $src=Join-Path $env:GITHUB_WORKSPACE 'C5VHD2\VHD2\TILESETS\18'
+          $dst=Join-Path $env:GITHUB_WORKSPACE 'Data-Maps-Tiles\VHD2\TILESETS\18'
+          New-Item -ItemType Directory -Force -Path $dst | Out-Null
+
+          Get-ChildItem -LiteralPath $src -File -Filter '*.b1tc' | ForEach-Object {
+            Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $dst $_.Name) -Force
+          }
+
+          $manifestSrc=Join-Path $env:GITHUB_WORKSPACE 'C5VHD2\SAN_MONA_C5_VHD2_MANIFEST.json'
+          $manifestDst=Join-Path $dst 'SAN_MONA_C5_VHD2_MANIFEST.json'
+          Copy-Item -LiteralPath $manifestSrc -Destination $manifestDst -Force
+
+          $assets=@(Get-ChildItem -LiteralPath $dst -File -Filter '*.b1tc')
+          Write-Host "VHD2 C5 pilot assets staged: $($assets.Name -join ', ')"
+
+      - name: Commit generated binary assets
+        shell: powershell
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- 'Data-Maps-Tiles/VHD2/TILESETS/18/*.b1tc' 'Data-Maps-Tiles/VHD2/TILESETS/18/SAN_MONA_C5_VHD2_MANIFEST.json'
+          git diff --cached --quiet
+          if($LASTEXITCODE-eq0){
+            Write-Host 'Generated C5 VHD2 assets already match branch.'
+            exit 0
+          }
+          git commit -m "Add San Mona C5 native VHD2 structural pilot"
+          if($LASTEXITCODE-ne0){exit $LASTEXITCODE}
+          git push origin HEAD:feature/vhd-renderer-test
+          if($LASTEXITCODE-ne0){exit $LASTEXITCODE}
