@@ -5,8 +5,8 @@ rem A3 tropical farm remake deployment for the standard nested checkout:
 rem   repo : C:\VENGENCE\Jagged Alliance 2\00000
 rem   game : C:\VENGENCE\Jagged Alliance 2
 rem
-rem Copies the authored A3 map plus the complete reusable true-colour farm kit.
-rem The source-side hero composer still requires the latest Release Win32 EXE.
+rem Graphics-only A3 deployment. The authored A3.dat is NEVER copied or replaced.
+rem This script deploys visual assets only; map geometry/placement stays authoritative.
 
 set "REPO=%~dp0"
 for %%I in ("%REPO%..") do set "GAME=%%~fI"
@@ -22,23 +22,15 @@ if not exist "%GAME%\JA2_EN_Release.exe" (
     exit /b 1
 )
 
-set "MAPSRC=%REPO%Data-Maps-Tiles\maps"
-set "MAPDST=%GAME%\Data-Maps-Tiles\maps"
 set "TILESRC=%REPO%Data-Maps-Tiles\Tilesets\38"
 set "TILEDST=%GAME%\Data-Maps-Tiles\Tilesets\38"
 
-if not exist "%MAPSRC%\A3.dat" (
-    echo ERROR: Source A3.dat not found.
-    pause
-    exit /b 1
-)
 if not exist "%TILESRC%" (
     echo ERROR: Source tileset 38 not found.
     pause
     exit /b 1
 )
 
-if not exist "%MAPDST%" mkdir "%MAPDST%"
 if not exist "%TILEDST%" mkdir "%TILEDST%"
 
 echo.
@@ -49,21 +41,10 @@ echo.
 
 set "FAIL=0"
 
-copy /Y "%MAPSRC%\A3.dat" "%MAPDST%\A3.dat" >nul
-if errorlevel 1 (
-    echo COPY FAILED: A3.dat
-    set "FAIL=1"
-) else (
-    fc /b "%MAPSRC%\A3.dat" "%MAPDST%\A3.dat" >nul
-    if errorlevel 1 (
-        echo VERIFY FAILED: A3.dat
-        set "FAIL=1"
-    ) else (
-        echo OK: maps\A3.dat
-    )
-)
-
-rem Runtime-required true-colour families used by TileEngine/worlddef.cpp.
+echo MAP SAFETY: A3.dat is not copied. Existing authored map remains untouched.
+echo.
+rem Reusable visual-only farm library. These assets carry no JSD and cannot
+rem alter collision, LOS, pathing, cover or authored map placement by themselves.
 for %%F in (
     VR_CROP_MASTER.b1tc
     A3_MUD_RUTS.b1tc
@@ -108,21 +89,17 @@ if "%FAIL%"=="1" (
 )
 
 echo.
-echo A3 DATA DEPLOYED AND VERIFIED.
+echo A3 VISUAL ASSETS DEPLOYED AND VERIFIED.
 echo.
-echo Source-side hero pass included in the matching vr_source branch:
-echo   - six irregular crop fields
-echo   - dense mature crop beds and harvested breaks
-echo   - tractor/trampled access corridors
-echo   - two open cattle paddocks
-echo   - irrigation junctions and field breaches
-echo   - denser working farmyard compositions
-echo   - hand-directed hero landmarks and roof detail
-echo   - expanded runtime cattle herd with clear animal footprints
+echo SAFETY INVARIANTS:
+echo   - A3.dat was not modified or copied.
+echo   - No runtime map dressing is expected or required.
+echo   - Visual profiles must not add/remove/relocate map nodes or placements.
+echo   - Structural replacement art must keep canonical STI/JSD geometry.
 echo.
 echo IMPORTANT:
 echo   Build and deploy the latest vr_source Release Win32 executable before testing.
-echo   Test A3 from a fresh sector load/new entry so runtime dressing is regenerated.
+echo   Load A3 normally; visual overrides should appear without changing sector layout.
 echo.
 pause
 exit /b 0
