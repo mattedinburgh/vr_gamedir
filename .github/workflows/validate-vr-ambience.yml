@@ -1,0 +1,47 @@
+name: Validate Vengeance ambience
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - "Data-Vengeance/SectorAmbience.ini"
+      - "Data-Vengeance/Sounds/VR_Ambience/**"
+      - "Data-Vengeance/Sounds/HELI1.WAV"
+      - "Data-Vengeance/AMBIENT/**"
+      - "VALIDATE_AMBIENCE.ps1"
+      - ".github/workflows/validate-vr-ambience.yml"
+  pull_request:
+    paths:
+      - "Data-Vengeance/SectorAmbience.ini"
+      - "Data-Vengeance/Sounds/VR_Ambience/**"
+      - "Data-Vengeance/Sounds/HELI1.WAV"
+      - "Data-Vengeance/AMBIENT/**"
+      - "VALIDATE_AMBIENCE.ps1"
+      - ".github/workflows/validate-vr-ambience.yml"
+  workflow_dispatch:
+  workflow_run:
+    workflows: [ "Generate Vengeance ambience" ]
+    types: [ completed ]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_run' && 'master' || github.sha }}
+          sparse-checkout: |
+            Data-Vengeance/SectorAmbience.ini
+            Data-Vengeance/Sounds/VR_Ambience
+            Data-Vengeance/Sounds/HELI1.WAV
+            Data-Vengeance/AMBIENT
+            VALIDATE_AMBIENCE.ps1
+          sparse-checkout-cone-mode: false
+
+      - name: Validate profile references and WAV assets
+        shell: pwsh
+        run: ./VALIDATE_AMBIENCE.ps1 -RepoRoot .
