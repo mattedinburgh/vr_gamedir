@@ -1,0 +1,178 @@
+scope,file_stem,event,emotion,intensity,spoken_es,popup_en,direction,priority,target_seconds
+baseline,FIRE_GUN,FIRE_GUN,legacy,2,¡Fuego!,Fire!,"Short, controlled combat call while firing.",1,1.5
+baseline,FIRE_LAUNCHER,FIRE_LAUNCHER,legacy,2,¡Va el lanzador!,Launcher!,Forceful warning before firing a launcher.,1,1.5
+baseline,ATTACK_BLADE,ATTACK_BLADE,legacy,2,¡Te tengo!,Got you!,"Close combat, aggressive but natural.",1,1.5
+baseline,ATTACK_HTH,ATTACK_HTH,legacy,2,¡Ven acá!,Come here!,"Close combat effort, aggressive.",1,1.5
+baseline,THROW_KNIFE,THROW_KNIFE,legacy,2,¡Cuidado!,Watch it!,Sharp warning during a knife throw.,1,1.5
+baseline,THROW_GRENADE,THROW_GRENADE,legacy,2,¡Granada!,Grenade!,"Clear warning, projected voice.",1,1.5
+baseline,OUT_OF_AMMO,OUT_OF_AMMO,legacy,2,¡Sin munición!,Out of ammo!,Urgent tactical report.,1,1.5
+baseline,RELOAD,RELOAD,legacy,2,¡Recargando!,Reloading!,Brief professional call.,1,1.5
+baseline,STEAL,STEAL,legacy,2,¡Dámelo!,Give it to me!,Close-range struggle.,1,1.5
+baseline,CHARGE_BLADE,CHARGE_BLADE,legacy,2,¡Voy por ti!,I'm coming for you!,Aggressive charge.,1,1.5
+baseline,CHARGE_HTH,CHARGE_HTH,legacy,2,¡Vamos!,Come on!,Aggressive close charge.,1,1.5
+baseline,RUN_AWAY,RUN_AWAY,legacy,2,¡Retirada!,Fall back!,Controlled withdrawal call.,1,1.5
+baseline,SEEK_NOISE,SEEK_NOISE,legacy,2,Voy a revisar.,I'll check it.,"Low/medium voice, cautious.",1,1.5
+baseline,ALERT,ALERT,legacy,2,¡Alerta!,Alert!,Immediate contact alert.,1,1.5
+baseline,SUSPICIOUS,SUSPICIOUS,legacy,2,¿Qué fue eso?,What was that?,"Suspicious, not yet panicked.",1,1.5
+baseline,NOTICED_UNSEEN,NOTICED_UNSEEN,legacy,2,¡Contacto!,Contact!,Sudden unseen threat.,1,1.5
+baseline,SAY_HI,SAY_HI,legacy,2,¡Ahí estás!,There you are!,"Enemy spotted, confident.",1,1.5
+baseline,INFORM_ABOUT,INFORM_ABOUT,legacy,2,¡Se movió por ahí!,He moved over there!,Passing location information.,1,1.5
+baseline,GOT_HIT,GOT_HIT,legacy,2,¡Ah!,Ah!,"Short impact reaction, not a theatrical scream.",1,1.5
+baseline,GOT_HIT_GUNFIRE,GOT_HIT_GUNFIRE,legacy,2,¡Me dieron!,I'm hit!,"Gunshot impact, intelligible.",1,1.5
+baseline,GOT_HIT_BLADE,GOT_HIT_BLADE,legacy,2,¡Carajo!,Damn!,"Blade injury, sharp pain.",1,1.5
+baseline,GOT_HIT_HTH,GOT_HIT_HTH,legacy,2,¡Mierda!,Damn!,"Blunt hit, angry pain.",1,1.5
+baseline,GOT_HIT_FALLROOF,GOT_HIT_FALLROOF,legacy,2,¡Aaah!,Aah!,"Falling scream, non-lexical.",1,1.5
+baseline,GOT_HIT_BLOODLOSS,GOT_HIT_BLOODLOSS,legacy,2,Estoy sangrando.,I'm bleeding.,Weak/strained report.,1,1.5
+baseline,GOT_HIT_EXPLOSION,GOT_HIT_EXPLOSION,legacy,2,¡Dios!,God!,Blast shock.,1,1.5
+baseline,GOT_HIT_GAS,GOT_HIT_GAS,legacy,2,¡No puedo respirar!,I can't breathe!,"Choking/strained, never full-voice screaming.",1,1.5
+baseline,GOT_HIT_TENTACLES,GOT_HIT_TENTACLES,legacy,2,¡Quítamelo!,Get it off me!,"Fear/disgust, urgent.",1,1.5
+baseline,GOT_HIT_STRUCTURE_EXPLOSION,GOT_HIT_STRUCTURE_EXPLOSION,legacy,2,¡Abajo!,Get down!,Blast/debris reaction.,1,1.5
+baseline,GOT_HIT_OBJECT,GOT_HIT_OBJECT,legacy,2,¡Mierda!,Damn!,Generic impact pain.,1,1.5
+baseline,GOT_HIT_THROWING_KNIFE,GOT_HIT_THROWING_KNIFE,legacy,2,¡Me dio!,It hit me!,Sharp surprise/pain.,1,1.5
+baseline,GOT_DEAFENED,GOT_DEAFENED,legacy,2,¡No oigo!,I can't hear!,"Disoriented, raised voice.",1,1.5
+baseline,GOT_BLINDED,GOT_BLINDED,legacy,2,¡No veo!,I can't see!,Disoriented and frightened.,1,1.5
+baseline,GOT_ROBBED,GOT_ROBBED,legacy,2,¡Devuélvelo!,Give it back!,Angry protest.,1,1.5
+baseline,GOT_MISSED,GOT_MISSED,legacy,2,¡Fallaste!,You missed!,Defiant reaction.,1,1.5
+baseline,GOT_MISSED_GUNFIRE,GOT_MISSED_GUNFIRE,legacy,2,¡Cerca!,That was close!,Startled but controlled.,1,1.5
+baseline,GOT_MISSED_BLADE,GOT_MISSED_BLADE,legacy,2,¡Muy lento!,Too slow!,Defiant close-combat taunt.,1,1.5
+baseline,GOT_MISSED_HTH,GOT_MISSED_HTH,legacy,2,¡Ni cerca!,Not even close!,Defiant close-combat taunt.,1,1.5
+baseline,GOT_MISSED_THROWING_KNIFE,GOT_MISSED_THROWING_KNIFE,legacy,2,¡Por poco!,That was close!,Startled reaction.,1,1.5
+baseline,HIT,HIT,legacy,2,¡Le di!,I hit him!,Brief confirmation.,1,1.5
+baseline,HIT_GUNFIRE,HIT_GUNFIRE,legacy,2,¡Le di!,Hit!,Brief gunfire confirmation.,1,1.5
+baseline,HIT_BLADE,HIT_BLADE,legacy,2,¡Lo tengo!,Got him!,Close-combat confirmation.,1,1.5
+baseline,HIT_HTH,HIT_HTH,legacy,2,¡Toma!,Take that!,Close-combat impact.,1,1.5
+baseline,HIT_EXPLOSION,HIT_EXPLOSION,legacy,2,¡Le dio!,That got him!,Blast hit confirmation.,1,1.5
+baseline,HIT_THROWING_KNIFE,HIT_THROWING_KNIFE,legacy,2,¡Le di!,Hit!,Knife hit confirmation.,1,1.5
+baseline,KILL,KILL,legacy,2,¡Cayó!,He's down!,Brief kill confirmation.,1,1.5
+baseline,KILL_GUNFIRE,KILL_GUNFIRE,legacy,2,¡Uno menos!,One down!,Controlled combat confirmation.,1,1.5
+baseline,KILL_BLADE,KILL_BLADE,legacy,2,¡Se acabó!,It's over!,Close-combat kill reaction.,1,1.5
+baseline,KILL_HTH,KILL_HTH,legacy,2,¡Fuera!,Down!,Close-combat kill reaction.,1,1.5
+baseline,KILL_THROWING_KNIFE,KILL_THROWING_KNIFE,legacy,2,¡Cayó!,He's down!,Knife kill confirmation.,1,1.5
+baseline,HEAD_POP,HEAD_POP,legacy,2,¡Dios!,God!,Shock at extreme wound; brief.,1,1.5
+baseline,MISS,MISS,legacy,2,¡Mierda!,Damn!,Frustrated miss.,1,1.5
+baseline,MISS_GUNFIRE,MISS_GUNFIRE,legacy,2,¡Fallé!,Missed!,Short frustration.,1,1.5
+baseline,TAUNT_MISS_BLADE,TAUNT_MISS_BLADE,legacy,2,¡Quieto!,Hold still!,Aggressive close-combat miss.,1,1.5
+baseline,MISS_HTH,MISS_HTH,legacy,2,¡Carajo!,Damn!,Frustrated close-combat miss.,1,1.5
+baseline,MISS_THROWING_KNIFE,MISS_THROWING_KNIFE,legacy,2,¡Carajo!,Damn!,Frustrated throwing miss.,1,1.5
+baseline,RIPOSTE,RIPOSTE,legacy,2,¡Cállate!,Shut up!,Short hostile reply.,1,1.5
+gap_fill,FIRE_GUN__angry,FIRE_GUN,angry,3,¡No los dejen respirar!,Keep them pinned!,"Aggressive suppressive fire; forceful, not berserk.",1,1.2
+gap_fill,FIRE_GUN__angry 0,FIRE_GUN,angry,3,"¡Fuego, fuego!",Fire! Fire!,"Aggressive suppressive fire; forceful, not berserk.",1,1.2
+gap_fill,FIRE_GUN__angry 1,FIRE_GUN,angry,3,¡Dales con todo!,Hit them hard!,"Aggressive suppressive fire; forceful, not berserk.",1,1.2
+gap_fill,THROW_GRENADE__controlled,THROW_GRENADE,controlled,2,"¡Granada, fuera!",Grenade out!,Professional grenade warning.,1,1
+gap_fill,THROW_GRENADE__controlled 0,THROW_GRENADE,controlled,2,¡Granada!,Grenade!,Professional grenade warning.,1,1
+gap_fill,THROW_GRENADE__angry,THROW_GRENADE,angry,3,¡Tomen esto!,Take this!,Aggressive grenade throw.,2,1.2
+gap_fill,THROW_GRENADE__angry 0,THROW_GRENADE,angry,3,"¡Granada, joder!",Grenade!,Aggressive grenade throw.,2,1.2
+gap_fill,OUT_OF_AMMO__controlled,OUT_OF_AMMO,controlled,2,¡Sin munición!,Out of ammo!,Professional ammunition emergency.,1,1.4
+gap_fill,OUT_OF_AMMO__controlled 0,OUT_OF_AMMO,controlled,2,¡Estoy seco!,I'm dry!,Professional ammunition emergency.,1,1.4
+gap_fill,OUT_OF_AMMO__controlled 1,OUT_OF_AMMO,controlled,2,"¡Recarga, cúbranme!",Cover me while I reload!,Professional ammunition emergency.,1,1.4
+gap_fill,OUT_OF_AMMO__distressed,OUT_OF_AMMO,distressed,3,"¡Estoy seco, cúbranme!","I'm dry, cover me!","Under pressure, worried but functional.",1,1.7
+gap_fill,OUT_OF_AMMO__distressed 0,OUT_OF_AMMO,distressed,3,¡No tengo munición!,I'm out of ammo!,"Under pressure, worried but functional.",1,1.7
+gap_fill,OUT_OF_AMMO__distressed 1,OUT_OF_AMMO,distressed,3,"¡Cúbranme, no me queda nada!","Cover me, I've got nothing left!","Under pressure, worried but functional.",1,1.7
+gap_fill,RELOAD__controlled,RELOAD,controlled,2,¡Recargando!,Reloading!,Short professional reload calls.,1,1.4
+gap_fill,RELOAD__controlled 0,RELOAD,controlled,2,"¡Cúbranme, recargo!","Cover me, reloading!",Short professional reload calls.,1,1.4
+gap_fill,RELOAD__controlled 1,RELOAD,controlled,2,¡Cambio cargador!,Changing magazine!,Short professional reload calls.,1,1.4
+gap_fill,RELOAD__distressed,RELOAD,distressed,3,"¡Cúbranme, recargo!","Cover me, reloading!",Reloading while under dangerous pressure.,2,1.5
+gap_fill,RELOAD__distressed 0,RELOAD,distressed,3,"¡Un segundo, recargando!","One second, reloading!",Reloading while under dangerous pressure.,2,1.5
+gap_fill,RUN_AWAY__controlled,RUN_AWAY,controlled,2,¡Retrocedan!,Fall back!,"Professional withdrawal, still in control.",1,1.5
+gap_fill,RUN_AWAY__controlled 0,RUN_AWAY,controlled,2,"¡Atrás, reagrúpense!","Back, regroup!","Professional withdrawal, still in control.",1,1.5
+gap_fill,RUN_AWAY__controlled 1,RUN_AWAY,controlled,2,¡Retirada ordenada!,Controlled withdrawal!,"Professional withdrawal, still in control.",1,1.5
+gap_fill,RUN_AWAY__distressed,RUN_AWAY,distressed,3,¡Hay que salir de aquí!,We need to get out of here!,Fear rising; tactical meaning still clear.,1,1.8
+gap_fill,RUN_AWAY__distressed 0,RUN_AWAY,distressed,3,"¡Atrás, rápido!","Back, quickly!",Fear rising; tactical meaning still clear.,1,1.8
+gap_fill,RUN_AWAY__distressed 1,RUN_AWAY,distressed,3,"¡Nos están rodeando, retrocedan!","We're being surrounded, fall back!",Fear rising; tactical meaning still clear.,1,1.8
+gap_fill,RUN_AWAY__panicked,RUN_AWAY,panicked,4,¡Nos van a matar!,They're going to kill us!,"Morale collapse; genuine panic, not comic.",1,1.8
+gap_fill,RUN_AWAY__panicked 0,RUN_AWAY,panicked,4,¡Sáquenme de aquí!,Get me out of here!,"Morale collapse; genuine panic, not comic.",1,1.8
+gap_fill,RUN_AWAY__panicked 1,RUN_AWAY,panicked,4,¡Corran!,Run!,"Morale collapse; genuine panic, not comic.",1,1.8
+gap_fill,RUN_AWAY__panicked 2,RUN_AWAY,panicked,4,¡No podemos quedarnos aquí!,We can't stay here!,"Morale collapse; genuine panic, not comic.",1,1.8
+gap_fill,ALERT__controlled,ALERT,controlled,2,¡Contacto!,Contact!,Immediate professional alert.,1,1.4
+gap_fill,ALERT__controlled 0,ALERT,controlled,2,"¡Alerta, contacto al frente!","Alert, contact ahead!",Immediate professional alert.,1,1.4
+gap_fill,ALERT__controlled 1,ALERT,controlled,2,"¡Atentos, enemigo!","Stay sharp, enemy!",Immediate professional alert.,1,1.4
+gap_fill,ALERT__distressed,ALERT,distressed,3,"¡Movimiento, atentos!","Movement, stay sharp!",Threat feels close and dangerous.,2,1.5
+gap_fill,ALERT__distressed 0,ALERT,distressed,3,¡Están cerca!,They're close!,Threat feels close and dangerous.,2,1.5
+gap_fill,ALERT__distressed 1,ALERT,distressed,3,"¡Contacto, prepárense!","Contact, get ready!",Threat feels close and dangerous.,2,1.5
+gap_fill,ALERT__panicked,ALERT,panicked,4,¡Están aquí!,They're here!,Sudden high-threat discovery.,2,1.4
+gap_fill,ALERT__panicked 0,ALERT,panicked,4,¡Nos encontraron!,They found us!,Sudden high-threat discovery.,2,1.4
+gap_fill,ALERT__panicked 1,ALERT,panicked,4,"¡Contacto, contacto!",Contact! Contact!,Sudden high-threat discovery.,2,1.4
+gap_fill,SUSPICIOUS__controlled,SUSPICIOUS,controlled,1,¿Oyeron eso?,Did you hear that?,Quiet suspicion; do not shout.,2,1.7
+gap_fill,SUSPICIOUS__controlled 0,SUSPICIOUS,controlled,1,Algo se movió.,Something moved.,Quiet suspicion; do not shout.,2,1.7
+gap_fill,SUSPICIOUS__controlled 1,SUSPICIOUS,controlled,1,Esperen... escuché algo.,Wait... I heard something.,Quiet suspicion; do not shout.,2,1.7
+gap_fill,NOTICED_UNSEEN__controlled,NOTICED_UNSEEN,controlled,2,"¡Contacto, no lo veo!","Contact, no visual!",Unseen contact; concise and trained.,1,1.5
+gap_fill,NOTICED_UNSEEN__controlled 0,NOTICED_UNSEEN,controlled,2,"¡Disparos, sin visual!","Shots, no visual!",Unseen contact; concise and trained.,1,1.5
+gap_fill,NOTICED_UNSEEN__controlled 1,NOTICED_UNSEEN,controlled,2,¡Enemigo oculto!,Hidden enemy!,Unseen contact; concise and trained.,1,1.5
+gap_fill,NOTICED_UNSEEN__distressed,NOTICED_UNSEEN,distressed,3,¡Nos disparan desde algún lado!,We're taking fire from somewhere!,Unseen fire creating fear/confusion.,1,1.8
+gap_fill,NOTICED_UNSEEN__distressed 0,NOTICED_UNSEEN,distressed,3,¡No veo al tirador!,I can't see the shooter!,Unseen fire creating fear/confusion.,1,1.8
+gap_fill,NOTICED_UNSEEN__distressed 1,NOTICED_UNSEEN,distressed,3,"¡Cúbranse, no lo veo!","Take cover, I can't see him!",Unseen fire creating fear/confusion.,1,1.8
+gap_fill,NOTICED_UNSEEN__panicked,NOTICED_UNSEEN,panicked,4,¡No sé de dónde viene!,I don't know where it's coming from!,Panicked unseen-fire response.,1,1.7
+gap_fill,NOTICED_UNSEEN__panicked 0,NOTICED_UNSEEN,panicked,4,¡Nos están cazando!,They're hunting us!,Panicked unseen-fire response.,1,1.7
+gap_fill,NOTICED_UNSEEN__panicked 1,NOTICED_UNSEEN,panicked,4,¡¿Dónde está?!,Where is he?!,Panicked unseen-fire response.,1,1.7
+gap_fill,GOT_HIT_GUNFIRE__controlled,GOT_HIT_GUNFIRE,controlled,2,¡Me rozó!,It grazed me!,"Minor/moderate hit, controlled.",1,1.3
+gap_fill,GOT_HIT_GUNFIRE__controlled 0,GOT_HIT_GUNFIRE,controlled,2,¡Estoy bien!,I'm okay!,"Minor/moderate hit, controlled.",1,1.3
+gap_fill,GOT_HIT_GUNFIRE__controlled 1,GOT_HIT_GUNFIRE,controlled,2,"¡Me dieron, sigo!","I'm hit, still moving!","Minor/moderate hit, controlled.",1,1.3
+gap_fill,GOT_HIT_GUNFIRE__angry,GOT_HIT_GUNFIRE,angry,3,"¡Hijo de puta, me dio!","Son of a bitch, he hit me!",Pain converted into anger; use profanity sparingly.,2,1.6
+gap_fill,GOT_HIT_GUNFIRE__angry 0,GOT_HIT_GUNFIRE,angry,3,"¡Me dieron, carajo!","I'm hit, damn it!",Pain converted into anger; use profanity sparingly.,2,1.6
+gap_fill,GOT_HIT_GUNFIRE__angry 1,GOT_HIT_GUNFIRE,angry,3,¡Vas a pagar por eso!,You'll pay for that!,Pain converted into anger; use profanity sparingly.,2,1.6
+gap_fill,GOT_HIT_GUNFIRE__distressed,GOT_HIT_GUNFIRE,distressed,3,¡Me dieron!,I'm hit!,"Serious wound, frightened/strained.",1,1.5
+gap_fill,GOT_HIT_GUNFIRE__distressed 0,GOT_HIT_GUNFIRE,distressed,3,¡Estoy herido!,I'm wounded!,"Serious wound, frightened/strained.",1,1.5
+gap_fill,GOT_HIT_GUNFIRE__distressed 1,GOT_HIT_GUNFIRE,distressed,3,¡Necesito ayuda!,I need help!,"Serious wound, frightened/strained.",1,1.5
+gap_fill,GOT_HIT_GUNFIRE__distressed 2,GOT_HIT_GUNFIRE,distressed,3,¡Me dieron fuerte!,I'm hit bad!,"Serious wound, frightened/strained.",1,1.5
+gap_fill,GOT_HIT_GUNFIRE__panicked,GOT_HIT_GUNFIRE,panicked,4,"¡Ayúdame, por favor!",Please help me!,"Critical wound; desperate, believable, not melodramatic.",1,1.8
+gap_fill,GOT_HIT_GUNFIRE__panicked 0,GOT_HIT_GUNFIRE,panicked,4,¡No quiero morir!,I don't want to die!,"Critical wound; desperate, believable, not melodramatic.",1,1.8
+gap_fill,GOT_HIT_GUNFIRE__panicked 1,GOT_HIT_GUNFIRE,panicked,4,¡Médico!,Medic!,"Critical wound; desperate, believable, not melodramatic.",1,1.8
+gap_fill,GOT_HIT_GUNFIRE__panicked 2,GOT_HIT_GUNFIRE,panicked,4,"¡Dios mío, me dieron!","Oh God, I'm hit!","Critical wound; desperate, believable, not melodramatic.",1,1.8
+gap_fill,GOT_HIT_GUNFIRE__panicked 3,GOT_HIT_GUNFIRE,panicked,4,¡No me dejen aquí!,Don't leave me here!,"Critical wound; desperate, believable, not melodramatic.",1,1.8
+gap_fill,GOT_HIT_BLOODLOSS__distressed,GOT_HIT_BLOODLOSS,distressed,3,Estoy sangrando mucho.,I'm bleeding badly.,Weak/strained; less volume than ordinary combat shouts.,1,2
+gap_fill,GOT_HIT_BLOODLOSS__distressed 0,GOT_HIT_BLOODLOSS,distressed,3,¡Necesito un médico!,I need a medic!,Weak/strained; less volume than ordinary combat shouts.,1,2
+gap_fill,GOT_HIT_BLOODLOSS__distressed 1,GOT_HIT_BLOODLOSS,distressed,3,¡No para de sangrar!,It won't stop bleeding!,Weak/strained; less volume than ordinary combat shouts.,1,2
+gap_fill,GOT_HIT_BLOODLOSS__distressed 2,GOT_HIT_BLOODLOSS,distressed,3,Ayúdame... estoy perdiendo mucha sangre.,Help me... I'm losing a lot of blood.,Weak/strained; less volume than ordinary combat shouts.,1,2
+gap_fill,GOT_HIT_BLOODLOSS__panicked,GOT_HIT_BLOODLOSS,panicked,4,¡Me estoy desangrando!,I'm bleeding out!,Severe blood loss; breathless desperation.,1,2
+gap_fill,GOT_HIT_BLOODLOSS__panicked 0,GOT_HIT_BLOODLOSS,panicked,4,"¡Por favor, ayúdame!",Please help me!,Severe blood loss; breathless desperation.,1,2
+gap_fill,GOT_HIT_BLOODLOSS__panicked 1,GOT_HIT_BLOODLOSS,panicked,4,¡No me dejen aquí!,Don't leave me here!,Severe blood loss; breathless desperation.,1,2
+gap_fill,GOT_HIT_BLOODLOSS__panicked 2,GOT_HIT_BLOODLOSS,panicked,4,¡No quiero morir!,I don't want to die!,Severe blood loss; breathless desperation.,1,2
+gap_fill,GOT_HIT_BLOODLOSS__panicked 3,GOT_HIT_BLOODLOSS,panicked,4,"¡Médico, por favor!","Medic, please!",Severe blood loss; breathless desperation.,1,2
+gap_fill,GOT_HIT_EXPLOSION__controlled,GOT_HIT_EXPLOSION,controlled,2,¡Abajo!,Get down!,Blast shock but still functional.,1,1.4
+gap_fill,GOT_HIT_EXPLOSION__controlled 0,GOT_HIT_EXPLOSION,controlled,2,"¡Estoy bien, sigan!","I'm okay, keep moving!",Blast shock but still functional.,1,1.4
+gap_fill,GOT_HIT_EXPLOSION__controlled 1,GOT_HIT_EXPLOSION,controlled,2,¡Explosión!,Explosion!,Blast shock but still functional.,1,1.4
+gap_fill,GOT_HIT_EXPLOSION__distressed,GOT_HIT_EXPLOSION,distressed,3,"¡Mierda, estoy herido!","Damn, I'm hurt!",Blast injury; shaken and hurt.,1,1.5
+gap_fill,GOT_HIT_EXPLOSION__distressed 0,GOT_HIT_EXPLOSION,distressed,3,¡No puedo levantarme!,I can't get up!,Blast injury; shaken and hurt.,1,1.5
+gap_fill,GOT_HIT_EXPLOSION__distressed 1,GOT_HIT_EXPLOSION,distressed,3,¡Ayuda!,Help!,Blast injury; shaken and hurt.,1,1.5
+gap_fill,GOT_HIT_EXPLOSION__panicked,GOT_HIT_EXPLOSION,panicked,4,¡Dios mío!,Oh God!,Severe blast shock/panic; brief.,2,1.5
+gap_fill,GOT_HIT_EXPLOSION__panicked 0,GOT_HIT_EXPLOSION,panicked,4,¡Ayúdenme!,Help me!,Severe blast shock/panic; brief.,2,1.5
+gap_fill,GOT_HIT_EXPLOSION__panicked 1,GOT_HIT_EXPLOSION,panicked,4,¡No siento nada!,I can't feel anything!,Severe blast shock/panic; brief.,2,1.5
+gap_fill,GOT_MISSED_GUNFIRE__controlled,GOT_MISSED_GUNFIRE,controlled,2,¡Cerca!,Close!,Near miss; startled but useful.,2,1.4
+gap_fill,GOT_MISSED_GUNFIRE__controlled 0,GOT_MISSED_GUNFIRE,controlled,2,"¡Balas, cúbranse!","Incoming, take cover!",Near miss; startled but useful.,2,1.4
+gap_fill,GOT_MISSED_GUNFIRE__controlled 1,GOT_MISSED_GUNFIRE,controlled,2,¡Me pasó al lado!,That went right past me!,Near miss; startled but useful.,2,1.4
+gap_fill,GOT_MISSED_GUNFIRE__distressed,GOT_MISSED_GUNFIRE,distressed,3,¡Casi me da!,That almost hit me!,Repeated near misses/suppression.,2,1.5
+gap_fill,GOT_MISSED_GUNFIRE__distressed 0,GOT_MISSED_GUNFIRE,distressed,3,¡Nos tienen marcados!,They've got us zeroed!,Repeated near misses/suppression.,2,1.5
+gap_fill,GOT_MISSED_GUNFIRE__distressed 1,GOT_MISSED_GUNFIRE,distressed,3,¡Cúbranme!,Cover me!,Repeated near misses/suppression.,2,1.5
+gap_fill,INFORM_ABOUT__controlled,INFORM_ABOUT,controlled,2,¡Se movió por ahí!,He moved over there!,Pass useful location information without invented direction.,1,1.5
+gap_fill,INFORM_ABOUT__controlled 0,INFORM_ABOUT,controlled,2,¡Cambió de posición!,He changed position!,Pass useful location information without invented direction.,1,1.5
+gap_fill,INFORM_ABOUT__controlled 1,INFORM_ABOUT,controlled,2,¡Lo vi moverse!,I saw him move!,Pass useful location information without invented direction.,1,1.5
+gap_fill,SEEK_NOISE__controlled,SEEK_NOISE,controlled,1,Voy a revisar.,I'll check it.,"Cautious search, low/medium volume.",2,1.7
+gap_fill,SEEK_NOISE__controlled 0,SEEK_NOISE,controlled,1,Reviso ese ruido.,Checking that noise.,"Cautious search, low/medium volume.",2,1.7
+gap_fill,SEEK_NOISE__controlled 1,SEEK_NOISE,controlled,1,"Cúbranme, voy a mirar.","Cover me, I'll take a look.","Cautious search, low/medium volume.",2,1.7
+gap_fill,KILL_GUNFIRE__controlled,KILL_GUNFIRE,controlled,2,¡Objetivo abatido!,Target down!,Brief confirmation; not celebratory.,2,1.2
+gap_fill,KILL_GUNFIRE__controlled 0,KILL_GUNFIRE,controlled,2,¡Uno menos!,One down!,Brief confirmation; not celebratory.,2,1.2
+gap_fill,KILL_GUNFIRE__controlled 1,KILL_GUNFIRE,controlled,2,¡Cayó!,He's down!,Brief confirmation; not celebratory.,2,1.2
+gap_fill,KILL_GUNFIRE__angry,KILL_GUNFIRE,angry,3,¡Uno menos!,One down!,"Angry/vengeful variant, use sparingly.",3,1.4
+gap_fill,KILL_GUNFIRE__angry 0,KILL_GUNFIRE,angry,3,¡Eso te pasa!,That's what you get!,"Angry/vengeful variant, use sparingly.",3,1.4
+gap_fill,KILL_GUNFIRE__angry 1,KILL_GUNFIRE,angry,3,¡Cayó el cabrón!,Bastard's down!,"Angry/vengeful variant, use sparingly.",3,1.4
+gap_fill,GOT_BLINDED__distressed,GOT_BLINDED,distressed,3,¡No veo!,I can't see!,Disoriented distress.,1,1.5
+gap_fill,GOT_BLINDED__distressed 0,GOT_BLINDED,distressed,3,"¡Estoy ciego, ayúdenme!","I'm blind, help me!",Disoriented distress.,1,1.5
+gap_fill,GOT_BLINDED__distressed 1,GOT_BLINDED,distressed,3,¡No puedo ver nada!,I can't see anything!,Disoriented distress.,1,1.5
+gap_fill,GOT_BLINDED__panicked,GOT_BLINDED,panicked,4,¡No veo nada!,I can't see anything!,Temporary blindness + panic.,2,1.5
+gap_fill,GOT_BLINDED__panicked 0,GOT_BLINDED,panicked,4,"¡Ayuda, no veo!","Help, I can't see!",Temporary blindness + panic.,2,1.5
+gap_fill,GOT_BLINDED__panicked 1,GOT_BLINDED,panicked,4,¡¿Dónde están?!,Where are they?!,Temporary blindness + panic.,2,1.5
+gap_fill,GOT_DEAFENED__distressed,GOT_DEAFENED,distressed,3,¡No oigo nada!,I can't hear anything!,Disoriented; raised voice.,2,1.5
+gap_fill,GOT_DEAFENED__distressed 0,GOT_DEAFENED,distressed,3,¡No los escucho!,I can't hear you!,Disoriented; raised voice.,2,1.5
+gap_fill,GOT_DEAFENED__distressed 1,GOT_DEAFENED,distressed,3,¡Me zumban los oídos!,My ears are ringing!,Disoriented; raised voice.,2,1.5
+gap_fill,GOT_HIT_GAS__distressed,GOT_HIT_GAS,distressed,3,¡No puedo respirar!,I can't breathe!,"Choking; strained, never a clean full shout.",1,1.8
+gap_fill,GOT_HIT_GAS__distressed 0,GOT_HIT_GAS,distressed,3,¡Aire... necesito aire!,Air... I need air!,"Choking; strained, never a clean full shout.",1,1.8
+gap_fill,GOT_HIT_GAS__distressed 1,GOT_HIT_GAS,distressed,3,¡Salgan del gas!,Get out of the gas!,"Choking; strained, never a clean full shout.",1,1.8
+gap_fill,GOT_HIT_GAS__panicked,GOT_HIT_GAS,panicked,4,¡Me ahogo!,I'm choking!,"Air hunger/panic, breath-broken.",1,1.7
+gap_fill,GOT_HIT_GAS__panicked 0,GOT_HIT_GAS,panicked,4,¡No puedo respirar!,I can't breathe!,"Air hunger/panic, breath-broken.",1,1.7
+gap_fill,GOT_HIT_GAS__panicked 1,GOT_HIT_GAS,panicked,4,¡Sáquenme de aquí!,Get me out of here!,"Air hunger/panic, breath-broken.",1,1.7
+gap_fill,GOT_HIT_BLADE__distressed,GOT_HIT_BLADE,distressed,3,¡Me cortó!,He cut me!,Sharp pain; close-range fear.,2,1.5
+gap_fill,GOT_HIT_BLADE__distressed 0,GOT_HIT_BLADE,distressed,3,¡Estoy sangrando!,I'm bleeding!,Sharp pain; close-range fear.,2,1.5
+gap_fill,GOT_HIT_BLADE__distressed 1,GOT_HIT_BLADE,distressed,3,"¡Carajo, me abrió!","Damn, he cut me bad!",Sharp pain; close-range fear.,2,1.5
+gap_fill,GOT_HIT_HTH__angry,GOT_HIT_HTH,angry,3,¡Hijo de puta!,Son of a bitch!,Angry response after a punch/strike.,3,1.4
+gap_fill,GOT_HIT_HTH__angry 0,GOT_HIT_HTH,angry,3,¡Eso fue un error!,That was a mistake!,Angry response after a punch/strike.,3,1.4
+gap_fill,GOT_HIT_HTH__angry 1,GOT_HIT_HTH,angry,3,¡Ahora vas a ver!,Now you'll see!,Angry response after a punch/strike.,3,1.4
