@@ -1,0 +1,367 @@
+{
+  "pilot": "Vengeance inventory icons \u2014 20 item pilot",
+  "source": "Data-AIMv53/BigItems",
+  "deployment": "NOT DEPLOYED; use INSTALL_PILOT.ps1 manually",
+  "items": [
+    {
+      "file": "GUN01.STI",
+      "name": "Glock 17",
+      "profile": "polymer",
+      "subimages": 1,
+      "source_sha256": "97762e96e9dee37a856da1503d23f57ecb953eb41cc57bc62eab6a0df116b70e",
+      "pilot_sha256": "8649e150b215b2cb05da70ffa2ae3af7842ec0004addd23c96a98aac630c14e5",
+      "source_bytes": 2237,
+      "pilot_bytes": 2237,
+      "geometry": [
+        {
+          "width": 60,
+          "height": 42,
+          "offset_x": 0,
+          "offset_y": 1
+        }
+      ]
+    },
+    {
+      "file": "GUN02.STI",
+      "name": "Glock 18",
+      "profile": "polymer",
+      "subimages": 1,
+      "source_sha256": "c47dcbb5d64080b01a74569c7bc8031ac2a1cfe3322f07044ac5e02680f8e3b2",
+      "pilot_sha256": "91a2f2b0be7ddb4c6d6c9cd573a0d455dbca3f959cddda1741e451b3592ce278",
+      "source_bytes": 2285,
+      "pilot_bytes": 2285,
+      "geometry": [
+        {
+          "width": 60,
+          "height": 46,
+          "offset_x": 0,
+          "offset_y": -1
+        }
+      ]
+    },
+    {
+      "file": "GUN03.STI",
+      "name": "Beretta 92F",
+      "profile": "steel",
+      "subimages": 1,
+      "source_sha256": "3a4335c9c28511ebec1fce4bb8ead5f5470e05faf82cfdfc77e5851e89f40e24",
+      "pilot_sha256": "0fffcc64715fdc3f7612544499c0492ed46b53eec4db7ca9078313ea2c4fcb12",
+      "source_bytes": 2536,
+      "pilot_bytes": 2536,
+      "geometry": [
+        {
+          "width": 68,
+          "height": 46,
+          "offset_x": 0,
+          "offset_y": -1
+        }
+      ]
+    },
+    {
+      "file": "GUN04.STI",
+      "name": "Beretta 93R",
+      "profile": "steel",
+      "subimages": 1,
+      "source_sha256": "193b1c7faa9332d8974bd22d196da17dd6c992aca3c87a417b2a827b5bdfeb3a",
+      "pilot_sha256": "f8d0d9eb7dc0f60e4557b6c143edb3215e183684a45d6e46a21d016ad2b7146a",
+      "source_bytes": 2779,
+      "pilot_bytes": 2779,
+      "geometry": [
+        {
+          "width": 78,
+          "height": 50,
+          "offset_x": 0,
+          "offset_y": -3
+        }
+      ]
+    },
+    {
+      "file": "GUN05.STI",
+      "name": ".38 Special",
+      "profile": "revolver",
+      "subimages": 1,
+      "source_sha256": "ecaf788fc62fb85ad7b4a538a4194f6495368135b545f028ca8b9d884c4d5782",
+      "pilot_sha256": "14e374518c768d4e515e74f4d2917c8abc7f4cdca1f5e4e7355c0719e7a86eda",
+      "source_bytes": 2165,
+      "pilot_bytes": 2165,
+      "geometry": [
+        {
+          "width": 65,
+          "height": 45,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      ]
+    },
+    {
+      "file": "GUN06.STI",
+      "name": "Barracuda",
+      "profile": "revolver",
+      "subimages": 1,
+      "source_sha256": "6e23f283538b9bde3fb6404dc993c87f3e601d2af91810abe962056126bab7a2",
+      "pilot_sha256": "66b258ba4b5fe499e4daeda9154683f5d370b2503466fff445f2994d50f0539d",
+      "source_bytes": 2450,
+      "pilot_bytes": 2450,
+      "geometry": [
+        {
+          "width": 69,
+          "height": 47,
+          "offset_x": 0,
+          "offset_y": -1
+        }
+      ]
+    },
+    {
+      "file": "GUN07.STI",
+      "name": "Desert Eagle .357",
+      "profile": "bright_metal",
+      "subimages": 1,
+      "source_sha256": "b83b05298587d492ee7aad3c37131fb5cbbd8fbd23c614d98326edceb70b1f55",
+      "pilot_sha256": "befaded67ebb1fccc47aa3e6d461c661323d0ec0b347f6ecd32cb48a76fd9a13",
+      "source_bytes": 2772,
+      "pilot_bytes": 2772,
+      "geometry": [
+        {
+          "width": 116,
+          "height": 46,
+          "offset_x": 0,
+          "offset_y": -1
+        }
+      ]
+    },
+    {
+      "file": "GUN08.STI",
+      "name": "Colt M1911A1",
+      "profile": "steel",
+      "subimages": 1,
+      "source_sha256": "7b271fa864295586d5e012a9acf0a669a0aa79f43b24bc6563cd75cf651c5e92",
+      "pilot_sha256": "62defec984358f196c729cbf331c1fc304631ad7e4e6fb895f1e3ae98d9fe0a0",
+      "source_bytes": 2135,
+      "pilot_bytes": 2135,
+      "geometry": [
+        {
+          "width": 63,
+          "height": 41,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      ]
+    },
+    {
+      "file": "GUN09.STI",
+      "name": "HK MP5KA4",
+      "profile": "polymer",
+      "subimages": 1,
+      "source_sha256": "7f443b79fae11a2205101ebd0f7ff22d7ff88d4aa223415ba5287e0c67bc5b56",
+      "pilot_sha256": "6d1241e3a12c3775e8f641da4b9e3d802d2e708ad71b54572a7d8cec2209a7c3",
+      "source_bytes": 2931,
+      "pilot_bytes": 2931,
+      "geometry": [
+        {
+          "width": 70,
+          "height": 48,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      ]
+    },
+    {
+      "file": "GUN10.STI",
+      "name": "Ingram MAC-10",
+      "profile": "steel",
+      "subimages": 1,
+      "source_sha256": "6f54acf86774775508d07ea93b36922e8390f2f6c8a4a8972ef1bdca2cf0f103",
+      "pilot_sha256": "2bf293f8a6fbe243c5dc884221a8d452b736e5917dac4ee34128323228c3c4ef",
+      "source_bytes": 2660,
+      "pilot_bytes": 2660,
+      "geometry": [
+        {
+          "width": 74,
+          "height": 47,
+          "offset_x": 0,
+          "offset_y": -1
+        }
+      ]
+    },
+    {
+      "file": "Gun11.sti",
+      "name": "Thompson M1A1",
+      "profile": "wood",
+      "subimages": 1,
+      "source_sha256": "fd3a3e513eb5a2355fef4750e42acc0ddd1958642053a918703718e20b74e1b7",
+      "pilot_sha256": "50b2321822368245402c357d925185645c7e4123a0a0fc2065053b5fc0cc65f7",
+      "source_bytes": 2549,
+      "pilot_bytes": 2549,
+      "geometry": [
+        {
+          "width": 117,
+          "height": 41,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      ]
+    },
+    {
+      "file": "GUN110.STI",
+      "name": "Colt M4 Commando",
+      "profile": "polymer",
+      "subimages": 1,
+      "source_sha256": "37c17bfd23aa4f4d4c09e5a9488e2de98c5b58c40a7de2a5feac4de3b45e95f9",
+      "pilot_sha256": "11ec97529c05617f127eba0825fdfe05003256679834ab566f4bcf3a496eb891",
+      "source_bytes": 2652,
+      "pilot_bytes": 2652,
+      "geometry": [
+        {
+          "width": 107,
+          "height": 41,
+          "offset_x": 0,
+          "offset_y": 2
+        }
+      ]
+    },
+    {
+      "file": "GUN13.STI",
+      "name": "HK 53A3",
+      "profile": "polymer",
+      "subimages": 1,
+      "source_sha256": "0c177cc70a4918bb20379e62b26aeacc5dbdd5b86ba00403d3d23816388783e7",
+      "pilot_sha256": "38b9c274e899b9e51f7640d1a74d32a1920fa1a6c106419a9e08c11d63c735ab",
+      "source_bytes": 2750,
+      "pilot_bytes": 2750,
+      "geometry": [
+        {
+          "width": 101,
+          "height": 41,
+          "offset_x": 0,
+          "offset_y": 2
+        }
+      ]
+    },
+    {
+      "file": "GUN14.STI",
+      "name": "AKS-74U",
+      "profile": "wood",
+      "subimages": 1,
+      "source_sha256": "0c5cffb4fae0276ee16fb1366a0b425b7df6710f8e06aecba6f8c95931a64d91",
+      "pilot_sha256": "45cebea046f42f4cadd961e79e9610e9d9e5e8ae8eb1c5a5484064e8b3550f5f",
+      "source_bytes": 2361,
+      "pilot_bytes": 2361,
+      "geometry": [
+        {
+          "width": 108,
+          "height": 46,
+          "offset_x": 0,
+          "offset_y": 3
+        }
+      ]
+    },
+    {
+      "file": "GUN15.STI",
+      "name": "FN P90",
+      "profile": "polymer",
+      "subimages": 1,
+      "source_sha256": "7e51c3a9c99e2e9e7d796f97aeb2c3404a6ead2d7b9f5236e1b542460f73a6c1",
+      "pilot_sha256": "4d8bf763f495a71a3d01a6ea411f953907f90e1c70c7f0534e8449a17d379641",
+      "source_bytes": 4072,
+      "pilot_bytes": 4072,
+      "geometry": [
+        {
+          "width": 110,
+          "height": 48,
+          "offset_x": 4,
+          "offset_y": 1
+        }
+      ]
+    },
+    {
+      "file": "Gun16.sti",
+      "name": "Type 85",
+      "profile": "steel",
+      "subimages": 1,
+      "source_sha256": "c9669647b9009b41ccaf5a37de12886631efe5cefd33726860cea49b025bf4e7",
+      "pilot_sha256": "6427a2b6636fd578faa7f6857e0adf2f8f97bf654591119b16a1d5fbf433175f",
+      "source_bytes": 2109,
+      "pilot_bytes": 2109,
+      "geometry": [
+        {
+          "width": 118,
+          "height": 39,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      ]
+    },
+    {
+      "file": "GUN17.STI",
+      "name": "SKS",
+      "profile": "wood",
+      "subimages": 1,
+      "source_sha256": "89fded2ce39065541af5f7a95a221b0c13e435f2ad086b44c1ce0bed7a6dce72",
+      "pilot_sha256": "f4684142bbe82065fc13eca953a5b1ae88b23d29fc3daded248461515521db68",
+      "source_bytes": 1939,
+      "pilot_bytes": 1939,
+      "geometry": [
+        {
+          "width": 117,
+          "height": 26,
+          "offset_x": 0,
+          "offset_y": 10
+        }
+      ]
+    },
+    {
+      "file": "GUN18.STI",
+      "name": "Dragunov SVD",
+      "profile": "wood",
+      "subimages": 1,
+      "source_sha256": "54440b0e5544d78aff02ad9f32c055c48605404ff54305bc890bdd2fb52dc106",
+      "pilot_sha256": "45c54faf0f4b4f9c2d6021827e6da7fabbde83d2fa4322568f3a39ca9a75b0bb",
+      "source_bytes": 1978,
+      "pilot_bytes": 1978,
+      "geometry": [
+        {
+          "width": 117,
+          "height": 25,
+          "offset_x": 0,
+          "offset_y": 10
+        }
+      ]
+    },
+    {
+      "file": "GUN19.STI",
+      "name": "M24",
+      "profile": "precision",
+      "subimages": 1,
+      "source_sha256": "9ee4123af99bf8ee6e8bb6a60126d5336ed0694b57d5ca55e448033199190366",
+      "pilot_sha256": "7f1f0fd7b6d22815f71de0bfeba29241aac4a75d473cfbfee058e5d56b9bd8c0",
+      "source_bytes": 1932,
+      "pilot_bytes": 1932,
+      "geometry": [
+        {
+          "width": 117,
+          "height": 23,
+          "offset_x": 0,
+          "offset_y": 11
+        }
+      ]
+    },
+    {
+      "file": "GUN20.STI",
+      "name": "Steyr AUG-A2",
+      "profile": "olive_polymer",
+      "subimages": 1,
+      "source_sha256": "d115015df312d423177e2c4eccc8dbb88c6c0b83ce1d59c74cd9590cfbdf5d3c",
+      "pilot_sha256": "0e82713190753262bf58ec35caa2fab2bab1aef28cca5a9dda5dbe89540dc106",
+      "source_bytes": 3073,
+      "pilot_bytes": 3073,
+      "geometry": [
+        {
+          "width": 116,
+          "height": 42,
+          "offset_x": 0,
+          "offset_y": 1
+        }
+      ]
+    }
+  ]
+}
