@@ -22,11 +22,16 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - name: Check out VHD game data
+      - name: Check out only C5 contract and VHD2 paths
         uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
           fetch-depth: 0
+          sparse-checkout: |
+            Data-Maps-Tiles/Tilesets/18
+            Data-Maps-Tiles/Tilesets/51
+            Data-Maps-Tiles/VHD2/TILESETS/18
+          sparse-checkout-cone-mode: false
 
       - name: Install Pillow
         shell: powershell
