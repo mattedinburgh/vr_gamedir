@@ -3,11 +3,11 @@
 	<ENEMYITEMCHOICES>
 		<uiIndex>0</uiIndex>
 		<name>Helmets</name>
-		<ubChoices>4</ubChoices>
+		<ubChoices>3</ubChoices>
 		<bItemNo1>176</bItemNo1>
 		<bItemNo2>177</bItemNo2>
 		<bItemNo3>302</bItemNo3>
-		<bItemNo4>31</bItemNo4>
+		<bItemNo4>0</bItemNo4>
 		<bItemNo5>0</bItemNo5>
 		<bItemNo6>0</bItemNo6>
 		<bItemNo7>0</bItemNo7>
@@ -1048,7 +1048,7 @@
 	<ENEMYITEMCHOICES>
 		<uiIndex>19</uiIndex>
 		<name>Ammo</name>
-		<ubChoices>8</ubChoices>
+		<ubChoices>9</ubChoices>
 		<bItemNo1>0</bItemNo1>
 		<bItemNo2>1</bItemNo2>
 		<bItemNo3>2</bItemNo3>
@@ -1057,7 +1057,7 @@
 		<bItemNo6>122</bItemNo6>
 		<bItemNo7>123</bItemNo7>
 		<bItemNo8>30</bItemNo8>
-		<bItemNo9>0</bItemNo9>
+		<bItemNo9>31</bItemNo9>
 		<bItemNo10>0</bItemNo10>
 		<bItemNo11>0</bItemNo11>
 		<bItemNo12>0</bItemNo12>
