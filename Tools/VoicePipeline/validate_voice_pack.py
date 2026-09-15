@@ -93,7 +93,11 @@ def main():
         if channels != 1:
             errors.append(f"{path.name}: must be mono, got {channels} channels")
         if rate != 44100:
-            errors.append(f"{path.name}: must be 44100 Hz, got {rate}")
+            message = f"{path.name}: non-production sample rate {rate} Hz (new packs target 44100 Hz)"
+            if args.production:
+                errors.append(message)
+            else:
+                warnings.append(message)
         if nominal > 0 and not 80000 <= nominal <= 192000:
             warnings.append(f"{path.name}: unusual nominal bitrate {nominal}")
         if duration > 5.0:
