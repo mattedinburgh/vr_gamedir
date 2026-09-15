@@ -1,8 +1,8 @@
 # San Mona C5 — native VHD2 scratch structural pilot
 
 Branch pairing:
-- source: `mattedinburgh/vr_source@feature/vhd-renderer`
-- gamedir: `mattedinburgh/vr_gamedir@feature/vhd-renderer-test`
+- source: `mattedinburgh/vr_source@exp/vhd`
+- gamedir: `mattedinburgh/vr_gamedir@exp/vhd`
 
 ## Production rules
 
