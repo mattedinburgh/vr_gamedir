@@ -4,25 +4,25 @@
 		<uiIndex>0</uiIndex>
 		<ubArmourClass>0</ubArmourClass>
 		<ubEnemyDropRate>15</ubEnemyDropRate>
-		<ubMilitiaDropRate>2</ubMilitiaDropRate>
+		<ubMilitiaDropRate>5</ubMilitiaDropRate>
 	</DROPITEM>
 	<DROPITEM>
 		<uiIndex>1</uiIndex>
 		<ubArmourClass>1</ubArmourClass>
 		<ubEnemyDropRate>15</ubEnemyDropRate>
-		<ubMilitiaDropRate>2</ubMilitiaDropRate>
+		<ubMilitiaDropRate>5</ubMilitiaDropRate>
 	</DROPITEM>
 	<DROPITEM>
 		<uiIndex>2</uiIndex>
 		<ubArmourClass>2</ubArmourClass>
 		<ubEnemyDropRate>15</ubEnemyDropRate>
-		<ubMilitiaDropRate>2</ubMilitiaDropRate>
+		<ubMilitiaDropRate>5</ubMilitiaDropRate>
 	</DROPITEM>
 	<DROPITEM>
 		<uiIndex>3</uiIndex>
 		<ubArmourClass>3</ubArmourClass>
 		<ubEnemyDropRate>15</ubEnemyDropRate>
-		<ubMilitiaDropRate>2</ubMilitiaDropRate>
+		<ubMilitiaDropRate>5</ubMilitiaDropRate>
 	</DROPITEM>
 	<DROPITEM>
 		<uiIndex>4</uiIndex>
