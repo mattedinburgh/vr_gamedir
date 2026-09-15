@@ -45,7 +45,7 @@ jobs:
           $ErrorActionPreference='Stop'
           $tools=Join-Path $env:GITHUB_WORKSPACE '_c5_tools'
           New-Item -ItemType Directory -Force -Path $tools | Out-Null
-          $sourceSha='1573fa73ba9f113bb952672d0bc557c3dd7187c0'
+          $sourceSha='893fd7e08b6fc09fe8437423e572f08fd687e17f'
           $base="https://raw.githubusercontent.com/mattedinburgh/vr_source/$sourceSha/Tools/SanMonaC5"
           Invoke-WebRequest "$base/generate_vhd2_c5_pilot.py" -OutFile (Join-Path $tools 'generate_vhd2_c5_pilot.py') -UseBasicParsing
           Invoke-WebRequest "$base/sti_contract.py" -OutFile (Join-Path $tools 'sti_contract.py') -UseBasicParsing
