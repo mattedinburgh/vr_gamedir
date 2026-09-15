@@ -1048,14 +1048,14 @@
 	<ENEMYITEMCHOICES>
 		<uiIndex>19</uiIndex>
 		<name>Ammo</name>
-		<ubChoices>6</ubChoices>
+		<ubChoices>7</ubChoices>
 		<bItemNo1>0</bItemNo1>
 		<bItemNo2>2</bItemNo2>
 		<bItemNo3>4</bItemNo3>
 		<bItemNo4>17</bItemNo4>
 		<bItemNo5>18</bItemNo5>
 		<bItemNo6>13</bItemNo6>
-		<bItemNo7>0</bItemNo7>
+		<bItemNo7>31</bItemNo7>
 		<bItemNo8>0</bItemNo8>
 		<bItemNo9>0</bItemNo9>
 		<bItemNo10>0</bItemNo10>
