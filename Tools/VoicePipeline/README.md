@@ -66,8 +66,10 @@ Archive/master:
 
 Game delivery:
 - mono OGG Vorbis
-- 44.1 kHz
+- 44.1 kHz for all new production
 - nominal 128 kbps (existing game material varies roughly 96-160 kbps)
+
+The legacy library contains some 22.05 kHz and other old/nonstandard-rate clips. The validator warns on those in audit mode but treats 44.1 kHz as mandatory when --production is used.
 - no clipping
 - trim excessive silence but keep natural breaths/attacks
 - do not hard-normalize every scream to identical loudness
