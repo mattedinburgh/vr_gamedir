@@ -1,0 +1,68 @@
+name: Build all inventory icons with AI stamp
+
+on:
+  push:
+    branches:
+      - art/all-inventory-icons-ai-2026-09-14
+    paths:
+      - "Tools/build_all_inventory_icons.py"
+      - "Tools/build_inventory_icon_pilot.py"
+      - "Data-AIMv53/TableData/Items/Items.xml"
+      - ".github/workflows/all-inventory-icons-ai.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: all-inventory-icons-ai
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout icon branch
+        uses: actions/checkout@v4
+        with:
+          ref: art/all-inventory-icons-ai-2026-09-14
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            Tools/build_inventory_icon_pilot.py
+            Tools/build_all_inventory_icons.py
+            Data-AIMv53/TableData/Items/Items.xml
+            Data-AIMv53/BigItems/*
+            Data-AIMv53/Interface/MDGUNS.sti
+            Data-AIMv53/Interface/MDP1ITEMS.sti
+            Data-AIMv53/Interface/MDP2ITEMS.STI
+            Data-AIMv53/Interface/MDP3ITEMS.STI
+            Data-AIMv53/Interface/MDP4ITEMS.sti
+            Data-AIMv53/Interface/MDP5ITEMS.sti
+            Data-AIMv53/Interface/MDP6ITEMS.STI
+            Data-AIMv53/Interface/MDP7ITEMS.STI
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install image dependencies
+        run: python -m pip install --disable-pip-version-check pillow numpy
+
+      - name: Build and validate whole catalogue
+        run: python Tools/build_all_inventory_icons.py --root .
+
+      - name: Commit generated replacement assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --sparse Generated/AllInventoryIconsAI
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "Generate whole-game inventory icons with AI stamp"
+          git push origin HEAD:art/all-inventory-icons-ai-2026-09-14
