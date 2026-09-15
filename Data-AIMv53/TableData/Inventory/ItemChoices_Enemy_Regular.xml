@@ -3,13 +3,13 @@
 	<ENEMYITEMCHOICES>
 		<uiIndex>0</uiIndex>
 		<name>Helmets</name>
-		<ubChoices>5</ubChoices>
+		<ubChoices>6</ubChoices>
 		<bItemNo1>176</bItemNo1>
 		<bItemNo2>177</bItemNo2>
 		<bItemNo3>180</bItemNo3>
 		<bItemNo4>302</bItemNo4>
 		<bItemNo5>2535</bItemNo5>
-		<bItemNo6>0</bItemNo6>
+		<bItemNo6>31</bItemNo6>
 		<bItemNo7>0</bItemNo7>
 		<bItemNo8>0</bItemNo8>
 		<bItemNo9>0</bItemNo9>
