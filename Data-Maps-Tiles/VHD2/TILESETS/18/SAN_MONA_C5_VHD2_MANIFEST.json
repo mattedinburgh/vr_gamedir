@@ -1,0 +1,55 @@
+{
+  "sector": "C5",
+  "profile": "San Mona Strip \u2014 native VHD2 scratch structural pilot",
+  "render_scale": 2,
+  "source_rgb_reused": false,
+  "source_usage": "technical frame/alpha/offset contract; broad wall semantic darkness only",
+  "art_direction": "dry late-20th-century Latin-American vice/commercial strip; weathered stucco, exposed brick, patched corrugated roofing, dusty municipal paving, improvised repair history",
+  "families": [
+    {
+      "name": "COBBLE_ROAD",
+      "source_sti": "Cobble_Road.sti",
+      "kind": "road",
+      "frames": 32,
+      "appdata_bytes": 0,
+      "output": "VHD2/TILESETS/18/COBBLE_ROAD.b1tc",
+      "sha256": "0cd041ebe8bc4eb7a1448527f0857935404b197d7b37b51776f00c6318ef6458"
+    },
+    {
+      "name": "COBBLE_ROAD_PIECES",
+      "source_sti": "Cobble_Road_Pieces.sti",
+      "kind": "road",
+      "frames": 312,
+      "appdata_bytes": 0,
+      "output": "VHD2/TILESETS/18/COBBLE_ROAD_PIECES.b1tc",
+      "sha256": "8e72887a27f2e9e20ef121aab79aaf272dc48c1f14b68fcb8b99ce913a90cbec"
+    },
+    {
+      "name": "PAVE_B",
+      "source_sti": "Pave_b.sti",
+      "kind": "pave",
+      "frames": 10,
+      "appdata_bytes": 0,
+      "output": "VHD2/TILESETS/18/PAVE_B.b1tc",
+      "sha256": "9e41e9ae72276c101c42be7b877d2cc817e2de407ded4ef7a01b9f979cc27304"
+    },
+    {
+      "name": "BUILD_24",
+      "source_sti": "build_24.sti",
+      "kind": "wall",
+      "frames": 65,
+      "appdata_bytes": 0,
+      "output": "VHD2/TILESETS/18/BUILD_24.b1tc",
+      "sha256": "3c4ba167a0b3855148977d765e8470c3598c940adeb5140d0ae88cdbe8eb9ac6"
+    },
+    {
+      "name": "SLANT_12",
+      "source_sti": "slant_12.sti",
+      "kind": "roof",
+      "frames": 12,
+      "appdata_bytes": 0,
+      "output": "VHD2/TILESETS/18/SLANT_12.b1tc",
+      "sha256": "5ded5db6c3f5ec987ac3899656164feabd6ca563dc00c9c7a2f2cb3bb2d61fa3"
+    }
+  ]
+}
