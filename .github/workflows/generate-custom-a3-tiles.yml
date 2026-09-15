@@ -1,12 +1,6 @@
 name: Generate custom A3 tiles
 
 on:
-  push:
-    branches:
-      - install/all-2026-09-12
-    paths:
-      - 'Tools/GenerateCustomA3Tiles.py'
-      - '.github/workflows/generate-custom-a3-tiles.yml'
   workflow_dispatch:
 
 permissions:
@@ -23,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: install/all-2026-09-12
+          ref: maps/visual-overhaul-2026
           fetch-depth: 0
           filter: blob:none
           sparse-checkout: |
@@ -70,5 +64,5 @@ jobs:
             exit 0
           fi
           git commit -m "Generate native custom A3 tile pack"
-          git pull --rebase origin install/all-2026-09-12
-          git push origin HEAD:install/all-2026-09-12
+          git pull --rebase origin maps/visual-overhaul-2026
+          git push origin HEAD:maps/visual-overhaul-2026
