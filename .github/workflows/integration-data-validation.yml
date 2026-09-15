@@ -1,0 +1,54 @@
+name: Vengeance gamedir integration validation
+
+on:
+  push:
+    branches:
+      - install/all-2026-09-12
+    paths:
+      - 'Data-AIMv53/TableData/**/*.xml'
+      - '.github/workflows/integration-data-validation.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-critical-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out integrated gamedir
+        uses: actions/checkout@v4
+
+      - name: Validate reconciled XML and ammo item definitions
+        shell: python
+        run: |
+          import pathlib
+          import xml.etree.ElementTree as ET
+
+          root = pathlib.Path(".")
+          critical = [
+              root / "Data-AIMv53/TableData/Inventory/EnemyItemChoices.xml",
+              root / "Data-AIMv53/TableData/Inventory/ItemChoices_Enemy_Admin.xml",
+              root / "Data-AIMv53/TableData/Inventory/ItemChoices_Enemy_Elite.xml",
+              root / "Data-AIMv53/TableData/Inventory/ItemChoices_Enemy_Regular.xml",
+              root / "Data-AIMv53/TableData/Items/AmmoTypes.xml",
+              root / "Data-AIMv53/TableData/Items/Magazines.xml",
+              root / "Data-AIMv53/TableData/Items/Items.xml",
+          ]
+
+          for path in critical:
+              if not path.is_file():
+                  raise SystemExit(f"Missing critical data file: {path}")
+              ET.parse(path)
+              print(f"XML OK: {path}")
+
+          items_text = (root / "Data-AIMv53/TableData/Items/Items.xml").read_text(
+              encoding="utf-8", errors="replace"
+          )
+          missing = [
+              idx for idx in range(3043, 3050)
+              if f"<uiIndex>{idx}</uiIndex>" not in items_text
+          ]
+          if missing:
+              raise SystemExit(f"Missing reconciled ammo item definitions: {missing}")
+
+          print("Critical gamedir reconciliation checks passed.")
