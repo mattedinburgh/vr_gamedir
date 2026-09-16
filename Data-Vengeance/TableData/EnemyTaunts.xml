@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>                                                                              
 <TAUNTS>
   <TAUNT>
-    <szText>¡Burla! (320 letras)</szText>
+    <szText>Taunt! (320 letters)</szText>
    
     <!-- attitudes: taunt will be only used by enemies with specifed attitudes - if none is specified, assuming all can use -->
 	<!-- proposed interpretation: aggressive = blood-thirsty, brave = cocky, cunning = snarky, defensive = level-headed  -->
@@ -107,1282 +107,1282 @@
 	
   </TAUNT>
   <TAUNT>
-	<szText>¡Imbécil!</szText>
+	<szText>Sucker!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Chúpate esta!</szText>
+	<szText>Suck on this!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Saluda a mi amiguito!</szText>
+	<szText>Say hello to my lil' friend!</szText>
 	<fire_gun>1</fire_gun>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ven por lo tuyo!</szText>
+	<szText>Come get some!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Eres mío!</szText>
+	<szText>You're mine!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Muere!</szText>
+	<szText>Die!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¿Tienes miedo, hijo de puta?</szText>
+	<szText>You scared, motherfucker?</szText>
 	<fire_gun>1</fire_gun>
 	<charge_knife>1</charge_knife>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Esto va a doler!</szText>
+	<szText>This gonna hurt!</szText>
 	<fire_gun>1</fire_gun>
 	<charge_knife>1</charge_knife>
   </TAUNT>
   <TAUNT>
-	<szText>¡Come mierda y muérete!</szText>
+	<szText>Eat shit and die!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Mándame una postal desde el INFIERNO!</szText>
+	<szText>Send me a postcard from HELL!</szText>
 	<fire_gun>1</fire_gun>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ven con papá!</szText>
+	<szText>Come to daddy!</szText>
 	<fire_gun>1</fire_gun>
 	<charge_knife>1</charge_knife>
 	<male>1</male>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ven con mamá!</szText>
+	<szText>Come to momma!</szText>
 	<fire_gun>1</fire_gun>
 	<charge_knife>1</charge_knife>
 	<female>1</female>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te voy a cortar los huevos!</szText>
+	<szText>I'll chop your balls off!</szText>
 	<aggressive>1</aggressive>
 	<charge_knife>1</charge_knife>
 	<target_male>1</target_male>
   </TAUNT>
   <TAUNT>
-	<szText>¡En nada estarás bajo tierra!</szText>
+	<szText>You'll be six feet under in no time!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te voy a mandar a casa en un ataúd, perdedor!</szText>
+	<szText>Gonna send ya home in a pine box, loser!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>Eh, ¿quieres jugar?</szText>
+	<szText>Hey, wanna play?</szText>
 	<fire_gun>1</fire_gun>
 	<charge_knife>1</charge_knife>
   </TAUNT>
   <TAUNT>
-	<szText>¡Eh, dame eso!</szText>
+	<szText>Hey, gimme that!</szText>
 	<steal>1</steal>
   </TAUNT>
   <TAUNT>
-	<szText>¡Bonito juguete!</szText>
+	<szText>Nice toy!</szText>
 	<steal>1</steal>
   </TAUNT>
   <TAUNT>
-	<szText>¡Debiste quedarte en casa, perra!</szText>
+	<szText>You should have stayed home, bitch!</szText>
 	<fire_gun>1</fire_gun>
 	<target_female>1</target_female>
   </TAUNT>
   <TAUNT>
-	<szText>¡Debiste quedarte en casa, cabrón!</szText>
+	<szText>You should have stayed home, fucker!</szText>
 	<fire_gun>1</fire_gun>
 	<target_male>1</target_male>
   </TAUNT>
   <TAUNT>
-	<szText>¡Muere, alimaña!</szText>
+	<szText>Die, vermin!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¿Asustado?</szText>
+	<szText>Feeling scared?</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Baila para mí!</szText>
+	<szText>Dance for me!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Qué divertido!</szText>
+	<szText>How fun!</szText>
 	<fire_gun>1</fire_gun>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ratatatá!</szText>
+	<szText>Dakka-dakka-dakka!</szText>
 	<fire_gun>1</fire_gun>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Las armas no matan gente, yo sí!</szText>
+	<szText>Guns don't kill people, I do!</szText>
 	<fire_gun>1</fire_gun>
 	<aggressive>1</aggressive>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Soy el mejor!</szText>
+	<szText>I'm the best!</szText>
 	<fire_gun>1</fire_gun>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Arrodíllate ante mí, perdedor!</szText>
+	<szText>Kneel before me, loser!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Vamos! ¡No tengo todo el día!</szText>
-	<fire_gun>1</fire_gun>
-	<brave>1</brave>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Traga plomo!</szText>
-	<fire_gun>1</fire_gun>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Soy mejor que tú!</szText>
+	<szText>Come on! I don't got all day!</szText>
 	<fire_gun>1</fire_gun>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te metiste con el hombre equivocado!</szText>
+	<szText>Eat lead!</szText>
+	<fire_gun>1</fire_gun>
+  </TAUNT>
+  <TAUNT>
+	<szText>I'm better than you!</szText>
+	<fire_gun>1</fire_gun>
+	<brave>1</brave>
+  </TAUNT>
+  <TAUNT>
+	<szText>You fucked with the wrong man!</szText>
 	<fire_gun>1</fire_gun>
 	<aggressive>1</aggressive>
 	<brave>1</brave>
 	<male>1</male>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te metiste con la mujer equivocada!</szText>
+	<szText>You fucked with the wrong woman!</szText>
 	<fire_gun>1</fire_gun>
 	<aggressive>1</aggressive>
 	<brave>1</brave>
 	<female>1</female>
   </TAUNT>
   <TAUNT>
-	<szText>¡Deja de hacerme perder el tiempo!</szText>
+	<szText>Stop wasting my time!</szText>
 	<fire_gun>1</fire_gun>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te lo mereces!</szText>
+	<szText>You deserve it!</szText>
 	<fire_gun>1</fire_gun>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Sí!</szText>
+	<szText>Yeah!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Eso es!</szText>
+	<szText>That's right!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>Estás muerto.</szText>
+	<szText>You're dead.</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¿Qué te parece?</szText>
+	<szText>How ya like it?</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te lo buscaste!</szText>
+	<szText>You had it coming!</szText>
 	<fire_gun>1</fire_gun>
   </TAUNT>
   <TAUNT>
-	<szText>Vaya, hola.</szText>
-	<fire_gun>1</fire_gun>
-	<cunning>1</cunning>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Di "whisky"!</szText>
+	<szText>Why, hello there!</szText>
 	<fire_gun>1</fire_gun>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Yippee-ki-yay, señor Falcon!</szText>
+	<szText>Say "cheese"!</szText>
 	<fire_gun>1</fire_gun>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¿Podrías simplemente morirte?</szText>
+	<szText>Yippie ki-yay, mister Falcon!</szText>
 	<fire_gun>1</fire_gun>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Día de sacar la basura!</szText>
+	<szText>Could you just please die?</szText>
+	<fire_gun>1</fire_gun>
+	<cunning>1</cunning>
+  </TAUNT>
+  <TAUNT>
+	<szText>Garbage day!</szText>
 	<fire_gun>1</fire_gun>
 	<fire_launcher>1</fire_launcher>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Hora de la barbacoa!</szText>
+	<szText>Barbecue time!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Trágatelo!</szText>
+	<szText>Suck it down!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Bum!</szText>
+	<szText>Bam!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Kabum!</szText>
+	<szText>Kaboom!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Esquiva esto!</szText>
+	<szText>Dodge this!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Me gusta!</szText>
+	<szText>I like it!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Jajaja!</szText>
+	<szText>Hahaha!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Muere quemada, perra!</szText>
+	<szText>Die in fire, bitch!</szText>
 	<fire_launcher>1</fire_launcher>
 	<aggressive>1</aggressive>
 	<target_female>1</target_female>
   </TAUNT>
   <TAUNT>
-	<szText>¡Muere quemado, hijo de puta!</szText>
+	<szText>Die in fire, son-of-a-bitch!</szText>
 	<fire_launcher>1</fire_launcher>
 	<aggressive>1</aggressive>
 	<target_male>1</target_male>
   </TAUNT>
   <TAUNT>
-	<szText>¡Reza tus últimas oraciones!</szText>
+	<szText>Say your prayers!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Carajo, sí!</szText>
+	<szText>Hell yeah!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡No existe el exceso cuando se trata de matar!</szText>
+	<szText>There's no kill like overkill!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Mi arma es más grande que la tuya!</szText>
+	<szText>My gun's bigger than yours!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>¡Tengo un regalito para ti!</szText>
+	<szText>I got a present for ya!</szText>
 	<fire_launcher>1</fire_launcher>
   </TAUNT>
   <TAUNT>
-	<szText>Mira y aprende.</szText>
-	<fire_launcher>1</fire_launcher>
-	<brave>1</brave>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Entrega especial!</szText>
-	<fire_launcher>1</fire_launcher>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Deberías verte la cara!</szText>
+	<szText>Watch and learn.</szText>
 	<fire_launcher>1</fire_launcher>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>No viste venir ESO, ¿eh?</szText>
+	<szText>Special delivery!</szText>
+	<fire_launcher>1</fire_launcher>
+  </TAUNT>
+  <TAUNT>
+	<szText>You should see your face now!</szText>
 	<fire_launcher>1</fire_launcher>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Jaque mate!</szText>
+	<szText>Didn't see THAT coming, ha?</szText>
+	<fire_launcher>1</fire_launcher>
+	<brave>1</brave>
+  </TAUNT>
+  <TAUNT>
+	<szText>Check mate!</szText>
 	<fire_launcher>1</fire_launcher>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Siempre quise hacer esto.</szText>
+	<szText>I always wanted to do this.</szText>
 	<fire_launcher>1</fire_launcher>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Paz mediante el poder!</szText>
+	<szText>Peace through power!</szText>
 	<fire_launcher>1</fire_launcher>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Este trabajo no está tan mal.</szText>
+	<szText>This job ain't that bad.</szText>
 	<fire_launcher>1</fire_launcher>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ahora recuerdo por qué me alisté!</szText>
+	<szText>Now I remember why I joined army!</szText>
 	<fire_launcher>1</fire_launcher>
 	<regular>1</regular>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Uy, que alguien me detenga!</szText>
+	<szText>Ooh, somebody stop me!</szText>
 	<fire_launcher>1</fire_launcher>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡De nada!</szText>
+	<szText>You're welcome!</szText>
 	<fire_launcher>1</fire_launcher>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Adiós al vecindario!</szText>
+	<szText>There goes the neighborhood!</szText>
 	<fire_launcher>1</fire_launcher>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Denegado!</szText>
+	<szText>Denied!</szText>
 	<fire_launcher>1</fire_launcher>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te voy a arrancar el cuero cabelludo, imbécil!</szText>
+	<szText>Gonna scalp ya, sucker!</szText>
 	<charge_knife>1</charge_knife>
   </TAUNT>
   <TAUNT>
-	<szText>Ven con papá.</szText>
-	<charge_knife>1</charge_knife>
-	<charge_fists>1</charge_fists>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Enséñame las tripas!</szText>
-	<charge_knife>1</charge_knife>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Te haré pedazos!</szText>
+	<szText>Come to papa.</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Hijo de puta!</szText>
+	<szText>Show me your guts!</szText>
+	<charge_knife>1</charge_knife>
+  </TAUNT>
+  <TAUNT>
+	<szText>I'll rip you to pieces!</szText>
+	<charge_knife>1</charge_knife>
+	<charge_fists>1</charge_fists>
+  </TAUNT>
+  <TAUNT>
+	<szText>Motherfucker!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Huelo tu miedo!</szText>
+	<szText>I can smell your fear!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te voy a reventar el cráneo!</szText>
+	<szText>I'll bash your skull in!</szText>
 	<charge_fists>1</charge_fists>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te pisaré la cabeza hasta matarte!</szText>
+	<szText>I'll stomp on your head till you're dead!</szText>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Cargaaa!</szText>
+	<szText>Chaaarge!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Las armas son para maricas!</szText>
+	<szText>Guns are for pussies!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Tu culo es mío!</szText>
+	<szText>Your ass is mine!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te arrancaré las putas piernas por el culo!</szText>
+	<szText>I'll rip you fucking legs out of your ass!</szText>
 	<charge_fists>1</charge_fists>
 	<aggressive>1</aggressive>
   </TAUNT>
    <TAUNT>
-	<szText>Bienvenido al mundo del dolor. ¡Yo seré tu guía!</szText>
+	<szText>Welcome to world of pain. I'll be your guide!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te voy a cortar como a un mango!</szText>
+	<szText>I'll slice ya up like a mango!</szText>
 	<charge_knife>1</charge_knife>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Van a rodar cabezas!</szText>
+	<szText>Heads are gonna roll!</szText>
 	<charge_knife>1</charge_knife>
   </TAUNT>
   <TAUNT>
-	<szText>¡Me acerco!</szText>
-	<charge_knife>1</charge_knife>
-	<charge_fists>1</charge_fists>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Listo o no, allá voy!</szText>
+	<szText>Closing in!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Es hora de ponerse personal!</szText>
+	<szText>Ready or not, here I come!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Detenme si puedes!</szText>
+	<szText>It's time to get personal!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Tú y yo! ¡Sin reglas! ¡Vamos, cobarde!</szText>
+	<szText>Stop me if you can!</szText>
+	<charge_knife>1</charge_knife>
+	<charge_fists>1</charge_fists>
+  </TAUNT>
+  <TAUNT>
+	<szText>You and me! No rules! Come on, coward!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡No me dejas otra opción!</szText>
+	<szText>You don't leave me a choice!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te mataré!</szText>
+	<szText>I'll kill you!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¿Quién necesita armas?</szText>
+	<szText>Who needs guns anyway?</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te apuñalaré hasta que digas "ay, estoy muerto"!</szText>
+	<szText>I'll stab you until you say "ouch, I'm dead"!</szText>
 	<charge_knife>1</charge_knife>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¿Qué tal un lifting?</szText>
+	<szText>How 'bout a facelift?</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
   </TAUNT>
   <TAUNT>
-	<szText>¡Es Navidad! ¡Y te has portado MUY mal!</szText>
+	<szText>It's Christmas! And you've been VERY naughty!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<throw_grenade>1</throw_grenade>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te lo advierto! ¡Vi "Operación Dragón" DOS VECES!</szText>
+	<szText>I warn you! I watched "Enter the Dragon" TWICE!</szText>
 	<charge_fists>1</charge_fists>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Abrazos!</szText>
+	<szText>Hugs!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Prometo que no dolerá... mucho.</szText>
+	<szText>I promise it won't hurt... much.</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te toca!</szText>
+	<szText>Tag!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Mierda, no puedo creer que esté haciendo esto!</szText>
+	<szText>Shit, I can't believe I'm doing this!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Atrapa!</szText>
+	<szText>Catch!</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ahí va!</szText>
+	<szText>Here ya go!</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
   </TAUNT>
   <TAUNT>
-	<szText>¡Y saltó la comadreja!</szText>
+	<szText>Pop goes the weasel.</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
   </TAUNT>
   <TAUNT>
-	<szText>Este va por ti.</szText>
+	<szText>This one's for you.</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
   </TAUNT>
   <TAUNT>
-	<szText>¡Muajaja!</szText>
-	<throw_knife>1</throw_knife>
-	<throw_grenade>1</throw_grenade>
-	<aggressive>1</aggressive>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Atrapa esto, cerdo!</szText>
+	<szText>Muahaha!</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Atrágantate con esto!</szText>
+	<szText>Catch this, swine!</szText>
+	<throw_knife>1</throw_knife>
+	<throw_grenade>1</throw_grenade>
+	<aggressive>1</aggressive>
+  </TAUNT>
+  <TAUNT>
+	<szText>Choke on this!</szText>
 	<throw_grenade>1</throw_grenade>
   </TAUNT>
   <TAUNT>
-	<szText>¡Cómete esto!</szText>
+	<szText>Snack on that!</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
   </TAUNT>
   <TAUNT>
-	<szText>¿Qué tal un poco de acupuntura?</szText>
+	<szText>How 'bout some acupuncture?</szText>
 	<throw_knife>1</throw_knife>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Diana!</szText>
+	<szText>Bullseye!</szText>
 	<throw_knife>1</throw_knife>
 	<cunning>1</cunning>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Aquí tienes una muestra de mi gratitud!</szText>
+	<szText>Here's a token of my gratitude!</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¿Te gustan las cosas brillantes?</szText>
+	<szText>Do you like shiny things?</szText>
 	<throw_knife>1</throw_knife>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Toma, quédatelo!</szText>
+	<szText>Here, keep it!</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
   </TAUNT>
   <TAUNT>
-	<szText>¡No se aceptan devoluciones!</szText>
+	<szText>No returns!</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
   </TAUNT>
   <TAUNT>
-	<szText>¡Va uno!</szText>
+	<szText>Incoming!</szText>
 	<throw_grenade>1</throw_grenade>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡A cubierto!</szText>
+	<szText>Take cover!</szText>
 	<throw_grenade>1</throw_grenade>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Granada!</szText>
+	<szText>Grenade!</szText>
 	<throw_grenade>1</throw_grenade>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Tengo más de donde salió esa!</szText>
+	<szText>Have more where it came from!</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Fuego en el hoyo!</szText>
+	<szText>Fire in the hole!</szText>
 	<throw_knife>1</throw_knife>
 	<throw_grenade>1</throw_grenade>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Están aquí!</szText>
+	<szText>They're here!</szText>
 	<alert>1</alert>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ahora empieza la diversión!</szText>
+	<szText>Now the fun can start!</szText>
 	<alert>1</alert>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>Llevo muuucho tiempo esperando esto.</szText>
+	<szText>I've waited for this looong time.</szText>
 	<alert>1</alert>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡El idiota con menos bajas paga las copas!</szText>
+	<szText>Sucker with the lowest body count buys drinks!</szText>
 	<alert>1</alert>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>No tienen idea de lo que les espera...</szText>
+	<szText>They have no idea what they are in for...</szText>
 	<alert>1</alert>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Todos preparados!</szText>
+	<szText>Everyone get ready!</szText>
 	<alert>1</alert>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Hora de matar!</szText>
+	<szText>Killing time!</szText>
 	<alert>1</alert>
 	<aggressive>1</aggressive>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Me pido cualquier lanzacohetes que saquemos de los cadáveres!</szText>
+	<szText>I call dibs on any rocket launchers we loot from corpses!</szText>
 	<alert>1</alert>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Por fin! ¡Algo de carnicería!</szText>
+	<szText>Finally! Some carnage!</szText>
 	<alert>1</alert>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ay, no veo la hora de echarles las manos encima!</szText>
+	<szText>Oh, I can't wait to get my hands on them!</szText>
 	<alert>1</alert>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>Por fin mi entrenamiento servirá de algo.</szText>
+	<szText>Finally, my training will pay off.</szText>
 	<alert>1</alert>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Todos, despierten!</szText>
+	<szText>Everybody, wake up!</szText>
 	<alert>1</alert>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>Hora de ganarme el sueldo...</szText>
+	<szText>Time to earn my paycheck...</szText>
 	<alert>1</alert>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Ahora podré demostrar lo que valgo.</szText>
+	<szText>Now I'll be able to prove myself.</szText>
 	<alert>1</alert>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Tenemos ventaja táctica!</szText>
+	<szText>We have tactical advantage!</szText>
 	<alert>1</alert>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Quizá me den una medalla!</szText>
+	<szText>Maybe I'll get a medal!</szText>
 	<alert>1</alert>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Nos atacan!</szText>
+	<szText>We're under attack!</szText>
 	<alert>1</alert>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Ah, genial. Justo lo que faltaba.</szText>
+	<szText>Oh, ain't that just great?</szText>
 	<alert>1</alert>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¿Ni una siesta puede echarse uno aquí?</szText>
+	<szText>Can't guy get a nap around here?</szText>
 	<alert>1</alert>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Ataque enemigo. Qué novedad.</szText>
+	<szText>Enemy attack. That's something new.</szText>
 	<alert>1</alert>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Sí, claro. Porque nadie lo vio venir.</szText>
+	<szText>Yay. 'Cause nobody saw that coming.</szText>
 	<alert>1</alert>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Voy a desertar en cuanto empecemos a perder.</szText>
+	<szText>I'm totally gonna desert as soon as we start losing.</szText>
 	<alert>1</alert>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Fantástico.</szText>
+	<szText>Fantastic.</szText>
 	<alert>1</alert>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>"Seguro que no se atreverán a atacarte." Sí, claro.</szText>
+	<szText>"Surely they wouldn't dare to attack you." Riiight.</szText>
 	<alert>1</alert>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Gracias por convertir mi día de mierda en un desastre total, cabrones!</szText>
+	<szText>Thanks for turning my shitty day into complete disaster, assholes!</szText>
 	<alert>1</alert>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Todos tranquilos y saldremos de esta.</szText>
+	<szText>Everybody stay calm, and we will make it through.</szText>
 	<alert>1</alert>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡A sus posiciones!</szText>
+	<szText>Take positions!</szText>
 	<alert>1</alert>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Esperaba que esto nunca pasara...</szText>
+	<szText>I hoped this would never happen...</szText>
 	<alert>1</alert>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Fuego a discreción!</szText>
+	<szText>Fire at will!</szText>
 	<alert>1</alert>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Tarde o temprano tenía que pasar.</szText>
+	<szText>It was bound to happen eventually.</szText>
 	<alert>1</alert>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Oí eso!</szText>
+	<szText>I heard that!</szText>
 	<seek_noise>1</seek_noise>
   </TAUNT>
   <TAUNT>
-	<szText>¿Quién anda ahí?</szText>
+	<szText>Who's there?</szText>
 	<seek_noise>1</seek_noise>
   </TAUNT>
    <TAUNT>
-	<szText>¿Qué fue eso?</szText>
+	<szText>What was that?</szText>
 	<seek_noise>1</seek_noise>
   </TAUNT>
   <TAUNT>
-	<szText>¡Eh! ¿Qué demo...?</szText>
+	<szText>Hey! What the...</szText>
 	<seek_noise>1</seek_noise>
   </TAUNT>
   <TAUNT>
-	<szText>¡Muéstrate!</szText>
+	<szText>Show yourself!</szText>
 	<seek_noise>1</seek_noise>
   </TAUNT>
   <TAUNT>
-	<szText>Te lo advierto... ¡mis dotes de detección están al MÁXIMO!</szText>
-	<seek_noise>1</seek_noise>
-	<brave>1</brave>
-  </TAUNT>
-  <TAUNT>
-	<szText>¿Qué demonios fue eso?</szText>
-	<seek_noise>1</seek_noise>
-  </TAUNT>
-  <TAUNT>
-	<szText>No estoy sordo, ¿sabes?</szText>
+	<szText>I warn you... my detection skills are at their PEAK!</szText>
 	<seek_noise>1</seek_noise>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Eh!</szText>
+	<szText>What the hell was that?</szText>
 	<seek_noise>1</seek_noise>
   </TAUNT>
   <TAUNT>
-	<szText>¡Sal, cobarde!</szText>
+	<szText>I'm not deaf, you know?</szText>
 	<seek_noise>1</seek_noise>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Eh! ¿Quién hace todo ese ruido?</szText>
+	<szText>Hey!</szText>
+	<seek_noise>1</seek_noise>
+  </TAUNT>
+  <TAUNT>
+	<szText>Come out, coward!</szText>
+	<seek_noise>1</seek_noise>
+	<brave>1</brave>
+  </TAUNT>
+  <TAUNT>
+	<szText>Hey! Who's making all that racket?</szText>
 	<seek_noise>1</seek_noise>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Sal de una vez, estés donde estés!</szText>
+	<szText>Just show yourself, wherever you are!</szText>
 	<seek_noise>1</seek_noise>
 	<aggressive>1</aggressive>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Eh! ¡Oí algo sospechoso!</szText>
+	<szText>Hey! I've heard something suspicious!</szText>
 	<seek_noise>1</seek_noise>
   </TAUNT>
   <TAUNT>
-	<szText>¿Hay alguien ahí?</szText>
+	<szText>Anybody there?</szText>
 	<seek_noise>1</seek_noise>
   </TAUNT>
   <TAUNT>
-	<szText>Debería ir a revisar.</szText>
+	<szText>Shoulda check it out.</szText>
 	<seek_noise>1</seek_noise>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¿Alguien se cree muy listo?</szText>
+	<szText>Is someone being clever?</szText>
 	<seek_noise>1</seek_noise>
 	<cunning>1</cunning>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Ruidos extraños...</szText>
+	<szText>Strange noises...</szText>
 	<seek_noise>1</seek_noise>
   </TAUNT>
   <TAUNT>
-	<szText>¿Puede ir otro a revisar, por favor?</szText>
-	<seek_noise>1</seek_noise>
-	<cunning>1</cunning>
-  </TAUNT>
-  <TAUNT>
-	<szText>Solo fue el viento... espera, ¡si no hay viento!</szText>
+	<szText>Can someone else check it out, please?</szText>
 	<seek_noise>1</seek_noise>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Muéstrate! Somos amistosos... y no sabemos pelear.</szText>
+	<szText>It was just a wind... wait a sec, there's no wind!</szText>
 	<seek_noise>1</seek_noise>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Pero qué...!</szText>
+	<szText>Show yourself! We're friendly... and don't know how to fight.</szText>
+	<seek_noise>1</seek_noise>
+	<cunning>1</cunning>
+  </TAUNT>
+  <TAUNT>
+	<szText>Da'ffff...!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Gran error!</szText>
+	<szText>Big mistake!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Joder!</szText>
+	<szText>Holy crap!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Enemigo!</szText>
+	<szText>Enemy!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡¡¡Enemigo!!!</szText>
+	<szText>Enemy!!!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Alerta! ¡Alerta!</szText>
+	<szText>Alert! Alert!</szText>
 	<alert>1</alert>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ahí hay uno!</szText>
+	<szText>There is one!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Intrusos!</szText>
+	<szText>Intruders!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Tenemos compañía!</szText>
+	<szText>We've got company!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Prepárate para sufrir!</szText>
+	<szText>Prepare to suffer!</szText>
 	<charge_knife>1</charge_knife>
 	<charge_fists>1</charge_fists>
 	<noticed_unseen>1</noticed_unseen>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Mierda!</szText>
+	<szText>Holy shit!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>Ah, hola.</szText>
-	<noticed_unseen>1</noticed_unseen>
-	<cunning>1</cunning>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Veo, veo!</szText>
+	<szText>Oh, hi.</szText>
 	<noticed_unseen>1</noticed_unseen>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Tengo contacto visual!</szText>
+	<szText>I spy with my little eye!</szText>
+	<noticed_unseen>1</noticed_unseen>
+	<cunning>1</cunning>
+  </TAUNT>
+  <TAUNT>
+	<szText>I have a sigthing!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Fuerzas enemigas!</szText>
+	<szText>Enemy forces!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Enemigo detectado!</szText>
+	<szText>Enemy detected!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>¡Enemigo por aquí!</szText>
+	<szText>Enemy over here!</szText>
 	<noticed_unseen>1</noticed_unseen>
   </TAUNT>
   <TAUNT>
-	<szText>Estamos metidos en mierda de verdad...</szText>
+	<szText>We're in some real shit...</szText>
 	<run_away>1</run_away>
   </TAUNT>
   <TAUNT>
-	<szText>¡Todo era parte de mi plan!</szText>
+	<szText>It was all part of my plan!</szText>
 	<run_away>1</run_away>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ya tuve suficiente!</szText>
+	<szText>I've had enough!</szText>
 	<run_away>1</run_away>
   </TAUNT>
   <TAUNT>
-	<szText>¡Dios mío!</szText>
+	<szText>Oh my God!</szText>
 	<run_away>1</run_away>
   </TAUNT>
   <TAUNT>
-	<szText>No nos pagan lo suficiente para esta mierda...</szText>
+	<szText>They ain't paying us enough for this shit...</szText>
 	<run_away>1</run_away>
 	<defensive>1</defensive>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¿En qué momento se fue todo al carajo?</szText>
+	<szText>When did things go so wrong?</szText>
 	<run_away>1</run_away>
 	<defensive>1</defensive>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Volveré! ¡Y con amigos!</szText>
+	<szText>I'll be back! With friends!</szText>
 	<run_away>1</run_away>
 	<aggressive>1</aggressive>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Pagarás por eso... otro día!</szText>
+	<szText>You'll pay for that... the other day!</szText>
 	<run_away>1</run_away>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡No estás jugando limpio!</szText>
+	<szText>You're not playing fair!</szText>
 	<run_away>1</run_away>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡No creas que te voy a perdonar!</szText>
+	<szText>Don't think you I will forgive ya!</szText>
 	<run_away>1</run_away>
 	<aggressive>1</aggressive>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Mamá!</szText>
+	<szText>Mommy!</szText>
 	<run_away>1</run_away>
   </TAUNT>
   <TAUNT>
-	<szText>¡Volveré cuando menos te lo esperes, cabrón!</szText>
+	<szText>I'll be back when you least expect me, fucker!</szText>
 	<run_away>1</run_away>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>Te dejaré vivo... por ahora.</szText>
+	<szText>I'll leave you alive... for now.</szText>
 	<run_away>1</run_away>
 	<aggressive>1</aggressive>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ya basta!</szText>
+	<szText>Enough is enough!</szText>
 	<run_away>1</run_away>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡A la mierda! ¡Me largo!</szText>
+	<szText>Screw this! I'm outta here!</szText>
 	<run_away>1</run_away>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡A la mierda! ¡Ni siquiera soy un soldado de verdad!</szText>
+	<szText>Screw this! I'm not even a real soldier!</szText>
 	<run_away>1</run_away>
 	<admin>1</admin>
 	<green>1</green>
   </TAUNT>
   <TAUNT>
-	<szText>¡Retirada táctica!</szText>
+	<szText>Tactical retreat!</szText>
 	<run_away>1</run_away>
 	<brave>1</brave>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Ya he visto suficiente.</szText>
+	<szText>I've seen enough.</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>No, no, no.</szText>
+	<szText>Nope, nope, nope.</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Corran a las colinas!</szText>
+	<szText>Run to the hills!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Dejémoslo en empate.</szText>
+	<szText>Let's call it a draw.</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Dijeron "únete al ejército". ¡No para esta mierda!</szText>
+	<szText>They said "join the army". Not for this shit!</szText>
 	<run_away>1</run_away>
 	<defensive>1</defensive>
 	<regular>1</regular>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡No me arrepiento de nada!</szText>
+	<szText>I regret nothing!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Fin del juego, hombre!</szText>
+	<szText>Game over, man!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Seamos amigos!</szText>
+	<szText>Let's be friends!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Se acabó la fiesta!</szText>
+	<szText>Party's over!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡La violencia no es la respuesta!</szText>
+	<szText>Violence is not an answer!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Soy demasiado atractivo para morir!</szText>
+	<szText>I'm too beatiful to die!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Que les den, me voy a casa!</szText>
+	<szText>Screw you guys, I'm going home!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Haz el amor, no la guerra!</szText>
+	<szText>Make love, not war!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Eh... dejé las luces encendidas en casa. ¡Tengo que irme!</szText>
+	<szText>I, ehrm, left the lights on in my place. Gotta go!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Déjame tu número y te llamo luego.</szText>
+	<szText>Leave me your phone number, and I'll get back to ya!</szText>
 	<run_away>1</run_away>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Aaaggh!</szText>
+	<szText>Aaaggh!</szText>
 	<got_hit>1</got_hit>
   </TAUNT>
   <TAUNT>
-	<szText>Veo todo rojo...</szText>
+	<szText>I see red...</szText>
 	<got_hit>1</got_hit>
 	<health_lt>40</health_lt>
   </TAUNT>
    <TAUNT>
-	<szText>Maldición, apenas sigo consciente.</szText>
+	<szText>Damn, I'm barely conscious.</szText>
 	<got_hit>1</got_hit>
 	<energy_lt>40</energy_lt>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ugh!</szText>
+	<szText>Ugh!</szText>
 	<got_hit>1</got_hit>
   </TAUNT>
   <TAUNT>
-	<szText>Esto... duele.</szText>
+	<szText>This... hurts!</szText>
 	<got_hit>1</got_hit>
   </TAUNT>
   <TAUNT>
-	<szText>Te arrepentirás... ugh... de esto.</szText>
+	<szText>You will regret... uhh... this.</szText>
 	<got_hit>1</got_hit>
   </TAUNT>
   <TAUNT>
-	<szText>¡Mierda!</szText>
+	<szText>Crap!</szText>
 	<got_hit>1</got_hit>
   </TAUNT>
   <TAUNT>
-	<szText>¡Pero qué...!</szText>
+	<szText>What the...!</szText>
 	<got_hit>1</got_hit>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ay!</szText>
+	<szText>Ouch!</szText>
 	<got_hit>1</got_hit>
   </TAUNT>
   <TAUNT>
-	<szText>¡Cabrón!</szText>
-	<got_hit>1</got_hit>
-	<aggressive>1</aggressive>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Pedazo de mierda!</szText>
+	<szText>You fuck!</szText>
 	<got_hit>1</got_hit>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Joder, pagarás por eso!</szText>
+	<szText>Oh, you piece of shit!</szText>
 	<got_hit>1</got_hit>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te metiste con el tipo equivocado!</szText>
+	<szText>Fuck, you'll pay for that!</szText>
+	<got_hit>1</got_hit>
+	<aggressive>1</aggressive>
+  </TAUNT>
+  <TAUNT>
+	<szText>You fucked with the wrong guy!</szText>
 	<got_hit>1</got_hit>
 	<aggressive>1</aggressive>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>Ahora sí... me has cabreado.</szText>
+	<szText>Now you have... pissed me off.</szText>
 	<got_hit>1</got_hit>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡No fue nada!</szText>
+	<szText>It was nothing!</szText>
 	<got_hit>1</got_hit>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Sigo aquí!</szText>
+	<szText>I'm still here!</szText>
 	<got_hit>1</got_hit>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ni lo sentí!</szText>
+	<szText>Didn't feel a thing!</szText>
 	<got_hit>1</got_hit>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡El dolor es solo la debilidad saliendo de mi cuerpo!</szText>
+	<szText>Pain is just a weakness leaving my body!</szText>
 	<got_hit>1</got_hit>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡El dolor es solo una ilusión!</szText>
+	<szText>Pain is just an illusion!</szText>
 	<got_hit>1</got_hit>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¿Quién te crees que eres?</szText>
+	<szText>Who do you think you are?</szText>
 	<got_hit>1</got_hit>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Vamos, hombre!</szText>
+	<szText>Oh, come on!</szText>
 	<got_hit>1</got_hit>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡¿Por qué yo?!</szText>
+	<szText>Why me?!</szText>
 	<got_hit>1</got_hit>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Esto te duele más a ti que a mí.</szText>
+	<szText>This hurts you more then it hurts me.</szText>
 	<got_hit>1</got_hit>
 	<defensive>1</defensive>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Soy alérgico al dolor!</szText>
+	<szText>I'm allergic to pain!</szText>
 	<got_hit>1</got_hit>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Eh, Cordona! ¡La reina Dee Dee manda saludos!</szText>
+	<szText>Hey, Cordona! Queen Dee Dee says hi!</szText>
 	<fire_gun>1</fire_gun>
 	<target_merc_profile>57</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Me ascenderán por matarte, escoria rebelde!</szText>
+	<szText>I'll get promotion me for killing you, rebel scum!</szText>
 	<brave>1</brave>
 	<fire_gun>1</fire_gun>
 	<target_merc_profile>57</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Mierda, es Gus Tarballs! ¡Estamos jodidos!</szText>
+	<szText>Holy shit, it's Gus Tarballs! We're fucked!</szText>
 	<elite>1</elite>
 	<noticed_unseen>1</noticed_unseen>
 	<target_merc_profile>16</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Eh, es el tipo de "Wild, Wild East"! ¡Soy tu mayor fan!</szText>
+	<szText>Hey, it's a guy from "Wild, Wild East"! I'm your biggest fan!</szText>
 	<cunning>1</cunning>
 	<noticed_unseen>1</noticed_unseen>
 	<target_merc_profile>167</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Bang, bang! ¡Como en "Attack of the Clydesdales"!</szText>
+	<szText>Bang-bang! Just like in "Attack of the Clydesdales"!</szText>
 	<cunning>1</cunning>
 	<fire_gun>1</fire_gun>
 	<target_merc_profile>167</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Mucho polvo, muchas balas!</szText>
+	<szText>Much Dust, Many Bullets!</szText>
 	<cunning>1</cunning>
 	<fire_gun>1</fire_gun>
 	<target_merc_profile>167</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Súbete a tu Honda y lárgate!</szText>
+	<szText>Get back on your Honda, and travel away!</szText>
 	<cunning>1</cunning>
 	<fire_gun>1</fire_gun>
 	<target_merc_profile>167</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Perdóname, porque he pecado!</szText>
+	<szText>Forgive me, for I have sinned!</szText>
 	<cunning>1</cunning>
 	<fire_gun>1</fire_gun>
 	<target_merc_profile>247</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡¿Dónde está tu Dios ahora?!</szText>
+	<szText>Where's your God now?!</szText>
 	<fire_launcher>1</fire_launcher>
 	<target_merc_profile>247</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>Padre, ¿y el quinto mandamiento? ¡Hipócrita!</szText>
+	<szText>Father, what about the fifth commandment? You hypocrite!</szText>
 	<got_missed>1</got_missed>
 	<target_merc_profile>247</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Vuelve a tu tumba, maldito zombi!</szText>
+	<szText>Get back to your grave, you freakin' zombie!</szText>
 	<fire_gun>1</fire_gun>
 	<target_merc_profile>187</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ese sí es un blanco fácil!</szText>
+	<szText>Now that's an easy target!</szText>
 	<fire_gun>1</fire_gun>
 	<target_merc_profile>253</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Enemigo detectado! Carajo, cuesta no verlo...</szText>
+	<szText>Enemy detected! Damn, he's hard to miss...</szText>
 	<noticed_unseen>1</noticed_unseen>
 	<target_merc_profile>253</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Le hago un favor al mundo librándolo de tu cara fea!</szText>
+	<szText>I'm doing world a favor getting rid of your ugly face!</szText>
 	<fire_gun>1</fire_gun>
 	<target_appearance>1</target_appearance>
   </TAUNT>
   <TAUNT>
-	<szText>Oye, nena, dame tu número y dejo de disparar.</szText>
+	<szText>Hey babe, give me your number, and I'll stop shooting!</szText>
 	<cunning>1</cunning>
 	<male>1</male>
 	<fire_gun>1</fire_gun>
@@ -1390,7 +1390,7 @@
 	<target_appearance>4</target_appearance>
   </TAUNT>
   <TAUNT>
-	<szText>Oye, guapo, dame tu número y dejo de disparar.</szText>
+	<szText>Hey handsome, give me your number, and I'll stop shooting!</szText>
 	<cunning>1</cunning>
 	<female>1</female>
 	<fire_gun>1</fire_gun>
@@ -1398,17 +1398,17 @@
 	<target_appearance>4</target_appearance>
   </TAUNT>
   <TAUNT>
-	<szText>¿Quién es esa loca?</szText>
+	<szText>Who's that psycho chick?</szText>
 	<got_missed>1</got_missed>
 	<target_merc_profile>23</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¿No estás un poco viejo para esto, abuelo?</szText>
+	<szText>Aren't you a bit old for this, geezer?</szText>
 	<got_missed>1</got_missed>
 	<target_merc_profile>187</target_merc_profile>
   </TAUNT>
   <TAUNT>
-	<szText>¡Cásate conmigo!</szText>
+	<szText>Marry me!</szText>
 	<cunning>1</cunning>
 	<male>1</male>
 	<got_missed>1</got_missed>
@@ -1416,167 +1416,167 @@
 	<target_appearance>4</target_appearance>
   </TAUNT>
   <TAUNT>
-	<szText>¡Patético!</szText>
+	<szText>Pathetic!</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>Inténtalo otra vez. Te reto.</szText>
+	<szText>Try again, I dare ya.</szText>
 	<got_missed>1</got_missed>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡No me obligues a ir hasta allá!</szText>
+	<szText>Don't make me go over there!</szText>
 	<got_missed>1</got_missed>
 	<brave>1</brave>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Acabas de cometer un gran error!</szText>
+	<szText>You've just made a big mistake!</szText>
 	<got_missed>1</got_missed>
 	<aggressive>1</aggressive>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te quitaré esa arma de tus manos frías!</szText>
+	<szText>I'll take that gun out of your cold hands!</szText>
 	<got_missed>1</got_missed>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Te arrepentirás de haber fallado!</szText>
+	<szText>You'll regret missing!</szText>
 	<got_missed>1</got_missed>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¿A quién le estabas disparando?</szText>
+	<szText>Who were you shootin' at?</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>¿Quién te enseñó a disparar?</szText>
+	<szText>Who learned you to shoot?</szText>
 	<got_missed>1</got_missed>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡Pagarás por eso!</szText>
+	<szText>You'll pay for that!</szText>
 	<got_missed>1</got_missed>
 	<aggressive>1</aggressive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Hijo de puta!</szText>
+	<szText>Son of a bitch!</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>¡Das pena!</szText>
+	<szText>You suck!</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>¡Qué malo!</szText>
+	<szText>Lame!</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>¿Lo estás intentando siquiera?</szText>
+	<szText>Are you even trying?</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ja, ya quisieras!</szText>
+	<szText>Ha, you wish!</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>¡Aprende a disparar, novato!</szText>
+	<szText>Learn how to shoot, rookie!</szText>
 	<got_missed>1</got_missed>
 	<brave>1</brave>
   </TAUNT>
   <TAUNT>
-	<szText>¡En tus sueños!</szText>
+	<szText>In your dream!</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>¡No me impresionas!</szText>
+	<szText>I'm not impressed!</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>Eso no va a pasar.</szText>
+	<szText>That ain't gonna happen.</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>¡Buuuu!</szText>
-	<got_missed>1</got_missed>
-	<cunning>1</cunning>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Los niños no deberían jugar con armas!</szText>
+	<szText>Booooo!</szText>
 	<got_missed>1</got_missed>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Buen intento!</szText>
-	<got_missed>1</got_missed>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Mi abuela dispara mejor!</szText>
+	<szText>Children shouldn't play with guns!</szText>
 	<got_missed>1</got_missed>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Ese tiro fue pésimo y deberías sentirte mal!</szText>
+	<szText>Nice try!</szText>
+	<got_missed>1</got_missed>
+  </TAUNT>
+  <TAUNT>
+	<szText>My grandma's a better shot!</szText>
 	<got_missed>1</got_missed>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>Bastante cerca.</szText>
-	<got_missed>1</got_missed>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡No puedes tocarme!</szText>
+	<szText>That shot was bad and you should feel bad!</szText>
 	<got_missed>1</got_missed>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>No dejes que la decepción te afecte.</szText>
+	<szText>Close enough.</szText>
+	<got_missed>1</got_missed>
+  </TAUNT>
+  <TAUNT>
+	<szText>Can't touch this!</szText>
 	<got_missed>1</got_missed>
 	<cunning>1</cunning>
   </TAUNT>
   <TAUNT>
-	<szText>¡Vuelve a la cocina, mujer, que es donde debes estar!</szText>
+	<szText>Oh, don't let the disappointment get to you.</szText>
+	<got_missed>1</got_missed>
+	<cunning>1</cunning>
+  </TAUNT>
+  <TAUNT>
+	<szText>Get back in the kitchen, where you belong, woman!</szText>
 	<got_missed>1</got_missed>
 	<brave>1</brave>
 	<target_male>1</target_male>
 	<target_female>1</target_female>
   </TAUNT>
   <TAUNT>
-	<szText>Estuvo cerca.</szText>
+	<szText>Was close.</szText>
 	<got_missed>1</got_missed>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Esfuérzate más!</szText>
+	<szText>Try harder!</szText>
 	<got_missed>1</got_missed>
   </TAUNT>
   <TAUNT>
-	<szText>¡Uf!</szText>
-	<got_missed>1</got_missed>
-	<defensive>1</defensive>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Ni loco!</szText>
-	<got_missed>1</got_missed>
-  </TAUNT>
-  <TAUNT>
-	<szText>¡Quizá la próxima!</szText>
+	<szText>Whew!</szText>
 	<got_missed>1</got_missed>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>¡Hoy no!</szText>
+	<szText>Hell no!</szText>
+	<got_missed>1</got_missed>
+  </TAUNT>
+  <TAUNT>
+	<szText>Maybe next time!</szText>
 	<got_missed>1</got_missed>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Cerca, pero no cuenta.</szText>
+	<szText>Not today!</szText>
 	<got_missed>1</got_missed>
 	<defensive>1</defensive>
   </TAUNT>
   <TAUNT>
-	<szText>Eso me despertó.</szText>
+	<szText>Close, but no cigar.</szText>
+	<got_missed>1</got_missed>
+	<defensive>1</defensive>
+  </TAUNT>
+  <TAUNT>
+	<szText>That woke me up.</szText>
 	<got_missed>1</got_missed>
 	<defensive>1</defensive>
   </TAUNT>
