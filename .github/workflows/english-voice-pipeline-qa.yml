@@ -1,0 +1,57 @@
+name: English voice pipeline QA
+
+on:
+  push:
+    branches:
+      - audio/english-situational-voices-2026-09-16
+    paths:
+      - 'Data-Vengeance/TableData/EnemyTaunts.xml'
+      - 'Tools/VoicePipeline/**'
+      - '.github/workflows/english-voice-pipeline-qa.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-data-and-tools:
+    runs-on: windows-2022
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+
+      - name: Validate EnemyTaunts XML
+        shell: pwsh
+        run: |
+          @'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          path = Path(r"Data-Vengeance/TableData/EnemyTaunts.xml")
+          root = ET.parse(path).getroot()
+          taunts = root.findall("TAUNT")
+          if not taunts:
+              raise SystemExit("EnemyTaunts.xml contains no TAUNT entries")
+          missing = [i for i, node in enumerate(taunts) if node.find("szText") is None]
+          if missing:
+              raise SystemExit(f"TAUNT entries missing szText: {missing[:10]}")
+          print(f"EnemyTaunts XML OK: {len(taunts)} taunts")
+          '@ | python -
+
+      - name: Compile voice pipeline Python
+        shell: pwsh
+        run: |
+          python -m py_compile `
+            Tools/VoicePipeline/build_voice_inventory.py `
+            Tools/VoicePipeline/prepare_recording_batch.py `
+            Tools/VoicePipeline/deploy_voice_pack.py `
+            Tools/VoicePipeline/validate_voice_pack.py
+
+      - name: Enforce English-only schema
+        shell: pwsh
+        run: |
+          $bad = Select-String -Path 'Tools/VoicePipeline/*' -Pattern 'spoken_es|Enemy Army uses Spanish|Militia uses Spanish'
+          if ($bad) {
+            $bad | ForEach-Object { Write-Host $_ }
+            exit 1
+          }
