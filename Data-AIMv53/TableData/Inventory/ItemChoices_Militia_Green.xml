@@ -333,7 +333,7 @@
 	<ENEMYITEMCHOICES>
 		<uiIndex>6</uiIndex>
 		<name>Misc</name>
-		<ubChoices>20</ubChoices>
+		<ubChoices>22</ubChoices>
 		<bItemNo1>49</bItemNo1>
 		<bItemNo2>222</bItemNo2>
 		<bItemNo3>243</bItemNo3>
@@ -445,7 +445,7 @@
 		<name>Single Shot Rocket Launchers</name>
 		<ubChoices>1</ubChoices>
 		<bItemNo1>51</bItemNo1>
-		<bItemNo2>3036</bItemNo2>
+		<bItemNo2>0</bItemNo2>
 		<bItemNo3>0</bItemNo3>
 		<bItemNo4>0</bItemNo4>
 		<bItemNo5>0</bItemNo5>
