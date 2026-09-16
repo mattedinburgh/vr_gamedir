@@ -8,6 +8,7 @@ on:
     paths:
       - 'Data-AIMv53/TableData/**/*.xml'
       - 'Data-Vengeance/Ja2_Options.INI'
+      - 'Tools/AuditMilitiaArmyEquipment.py'
       - '.github/workflows/integration-data-validation.yml'
   workflow_dispatch:
 
@@ -103,3 +104,8 @@ jobs:
               raise SystemExit(f"Required item-stream options missing: {missing_options}")
 
           print("Critical gamedir reconciliation and item-stream checks passed.")
+
+      - name: Audit militia versus army equipment tables
+        shell: python
+        run: |
+          python Tools/AuditMilitiaArmyEquipment.py --check
