@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - install/all-2026-09-12
+      - items/inventory-loot-2026
     paths:
       - 'Data-AIMv53/TableData/**/*.xml'
+      - 'Data-Vengeance/Ja2_Options.INI'
       - '.github/workflows/integration-data-validation.yml'
   workflow_dispatch:
 
@@ -33,6 +35,11 @@ jobs:
               root / "Data-AIMv53/TableData/Items/AmmoTypes.xml",
               root / "Data-AIMv53/TableData/Items/Magazines.xml",
               root / "Data-AIMv53/TableData/Items/Items.xml",
+              root / "Data-AIMv53/TableData/Inventory/EnemyWeaponDrops.xml",
+              root / "Data-AIMv53/TableData/Inventory/EnemyAmmoDrops.xml",
+              root / "Data-AIMv53/TableData/Inventory/EnemyArmourDrops.xml",
+              root / "Data-AIMv53/TableData/Inventory/EnemyExplosiveDrops.xml",
+              root / "Data-AIMv53/TableData/Inventory/EnemyMiscDrops.xml",
           ]
 
           for path in critical:
@@ -51,4 +58,48 @@ jobs:
           if missing:
               raise SystemExit(f"Missing reconciled ammo item definitions: {missing}")
 
-          print("Critical gamedir reconciliation checks passed.")
+          drop_files = [
+              root / "Data-AIMv53/TableData/Inventory/EnemyWeaponDrops.xml",
+              root / "Data-AIMv53/TableData/Inventory/EnemyAmmoDrops.xml",
+              root / "Data-AIMv53/TableData/Inventory/EnemyArmourDrops.xml",
+              root / "Data-AIMv53/TableData/Inventory/EnemyExplosiveDrops.xml",
+              root / "Data-AIMv53/TableData/Inventory/EnemyMiscDrops.xml",
+          ]
+          for path in drop_files:
+              drop_root = ET.parse(path).getroot()
+              entries = drop_root.findall("DROPITEM")
+              if not entries:
+                  raise SystemExit(f"No DROPITEM entries in {path}")
+              indices = []
+              for entry in entries:
+                  index_text = entry.findtext("uiIndex")
+                  enemy_text = entry.findtext("ubEnemyDropRate")
+                  militia_text = entry.findtext("ubMilitiaDropRate")
+                  if index_text is None or enemy_text is None or militia_text is None:
+                      raise SystemExit(f"Incomplete drop entry in {path}")
+                  index = int(index_text)
+                  enemy_rate = int(enemy_text)
+                  militia_rate = int(militia_text)
+                  if not 0 <= enemy_rate <= 100 or not 0 <= militia_rate <= 100:
+                      raise SystemExit(
+                          f"Invalid drop rate in {path}: index={index}, "
+                          f"enemy={enemy_rate}, militia={militia_rate}"
+                      )
+                  indices.append(index)
+              if len(indices) != len(set(indices)):
+                  raise SystemExit(f"Duplicate drop-table uiIndex in {path}")
+              print(f"Drop table OK: {path} ({len(entries)} entries)")
+
+          options_text = (root / "Data-Vengeance/Ja2_Options.INI").read_text(
+              encoding="utf-8", errors="replace"
+          )
+          required_options = [
+              "USE_EXTERNALIZED_ENEMY_ITEM_DROPS =\t1",
+              "ADVANCED_REPAIR = TRUE",
+              "MERCS_CAN_DO_ADVANCED_REPAIRS = TRUE",
+          ]
+          missing_options = [setting for setting in required_options if setting not in options_text]
+          if missing_options:
+              raise SystemExit(f"Required item-stream options missing: {missing_options}")
+
+          print("Critical gamedir reconciliation and item-stream checks passed.")
