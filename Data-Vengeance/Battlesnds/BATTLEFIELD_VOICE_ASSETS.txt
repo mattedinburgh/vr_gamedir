@@ -53,3 +53,16 @@ with irrelevant announcer clips.
 
 A 1.8 second sector-wide gate prevents the shared military callouts from
 overlapping into noise. Existing per-soldier taunt delays remain active.
+
+Semantic callout seed aliases (2026-09-17)
+-------------------------------------------
+The UI / Tactical Information / Audio stream also reuses 14 of the CC0 files
+above under exact subtitle-matched semantic names (7 phrases x male/female).
+These aliases are used only where the recorded phrase exactly matches the
+selected English popup line; emotion-specific rewritten subtitles never fall
+back to a mismatched recording.
+
+Seeded semantic phrases: Fire in the hole!, Get down!, Hold!, Medic!,
+Reloading!, RPG!, Suppressing fire!.
+The complete 510-row production/recording contract is generated and validated
+in vr_source under Tools/Audio/BATTLE_CALLOUT_RECORDING_MANIFEST.csv.
